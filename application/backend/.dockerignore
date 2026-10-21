@@ -1,0 +1,15 @@
+# .dockerignore
+# Fichiers à exclure de l'image Docker
+
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+tests/
+.env
+logs/
+.vscode/
+*.md
+.git/
+.gitignore

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Barre de navigation FLOTTANTE en pilule (réf. Switchn) : le contenu occupe
+     tout l'écran, la barre flotte par-dessus avec des marges. Les fragments
+     ont un padding bas pour ne pas passer sous la barre. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_light">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/bg_bottom_nav_pill"
+        android:elevation="16dp"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_icon_color"
+        app:itemTextColor="@color/bottom_nav_text_color"
+        app:itemActiveIndicatorStyle="@style/Widget.MinorShield.NavActiveIndicator"
+        app:itemPaddingTop="7dp"
+        app:itemPaddingBottom="6dp"
+        app:labelVisibilityMode="labeled" />
+
+</FrameLayout>

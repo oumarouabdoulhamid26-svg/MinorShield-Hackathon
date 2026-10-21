@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fond 100% OPAQUE (alpha FF) : le contenu derrière doit être totalement
+     invisible, sur tous les appareils. Un dégradé transparent ou un flou
+     (non supporté par certaines ROMs) laisserait deviner l'image. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#FF0A1628"
+        android:endColor="#FF4A0000"
+        android:angle="270" />
+</shape>

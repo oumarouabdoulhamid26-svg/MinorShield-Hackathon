@@ -1,0 +1,151 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Lexique de termes à caractère sexuel / nudité — contexte Cameroun (CMR)
+#
+# Chaque terme (ou expression) sur une ligne. La casse et les accents sont
+# ignorés à la comparaison. La recherche se fait par MOT ENTIER.
+# Les lignes vides et celles commençant par # sont ignorées.
+#
+# Objectif : compléter la détection IA en attrapant le vocabulaire LOCAL
+# (français camerounais, camfranglais, pidgin) que les modèles peuvent manquer.
+# → Complétez librement cette liste avec les termes que vous connaissez.
+# ─────────────────────────────────────────────────────────────────────────
+
+# ── Français — anatomie / actes explicites ──────────────────────────────
+bite
+penis
+verge
+vagin
+chatte
+clitoris
+vulve
+sexe
+seins
+seins nus
+nichons
+teton
+tetons
+fesses nues
+cul
+sodomie
+fellation
+cunnilingus
+penetration
+ejaculation
+sperme
+orgasme
+erection
+masturbation
+se masturber
+baise
+baiser
+baisent
+niquer
+nique
+enculer
+encule
+suceuse
+suce
+sucer
+
+# ── Français — pornographie / prostitution ──────────────────────────────
+porno
+pornographie
+pornographique
+xxx
+film x
+salope
+pute
+putain
+prostituee
+prostitution
+escort
+michetonneuse
+
+# ── Anglais (très courant au CMR anglophone) ────────────────────────────
+nude
+nudes
+naked
+porn
+pornography
+xxx
+sex
+blowjob
+handjob
+pussy
+dick
+cock
+boobs
+tits
+horny
+cum
+fuck
+fucking
+slut
+whore
+
+# ── Français — argot sexuel ─────────────────────────────────────────────
+branler
+branlette
+partouze
+levrette
+foufoune
+godemichet
+nympho
+plan cul
+
+# ── Sites et plateformes pornographiques ────────────────────────────────
+pornhub
+xvideos
+xnxx
+xhamster
+youporn
+redtube
+onlyfans
+hentai
+
+# ── Anglais — sexting et nudes (variantes d'écriture) ───────────────────
+sexting
+sext
+sexts
+sextape
+sex tape
+noods
+nudez
+dick pic
+dick pics
+nude pic
+nude pics
+
+# ── Chantage aux images (sextorsion) — expressions complètes ────────────
+send nudes
+send me nudes
+send your nudes
+send me your nudes
+envoie tes nudes
+envoie moi tes nudes
+envoie ta nude
+photo nue
+photos nues
+video nue
+videos nues
+
+# ── Camfranglais / Pidgin camerounais ───────────────────────────────────
+# Termes au sens sexuel clair, sans autre usage courant (actifs) :
+ashawo
+wolowoss
+bordelle
+
+# ── À VALIDER PAR L'ÉQUIPE (désactivés) ─────────────────────────────────
+# Ces termes ont un sens sexuel en pidgin / camfranglais / argot, mais aussi
+# un AUTRE sens courant : activés, ils bloqueraient des messages innocents
+# (un seul mot suffit à bloquer). Pour en activer un, retirer le « # ».
+# toto        (sexe féminin en pidgin ; aussi prénom / surnom)
+# bobi        (seins en pidgin ; aussi « lait maternel », prénom Bobby)
+# nyass       (sexe féminin, argot ; à confirmer)
+# bangala     (sexe masculin, argot ; aussi nom d'un peuple et d'une langue)
+# nack        (relation sexuelle en pidgin ; « knack » = talent en anglais)
+# lolo        (seins, argot français ; aussi « lait » en langage enfantin)
+# zizi        (sexe masculin, langage enfantin)
+# sugar daddy (relation tarifée ; aussi employé dans les conseils de prévention)
+#
+# Ajoutez ci-dessous les autres termes locaux que vous connaissez (un par ligne).

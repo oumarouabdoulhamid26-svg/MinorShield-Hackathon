@@ -1,0 +1,28 @@
+# Android / Gradle
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Fichiers sensibles — NE JAMAIS committer
+# local.properties contient les clés SDK Android
+local.properties
+
+# Logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.bak
+
+# Backend Python (depot separe)
+Server/

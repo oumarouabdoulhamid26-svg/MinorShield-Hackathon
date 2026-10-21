@@ -1,0 +1,400 @@
+Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun
+
+Source : Recueil des textes du secteur des Postes, Telecommunications et TIC - Edition 2023 (Agence de Regulation des Telecommunications, art.cm), pages PDF 224 a 230.
+
+[PAGE 224 du recueil PDF]
+216
+
+CHAPITRE I 
+DISPOSITIONS GÉNÉRALES 
+ 
+ARTICLE 1. - La présente loi porte charte de protection des enfants en ligne au Cameroun. 
+ 
+ARTICLE 2.- La présente loi s'applique à toutes les activités impliquant les enfants dans le  cyberespace. 
+ 
+ARTICLE 3.- Au sens de la présente loi et des textes réglementaires pris pour son application, les définitions 
+ci-après sont admises : 
+Contenu inapproprié : contenu qui favorise l'abus de substances psychoactives, la  discrimination et l'exclusion, 
+les comportements à risque, le suicide ou la violence ; 
+Contrôle parental : système de filtre ou de surveillance pouvant être mis en place par des parents pour res-
+treindre et contrôler l'accès de leurs enfants à un média ; 
+Cybercriminalité : ensemble des infractions s’effectuant à travers le cyberespace par d'autres moyens que 
+ceux habituellement mis en œuvre, et de manière complémentaire à la criminalité classique ; 
+Cyberespace : réseau mondial associant des ressources de télécommunications, des ordinateurs serveurs et 
+des clients, destiné à l'échange de messages électroniques, d'informations multimédias et de fichiers et utili-
+sant un protocole commun permettant l'acheminement de messages en paquets indépendants ; 
+Enfant : toute personne âgée de moins de dix-huit (18) ans ; 
+Fournisseur d'accès à Internet : personne morale ou physique qui assure l'accès au réseau Internet ; 
+Fournisseur des contenus : toute personne physique ou morale qui diffuse des  informations à travers un ser-
+vice en ligne ; 
+Fournisseur de moteurs de recherche : toute personne ou entreprise spécialisée dans  la conception et la li-
+vraison de logiciel applicatif qui permet de trouver l'information recherchée en ligne à l’aide de mots ou de 
+phrases clés ; 
+Gérant de cybercafé : toute personne qui gère un centre ouvert au public et fournissant  des services de té-
+lécommunications/TIC ; 
+Internet : ensemble de réseaux mondiaux interconnectés qui permet à des ordinateurs   et à des serveurs de 
+communiquer eﬃcacement au moyen d’un protocole de   communication commun ; 
+Média social : application web permettant la création et la publication de contenus   générés par l'utilisateur 
+et le développement de réseaux sociaux en ligne en connectant les profits des utilisateurs ; 
+Opérateur des communications électroniques : personne physique ou morale titulaire d'une concession ou 
+d’une licence, exploitant un réseau de communications   électroniques ouvert au public ou fournissant au pu-
+blic un service de communications électroniques ; 
+Organe chargé de la régulation des Technologies de l'information et de la Communication : organisme public 
+chargé de la régulation, du contrôle et du suivi des activités liées à la sécurisation des réseaux des communi-
+cations électroniques et des systèmes d'information ; 
+Pédophilie : intention, propension, inclinaison périodique ou permanente à rechercher le plaisir sexuel auprès 
+des personnes mineures des deux (02) sexes ; 
+Pédopornographie : toute donnée quelle qu'en soit la nature ou la forme représentant de manière visuelle 
+LOI N°2023/009 DU 25 JUILLET 2023   
+Portant charte de protection des enfants 
+en ligne au Cameroun
+Le Parlement a délibéré et adopté,  
+le Président de la République promulgue  
+la loi dont la teneur suit :
+
+[PAGE 225 du recueil PDF]
+217
+
+un enfant se livrant ou subissant un agissement sexuellement explicite ou des images réalistes représentant 
+un enfant se livrant ou subissant un comportement sexuellement explicite ; 
+Promoteur de réseau social : personne ou entreprise spécialisée dans la création et la livraison des plateformes 
+dont la première vocation est la mise en relation des utilisateurs entre eux ;  
+Protection : mesure visant à prévenir, atténuer et répondre aux risques liés à l'utilisation d’internet par les 
+enfants ; 
+Réseau social : regroupement de personnes ou d'organisations qui échangent, communiquent et partagent 
+leurs idées autour d'un sujet commun et qui se matérialise par des sites sur lesquels chaque utilisateur se 
+crée un profil ; 
+Système d'information : ensemble organisé de ressources permettant de collecter, stocker, traiter et distribuer 
+l'information ; 
+TIC : Technologies de l'Information et de la Communication. 
+ 
+CHAPITRE II 
+DU ROLE DES POUVOIRS PUBLICS ET DU SECTEUR PRIVÉ 
+ 
+SECTION I 
+DU RÔLE DES POUVOIRS PUBLICS  
+ 
+ARTICLE 4.- Les pouvoirs publics veillent à la mise en place d'un cadre adéquat pour  l'utilisation sécurisée 
+d’internet par les enfants. 
+A ce titre, le Ministère en charge des télécommunications en collaboration avec les autres Administrations 
+concernées, élabore et met en œuvre un Plan d’Action National de Protection des Enfants en Ligne. 
+ 
+ARTICLE 5.- Le Plan d'Action National de Protection des Enfants en Ligne vise notamment à : 
+- garantir à l'enfant un accès sécurisé à l'Internet pour son apprentissage, le développement de ses po-
+tentiels et son épanouissement ; 
+- sensibiliser les acteurs de la chaîne de protection des enfants contre les effets pervers de l’internet ; 
+- prendre en compte la protection des enfants dans le traitement et la diffusion des  informations par les 
+professionnels de l’audiovisuel. 
+ 
+ARTICLE 6.- Les Ministères en charge de l'éducation et de la jeunesse, en collaboration  avec le Ministère en 
+charge des télécommunications, mettent en place des curricula de  formation sur l'utilisation responsable 
+d’Internet et des réseaux sociaux avec un accent particulier sur la protection des enfants en ligne. 
+ 
+ARTICLE 7.- Le Ministère en charge de la femme et de la famille, en collaboration avec le Ministère en charge 
+des télécommunications élaborent des modules de formation des parents à l'utilisation d'internet à dispenser 
+dans le cadre des programmes de parentalité positive. 
+ 
+ARTICLE 8.- Le Ministère en charge des affaires sociales offre, au personnel intervenant dans la prise en charge 
+des enfants, une formation appropriée en matière de prévention, de détection et de prise en charge des abus 
+dont peuvent être victimes les enfants en ligne. 
+ 
+ARTICLE 9.- Le Ministère en charge de la communication sensibilise les médias et s'assure que ceux-ci offrent 
+des contenus appropriés aux enfants. 
+ 
+ARTICLE 10.- (1) L’organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs nécessaires 
+à la protection des enfants dans le cyberespace national.  
+(2)    Un texte particulier précise le rôle de l'organe chargé de la régulation des TIC en matière de protection 
+des enfants en ligne. 
+ 
+SECTION II 
+DU RÔLE DU SECTEUR PRIVÉ 
+ 
+ARTICLE 11.- (1) Le secteur privé concourt, avec les pouvoirs publics, à rendre le cyberespace national plus sé-
+
+[PAGE 226 du recueil PDF]
+curisé pour les enfants. 
+(2)    Le secteur privé respecte les droits des enfants et prévient ou remédie aux incidences négatives sur ces 
+droits directement liées à leurs opérations, leurs produits et leurs services. 
+(3)    Le secteur privé participe à la sensibilisation et à la formation des enfants, des familles et des commu-
+nautés en donnant notamment des informations précises sur les sites non éligibles aux enfants. 
+ 
+ARTICLE 12.- Le secteur privé prend des mesures, lors de leurs offres de service, pour  réduire la disponibilité 
+et l'accès aux contenus portant atteinte à la dignité et à l'intégrité des  enfants. 
+ 
+ARTICLE 13.- Les entreprises qui développent ou proposent de nouveaux produits et  services technologiques 
+doivent aider leurs utilisateurs, en particulier les enfants, à comprendre le fonctionnement et à maitriser l’uti-
+lisation appropriée. 
+ 
+CHAPITRE III 
+DE LA RESPONSABILITE DES INTERVENANTS DANS LE CYBERESPACE ET DES SANCTIONS 
+ 
+SECTION I 
+DES OBLIGATIONS  
+  
+PARAGRAPHE I 
+DES OBLIGATIONS GENERALES 
+ 
+ARTICLE 14.- Les fournisseurs d’accès à Internet, les fournisseurs des contenus, les exploitants des systèmes 
+d’information ou les promoteurs de réseau social, doivent, à la demande des autorités compétentes, suspendre 
+l'accès à Internet, à leur contenu numérique ou réseau social à un consommateur qui est à l'origine de la pu-
+blication d’un contenu portant atteinte à la dignité et à l'intégrité des enfants. 
+ 
+ARTICLE 15.- Les fournisseurs de moteurs de recherche doivent, à la demande des autorités compétentes, 
+mettre fin à l'indexation des contenus portant atteinte à la dignité et à l'intégrité des enfants. 
+ 
+ARTICLE 16.- Les fournisseurs d'accès à Internet, les fournisseurs de contenu numérique ou de moteurs de re-
+cherche, les promoteurs de réseau social, les exploitants des systèmes d'information et les gérants de cybercafé 
+ont l'obligation de porter à la connaissance des autorités compétentes tous les actes constitutifs de pédopor-
+nographie et de suspendre les sites identifiés comme portant atteinte à la dignité et à l'intégrité des enfants. 
+ 
+ARTICLE 17.- Les responsables du traitement des données ou leurs sous-traitants sont  tenus de respecter la 
+réglementation en vigueur en matière de protection des droits des enfants. 
+ 
+ARTICLE 18.- (1) La publicité en ligne ne doit pas, sauf motif légitime, présenter des enfants en situation de 
+vulnérabilité. 
+ (2)    La publicité en ligne ne doit, en aucun cas, exploiter l'inexpérience ou la naïveté des enfants. 
+ 
+ARTICLE 19.- (1) Lorsqu'elle s'adresse aux enfants, la publicité en ligne ne doit pas être de nature à compro-
+mettre leur éducation, ni comporter de présentation visuelle ou de déclaration écrite ou orale qui puisse leur 
+causer un dommage physique ou moral. 
+(2)    La publicité en ligne ne doit pas exploiter, altérer ou tendre à ruiner la confiance ou le respect que les 
+enfants ont envers leurs parents, leurs éducateurs ou  d'autres personnes ayant en charge leur formation mo-
+rale ou intellectuelle. 
+ 
+PARAGRAPHE II 
+DES OBLIGATIONS SPECIFIQUES 
+ 
+ARTICLE 20.- (1) Les fournisseurs d'accès à Internet doivent mettre à la disposition des utilisateurs des guides 
+indiquant : 
+- les bonnes pratiques dans le cyberespace ; 
+218
+
+[PAGE 227 du recueil PDF]
+219
+
+- les activités portant atteinte à la dignité et à l’intégrité des enfants, ainsi que les conséquences y affé-
+rentes. 
+(2)    Ils mettent également en place des mécanismes de signalement des contenus ou des comportements 
+portant atteinte à la dignité et à l'intégrité des enfants. 
+(3)    Les contenus visés à l'alinéa 2 ci-dessus doivent être notifiés par tout moyen laissant trace écrite à l'organe 
+chargé de la régulation des TIC et aux services de sécurité, et peuvent aussi servir à bloquer l'accès à des 
+contenus ou à les supprimer. 
+(4)    Les mécanismes visés à l'alinéa 1 ci-dessus peuvent aussi servir à bloquer l'accès à ces contenus ou à les 
+supprimer. 
+ 
+ARTICLE 21.- (1) Les fournisseurs d'accès à Internet mettent à la disposition des utilisateurs des procédures et 
+des moyens techniques facilitant le contrôle de l'accès des  enfants à Internet. 
+(2)    Les fournisseurs d'accès à Internet mettent à disposition, des dispositifs  de contrôle parental, aux fins 
+de surveiller, filtrer et bloquer les sites ayant des contenus  portant atteinte à la dignité et à l'intégrité des en-
+fants . 
+ 
+ARTICLE 22.- Les fournisseurs des contenus sont responsables des contenus véhiculés par les réseaux de 
+communications électroniques ou les systèmes d'information, notamment lorsque ces contenus portent at-
+teinte à la dignité et à l'intégrité des enfants. 
+ 
+ARTICLE 23.- (1) Les fournisseurs des contenus et de services en ligne décrivent la nature  des contenus ou 
+des services qu'ils offrent et les groupes d'âge auxquels ceux-ci sont  destinés. 
+(2)    Ils mettent en place un système de paramétrage en vue du respect de la vie privée dans les systèmes qui 
+recueillent, traitent, stockent, commercialisent et publient  des données personnelles, y compris des infor-
+mations sur la localisation de l'utilisateur et ses habitudes de navigation sur Internet, lorsque ces données 
+concernent les enfants. 
+(3)    Ils mettent également en place des mécanismes permettant de retirer  immédiatement les publications 
+portant atteinte à la dignité et à l'intégrité des enfants ou  de bloquer l'accès à ces publications. 
+ 
+ARTICLE 24.- Les opérateurs des réseaux de communications électroniques et les  exploitants de systèmes 
+d'information promeuvent les mécanismes de signalement des  publications portant atteinte à la dignité et à 
+l’intégrité des enfants. 
+ 
+ARTICLE 25.- (1) Les opérateurs des réseaux de communications électroniques et les exploitants de systèmes 
+d'information facilitent le déploiement, par l'organe chargé de la régulation des TIC, de tout dispositif visant 
+à protéger la dignité et l'intégrité des enfants au sein de leur réseau ou de leur système d'information. 
+(2)    Ils facilitent également les opérations de collecte des données nécessaires aux investigations numériques 
+et judiciaires. 
+(3)    Ils sont tenus de respecter les prescriptions pour le bon fonctionnement du dispositif visé à l'alinéa 1 ci-
+dessus. 
+ 
+ARTICLE 26.- (1) Les opérateurs de communication audiovisuelle veillent à la protection  des enfants dans les 
+programmes mis en ligne et à la disposition du public. A ce titre, ils aménagent, dans leur catalogue, en tant 
+que de besoin, un espace de confiance qui offre à la famille et aux enfants, un ensemble constitué uniquement 
+de programmes « tous publics », exempt d'extraits, de bande-annonce, de messages et de tout contenu ou 
+services faisant l'objet de restrictions vis-à-vis des enfants. 
+(2)    Ils sont tenus de recueillir le consentement des parents ou tuteurs avant toute prise de vue ou de son 
+des enfants. 
+(3)    Les fournisseurs des services doivent s'assurer que leur divulgation tient   compte de l'intérêt supérieur 
+de l'enfant. 
+ 
+SECTION II 
+DES SANCTIONS ADMINISTRATIVES 
+ 
+ARTICLE 27.- Lorsque les atteintes aux droits des enfants en ligne ne constituent pas des infractions pénales,
+
+[PAGE 228 du recueil PDF]
+l'organe chargé de la régulation des TIC prend des mesures pour y  mettre fin, en collaboration avec l'organe 
+chargé de la régulation des télécommunications et celui chargé de la régulation des médias. 
+ 
+ARTICLE 28.- En cas de manquement à leurs obligations, l'organe chargé de la régulation  des TIC met en de-
+meure de se conformer dans un délai de quinze (15) jours, les fournisseurs d’accès à internet, fournisseurs de 
+contenus, les opérateurs des réseaux  de communications électroniques, les exploitants des systèmes d'infor-
+mation, les professionnels de la publicité en ligne et les opérateurs de communication audiovisuelle. 
+ 
+ARTICLE 29.- Lorsque les fournisseurs d'accès à Internet, les fournisseurs de contenus, les opérateurs des ré-
+seaux de communications électroniques, les exploitants des systèmes  d’information, les professionnels de la 
+publicité en ligne et les opérateurs de communication audiovisuelle ne respectent pas la mise en demeure 
+visée à l'article 28 ci-dessus, I ’organe chargé de la régulation des TIC prononce à leur encontre une pénalité 
+comprise entre un million (1 000 000) et dix millions (10 000 000) de francs CFA. 
+ 
+SECTION III 
+DE LA PROCEDURE ET DES SANCTIONS PENALES 
+ 
+ARTICLE 30.- Les enregistrements audio, vidéo ou par tout autre moyen de conservation électronique peuvent 
+être recevables comme moyen de preuve.  
+ 
+ARTICLE 31.- L'écrit sous forme électronique est recevable comme preuve au même titre que l'écrit sur support 
+papier et a la même force probante que celui-ci, dès lors que la personne dont il émane est dûment identifiée 
+et qu’il est établi et conservé dans des conditions de nature à garantir son intégrité. 
+ 
+ARTICLE 32.- (1) Les infractions aux dispositions de la présente loi sont constatées par les oﬃciers de police 
+judiciaire à compétence générale, les agents assermentés de l'organe chargé de la régulation des TIC ou des 
+Ministères en charge des télécommunications et de la publicité, conformément aux conditions prévues par 
+les textes législatifs et réglementaires en vigueur. 
+(2)    Les procès-verbaux constatant les infractions, ainsi que les objets et documents saisis, sont transmis au 
+Procureur de la République compétent dans un délai maximum de huit (08) jours. 
+ 
+ARTICLE 33.- (1) Est puni d'une amende de vingt-cinq millions (25 000 000) à deux cent cinquante millions 
+(250 000 000) francs CFA, tout fournisseur d'accès à Internet qui, après avoir pris connaissance de l'existence 
+d'un contenu ou d'un comportement portant atteinte à la dignité et à l'intégrité des enfants, s'abstient de le 
+signaler aux autorités compétentes,  de le bloquer ou de le supprimer. 
+(2)    Est puni des peines prévues à l’alinéa 1 ci-dessus : 
+- le fournisseur de contenu qui laisse prospérer des contenus portant atteinte à la dignité et à l'intégrité 
+des enfants dans les réseaux de communications électroniques ou les systèmes d'information dont il a 
+la charge ; 
+- l'opérateur des réseaux de communications électroniques ou l'exploitant de systèmes d'information qui 
+s'oppose au déploiement par l'organe chargé de la  régulation des TIC d'un dispositif visant à protéger la 
+dignité et l'intégrité des enfants au sein de son réseau ou de son système d'information, ou à la collecte 
+de données nécessaires aux investigations numériques et judiciaires ; 
+- le professionnel de la publicité qui fait passer des annonces publicitaires destinées aux enfants avec des 
+contenus inappropriés ; 
+- le professionnel de la publicité qui fait diffuser en ligne, sous sa responsabilité et sans motif légitime, un 
+message publicitaire présentant des enfants en situation de danger ou exploitant l'inexpérience ou la 
+naïveté de ces derniers, et la fragilité des personnes handicapées et de toute autre personne vulnérable 
+en raison de leur état physique ou moral.  
+(3)    Le tribunal peut en outre, en cas de récidive, ordonner : 
+- l'interdiction, à titre définitif ou pour une durée d'un (01) an au moins, d'exercer directement ou indirec-
+tement une ou plusieurs activités professionnelles ou sociales ; 
+- la fermeture temporaire pour une durée d'un (01) an au moins, dans les conditions  prévues par l'article 
+34 du Code Pénal, de l'établissement ayant servi à commettre  les faits incriminés ; 
+- la publication de la décision prononcée par tout moyen de communication au public par voie électronique  
+220
+
+[PAGE 229 du recueil PDF]
+221
+
+ARTICLE 34.- (1) Est puni des peines prévues à l'article 344 du Code Pénal, l'opérateur de communications 
+électroniques qui fait participer des enfants dans une communication électronique sans une autorisation écrite 
+de leurs parents ou tuteurs.  
+(2)    Les peines prévues à l'alinéa 1 ci-dessus s'appliquent également à celui qui fait diffuser par voie de 
+communications électroniques ou dans un système  d'information, sous sa responsabilité, un message publi-
+citaire de nature à compromettre l’éducation des enfants, à leur causer un dommage physique ou moral, à al-
+térer ou tendre à ruiner la confiance ou le respect que les enfants ont envers leurs parents, leurs éducateurs 
+ou d'autres personnes ayant en charge leur formation morale ou intellectuelle. 
+ 
+ARTICLE 35.- Est puni d'un emprisonnement d’un (01) mois à deux (02) ans et d'une amende de cinq mille (5 
+000) à cinq cent mille (500 000) francs CFA, toute personne  qui divulgue l'identité de l'enfant en situation de 
+vulnérabilité dans le traitement des sujets susceptibles de lui porter préjudice notamment lorsqu’il existe un 
+risque de stigmatisation après diffusion. 
+ 
+ARTICLE 36.- Est puni d'un emprisonnement d'un (01) à trois (03) ans et d'une amende de cinq millions (5 000 
+000) à dix millions (10 000 000) de francs CFA, ou de l'une de ces deux peines seulement, le promoteur de 
+jeux et de paris en ligne qui n'empêche pas l’accès d'un enfant à ces jeux et paris, en s'abstenant d'adopter 
+les mesures ci-après : 
+- diffuser sur la page d’accueil du site de jeux et les pages d'inscription de manière  visible, un texte inter-
+disant explicitement l'accès des enfants au service de jeu ; 
+- imposer au joueur de s'engager sur l'honneur sur son âge et d'entrer ses données  d'identification ; 
+- imposer au joueur de recourir aux moyens de paiement en ligne ; 
+- interdire l'accès aux enfants. 
+ 
+ARTICLE 37.- Est puni d'un emprisonnement de cinq (05) à dix (10) ans et d'une amende de cinq millions (5 
+000 000) à dix millions (10 000 000) de francs CFA, ou de l'une de ces deux peines seulement, celui qui confec-
+tionne, transporte, diffuse, par voie de communications électroniques ou d'un système d'information, un mes-
+sage à caractère  pédopornographique, ou de nature à porter gravement atteinte à la dignité d'un enfant. 
+ 
+ARTICLE 38.- Est puni d'un emprisonnement de trois (03) à six (06) ans et d'une amende de cinq millions (5 
+000 000) à dix millions (10 000 000) de francs CFA, ou de l'une de ces deux peines seulement, celui qui fixe, 
+enregistre, diffuse, rend disponible ou transmet à titre onéreux ou gratuit l'image présentant les actes de pé-
+dophilie sur un enfant par voie de communications électroniques ou d'un système d'information. 
+ 
+ARTICLE 39.- (1) Est puni d'un emprisonnement d'un (01) à cinq (05) ans et d'une amende de cinq millions (5 
+000 000) à dix millions (10 000 000) de francs CFA ou de l'une de ces deux peines seulement, celui qui détient 
+dans un réseau de communication électronique ou dans un système d'information, une image ou une repré-
+sentation à caractère pédophile. 
+(2)    Les peines prévues à I alinéa 1 ci-dessus sont doublées, lorsqu'un réseau de communications électro-
+niques a été utilisé pour la diffusion de l'image ou la représentation de l’enfant à destination du public. 
+(3)    Les dispositions du présent article sont également applicables aux images pornographiques mettant en 
+scène les enfants. 
+ 
+ARTICLE 40.- Est puni d'un emprisonnement de deux (02) à cinq (05) ans et d'une amende de cinq millions (5 
+000 000) à dix millions (10 000 000) de francs CFA, ou de l'une de ces deux peines seulement, l'auteur des 
+faits suivants, lorsqu’ils sont commis en utilisant un réseau de communications électroniques ou un système 
+d'information : 
+- l'offre, la production, la mise à disposition de pornographie enfantine en vue de sa diffusion ; 
+- le fait de se procurer ou de procurer à autrui de la pornographie enfantine par le biais d'un système d'in-
+formation ; 
+- le fait pour les personnes majeures de faire des propositions sexuelles à des enfants ou une personne se 
+présentant comme telle ; 
+- la diffusion ou la transmission de pornographie enfantine par le biais d'un système d'information. 
+ 
+ARTICLE 41.- Est puni d'un emprisonnement de dix (10) à vingt (20) ans et d'une amende de dix millions (10
+
+[PAGE 230 du recueil PDF]
+222
+
+000 000) à vingt millions (20 000 000) de francs CFA, ou de l'une de ces deux peines seulement, celui qui 
+commet par voie de communications électroniques un  outrage à la pudeur sur un enfant. 
+ 
+ARTICLE 42.- (1) Est puni d’un emprisonnement de deux (02) à cinq (05) ans et d’une amende d'un million (1 
+000 000) à cinq millions (5 000 000) de francs CFA, ou de l'une de  ces deux peines seulement, toute personne 
+qui, par voie de communications électroniques, fait des propositions sexuelles à un enfant ou une personne 
+se présentant comme telle. 
+(2)    Les peines prévues à l’alinéa 1 ci-dessus sont doublées lorsque la personne mise en cause par ruse, pres-
+sion psychologique, violences ou chantage, par voie  de communications électroniques, obtient d'un enfant 
+l'envoi des photos ou vidéos d'elle  qui ont un caractère explicitement ou implicitement sexuel. 
+(3)    Les peines prévues à l'alinéa 2 ci-dessus s'appliquent également lorsque   les propositions sexuelles en 
+ligne aboutissent à une rencontre physique, à l'atteinte à la  dignité de l’enfant ou à une offense sexuelle. 
+ 
+ARTICLE 43.- (1) Est puni d'un emprisonnement de cinq (05) à dix (10) ans et d'une amende de cinq millions 
+(5 000 000) à dix millions (10 000 000) de francs CFA, ou de  l'une de ces deux peines seulement, celui qui fixe, 
+enregistre, diffuse, transmet à titre onéreux ou gratuit par voie de communications électroniques ou d'un sys-
+tème d'information, un contenu à caractère sexuel impliquant un enfant. 
+(2)     Est puni des peines prévues à l'alinéa 1 ci-dessus, toute personne qui offre, ou rend disponible un 
+contenu à caractère sexuel impliquant un enfant. 
+(3)    Les peines prévues aux alinéas 1 et 2 ci-dessus sont doublées en cas de récidive. 
+ 
+ARTICLE 44.- Est puni d'un emprisonnement d'un (01) à cinq (05) ans et d'une amende de cinq millions (5 000 
+000) à dix millions (10 000 000) de francs CFA, ou de l'une de ces deux peines seulement, celui qui détient 
+dans un réseau de communications électroniques ou dans un système d'information, un contenu à caractère 
+sexuel impliquant un enfant. 
+ 
+ARTICLE 45.- Est punie d'un emprisonnement de deux (02) à cinq (05) ans et d'une  amende d'un million (1 
+000 000) à cinq millions (5 000 000) de francs CFA, ou de l'une de ces deux peines seulement, toute personne 
+qui expose un enfant à un contenu à caractère sexuel. 
+ 
+ARTICLE 46.- Est punie d'un emprisonnement de deux (02) à cinq (05) ans et d'une amende d'un million (1 
+000 000) à cinq millions (5 000 000) de francs CFA, ou de l’une de ces deux peines seulement, toute personne 
+qui consulte habituellement des sites contenant des images de pédopornographie.  
+ 
+CHAPITRE IV 
+DISPOSITIONS DIVERSES ET FINALES 
+ 
+ARTICLE 47.- Sont abrogées toutes les dispositions antérieures contraires. 
+ 
+ARTICLE 48.- Des textes particuliers précisent, en tant que de besoin, les modalités d'application de la présente 
+loi. 
+ 
+ARTICLE 49.- La présente loi sera enregistrée, publiée selon la procédure d'urgence,  puis insérée au Journal 
+Oﬃciel en Français et en Anglais./- 
+ 
+Yaoundé, le 25 juillet 2023 
+ 
+LE PRESIDENT DE LA REPUBLIQUE  
+ 
+PAUL BIYA

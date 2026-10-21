@@ -1,0 +1,6 @@
+# Configuration Nixpacks pour Railway.
+# Installe le binaire Tesseract + les langues utilisées par l'OCR
+# (fra+eng, cf. app/services/ocr_service.py). Sans ça, pytesseract
+# ne trouve pas l'exécutable et l'extraction de texte échoue.
+[phases.setup]
+aptPkgs = ["tesseract-ocr", "tesseract-ocr-fra", "tesseract-ocr-eng"]

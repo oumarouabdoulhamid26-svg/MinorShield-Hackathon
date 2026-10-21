@@ -1,0 +1,41 @@
+# docker-compose.yml
+# Orchestre le lancement du serveur MinorShield avec Docker.
+# Lance avec : docker-compose up
+
+
+
+services:
+  minorshield-api:
+    # ── Construction de l'image ──────────────────────────────────
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # ── Nom du conteneur ─────────────────────────────────────────
+    container_name: minorshield-api
+
+    # ── Ports ────────────────────────────────────────────────────
+    # Format : port_machine:port_conteneur
+    ports:
+      - "8081:8081"
+
+    # ── Variables d'environnement ─────────────────────────────────
+    # Lues depuis le fichier .env
+    env_file:
+      - .env
+
+    # ── Volumes ───────────────────────────────────────────────────
+    # Synchronise le dossier weights avec le conteneur
+    volumes:
+      - ./weights:/app/weights
+
+    # ── Redémarrage automatique ───────────────────────────────────
+    restart: unless-stopped
+
+    # ── Vérification santé ────────────────────────────────────────
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bleu marine profond — principal -->
+    <color name="navy_deep">#0A1628</color>
+    <color name="navy">#152345</color>
+    <color name="navy_medium">#1E3A5F</color>
+
+    <!-- Vert — état protégé / sûr (sémantique partagée avec l'app parent) -->
+    <color name="enfant_teal">#1D9E75</color>
+    <color name="enfant_teal_light">#5DCAA5</color>
+    <color name="enfant_teal_surface">#E1F5EE</color>
+    <color name="success_ink">#0F6E56</color>
+
+    <!-- Accent bleu — actions/interactif (aligné sur l'app parent) -->
+    <color name="accent_blue">#2E6BF6</color>
+    <color name="accent_blue_dark">#1B4DB8</color>
+    <color name="accent_blue_surface">#E7EFFE</color>
+
+    <!-- Fond et surfaces — BLANC dominant, cartes à liseré fin -->
+    <color name="enfant_background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="enfant_surface_variant">#F1F1F4</color>
+    <color name="card_stroke">#E7E8EB</color>
+    <!-- Outline des cartes : gris à 25% d'opacité (remplace les ombres) -->
+    <color name="card_outline">#405A6475</color>
+
+    <!-- Textes — contraste garanti -->
+    <color name="enfant_text_primary">#1C2333</color>
+    <color name="enfant_text_secondary">#5A6475</color>
+    <color name="enfant_text_hint">#9BA3AF</color>
+    <color name="text_on_dark">#FFFFFF</color>
+    <color name="text_on_dark_muted">#B0C4DE</color>
+
+    <!-- Danger — overlay bloqué -->
+    <color name="danger">#C62828</color>
+    <color name="danger_dark">#4A0000</color>
+    <color name="enfant_danger_surface">#FFEBEE</color>
+
+    <!-- Overlay de blocage — textes sur fond rouge sombre -->
+    <color name="overlay_accent">#FFCC00</color>
+    <color name="overlay_text_muted">#DDFFFFFF</color>
+    <color name="overlay_text_faint">#55FFFFFF</color>
+
+    <!-- Divers -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="enfant_divider">#E8ECF0</color>
+    <color name="enfant_primary">#152345</color>
+    <color name="enfant_primary_dark">#0A1628</color>
+    <color name="safe_green_light">#1D9E75</color>
+    <color name="safe_green_surface">#E1F5EE</color>
+    <!-- Vert franc pour le bouton "Quitter" de l'écran d'avertissement -->
+    <color name="quit_green">#2E9E5B</color>
+</resources>

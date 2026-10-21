@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Traduction anglaise du mode enfant.
+    Ton volontairement simple et direct : ces écrans s'adressent à un enfant.
+-->
+<resources>
+    <string name="app_name">MinorShield Child</string>
+
+    <string name="pairing_title">Connect this device</string>
+    <string name="pairing_subtitle">Enter the code your parent gave you</string>
+    <string name="pairing_hint">6-digit code</string>
+    <string name="pairing_btn">Connect</string>
+
+    <string name="main_protected">You are protected</string>
+    <string name="main_active">Monitoring active</string>
+
+    <string name="enfant_overlay_title">Content blocked</string>
+    <string name="overlay_message">This content was found to be inappropriate.\nWait for your parent to unblock it.</string>
+
+    <string name="notif_title">MinorShield is active</string>
+    <string name="notif_text">Protection running…</string>
+
+    <!-- Déconnexion de l'appareil -->
+    <string name="enfant_disconnect_la_protection_sera_desactivee_et">Protection will be turned off and this device unlinked from the parent account. The parent PIN is required to continue.</string>
+    <string name="enfant_disconnect_code_pin_parent">Parent PIN</string>
+
+    <!-- Écran principal -->
+    <string name="enfant_activity_main_appareil_de">Device of</string>
+    <string name="enfant_activity_main_enfant">Child</string>
+    <string name="enfant_activity_main_actif">Active</string>
+    <string name="enfant_activity_main_tes_parents_veillent_sur_toi">Your parents are looking out for you</string>
+    <string name="enfant_activity_main_protection_incomplete">⚠️ Protection incomplete</string>
+    <string name="enfant_activity_main_reactiver_la_protection">Turn protection back on</string>
+    <string name="enfant_activity_main_etat_de_la_protection">Protection status</string>
+    <string name="enfant_activity_main_analyse_de_l_ecran">Screen analysis</string>
+    <string name="enfant_activity_main_blocage_des_contenus">Content blocking</string>
+    <string name="enfant_activity_main_identification_des_applications">App identification</string>
+    <string name="enfant_activity_main_contenus_filtres">Filtered content</string>
+    <string name="enfant_activity_main_les_contenus_inappropries_sont_bloques">Inappropriate content is blocked automatically</string>
+    <string name="enfant_activity_main_alertes_parent">Parent alerts</string>
+    <string name="enfant_activity_main_ton_parent_est_notifie_en">Your parent is notified when content is blocked</string>
+    <string name="enfant_activity_main_deconnecter_cet_appareil">Disconnect this device</string>
+    <string name="enfant_activity_main_minorshield_protection_familiale">MinorShield · Family Protection</string>
+
+    <!-- Appairage -->
+    <string name="enfant_activity_pairing_minorshield">MinorShield</string>
+    <string name="enfant_activity_pairing_application_enfant">Child app</string>
+    <string name="enfant_activity_pairing_connecter_l_appareil">Connect this device</string>
+    <string name="enfant_activity_pairing_entre_le_code_a_6">Enter the 6-digit code your parent gave you</string>
+    <string name="enfant_activity_pairing_code_d_appairage">Pairing code</string>
+
+    <!-- Démarrage -->
+    <string name="enfant_activity_splash_protection_familiale">Family Protection</string>
+    <string name="enfant_activity_splash_chargement">Loading…</string>
+
+    <!-- Écrans de blocage / avertissement -->
+    <string name="enfant_blocked_contenu_bloque">CONTENT BLOCKED</string>
+    <string name="enfant_blocked_vous_avez_atteint_la_limite">You have reached the warning limit. Only a parent can unlock this device.</string>
+    <string name="enfant_blocked_en_attente_du_deblocage_parent">Waiting for a parent to unlock…</string>
+    <string name="enfant_warning_contenu_inapproprie_detecte">Inappropriate content detected</string>
+    <string name="enfant_warning_quitter">Close</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base "Light" et non "DayNight" : aucune palette nuit (values-night/)
+        n'est définie. Avec DayNight, Material basculait certains composants en
+        sombre alors que nos couleurs restaient claires → contrastes cassés en
+        mode sombre. L'app enfant est déjà en Light : les deux sont désormais
+        alignées. Passer en DayNight demandera d'abord une vraie palette nuit.
+    -->
+    <style name="Theme.MinorShield" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+
+        <!-- ── Typographie unifiée ────────────────────────────────────
+             Police déclarée explicitement plutôt que subie, et échelle
+             appliquée aux composants Material (boutons, champs, dialogues). -->
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MinorShield.Title</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MinorShield.Subtitle</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MinorShield.Body</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MinorShield.BodySmall</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MinorShield.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MinorShield.Button</item>
+    </style>
+
+    <style name="Theme.MinorShield.NoActionBar" parent="Theme.MinorShield" />
+
+    <style name="Theme.MinorShield.Splash" parent="Theme.MinorShield">
+        <item name="android:windowBackground">@color/surface_light</item>
+        <item name="android:statusBarColor">@color/surface_light</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Bouton principal -->
+    <style name="Widget.MinorShield.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/accent_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <!-- Pas de padding vertical : la hauteur est fixée (56dp) dans les layouts.
+             Ajouter un padding en plus écrasait/rognait le texte du bouton.
+             On laisse MaterialButton centrer le libellé et on neutralise les
+             insets par défaut pour occuper toute la hauteur. -->
+        <item name="android:gravity">center</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Bouton texte -->
+    <style name="Widget.MinorShield.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Cards -->
+    <style name="Widget.MinorShield.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+
+    <!-- TextInput -->
+    <style name="Widget.MinorShield.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/teal</item>
+        <item name="hintTextColor">@color/teal</item>
+    </style>
+
+    <!-- ── Barre de navigation : pastille active (active indicator) ─────
+         Pastille bleue arrondie derrière l'icône de l'onglet sélectionné.
+         Rend l'état actif enfin lisible sur la pilule sombre. -->
+    <style name="ShapeAppearance.MinorShield.NavIndicator" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">18dp</item>
+    </style>
+
+    <style name="Widget.MinorShield.NavActiveIndicator" parent="">
+        <item name="android:width">56dp</item>
+        <item name="android:height">30dp</item>
+        <item name="android:color">@color/accent_blue</item>
+        <item name="marginHorizontal">10dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MinorShield.NavIndicator</item>
+    </style>
+</resources>

@@ -1,0 +1,50 @@
+# ── Secrets (NE JAMAIS committer) ──────────────
+.env
+application/backend/.env
+application/frontend/app/google-services.json
+keystore.properties
+*.keystore
+*.jks
+
+# ── Python ─────────────────────────────────────
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+
+# ── Base vectorielle : reconstruite avec bd/knowledge/ingest.py ──
+bd/chromadb/
+
+# ── Simulations : seule la simulation de reference est publiee (docs/exemple_simulation/) ──
+runs/
+
+# ── Android / Gradle ───────────────────────────
+*.iml
+.gradle/
+.idea/
+local.properties
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# ── Backend MinorShield ────────────────────────
+application/backend/logs/
+application/backend/weights/
+application/backend/data/
+application/backend/*.db
+application/backend/*.db-journal
+application/backend/*.db-wal
+application/backend/firebase-service-account.json
+
+# ── Divers ─────────────────────────────────────
+*.log
+*.tmp
+*.bak
+.DS_Store
+~$*

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Teinte d'ICÔNE de la barre : actif = blanc (posé sur la pastille bleue),
+     inactif = gris. Séparé du texte pour permettre icône blanche + libellé bleu. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/on_accent" android:state_checked="true" />
+    <item android:color="@color/nav_inactive" />
+</selector>

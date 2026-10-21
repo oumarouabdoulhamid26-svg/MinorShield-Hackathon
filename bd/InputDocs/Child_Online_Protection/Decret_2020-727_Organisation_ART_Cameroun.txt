@@ -1,0 +1,646 @@
+Decret n° 2020/727 du 03 decembre 2020 portant reorganisation et fonctionnement de l'ART
+
+Source : Recueil des textes du secteur des Postes, Telecommunications et TIC - Edition 2023 (Agence de Regulation des Telecommunications, art.cm), pages PDF 66 a 76.
+
+[PAGE 66 du recueil PDF]
+58
+
+Textes organiques
+LE PRESIDENT DE LA REPUBLIQUE, 
+ 
+Vu
+la Constitution ; 
+Vu
+l’Acte Uniforme OHADA relatif aux droits des Sociétés Commerciales et du Groupement d’intérêt Econo-
+mique adopté le 30 janvier 2014 à Ouagadougou ; 
+Vu
+la loi n° 98/013 du 14 juillet 1998 relative à la concurrence ; 
+Vu
+la loi n° 2001/010 du 23 juillet 2001 instituant le service minimum dans le domaine des télécommunica-
+tions ; 
+Vu
+la loi n° 2010/013 du 21 décembre 2010 régissant les communications électroniques au Cameroun, mo-
+difiée et complétée par la loi n° 2015/006 du 20 avril 2015 ; 
+Vu
+la loi n° 2018/011 du 11 juillet 2018 portant Code de transparence et de bonne gouvernance dans la ges-
+tion des finances publiques au Cameroun ; 
+Vu
+la loi n° 2018/012 du 11 juillet 2018 portant régime financier de l’Etat et des autres entités publiques ; 
+Vu
+la loi n° 2017/010 du 12 juillet 2017 portant statut général des établissements publics ; 
+Vu
+le décret n° 2019/320 du 19 juin 2019 précisant les modalités d’application de certaines dispositions des 
+lois n° 2017/010 et 2017/011 portant statut des établissements publics et des entreprises publiques ; 
+Vu
+le décret n° 2019/322 du 19 juin 2019 fixant les catégories d’établissements publics, la rémunération, 
+les indemnités et les avantages de leurs dirigeants ; 
+Vu
+le décret n° 2011/408 du 11 décembre 2011 portant organisation du Gouvernement, modifié et complété 
+par le décret n° 2018/190 du 02 mars 2018, 
+ 
+DECRETE : 
+ 
+CHAPITRE I 
+DISPOSITIONS GENERALES 
+ 
+ARTICLE 1er.- Le présent décret porte réorganisation et fonctionnement de l’Agence de Régulation des Télé-
+communications, en abrégé « ART », et ci-après désignée l’« Agence ». 
+ 
+ARTICLE 2.- (1) L’Agence est un établissement public à caractère spécial, dotée de la personnalité juridique et 
+de l’autonomie financière. 
+(2)    Elle est gérée suivant les règles de la comptabilité privée, conformément aux dispositions de l’Acte Uni-
+forme OHADA relatif au droit des Sociétés Commerciales et du Groupement d’Intérêt Economique. 
+(3)    Son siège est fixé à Yaoundé. Il peut être transféré en tout autre lieu du territoire national, par résolution 
+du Conseil d’Administration. 
+(4)    Des antennes de l’Agence peuvent être créées, en tant que de besoin, à l’intérieur du territoire national 
+par résolution du Conseil d’Administration. 
+ 
+ARTICLE 3.- (1) L’Agence est placée sous la tutelle technique du Ministère chargé des télécommunications et 
+sous la tutelle financière du Ministère chargé des finances. 
+(2)    La tutelle technique a pour objet de s’assurer que les activités menées par l’Agence sont conformes aux 
+orientations des politiques publiques du Gouvernement dans le secteur des communications électroniques, 
+sous réserve des compétences reconnues au Conseil d’Administration. 
+En outre, elle s’assure de la conformité des résolutions du Conseil d’Administration aux lois et règlements, 
+ainsi qu’aux orientations des politiques sectorielles. 
+DECRET N°2020/727 DU 03 DÉCEMBRE 2020      
+portant réorganisation et fonctionnement de 
+l’Agence de Régulation des Télécommunications./-
+
+[PAGE 67 du recueil PDF]
+59
+Textes organiques
+
+(3)    La tutelle financière a pour objet de s’assurer de la conformité des opérations de gestion à incidence fi-
+nancière de l’Agence à la réglementation sur les finances publiques d’une part, et de la régularité a posteriori 
+des comptes d’autre part. 
+En outre, elle s’assure de la régularité des résolutions du Conseil d’Administration à incidence financière, de 
+la soutenabilité des engagements financiers et de la cohérence générale des plans de performance de l’Agence 
+aux programmes sectoriels. 
+ 
+ARTICLE 4.- (1) Les tutelles technique et financière, en liaison avec le Conseil d’Administration, concourent au 
+suivi de la performance de l’Agence. 
+(2)    L’Agence adresse aux tutelles technique et financière tous les documents et informations relatifs à sa 
+gestion, notamment les projets de performance, les plans d’actions, les rapports annuels de performance, le 
+rapport du ou des Commissaire(s) aux Comptes, les Comptes administratif et de gestion, l’état à jour de la si-
+tuation du personnel et la grille salariale. 
+(3)    Les Ministres de tutelles technique et financière adressent, chacun en ce qui le concerne, au Président 
+de la République, un rapport annuel sur la situation de l’Agence. 
+ 
+CHAPITRE II 
+DES MISSIONS ET DES POUVOIRS 
+ 
+SECTION I 
+DES MISSIONS 
+ 
+ARTICLE 5.- (1) L’Agence assure pour le compte de l’Etat, la régulation, le contrôle et le suivi des activités des 
+opérateurs, des exploitants des réseaux et des fournisseurs des services de communications électroniques. 
+Elle veille également au respect du principe d’égalité de traitement des usagers dans toutes les entreprises de 
+communications électroniques. 
+A ce titre, elle a notamment pour missions : 
+- de veiller à l’application des textes législatifs et réglementaires en matière des télécommunications et 
+des technologies de l’information et de la communication ; 
+- de s’assurer que l’accès aux réseaux ouverts au public s’effectue dans des conditions objectives, trans-
+parentes et non discriminatoires ; 
+- de garantir une concurrence saine et loyale dans le secteur des télécommunications et des technologies 
+de l’information et de la communication ; 
+- de sanctionner les manquements des opérateurs à leurs obligations ainsi que les pratiques anticoncur-
+rentielles ; 
+- de définir les principes devant régir la tarification des services fournis ; 
+- d’instruire les demandes de licence et de préparer les décisions y afférentes ; 
+- de délivrer formellement les récépissés de déclaration ; 
+- de définir les conditions et les obligations d’interconnexion et de partage des infrastructures ; 
+- d’émettre un avis formel sur tous les projets de textes à caractère législatif et réglementaire en matière 
+de communication électronique ; 
+- d’assurer l’assignation et le contrôle du spectre des fréquences ; 
+- de préparer les dossiers d’appels d’offres pour les concessions et les licences ; 
+- d’établir et de gérer le plan de numérotation ; 
+- de soumettre au Gouvernement toute proposition et recommandation tendant à développer et à moder-
+niser le secteur des télécommunications et des technologies de l’information et de la communication ; 
+- d’assigner les ressources en adressage ; 
+- d’instruire les dossiers d’homologation des équipements terminaux et de préparer les décisions y affé-
+rentes ; 
+- de délivrer les agréments ; 
+- de garantir la protection des consommateurs ; 
+- d’exercer toute autre mission d’intérêt général que pourrait lui confier le Gouvernement dans le secteur 
+des télécommunications et des technologies de l’information et de la communication. 
+(2)    L’Agence veille à la mise en œuvre du service universel et du développement des communications élec-
+troniques sur l’ensemble du territoire national.
+
+[PAGE 68 du recueil PDF]
+(3)    L’Agence appuie toute initiative visant la formation et le renforcement des capacités du personnel chargé 
+de la réglementation du secteur des télécommunications. 
+(4)    L’Agence assure le recouvrement des ressources du Fonds Spécial des Télécommunications, conformé-
+ment à la règlementation en vigueur. 
+(5)    L’Agence collabore avec l’Agence Nationale des Technologies de l’Information et de la Communication, 
+dans le cadre de la régulation des activités liées à la sécurité des réseaux de communications électroniques et 
+des systèmes d’information. 
+(6)    L’Agence collabore avec l’organe chargé de la régulation de l’audiovisuel dans le cadre de la régulation 
+des activités audiovisuelles. 
+(7)    L’Agence connaît, préalablement à la saisine de toute juridiction, des litiges entre opérateurs des réseaux 
+de communications électroniques relatifs notamment, à l’interconnexion ou à l’accès à un réseau de commu-
+nications électroniques, au dégroupage de la boucle locale, à la numérotation, à l’interférence des fréquences, 
+à la co-localisation physique et au partage des infrastructures. 
+ 
+SECTION II 
+DES POUVOIRS 
+ 
+ARTICLE 6.- Pour l’accomplissement de ses missions, l’Agence dispose des pouvoirs de régulation, de contrôle, 
+d’investigation, d’injonction, de coercition et de sanction. 
+A ce titre, elle est habilitée notamment à : 
+a) commettre ses Agents assermentés qui peuvent de ce fait : 
+- accéder aux locaux, terrains ou moyens de transport à usage professionnel ; 
+- demander communication de tout document professionnel et en prendre copie ; 
+- recueillir, sur convocation ou sur place, les renseignements et justifications ; 
+b) fixer les procédures de sa saisine en cas de litiges entre opérateurs et de leur règlement ; 
+c) faire constater les infractions qui ne peuvent se révéler que par un contrôle systématique et pluriel des 
+intervenants dans le secteur par les Oﬃciers de Police Judiciaire, ainsi que les Agents assermentés 
+commis à cette fin ; 
+d) recueillir des informations et des documents nécessaires auprès des opérateurs exploitants des réseaux 
+et fournisseurs de services, dans le cadre de leur convention et de leur cahier des charges, pour s’assurer 
+du respect par ceux-ci des obligations qui sont imposées par les textes législatifs et réglementaires en 
+vigueur ; 
+e) régler les litiges d’une part, entre les autorités de certification, les prestataires des services de sécurité 
+des réseaux et des systèmes d’information et, d’autre part, entre ces derniers et les utilisateurs ; 
+f) prononcer le retrait du titre d’exploitation à l’encontre de tout titulaire d’une autorisation qui ne se 
+conforme pas à la mise en demeure qui lui a été adressée, dans le respect des formes et procédures 
+ayant régi sa délivrance ; 
+g) prononcer des sanctions à l’encontre des opérateurs et exploitants contrevenants. Lesdites sanctions 
+constituent des titres exécutoires ; 
+h) prendre des mesures conservatoires nécessaires pour faire assurer la continuité du service et protéger 
+les intérêts des usagers. 
+ 
+CHAPITRE III 
+DES ORGANES DE GESTION 
+ 
+ARTICLE 7.- Les organes de gestion de l’Agence sont : 
+- le Conseil d’Administration ; 
+- la Direction Générale. 
+ 
+SECTION I 
+DU CONSEIL D’ADMINISTRATION 
+ 
+ARTICLE 8.- (1) Le Conseil d’Administration, composé de douze (12) membres, est présidé par une personnalité 
+nommée par décret du Président de la République. 
+Il comprend, outre le Président du Conseil, les membres ci-après : 
+60
+
+Textes organiques
+
+[PAGE 69 du recueil PDF]
+61
+Textes organiques
+
+- un (01) représentant de la Présidence de la République ; 
+- un (01) représentant des Services du Premier Ministre ; 
+- un (01) représentant du Ministère en charge des télécommunications ; 
+- un (01) représentant du Ministère en charge des finances ; 
+- un (01) représentant du Ministère en charge de la défense ; 
+- un (01) représentant du Ministère en charge de la justice ; 
+- un (01) représentant de la Délégation Générale à la Sûreté Nationale ; 
+- un (01) représentant du Ministère en charge de la communication ; 
+- un (01) représentant de l’Agence Nationale des Technologies de l’Information et de la Communication ; 
+- un (01) représentant du personnel élu de l’Agence ; 
+- un (01) représentant des usagers ou des bénéficiaires des services de communications électroniques, à 
+la diligence du Ministre de tutelle technique. 
+ 
+ARTICLE 9.- (1) Le Président du Conseil d’Administration est nommé par décret du Président de la République 
+pour un mandat de trois (03) renouvelable une (01) fois. 
+(2)    L’acte nommant le Président du Conseil d’Administration confère d’oﬃce à celui-ci la qualité d’Adminis-
+trateur. 
+(3)    En cas d’expiration du mandat du Président du Conseil d’Administration, le Ministre de tutelle technique 
+saisit l’autorité investi du pouvoir de nomination. 
+ 
+ARTICLE 10.- Les membres du Conseil d’Administration sont nommés par décret du Président de la République, 
+sur proposition des administrations ou organisations qu’ils représentent, pour un mandat de trois (03) ans 
+éventuellement renouvelable une (01) fois. 
+ 
+ARTICLE 11.- (1) Le mandat d’Administrateur prend fin : 
+- par  décès ou par démission ; 
+- à la suite de la perte de la qualité ayant motivé sa nomination ; 
+- par révocation à la suite d’une faute grave ou des agissements incompatibles avec la fonction d’Adminis-
+trateur ; 
+- à l’expiration normale de sa durée. 
+(2)    Dans les cas prévus à l’alinéa 1 ci-dessus, il est pourvu au remplacement d’un Administrateur dans les 
+mêmes formes que sa désignation. 
+ 
+ARTICLE 12.- (1) Six (06) mois avant l’expiration du mandat d’un membre du Conseil d’Administration, le Pré-
+sident du Conseil saisit la structure qu’il représente, en vue de son remplacement. 
+(2)    Aucun membre ne peut siéger une fois son mandat expiré. 
+(3)    En cas de décès en cours de mandat ou dans toutes les hypothèses où un Administrateur n’est plus en 
+mesure d’exercer son mandat, l’Administration ou l’organisme qu’il représente désigne un autre Administrateur 
+pour la suite du mandat. 
+ 
+ARTICLE 13.- (1) Le Président et les membres du Conseil d’Administration sont soumis aux mesures restrictives 
+et aux incompatibilités prévues par la règlementation en vigueur. 
+(2)    Les fonctions de Président et de membre du Conseil d’Administration sont incompatibles avec toutes dé-
+tentions directes ou indirectes d’intérêt dans une entreprise du secteur des communications électroniques, 
+ou de toute fonction salariée dans une entreprise de communication électronique ou bénéficiant d’une ré-
+munération sous quelques formes que ce soit servie par une telle entreprise. 
+ 
+ARTICLE 14.- (1) Le Conseil d’Administration a les pouvoirs pour définir, orienter la politique générale de 
+l’Agence et en évaluer la gestion, dans les limites fixées par son objet social et conformément à la réglemen-
+tation en vigueur. 
+A ce titre, il : 
+a) fixe les objectifs et approuve les projets de performance de l’Agence ; 
+b) adopte le budget accompagné du projet de performance de l’Agence et de manière définitive les 
+comptes et les états financiers annuels ; 
+c) approuve les rapports annuels de performance ;
+
+[PAGE 70 du recueil PDF]
+d) adopte l’organigramme et le Règlement Intérieur ; 
+e) autorise le recrutement de tout le personnel conformément au plan de recrutement proposé par le Di-
+recteur Général et validé par le Conseil d’Administration ; 
+f) autorise le licenciement du personnel, sur proposition du Directeur Général ; 
+g) nomme sur proposition du Directeur Général, aux postes de responsabilité aux rangs de Sous-directeurs, 
+de Directeurs et assimilés ; 
+h) accepte tous dons, legs et subventions ; 
+i) approuve les contrats de performance ou toutes autres conventions y compris les emprunts, préparés 
+par le Directeur Général et ayant une incidence sur le budget ; 
+j) autorise toute aliénation de biens meubles ou immeubles, corporels ou incorporels, conformément aux 
+dispositions des articles 64 et 65 de la loi n° 2017/010 susvisée ; 
+k) s’assure du respect des règles de gouvernance et commet des audits afin de garantir la bonne gestion 
+de l’Agence ; 
+l) fixe les rémunérations et les avantages du personnel, dans le respect des lois et règlements en vigueur, 
+du Règlement Intérieur et des prévisions budgétaires ; 
+m) fixe les rémunérations mensuelles et avantages du Directeur Général et du Directeur Général-Adjoint 
+dans le respect des lois et règlements en vigueur ; 
+n) fixe le montant de l’allocation et les avantages du Président du Conseil d’Administration, ainsi que le 
+montant des indemnités des membres dudit Conseil, conformément à la réglementation en vigueur ; 
+o) fixe le barème des salaires et les avantages du personnel proposé par le Directeur Général dans le res-
+pect des lois et règlements en vigueur, du Règlement Intérieur et des prévisions budgétaires ; 
+p) autorise la participation de l’Agence dans des associations, des groupements ou autres organismes pro-
+fessionnels dont l’activité est nécessairement liée à ses missions ; 
+q) arrête toute mesure susceptible d’améliorer les services offerts par l’Agence, notamment la simplifica-
+tion des procédures administratives ; 
+r) veille à la publication annuelle d’un rapport sur l’Etat et le développement des activités de la régulation 
+du secteur des télécommunications et des Technologies de l’Information et de la Communication au 
+Cameroun. 
+(2)    Le Conseil d’Administration peut déléguer au Directeur Général certains de ses pouvoirs. 
+ 
+ARTICLE 15.- Le Président du Conseil d’Administration convoque et préside les sessions du Conseil. Il veille à 
+l’application de ses résolutions. 
+ 
+ARTICLE 16.- Le secrétariat des sessions du Conseil d’Administration est assuré par le Directeur Général. 
+ 
+ARTICLE 17.- (1) Sur convocation de son Président, le Conseil d’Administration se réunit obligatoirement au 
+moins deux (02) fois par an en session ordinaire dont : 
+- une (01) session consacrée à l’examen du projet de performance et l’adoption du budget qui se tient 
+avant le début de l’exercice budgétaire suivant ; 
+- une (01) session pour l’arrêt des comptes qui se tient au plus tard le 30 juin de l’année en cours. 
+(2)    Le Président du Conseil d’Administration est défaillant lorsqu’il ne convoque pas au moins deux (02) ses-
+sions par an. 
+(3)    Le Conseil d’Administration peut être convoqué en session extraordinaire sur un ordre du jour précis, à 
+la demande de son Président ou des deux tiers (2/3) de ses membres. 
+(4)    En cas de refus de convoquer une session du Conseil ou en cas de silence du Président pour incapacité 
+permanente constatée par le Conseil d’Administration, les deux tiers (2/3) des membres saisissent le Ministre 
+chargé des finances qui convoque le Conseil sur un ordre du jour déterminé. 
+ 
+ARTICLE 18.- Le Conseil d’Administration examine toute question inscrite à l’ordre du jour soit par le Président, 
+soit à la demande des deux tiers (2/3) des Administrateurs. 
+ 
+ARTICLE 19.- (1) En cas de vacance de la Présidence du Conseil d’Administration suite au décès, à la démission 
+et à la défaillance du Président, les sessions du Conseil d’Administration sont convoquées par le Ministre de 
+tutelle financière, à la diligence du Directeur Général ou des deux tiers (2/3) des membres du Conseil d’admi-
+nistration. 
+62
+
+Textes organiques
+
+[PAGE 71 du recueil PDF]
+63
+Textes organiques
+
+(2)    Lorsque l’initiative est prise par les deux tiers (2/3) des membres du Conseil d’Administration, ceux-ci 
+adressent à l’autorité de tutelle financière une demande de convocation du Conseil d’Administration portant 
+la signature de tous les demandeurs. 
+(3)    L’autorité de tutelle financière procède à la convocation du Conseil d’Administration, à la diligence du Di-
+recteur Général. 
+(4)    Les sessions du Conseil d’Administration convoquées dans les cas prévus aux alinéas ci-dessus sont pré-
+sidées par un membre du Conseil élu par ses pairs. 
+ARTICLE 20.- Le Conseil d’Administration peut se réunir en session extraordinaire à la demande de son Prési-
+dent ou des deux tiers (2/3) de ses membres, sur un ordre du jour précis. 
+ 
+ARTICLE 21.- (1) Les convocations et les documents relatifs à la session sont envoyés par lettre, fax, télé-
+gramme, courrier électronique, télécopie ou par tout autre moyen laissant trace écrite, et adressés aux mem-
+bres quinze (15) jours au moins avant la date prévue pour la session. 
+(2)    Les convocations indiquent l’ordre jour, la date, le lieu et l’heure de la session. 
+(3)    En cas d’urgence, le délai prévu à l’alinéa 1 ci-dessus peut être ramené à cinq (05) jours. 
+ 
+ARTICLE 22.- (1) Tout membre du Conseil d’Administration empêché peut se faire représenter aux travaux du 
+Conseil par un autre membre. Toutefois, aucun Administrateur ne peut, au cours d’une même session, repré-
+senter plus d’un Administrateur. 
+(2)    Tout membre présent ou représenté à une session du Conseil d’Administration est considéré comme 
+ayant été dûment convoqué. 
+(3)    En cas d’empêchement du Président, le Conseil d’Administration élit en son sein, à la majorité simple des 
+membres présents ou représentés, le Président de séance.  
+ 
+ARTICLE 23.- (1) Le Conseil d’Administration ne peut valablement délibérer sur toute question inscrite à l’ordre 
+du jour de sa session que si les deux tiers (2/3) au moins de ses membres sont présents ou représentés. Si le 
+quorum n’est pas atteint lors de la première convocation, il est, pour la convocation suivante, ramené à la 
+moitié des membres du Conseil d’Administration. 
+(2)    Chaque membre dispose d’une voix. Les décisions sont prises à la majorité simple des voix des membres 
+présents ou représentés. En cas d’égalité des voix, celle du Président est prépondérante. 
+(3)    Les délibérations du Conseil d’Administration font l’objet d’un procès-verbal signé par le Président du 
+Conseil ou de séance et un Administrateur. Le procès-verbal mentionne outre les noms des membres présents 
+ou représentés, ceux des personnes conviées à titre consultatif. Il est lu et approuvé par le Conseil d’Adminis-
+tration à l’occasion d’une session du Conseil. 
+(4)    Les procès-verbaux de séance sont consignés dans un registre spécial tenu au siège de l’Agence. 
+ 
+ARTICLE 24.- (1) Les décisions du Conseil d’Administration prennent la forme des résolutions. Elles sont signées 
+séance tenante par le Président du Conseil d’Administration ou le Président de séance le cas échéant, et un 
+Administrateur. 
+(2)    Les décisions du Conseil d’Administration prennent effet à compter de leur adoption sous réserve des 
+dispositions contraires des lois et règlements en vigueur. 
+ 
+ARTICLE 25.- (1) Pour l’accomplissement de ses missions, le Conseil d’Administration peut créer en son sein 
+et, en tant que de besoin, des Comités et des Commissions. 
+(2)    Les membres des Comités ou des Commissions bénéficient des facilités de travail et des indemnités dans 
+la limite des plafonds fixés par la règlementation en vigueur. 
+ 
+ARTICLE 26.- (1) Le Président du Conseil d’Administration bénéficie d’une allocation mensuelle ainsi que des 
+avantages. Le montant de l’allocation mensuelle ainsi que les avantages sont fixés par le Conseil d’Administra-
+tion, conformément à la réglementation en vigueur. 
+(2)    Les Administrateurs bénéficient d’une indemnité de session fixée par une résolution du Conseil d’Admi-
+nistration, dans la limite des plafonds définis par la réglementation en vigueur. Ils peuvent prétendre au rem-
+boursement des dépenses occasionnées par les sessions, sur présentation des pièces justificatives.  
+(3)    Le Conseil d’Administration peut allouer à ses membres, des rémunérations exceptionnelles pour les mis-
+sions et mandats qui leur sont confiés, ou autoriser le remboursement des frais de voyage, déplacement et
+
+[PAGE 72 du recueil PDF]
+dépenses engagées dans l’intérêt de l’Agence. 
+ 
+SECTION II 
+DE LA DIRECTION GENERALE 
+ 
+ARTICLE 27.- (1) L’Agence est placée sous l’autorité d’un Directeur Général, assisté éventuellement d’un Di-
+recteur Général Adjoint. 
+(2)    Le Directeur Général et le Directeur Général Adjoint sont nommés par décret du Président de la Répu-
+blique, pour un mandat de trois (03) ans éventuellement renouvelable deux (02) fois. 
+(3)    Le renouvellement prévu à l’alinéa 1 ci-dessus est tacite. 
+(4)    Dans tous les cas, les mandats cumulés du Directeur Général ou du Directeur Général Adjoint ne peuvent 
+excéder neuf (09) ans. 
+(5)    Les fonctions de Membre du Gouvernement ou assimilés, de parlementaires, de magistrats exerçant au-
+près d’une juridiction ou de membre du Conseil Constitutionnel sont incompatibles avec celles du Directeur 
+Général ou du Directeur Général Adjoint. 
+ 
+ARTICLE 28.- (1) Sous le contrôle du Conseil d’Administration, le Directeur Général est chargé de la gestion et 
+de l’application de la politique générale de l’Agence. 
+A ce titre, il est chargé notamment : 
+a) d’assurer la direction économique, administrative et financière de l’Agence  
+b) de préparer le projet de budget et de performance, de produire le compte administratif ainsi que le 
+rapport annuel de performance ; 
+c) de préparer les résolutions du Conseil d’Administration, d’assister avec voix consultative à ses réunions 
+et d’exécuter ses décisions ; 
+d) de proposer un plan de recrutement du personnel au Conseil d’Administration ; 
+e) de nommer aux postes de responsabilités, sous réserve des compétences dévolues au Conseil d’Admi-
+nistration ; 
+f) de gérer les biens meubles, immeubles, corporels et incorporels de l’Agence, dans le respect de son 
+objet social et les pouvoirs du Conseil d’Administration ; 
+g) de soumettre à l’adoption du Conseil d’Administration, les projets de plan d’organisation de l’Agence, 
+de Règlement Intérieur, des statuts du personnel, de la grille des rémunérations et avantages du per-
+sonnel ; 
+h) de préparer le plan d’investissement, les rapports d’activités, ainsi que les comptes et les états financiers 
+qu’il soumet au Conseil d’Administration pour approbation et arrêt ; 
+i) de noter et licencier le personnel sous réserve des pouvoirs du Conseil d’Administration ; 
+j) de recruter le personnel, conformément au plan de recrutement approuvé par le Conseil d’Administra-
+tion ; 
+k) de proposer au Conseil d’Administration de nommer et de démettre de leurs fonctions, les représentants 
+de l’Agence aux assemblées générales et aux Conseils d’Administration d’autres entreprises ; 
+l) de prendre, dans les cas d’urgence, toute mesure conservatoire nécessaire à la bonne marche de 
+l’Agence, à charge pour lui d’en rendre compte au Conseil d’Administration ; 
+m) de procéder aux achats, de passer et de signer les marchés, contrats et conventions, en assurer l’exé-
+cution et le contrôle dans le strict respect du budget, et conformément aux dispositions législatives et 
+réglementaires en vigueur.  
+(2)    Le Directeur Général peut déléguer une partie de ses pouvoirs. 
+ 
+ARTICLE 29.- Le Directeur Général représente l’Agence dans tous les actes de la vie civile et en justice. 
+ 
+ARTICLE 30.-  (1) Le Directeur Général ou le Directeur Général-Adjoint éventuellement est responsable devant 
+le Conseil d’Administration qui peut le sanctionner en cas de faute grave de gestion ou de comportement sus-
+ceptible de nuire à la bonne marche ou à l’image de l’Agence. 
+(2)    Dans les cas prévus à l’alinéa 1 ci-dessus, le Président du Conseil d’Administration est tenu de convoquer 
+une session extraordinaire au cours de laquelle le Directeur Général ou le Directeur Général- Adjoint est en-
+tendu. 
+(3)    Le dossier comprenant les griefs est transmis au Directeur Général ou au Directeur Général-Adjoint dix 
+64
+
+Textes organiques
+
+[PAGE 73 du recueil PDF]
+65
+Textes organiques
+
+(10) jours au moins avant la date prévue de la session extraordinaire. 
+(4)    Le débat devant le Conseil d’Administration est contradictoire. 
+(5)    Le Conseil d’Administration ne peut valablement délibérer qu’en présence d’au moins deux tiers (2/3) de 
+ses membres. Aucune représentation n’est admise dans ce cas. 
+ 
+ARTICLE 31.- (1) Le Conseil d’Administration peut prendre à l’encontre du Directeur Général ou du Directeur 
+Général-Adjoint, les sanctions suivantes : 
+- suspension de certains pouvoirs ; 
+- suspension de ses fonctions pour une période limitée avec effet immédiat ; 
+- suspension de ses fonctions avec effet immédiat, assortie d’une demande de révocation adressée à l’au-
+torité investie du pouvoir de nomination. 
+(2)    Les décisions sont transmises pour information aux Ministres de tutelle technique et financière, à la di-
+ligence du Président du Conseil d’Administration. 
+ 
+ARTICLE 32.- En cas de suspension des fonctions du Directeur Général ou du Directeur Général-Adjoint, le 
+Conseil d’Administration prend les dispositions nécessaires pour assurer la bonne marche de l’Agence. 
+ 
+ARTICLE 33.- (1) En cas d’empêchement temporaire du Directeur Général, l'intérim est assuré par le Directeur 
+Général-Adjoint. 
+(2)    Dans le cas où la Direction Générale de l’Agence n’est pas pourvue d’un Directeur Général-Adjoint, l’in-
+térim est assuré par un responsable ayant au moins rang de Directeur, désigné par le Directeur Général. 
+(3)    En cas de vacance du poste de Directeur Général pour cause de décès, de démission ou de mandat arrivé 
+à échéance, le Conseil d’Administration prend toutes les dispositions nécessaires pour le bon fonctionnement 
+de l’Agence, en attendant la nomination d’un nouveau Directeur Général par l’autorité investie du pouvoir de 
+nomination. 
+ 
+CHAPITRE IV 
+DES DISPOSITIONS FINANCIERES 
+ 
+SECTION I 
+DES RESSOURCES 
+ 
+ARTICLE 34.- Les ressources financières de l’Agence sont constituées : 
+- de la quote-part des droits d’entrée et/ou de renouvellement des autorisations pour les activités relevant 
+du secteur des télécommunications ; 
+- une quote-part des pénalités instituées par la loi régissant les communications électroniques ; 
+- une quote-part de la redevance d’utilisation des fréquences radioélectriques ; 
+- une quote-part de la redevance d’utilisation des adresses, des préfixes et des numéros ou blocs de nu-
+méros ; 
+- la redevance de fonctionnement de l’Agence due par les opérateurs de réseaux et les fournisseurs de 
+services de communications électroniques conformément à la règlementation en vigueur ; 
+- les taxes parafiscales dont la perception est autorisée par la législation en vigueur ; 
+- le produit des prestations ; 
+- les dons et legs ; 
+- toute autre ressource qui pourrait lui être affectée, conformément à la règlementation en vigueur. 
+ 
+ARTICLE 35.- (1) Les ressources financières de l’Agence sont des deniers publics. 
+A cet effet, elles sont gérées selon les règles prévues par le régime financier de l’Etat et des autres entités pu-
+bliques. 
+(2)    Le recouvrement des ressources de l’Agence s’effectue conformément à la législation relative aux re-
+couvrements des créances de l’Etat. 
+(3)    Pour le recouvrement visé à l’alinéa 2 ci-dessus, l’Agence bénéficie du privilège du Trésor.  
+ 
+ 
+SECTION II
+
+[PAGE 74 du recueil PDF]
+DU BUDGET ET DES COMPTES 
+ 
+ARTICLE 36.- L’exercice budgétaire de l’Agence commence le 1er janvier et se termine le 31 décembre de 
+chaque année. 
+ 
+ARTICLE 37.- (1) Le Directeur Général est l’ordonnateur principal du budget de l’Agence. 
+(2)    Sur proposition du Directeur Général, des ordonnateurs délégués peuvent être désignés par le Conseil 
+d’Administration. 
+ 
+ARTICLE 38.- (1) Le projet de budget annuel assorti du projet de performance y compris les plans d’investis-
+sement de l’Agence sont préparés par le Directeur Général et adoptés par le Conseil d’Administration. 
+(2)    Le budget est présenté sous forme de sous-programmes cohérents, avec les objectifs de politique pu-
+blique nationale ou sectorielle. 
+(3)    Le budget de l’Agence doit être équilibré en recettes et en dépenses. 
+(4)    Toutes les recettes et toutes les dépenses de l’Agence sont inscrites dans le budget adopté par le Conseil 
+d’Administration. 
+ 
+ARTICLE 39.- (1) Le budget adopté par le Conseil d’Administration est transmis pour information au Ministre 
+chargé des télécommunications et, pour approbation au Ministre chargé des finances. 
+(2)    Le budget est rendu exécutoire dès son adoption par le Conseil d’Administration, sous réserve des dis-
+positions contraires des lois et règlements en vigueur. 
+ 
+ARTICLE 40.- Les comptes de l’Agence sont tenus selon les règles du système comptable OHADA. Ils doivent 
+être réguliers, sincères et donner une image fidèle de son patrimoine et de sa situation financière. 
+ 
+ARTICLE 41.- En cas d’excédent budgétaire constaté à la fin de l’exercice, cinquante pour cent (50%) dudit ex-
+cédent est affecté au Fonds Spécial des Télécommunications, et l’autre moitié est consacrée à l’acquisition des 
+équipements de régulation et de contrôle. 
+ 
+SECTION III 
+DU CONTRÔLE ET DU SUIVI DES COMPTES 
+ 
+ARTICLE 42.- L’Agence est soumise au contrôle des organes compétents de l’Etat. 
+ 
+ARTICLE 43.- (1) Le Conseil d’Administration désigne un ou plusieurs Commissaires aux Comptes choisis parmi 
+les experts inscrits à l’Ordre National des Experts Comptables du Cameroun (ONECCA), après appel à candi-
+datures conduit par le Directeur Général. 
+(2)    Le Conseil d’Administration fixe les honoraires du ou des Commissaires aux Comptes dont la durée du 
+mandat ne peut être supérieure à trois (03) ans renouvelable une (01) fois. 
+ 
+ARTICLE 44.- (1) Ne peuvent être Commissaires aux Comptes les Administrateurs, le Directeur Général, le Di-
+recteur Général-Adjoint, le Directeur en charge des finances et de la comptabilité, le personnel de l’Agence, 
+ainsi que leurs conjoints, ascendants, descendants en ligne directe ou collatérale, ou toute personne qui reçoit 
+de ces personnes une rémunération en raison d’une activité permanente autre que celle de Commissaires 
+aux Comptes. 
+(2)    Si l’un des motifs intervient  au cours du mandat, le Commissaire aux Comptes doit en informer le Conseil 
+et cesser immédiatement ses fonctions. 
+ 
+ARTICLE 45.- (1) Le Commissaire aux Comptes est chargé notamment: 
+- d’effectuer tout au long de son mandat tous contrôles, toutes vérifications qu’il juge opportun en se fai-
+sant communiquer toutes pièces qu’il juge utiles ; 
+- de porter à la connaissance du Conseil d’Administration, des autorités de tutelle du représentant du Mi-
+nistère public, toutes irrégularités, tous faits délictueux qu’il aurait découverts sans que sa responsabilité 
+puisse être engagée ; 
+- d’élaborer ses rapports et en communiquer les résultats au Conseil d’Administration dans les délais re-
+66
+
+Textes organiques
+
+[PAGE 75 du recueil PDF]
+67
+Textes organiques
+
+quis. 
+(2)    Il est astreint au respect des obligations et des diligences généralement admises dans la profession. 
+ 
+CHAPITRE V 
+DU PERSONNEL 
+ 
+ARTICLE 46.- (1) Peuvent faire partie du personnel de l’Agence : 
+- le personnel recruté par l’Agence ; 
+- les Fonctionnaires en détachement ; 
+- les Agents de l’Etat relevant du Code du Travail mis à la disposition de l’Agence ; 
+- le personnel occasionnel, saisonnier et temporaire dont les modalités de recrutement, de rémunération 
+et de rupture de contrat sont fixées par les statuts du personnel. 
+(2)    Les fonctionnaires en détachement et les agents de l’Etat relevant du Code du Travail mis à la disposition 
+de l’Agence relèvent, pendant toute la durée de leur emploi, de la législation du travail, sous réserve des dis-
+positions du Statut Général de la Fonction Publique et des statuts spécifiques relatifs à la retraite, à l’avance-
+ment, et à la fin du détachement. 
+(3)    Le personnel de l’Agence ne doit en aucun cas être salarié, ni bénéficier d’une rémunération sous quelque 
+forme que ce soit, ou avoir un intérêt direct ou indirect dans une entreprise relevant du secteur des télécom-
+munications et des technologies de l’information et de la communication. 
+ 
+ARTICLE 47.- (1) Les Fonctionnaires en détachement et les Agents de l’Etat relevant du Code du Travail mis à 
+la disposition de l’Agence sont, quel que soit leur statut d’origine, pris totalement en charge par l’Agence. 
+(2)    La prise en charge visée à l’alinéa 1 ci-dessus, concerne le salaire et ses accessoires, les indemnités, les 
+primes et les autres avantages servis par l’Agence. 
+ 
+ARTICLE 48.- (1) La responsabilité civile et/ou pénale du personnel de l’Agence est soumise aux règles de droit 
+commun. 
+(2)    Les conﬂits entre le personnel et l’Agence relèvent de la compétence des juridictions de droit commun. 
+ 
+ARTICLE 49.- L’acte de nomination du Directeur Général et du Directeur Général Adjoint, ne leur confère pas 
+la qualité d’employé de l’Agence, à moins que les intéressés ne soient préalablement dans une relation contrac-
+tuelle avec l’Agence. 
+ 
+CHAPITRE VI 
+DU PATRIMOINE DE L’AGENCE 
+ 
+ARTICLE 50.- (1) Le patrimoine de l’Agence est constitué par les biens meubles et immeubles qui lui sont affec-
+tés par l’Etat. 
+(2)    Les biens du domaine public, du domaine national et du domaine privé de l’Etat, transférés en jouissance 
+à l’Agence conformément à la législation domaniale, conservent leur statut d’origine. 
+(3)    Les biens du domaine privé de l’Etat transférés en propriété à l’Agence, sont intégrés de façon définitive 
+dans son patrimoine. 
+(4)    Les biens faisant partie du domaine privé de l’Agence sont gérés conformément au droit commun. 
+ 
+ARTICLE 51.- (1) Sous le contrôle du Conseil d’Administration, la gestion du patrimoine de l’Agence relève de 
+l’autorité du Directeur Général. 
+(2)    La gestion du patrimoine visée à l’alinéa 1 ci-dessus, concerne l’acquisition des biens et leur aliénation. 
+ 
+ARTICLE 52.- (1) En cas d’aliénation d’un bien de l’Agence, le Directeur Général requiert l’autorisation préalable 
+du Conseil d’Administration. Il tient à jour au Conseil d’Administration, la situation du patrimoine qui fait l’objet 
+d’un examen à l’occasion d’une de ses sessions. 
+(2)    L’autorisation du Conseil d’Administration se fait au moyen d’une résolution adoptée par au moins deux 
+tiers (2/3) de ses membres. 
+ 
+CHAPITRE VII
+
+[PAGE 76 du recueil PDF]
+DES MARCHES PUBLICS 
+ 
+ARTICLE 53.- (1) Agence n’est pas assujettie aux dispositions du Code des marchés publics.  
+(2)    Le Conseil d’Administration s’assure des règles de transparence, de concurrence, d’égalité de traitement 
+des candidats et de juste prix. 
+(3)    Une résolution du Conseil d’Administration précise les modalités d’organisation et de fonctionnement 
+de la Commission Interne de passation des marchés, de désignation de ses membres et d’évaluation des offres. 
+ 
+CHAPITRE VII 
+DISPOSITIONS DIVERSES ET FINALES 
+ 
+ARTICLE 54.- (1) En cas de crise grave susceptible de mettre en péril les missions d’intérêt général, l’objet social 
+ou les objectifs sectoriels du Gouvernement, un Administrateur provisoire peut être désigné par décret du 
+Président de la République, en lieu et place des organes dirigeants de l’Agence. 
+(2)    L’acte portant nomination de l’Administrateur Provisoire précise ses attributions et la durée de son man-
+dat, conformément à la réglementation en vigueur. 
+ 
+ARTICLE 55.- Les membres du Conseil d’Administration de l’Agence et l’ensemble du personnel sont astreints 
+au secret professionnel pour les informations, faits, actes ou renseignements dont ils ont connaissance dans 
+l’exercice de leurs fonctions, et à l’obligation de réserve. 
+ 
+ARTICLE 56.- Sont abrogées, toutes dispositions antérieures contraires, notamment celles du décret n° 
+2012/203 du 20 avril 2012 portant organisation et fonctionnement de l’Agence de Régulation des Télécom-
+munications. 
+ 
+ARTICLE 57.- Le présent décret sera enregistré, publié suivant la procédure d’urgence, puis inséré au Journal 
+oﬃciel en français et en anglais./- 
+ 
+ 
+Yaoundé, le 03 décembre 2020 
+ 
+LE PRESIDENT DE LA REPUBLIQUE, 
+ 
+PAUL BIYA  
+68
+
+Textes organiques

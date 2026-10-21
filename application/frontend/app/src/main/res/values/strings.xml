@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MinorShield</string>
+    <string name="app_tagline">Protégez ce qui compte le plus</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Surveillance intelligente</string>
+    <string name="onboarding_1_desc">Protégez vos enfants avec une surveillance discrète et efficace</string>
+    <string name="onboarding_2_title">Détection par Intelligence Artificielle</string>
+    <string name="onboarding_2_desc">L\'IA analyse en temps réel le contenu visuel et textuel</string>
+    <string name="onboarding_3_title">Blocage automatique en temps réel</string>
+    <string name="onboarding_3_desc">Blocage instantané du contenu inapproprié avant qu\'il ne soit vu</string>
+    <string name="btn_next">Suivant</string>
+    <string name="btn_start">Commencer</string>
+    <string name="btn_skip">Passer</string>
+
+    <!-- Auth -->
+    <string name="title_register">Créer un compte administrateur</string>
+    <string name="title_login">Connexion administrateur</string>
+    <string name="hint_full_name">Votre nom complet</string>
+    <string name="hint_email">votre@email.com</string>
+    <string name="hint_phone">+237 6XX XXX XXX</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_confirm_password">Confirmer le mot de passe</string>
+    <string name="btn_create_account">Créer mon compte</string>
+    <string name="btn_login">Se connecter</string>
+    <string name="desc_login">Connectez-vous à votre compte parent</string>
+    <string name="link_no_account">Pas encore de compte ? Créer un compte</string>
+    <string name="lbl_already_account">Vous avez déjà un compte ?</string>
+    <string name="lbl_no_account">Pas encore de compte ?</string>
+    <string name="lbl_enter_pin">Entrez votre code PIN</string>
+    <string name="lbl_forgot_password">Mot de passe oublié ?</string>
+
+    <!-- Navigation -->
+    <string name="nav_accueil">Accueil</string>
+    <string name="nav_historique">Historique</string>
+    <string name="nav_alertes">Alertes</string>
+    <string name="nav_reglages">Réglages</string>
+
+    <!-- Dashboard -->
+    <string name="title_dashboard">Accueil</string>
+    <string name="lbl_protection_active">Protection activée</string>
+    <string name="lbl_protection_inactive">Protection désactivée</string>
+    <string name="lbl_detections">Détections</string>
+    <string name="lbl_blocked">Bloqués</string>
+    <string name="lbl_active_time">Actives</string>
+    <string name="lbl_recent_activity">Activité récente</string>
+    <string name="lbl_see_all">Voir tout</string>
+    <string name="lbl_my_children">Mes enfants</string>
+    <string name="lbl_add_child">+ Ajouter</string>
+    <string name="lbl_protected">Protégé(e) ✓</string>
+    <string name="lbl_active_badge">✓ Actif</string>
+
+    <!-- Historique -->
+    <string name="title_history">Historique &amp; Statistiques</string>
+    <string name="lbl_today">Aujourd\'hui</string>
+    <string name="lbl_week">Semaine</string>
+    <string name="lbl_month">Mois</string>
+    <string name="lbl_total">Total</string>
+    <string name="lbl_efficacy">Efficacité</string>
+    <string name="lbl_detections_by_app">Détections par application</string>
+    <string name="lbl_detections_history">Historique des détections</string>
+    <string name="lbl_last_7_days">Détections (7 derniers jours)</string>
+    <string name="lbl_blocked_status">Bloqué</string>
+    <string name="lbl_ignored_status">Ignoré</string>
+    <string name="lbl_very_effective">Très efficace</string>
+    <string name="lbl_effective">Efficace</string>
+    <string name="lbl_medium">Moyen</string>
+
+    <!-- Alertes -->
+    <string name="title_alerts">Alertes</string>
+    <string name="lbl_alerts_history">Historique des alertes</string>
+    <string name="lbl_mark_all_read">Tout marquer comme lu</string>
+    <string name="lbl_all">Tous</string>
+    <string name="lbl_level_critical">Critique</string>
+    <string name="lbl_level_elevated">Élevé</string>
+    <string name="lbl_level_medium">Moyen</string>
+    <string name="lbl_level_info">Info</string>
+    <string name="lbl_alerts_by_child">Alertes par enfant</string>
+    <string name="lbl_alerts_enabled">Alertes activées</string>
+    <string name="lbl_alerts_disabled">Alertes désactivées</string>
+
+    <!-- Réglages -->
+    <string name="title_settings">Paramètres parent</string>
+    <string name="lbl_profile">Profil</string>
+    <string name="lbl_security">Sécurité</string>
+    <string name="lbl_restoration">Restauration</string>
+    <string name="lbl_edit_profile">Modifier le profil</string>
+    <string name="lbl_pin_code">Code PIN de sécurité</string>
+    <string name="lbl_restore_defaults">Restaurer les paramètres par défaut</string>
+    <string name="lbl_validation_email">Validation par e-mail requise</string>
+    <string name="lbl_pin_required">Requis à l\'ouverture de l\'application</string>
+
+    <!-- Appairage -->
+    <string name="title_add_child">Ajouter un enfant</string>
+    <string name="lbl_child_name">Prénom de l\'enfant</string>
+    <string name="hint_child_age">Âge (facultatif)</string>
+    <string name="btn_generate_code">Générer le code</string>
+    <string name="btn_pairing_done">Terminé</string>
+    <string name="lbl_code_expires">Ce code expire dans 24 heures</string>
+    <string name="lbl_pairing_instructions">Installez MinorShield Enfant sur le téléphone et entrez ce code</string>
+
+    <!-- Abonnement -->
+    <string name="title_subscription">Abonnement Premium</string>
+
+    <!-- Overlay (app enfant - conservé) -->
+    <string name="overlay_title">🛡️ Contenu bloqué par MinorShield</string>
+    <string name="overlay_pin_hint">Saisissez le PIN parent pour débloquer</string>
+    <string name="overlay_pin_placeholder">PIN</string>
+    <string name="overlay_btn_unlock">Débloquer</string>
+    <string name="blurred_bg_desc">Fond flouté</string>
+    <string name="wrong_pin">PIN incorrect. Réessayez.</string>
+    <string name="score_format">Confiance : %d%%</string>
+
+    <!-- Service -->
+    <string name="service_running_title">MinorShield actif</string>
+    <string name="service_running_text">Protection en cours…</string>
+    <string name="channel_alerts_name">Alertes MinorShield</string>
+    <string name="channel_alerts_desc">Alertes de contenu bloqué</string>
+    <string name="channel_service_name">Service MinorShield</string>
+    <string name="channel_service_desc">Notification de service en arrière-plan</string>
+    <string name="notif_blocked_title">⚠️ Contenu bloqué</string>
+    <!-- Format positionnel (%1$s, %2$d) : obligatoire dès qu'il y a plusieurs
+         substitutions, et indispensable à la traduction (l'ordre des mots
+         change d'une langue à l'autre). -->
+    <string name="notif_blocked_text">%1$s — Confiance %2$d%%</string>
+    <string name="notif_secure_app_title">🔒 App sécurisée détectée</string>
+    <string name="notif_secure_app_text">%s utilise FLAG_SECURE</string>
+    <string name="notif_uninstall_title">⚠️ Tentative de désinstallation</string>
+    <string name="notif_uninstall_text">Une app vient d\'être désinstallée</string>
+
+    <!-- Erreurs -->
+    <string name="error_required_field">Ce champ est obligatoire</string>
+    <string name="error_invalid_email">Email invalide</string>
+    <string name="error_password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="error_password_short">Minimum 6 caractères</string>
+    <string name="error_network">Erreur réseau. Vérifiez votre connexion.</string>
+    <string name="error_server">Erreur serveur. Réessayez plus tard.</string>
+
+    <!-- Permissions -->
+    <string name="perm_overlay_title">Permission d\'affichage</string>
+    <string name="perm_overlay_desc">Nécessaire pour afficher l\'overlay de blocage.</string>
+    <string name="perm_usage_title">Accès aux statistiques</string>
+    <string name="perm_usage_desc">Nécessaire pour détecter l\'application active.</string>
+    <string name="perm_notification_title">Notifications</string>
+    <string name="perm_notification_desc">Nécessaire pour alerter le parent.</string>
+    <string name="grant">Autoriser</string>
+    <string name="granted">✓ Accordée</string>
+
+    <!-- Autres titres -->
+    <string name="title_app_management">Gestion des apps</string>
+    <string name="title_schedule">Plages horaires</string>
+    <string name="title_child_profile">Profil enfant</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Navigation (aliases anglais utilisés dans les fragments) -->
+    <string name="nav_home">Accueil</string>
+    <string name="nav_history">Historique</string>
+    <string name="nav_alerts">Alertes</string>
+    <string name="nav_settings">Réglages</string>
+
+    <!-- Boutons manquants -->
+    <string name="btn_add_child">+ Ajouter</string>
+    <string name="btn_logout">Se déconnecter</string>
+
+    <!-- Réglages détaillés -->
+    <string name="settings_change_pin">Modifier le code PIN</string>
+    <string name="settings_notif_new_detection">Alerter sur chaque détection</string>
+    <string name="settings_notif_daily_summary">Résumé quotidien</string>
+    <string name="settings_subscription">Mon abonnement</string>
+
+    <!-- Appairage -->
+    <string name="title_pairing">Ajouter un enfant</string>
+    <string name="desc_pairing">Générez un code d\'appairage et entrez-le sur le téléphone de votre enfant</string>
+    <string name="hint_child_name">Prénom de l\'enfant</string>
+
+    <!-- Textes extraits des layouts (internationalisation) -->
+    <string name="child_detail_toucher_pour_changer_la_photo">Toucher pour changer la photo</string>
+    <string name="child_detail_code_d_appairage">CODE D\'APPAIRAGE</string>
+    <string name="child_detail_generer_un_nouveau_code">Générer un nouveau code</string>
+    <string name="child_detail_niveau_de_protection">Niveau de protection</string>
+    <string name="child_detail_debloquer_l_appareil">Débloquer l\'appareil</string>
+    <string name="child_detail_avertissements">Avertissements</string>
+    <string name="child_detail_avertissements_autorises">Avertissements autorisés</string>
+    <string name="child_detail_reinitialiser_le_compteur">Réinitialiser le compteur</string>
+    <string name="child_detail_reglages_de_protection">Réglages de protection</string>
+    <string name="child_detail_age_de_l_enfant">Âge de l\'enfant</string>
+    <string name="child_detail_intensite_de_blocage">Intensité de blocage</string>
+    <string name="child_detail_mots_sensibles_perso">Mots sensibles perso</string>
+    <string name="child_detail_temps_d_ecran_autorise_jour">Temps d\'écran autorisé / jour</string>
+    <string name="child_detail_limiter_la_duree_d_utilisation">Limiter la durée d\'utilisation du téléphone (bientôt disponible)</string>
+    <string name="child_detail_derniere_activite">Dernière activité</string>
+    <string name="child_detail_appareil">Appareil</string>
+    <string name="child_detail_lie_depuis">Lié depuis</string>
+    <string name="child_detail_deconnecter_l_appareil">Déconnecter l\'appareil</string>
+    <string name="child_detail_supprimer_cet_enfant">Supprimer cet enfant</string>
+    <string name="register_configurez_votre_compte_pour_commencer">Configurez votre compte pour commencer</string>
+    <string name="register_renseignez_votre_adresse_e_mail">Renseignez votre adresse e-mail</string>
+    <string name="register_le_code_pin_de_securite">Le code PIN de sécurité sera configuré dans les paramètres après connexion</string>
+    <string name="role_choice_configurer_cet_appareil">Configurer cet appareil</string>
+    <string name="role_choice_a_qui_appartient_ce_telephone">À qui appartient ce téléphone ?</string>
+    <string name="role_choice_c_est_mon_telephone_parent">C\'est mon téléphone (parent)</string>
+    <string name="role_choice_surveiller_mes_enfants_recevoir_les">Surveiller mes enfants, recevoir les alertes et gérer la protection.</string>
+    <string name="role_choice_c_est_le_telephone_de">C\'est le téléphone de mon enfant</string>
+    <string name="role_choice_activer_la_protection_sur_cet">Activer la protection sur cet appareil et l\'associer à un compte parent.</string>
+    <string name="role_choice_ce_choix_est_definitif_pour">Ce choix est définitif. Pour le modifier, il faudra désinstaller puis réinstaller l\'application.</string>
+    <string name="subscription_minorshield_premium">MinorShield Premium</string>
+    <string name="subscription_protegez_votre_enfant_sans_limites">Protégez votre enfant sans limites</string>
+    <string name="subscription_plan_gratuit">Plan gratuit</string>
+    <string name="subscription_fonctionnalites_limitees">Fonctionnalités limitées</string>
+    <string name="subscription_ce_que_vous_debloquez">Ce que vous débloquez</string>
+    <string name="subscription_mensuel">Mensuel</string>
+    <string name="subscription_renouvelable_chaque_mois">Renouvelable chaque mois</string>
+    <string name="subscription_1_000_xaf">1 000 XAF</string>
+    <string name="subscription_meilleure_offre_2_mois_offerts">MEILLEURE OFFRE — 2 MOIS OFFERTS</string>
+    <string name="subscription_annuel">Annuel</string>
+    <string name="subscription_soit_833_xaf_mois">soit ~833 XAF / mois</string>
+    <string name="subscription_12_000_xaf">12 000 XAF</string>
+    <string name="subscription_10_000_xaf">10 000 XAF</string>
+    <string name="subscription_payer_avec_mtn_orange_money">Payer avec MTN / Orange Money</string>
+    <string name="subscription_paiement_securise_mtn_mobile_money">Paiement sécurisé · MTN Mobile Money · Orange Money\nAucun remboursement après activation de l\'abonnement.</string>
+    <string name="verify_email_verifiez_votre_e_mail">Vérifiez votre e-mail</string>
+    <string name="verify_email_code_a_6_chiffres">Code à 6 chiffres</string>
+    <string name="verify_email_verifier">Vérifier</string>
+    <string name="verify_email_renvoyer_le_code">Renvoyer le code</string>
+    <string name="set_pin_pin_actuel">PIN actuel</string>
+    <string name="set_pin_nouveau_pin_4_a_6">Nouveau PIN (4 à 6 chiffres)</string>
+    <string name="set_pin_confirmer_le_nouveau_pin">Confirmer le nouveau PIN</string>
+    <string name="accueil_bienvenue">Bienvenue,</string>
+    <string name="accueil_parent">Parent</string>
+    <string name="accueil_protection">PROTECTION</string>
+    <string name="accueil_protection_active">Protection active</string>
+    <string name="accueil_aucun_enfant_ajoute">Aucun enfant ajouté</string>
+    <string name="accueil_appuyez_sur_ajouter_pour_lier">Appuyez sur « Ajouter » pour lier un appareil</string>
+    <string name="accueil_dernieres_detections">Dernières détections</string>
+    <string name="accueil_aucune_detection_recente">Aucune détection récente</string>
+    <string name="accueil_tout_est_calme_pour_le">Tout est calme pour le moment</string>
+    <string name="alertes_contenus_bloques_recemment">Contenus bloqués récemment</string>
+    <string name="alertes_aucune_alerte">Aucune alerte</string>
+    <string name="alertes_les_contenus_bloques_apparaitront_ici">Les contenus bloqués apparaîtront ici</string>
+    <string name="historique_liste">Liste</string>
+    <string name="historique_statistiques">Statistiques</string>
+    <string name="historique_aucune_detection">Aucune détection</string>
+    <string name="historique_jour">Jour</string>
+    <string name="historique_detections_par_jour">Détections par jour</string>
+    <string name="historique_applications_concernees">Applications concernées</string>
+    <string name="historique_aucune_application_concernee_sur_cette">Aucune application concernée sur cette période</string>
+    <string name="reglages_email_example_com">email@example.com</string>
+    <string name="reglages_abonnement">Abonnement</string>
+    <string name="reglages_gratuit">Gratuit</string>
+    <string name="alert_alerte">Alerte</string>
+    <string name="alert_application">Application</string>
+    <string name="alert_il_y_a_5_min">Il y a 5 min</string>
+    <string name="alert_debloquer_a_distance">Débloquer à distance</string>
+    <string name="child_enfant">Enfant</string>
+    <string name="child_actif">Actif</string>
+    <string name="child_0_detections">0 détections</string>
+    <string name="detection_contenu_inapproprie">Contenu inapproprié</string>
+    <string name="detection_chrome">Chrome</string>
+    <string name="detection_texte_detecte">TEXTE DÉTECTÉ</string>
+    <string name="detection_voir_plus">Voir plus</string>
+
+    <!-- Langue de l'interface -->
+    <string name="settings_section_preferences">Préférences</string>
+    <string name="settings_language">Langue</string>
+    <string name="settings_language_title">Langue de l\'application</string>
+</resources>

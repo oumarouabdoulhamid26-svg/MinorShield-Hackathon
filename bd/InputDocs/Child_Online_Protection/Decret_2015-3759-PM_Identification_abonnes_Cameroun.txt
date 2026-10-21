@@ -1,0 +1,256 @@
+Decret n° 2015/3759/PM du 03 septembre 2015 fixant les modalites d'identification des abonnes et des equipements terminaux
+
+Source : Recueil des textes du secteur des Postes, Telecommunications et TIC - Edition 2023 (Agence de Regulation des Telecommunications, art.cm), pages PDF 325 a 329.
+
+[PAGE 325 du recueil PDF]
+317
+
+LE PREMIER MINISTRE, CHEF DU GOUVERNEMENT, 
+ 
+Vu
+la Constitution ; 
+Vu
+la loi n° 98/013 du 14 juillet 1998 relative à la concurrence ; 
+Vu
+la loi n° 2010/0l3 du 21 décembre 2010 régissant les communications électroniques au Cameroun, mo-
+difiée et complétée par la loi n° 2015/006 du 20 avril 2015 ; 
+Vu
+la loi-cadre n° 2011/012 du 6 mai 2021 portant protection des consommateurs au Cameroun ; 
+Vu
+le décret n° 92/089 du 04 mai 1992 précisant les attributions du Premier Ministre, modifié et complété 
+par le décret n° 95/145 bis du 4 août 1995 ; 
+Vu
+le décret n° 2011/408 du 09 décembre 2011 portant organisation du Gouvernement ; 
+Vu
+le décret n° 2011/409 du 09 décembre 2011 portant nomination d’un Premier Ministre, Chef du Gou-
+vernement ; 
+Vu
+le décret n° 2012/203 du 20 avril 2012 portant organisation et fonctionnement de l’Agence de Régulation 
+des Télécommunications, 
+ 
+DECRETE 
+ 
+CHAPITRE I 
+DISPOSITIONS GENERALES 
+ 
+SECTION I 
+DE L’OBJET 
+ 
+ARTICLE 1er.- (l) Le présent décret fixe les modalités d’identification des abonnés et des équipements terminaux 
+des réseaux de communications électroniques. 
+(2) Il est pris en application des dispositions de l’article 55 de la loi n° 2010/0l3 du 21 décembre 2010 régissant 
+les communications électroniques au Cameroun, modifiée et complétée par la loi n° 2015/006 du 20 avril 
+2015. 
+ 
+SECTION II 
+DES DEFINITIONS 
+ 
+ARTICLE 2.- Au sens du présent décret, les définitions ci-après sont admises : 
+- Module d'identité d'Abonné : carte à puce qui s'insère dans un équipement terminal ou tout autre dis-
+positif électronique par lequel le réseau identifie l'abonné ; 
+- Opérateur : personne physique ou morale titulaire d’une concession ou d’une licence exploitant un réseau 
+ou fournissant un service de communications électroniques ouvert au public. 
+  
+CHAPITRE II 
+DE L’IDENTIFICATION DES ABONNES ET DES TERMINAUX 
+ 
+ARTICLE 3.- Les opérateurs sont tenus d’identifier leurs abonnés, ainsi que les équipements terminaux, au 
+moment de la souscription à tout service de communications électroniques. 
+DECRET N°2015/3759/PM DU 03 SEPTEMBRE 2015       
+Fixant les modalités d'identification des abonnés et 
+des équipements terminaux des réseaux de 
+communications électroniques.-
+
+[PAGE 326 du recueil PDF]
+ARTICLE 4.- (1) Une personne physique ne peut détenir plus de trois (03) modules d’identité d’abonné par 
+opérateur. 
+(2)    Toute demande d’un nombre de modules d’identité d’abonné supérieur au nombre mentionné à l’alinéa 
+1 ci-dessus, est soumise à l’autorisation préalable de l'Agence en charge de la régulation des communications 
+électroniques, à la diligence de l’opérateur. 
+ 
+ARTICLE 5.- Une personne morale peut souscrire pour son personnel une ﬂotte de modules d’identité 
+d’abonné. Dans ce cas, le nombre de modules est fonction de la demande et doit être justifié auprès de l’opé-
+rateur. 
+ 
+ARTICLE 6.- Les opérateurs sont tenus d’exiger, lors de la souscription d'un abonnement : 
+• aux personnes physiques, outre leur présence physique : 
+- l’original de la Carte Nationale d’Identité ou de toute autre pièce qui en tient lieu ; 
+- le titre de séjour en cours de validité pour les étrangers ou tout document en tenant lieu ; 
+- l’adresse exacte et le plan de localisation du demandeur ; 
+- le numéro d’identité internationale de l’équipement terminal (IMEI). 
+• aux personnes morales: 
+- une expédition de l’acte d’inscription au Registre de Commerce et du Crédit Mobilier, le cas échéant ; 
+- l’original de la pièce d’identité de son représentant légal ; 
+- l’adresse exacte et le plan de localisation du siège social de la personne morale ; 
+- le numéro d’identité internationale pour chaque équipement terminal de la ﬂotte ; 
+- la liste du personnel bénéficiaire de la ﬂotte ainsi que la photocopie certifiée conforme de la pièce 
+d'identité de chacun ;  
+- l’attestation de soumission à l'organisme en charge de la sécurité sociale, le cas échéant. 
+ 
+ARTICLE 7.- (1) Les opérateurs sont tenus d’exiger, en cas de souscription d’un abonnement par un mineur 
+non titulaire d’une Carte Nationale d’Identité, outre l’original de l’acte de naissance, l’identification du parent 
+ou du tuteur muni des pièces exigées à l’article 6 ci-dessus. 
+(2)    Les opérateurs sont tenus d'exiger, en cas de souscription d’un abonnement par un mineur titulaire d'une 
+Carte Nationale d’identité, l'identification du parent ou du tuteur muni des pièces exigées à l'article 6 ci-dessus. 
+ 
+ARTICLE 8.- Les opérateurs sont tenus de conserver sous format électronique ou numérique, les informations 
+relatives à l’identification de leurs abonnés et des équipements terminaux pendant toute la durée de validité 
+de l’abonnement et dix (10) ans après résiliation.  
+ 
+ARTICLE 9.- (1) Les opérateurs sont tenus chacun de mettre en place une base de données informatisée d’iden-
+tification de leurs abonnés et des équipements terminaux ainsi que de veiller à leur mise à jour régulière. 
+(2)    Le format, les outils et les méthodes de collecte et de traitement des données d’identification des abon-
+nés et des équipements terminaux sont définis par l'Agence en charge de la régulation des communications 
+électroniques. 
+(3)    L'Agence en charge de la régulation des communications électroniques dispose d’un accès distant à la 
+base de données visée à l'alinéa 1 ci-dessus, à la diligence de l'opérateur. 
+ 
+CHAPITRE III 
+DE L’ACTIVATION DES MODULES D’IDENTITE D’ABONNE 
+ 
+ARTICLE 10.- (1) L’activation d’un module d’identité d’abonné par les opérateurs ne peut être faite que pour 
+les abonnements dont les détenteurs ont été formellement identifiés conformément aux dispositions du pré-
+sent décret et après enregistrement dans la base de données visée à l’article 9 ci-dessus. 
+(2)    Au terme du processus d’identification de l’abonné, l’opérateur l’en informe, sans frais, par tout moyen 
+laissant trace écrite. 
+ 
+ARTICLE 11.- (1) A l’expiration du délai de validité de la Carte Nationale d’Identité ou de la pièce en tenant 
+lieu, l’opérateur restreint en réception simple l’abonné concerné et l’en informe par message sans frais. 
+(2)    La restriction visée à l’alinéa 1 ci-dessus est levée dès production d’une pièce d’identité valide par l’abonné 
+318
+
+[PAGE 327 du recueil PDF]
+319
+
+dans un délai de trois (03) mois à compter de la date  d'application de la restriction en réception simple. 
+(3)    L’opérateur procède à la suspension complète des services à l’abonné à l’expiration du délai visé à l’alinéa 
+2 ci-dessus en cas de non production d’une pièce d’identification valide. Il en informe l’abonné par un message 
+sans frais.   
+(4)    L’opérateur procède au rétablissement des services en cas de production d’une pièce d’identité valide 
+par l’abonné dans un délai de trois (03) mois à compter de la date de suspension des services.  
+(5)    A l’expiration du délai visé à l'alinéa 4 ci-dessus, l’opérateur procède à la désactivation systématique du 
+module d'identité de l'abonné. 
+(6)    L’opérateur n'est pas redevable du remboursement des crédits de communication en cours et n’est pas 
+passible de dommages et intérêts en cas de suspension ou de résiliation d’un abonné en application des dis-
+positions du présent décret. 
+ 
+CHAPITRE IV 
+DE LA COMMERCIALISATION DES MODULES D’IDENTITE D’ABONNE 
+ 
+ARTICLE 12.- La commercialisation par les opérateurs des modules d’identité d’abonné pré-activés est inter-
+dite. 
+ 
+ARTICLE 13.- (1) La revente des modules d’identité d'abonné est interdite. 
+(2)    Nonobstant les dispositions de l'alinéa (1) ci-dessus, les personnes titulaires d’un agrément de vendeur 
+de matériels des communications électroniques délivré par l’Agence et ayant un contrat de partenariat avec 
+les opérateurs dont ils commercialisent les produits sont autorisés à revendre les modules d’identité d’abonné. 
+(3)    Le contrat de partenariat entre un revendeur de modules d’identité d’abonnés et un opérateur est écrit, 
+personnel et incessible. 
+ 
+ARTICLE 14.- (1) La commercialisation de modules d’identité d’abonnés dans les rues est interdite. 
+(2)    La commercialisation ne peut se faire que dans des espaces aménagées munis des dispositifs permettant 
+l’identification des abonnés et des équipements terminaux tel que prescrit par les dispositions du présent dé-
+cret.  
+ 
+ARTICLE 15.- L’achat d’un module d’identité d’abonné fait l’objet d’un contrat d’abonnement avec l’opérateur 
+responsable de la fourniture des services de communications électroniques. 
+  
+ARTICLE 16.- Les opérateurs qui contractent avec une société de commercialisation des services, sont tenus 
+de prendre toutes les dispositions afin que leurs distributeurs agréés procèdent à l’identification des abonnés, 
+au moment de la commercialisation des services.  
+ 
+CHAPITRE V 
+DE LA CONFIDENTIALITE DES DONNEES D’IDENTIFICATION  
+ 
+ARTICLE 17.- (1) Les opérateurs prennent des mesures appropriées pour assurer la protection, l’intégrité et la 
+confidentialité des données d’identification qu’ils détiennent ou qu’ils traitent, ainsi que les informations qu’ils 
+détiennent sur la localisation des clients abonnés à leur réseau. 
+(2)    L’Agence en charge de la régulation des communications électroniques prend les mesures appropriées 
+pour assurer la confidentialité des données d’identification des abonnés auxquelles elle accède.  
+ 
+ARTICLE 18.- Les opérateurs veillent à ce que les données d’identification de l’abonné ne soient utilisées à des 
+fins de prospection commerciale, soit par voie postale, soit par voie de communications électroniques, à l’ex-
+ception des opérations concernant l’activité autorisée et relevant uniquement de la relation contractuelle 
+entre l’opérateur et l’abonné.  
+ 
+ARTICLE 19.- (1) les opérateurs sont tenus de porter à la connaissance de leurs agents, les obligations aux-
+quelles ils sont assujettis et les sanctions qu’ils encourent en cas de non-respect du secret des données d’iden-
+tification concernant leurs abonnés. 
+(2)    Lorsqu’un opérateur fait appel à des sociétés de commercialisation, il doit veiller, dans les relations
+
+[PAGE 328 du recueil PDF]
+contractuelles avec les sociétés, au respect de ses obligations relatives aux conditions de confidentialité et de 
+neutralité au regard des messages transmis et informations liées aux communications. 
+ 
+ARTICLE 20.- L’opérateur est tenu d’assurer gratuitement à l’abonné, du moment qu’il justifie sa qualité de ti-
+tulaire de l’abonnement, la communication des informations d’identification le concernant, ainsi que leur rec-
+tification, clarification ou mise à jour. 
+ 
+CHAPITRE VI 
+DU VOL ET DE LA PERTE DES TERMINAUX 
+ 
+ARTICLE 21.- L’opérateur met à la disposition des usagers toutes les informations relatives aux mesures à pren-
+dre, en cas de vol de leurs équipements terminaux. 
+ 
+ARTICLE 22.- L’abonné est tenu de déclarer sans délai auprès de l’opérateur par tout moyen laissant trace 
+écrite, la perte ou le vol de son équipement terminal ou de son module d’identité d’abonné, afin de permettre 
+à operateur de désactiver le module concerné. 
+ 
+ARTIÇLE 23.- (1) L’opérateur met en place un système de blocage des équipements terminaux mobiles déclarés 
+volés pour les rendre inutilisables sur son réseau de communications électroniques. 
+(2)    A la demande expresse de l’abonné, l’opérateur est tenu d’interdire l’utilisation de l’équipement terminal 
+déclaré volé ou perdu sur son réseau, sous réserve de toute autre réquisition des autorités compétentes de 
+police ou judiciaires.  
+(3)    La responsabilité de l’opérateur peut être engagée pour toute infraction survenue par le biais d’un module 
+d’identité ou d’un équipement terminal dont la déclaration de perte ou de vol a été régulièrement faite à 
+l’opérateur par l’abonné. 
+(4)    Les opérateurs sont tenus de mettre en place un mécanisme de mutualisation des données relatives aux 
+équipements terminaux déclarés volés.  
+(5)    L’Agence en charge de la régulation des communications électroniques édicte les règles pour la mutua-
+lisation des données visées à l’alinéa 4 ci-dessus. 
+ 
+ARTICLE 24.- Si l’abonné ne déclare pas le vol ou la perte de son équipement terminal ou de son module 
+d’identité, sa responsabilité peut être engagée pour toute utilisation frauduleuse, malveillante ou attentatoire 
+à l’ordre public, effectuée à l'aide du module d’identité volé ou perdu. 
+ 
+ARTICLE 25.- La réactivation par l’opérateur d’un équipement terminal ou d’un module d’identité déclaré volé 
+ou perdu ne peut intervenir qu’après vérification de l’identité de la personne attestant qu’elle en est le titulaire 
+légitime dudit terminal ou dudit module. 
+ 
+CHAPITRE VII 
+DISPOSITIONS DIVERSES, TRANSITOIRES ET FINALES 
+ 
+ARTICLE 26.- Les opérateurs sont tenus de mettre à la disposition de l’Agence, les informations de leurs bases 
+des données mises à jour. 
+ 
+ARTICLE 27.- Les opérateurs sont tenus de faire droit à toute réquisition des autorités compétentes  dans les 
+conditions fixées par les lois et règlements en vigueur. 
+ 
+ARTICLE 28.- Les opérateurs sont tenus de procéder, dès l’entrée en vigueur du présent décret, à l’adaptation 
+du contrat et des conditions générales d’offres de services, de notifier les changements à leurs partenaires 
+agréés et d’en informer les abonnés. 
+ 
+ARTICLE 29.- (1) Les opérateurs de réseaux de communications électroniques disposent d’un délai de soixante 
+(60) jours à compter de la date de signature du présent décret pour s’y conformer. 
+(2)    Les opérateurs qui, à l’expiration du délai prévu à l’alinéa 1 ci-dessus, ne se conforment pas aux disposi-
+tions du présent décret, s’exposent aux sanctions prévues par la réglementation en vigueur.  
+320
+
+[PAGE 329 du recueil PDF]
+321
+
+ARTICLE 30.- Des textes particuliers du Ministre chargé des télécommunications précisent, en tant que de be-
+soin, les modalités d’application du présent décret. 
+ 
+ARTICLE 31.- Sont abrogées toutes les dispositions antérieures contraires, notamment le décret n° 
+2012/1637/PM du 14 juin 2012 fixant les modalités d’identification des abonnés et des terminaux. 
+ 
+ARTICLE 32.- Le présent décret sera enregistré, publié suivant la procédure d’urgence, puis inséré au Journal 
+Oﬃciel en français et en anglais./- 
+ 
+ 
+Yaoundé, le 03 septembre 2015 
+ 
+LE PREMIER MINISTRE, CHEF DU GOUVERNEMENT, 
+ 
+Philemon YANG

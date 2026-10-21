@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Couleurs principales — deep navy -->
+    <color name="primary">#0A1628</color>
+    <color name="primary_dark">#060E1B</color>
+    <color name="primary_light">#1D3461</color>
+    <color name="primary_gradient_start">#0A1628</color>
+    <color name="primary_gradient_end">#152345</color>
+
+    <!-- Accents — accent unique BLEU (#2E6BF6). Les noms "teal*" sont
+         conservés pour ne pas casser les références existantes, mais pointent
+         désormais vers le bleu : bascule globale de l'accent en un seul endroit. -->
+    <color name="secondary">#2E6BF6</color>
+    <color name="teal">#2E6BF6</color>
+    <color name="teal_light">#6B9BF9</color>
+    <color name="accent_green">#2E7D32</color>
+    <color name="accent_green_light">#43A047</color>
+    <color name="accent_orange">#E65100</color>
+    <color name="accent_red">#C62828</color>
+    <color name="accent_yellow">#F9A825</color>
+
+    <!-- Statuts détections -->
+    <color name="status_blocked">#C62828</color>
+    <color name="status_ignored">#757575</color>
+    <color name="status_critical">#B71C1C</color>
+    <color name="status_elevated">#E65100</color>
+    <color name="status_medium">#F9A825</color>
+    <color name="status_info">#1D3461</color>
+
+    <!-- Scores (compatibilité overlay existant) -->
+    <color name="score_safe">#2E7D32</color>
+    <color name="score_warning">#E65100</color>
+    <color name="score_danger">#C62828</color>
+
+    <!-- Efficacité -->
+    <color name="efficacy_high">#2E7D32</color>
+    <color name="efficacy_medium">#F9A825</color>
+    <color name="efficacy_low">#C62828</color>
+
+    <!-- Surfaces -->
+    <color name="background">#F4F6F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#EEF2F7</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Textes -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#546E7A</color>
+    <color name="text_hint">#90A4AE</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Textes sur fond navy (splash, en-têtes dégradés) -->
+    <color name="text_on_navy">#BFDBFE</color>
+    <color name="text_on_navy_accent">#80DEEA</color>
+
+    <!-- Surface accent claire (cartes d'abonnement, badges, pastilles) -->
+    <color name="teal_surface">#E7EFFE</color>
+    <!-- Action d'alerte (bouton de déblocage) -->
+    <color name="accent_unlock">#FF6B35</color>
+
+    <!-- ── Accent bleu — système unifié (blanc dominant + contraste) ──── -->
+    <color name="accent_blue">#2E6BF6</color>
+    <color name="accent_blue_dark">#1B4DB8</color>
+    <color name="accent_blue_surface">#E7EFFE</color>
+    <!-- Textes lisibles posés SUR un aplat bleu plein -->
+    <color name="on_accent">#FFFFFF</color>
+    <color name="on_accent_muted">#D6E4FF</color>
+    <!-- Blocs sombres (carte stat, pilule de navigation) -->
+    <color name="ink_block">#0E1116</color>
+    <color name="nav_inactive">#888E98</color>
+    <!-- Succès / « tout va bien » (états vides rassurants) -->
+    <color name="success_surface">#E1F5EE</color>
+    <color name="success_ink">#0F6E56</color>
+
+    <!-- ── Style clair : blanc dominant, cartes blanches à liseré fin ── -->
+    <!-- Fond général BLANC (blanc dominant) -->
+    <color name="surface_light">#FFFFFF</color>
+    <color name="card_stroke">#E7E8EB</color>
+    <color name="circle_light">#F1F1F4</color>
+    <!-- Noir profond pour les grands titres -->
+    <color name="ink">#0B0B0F</color>
+    <!-- Teinte rouge claire (contexte alerte / danger) -->
+    <color name="danger_surface">#FDECEC</color>
+    <!-- Accents d'icônes (couleur uniquement sur les icônes) -->
+    <color name="icon_blue">#2E7DF6</color>
+    <color name="icon_green">#22C55E</color>
+    <color name="icon_purple">#A855F7</color>
+    <color name="icon_orange">#F97316</color>
+    <color name="icon_red">#EF4444</color>
+    <color name="icon_teal">#14B8A6</color>
+
+    <!-- Divers -->
+    <color name="divider">#E0E7EF</color>
+    <color name="overlay_bg">#CC000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

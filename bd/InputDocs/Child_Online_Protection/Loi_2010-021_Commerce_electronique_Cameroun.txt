@@ -1,0 +1,799 @@
+Loi n° 2010/021 du 21 decembre 2010 regissant le commerce electronique au Cameroun
+
+Source : Recueil des textes du secteur des Postes, Telecommunications et TIC - Edition 2023 (Agence de Regulation des Telecommunications, art.cm), pages PDF 85 a 98.
+
+[PAGE 85 du recueil PDF]
+77
+Textes transversaux
+
+TITRE I 
+DISPOSITIONS GENERALES 
+ 
+ARTICLE 1.- La présente loi régit le commerce électronique au Cameroun. 
+ 
+ARTICLE 2.- Au sens de la présente loi et des textes pris pour son application on entend par : 
+Activité commerciale : toute activité de production et d’échange des biens et services exercée sur la base de 
+supports matériels ou électroniques, par toute personne physique ou morale conformément aux dispositions 
+des textes à caractère législatif, réglementaire ou conventionnel régissant le commerce ; 
+Autorité de certification : autorité de confiance chargée de créer et d’attribuer des clés publiques et privées 
+ainsi que des certificats électroniques ; 
+Certificat électronique : document électronique sécurisé par la signature électronique de la personne qui l’a 
+émis et qui atteste après constat de la véracité de son contenu ; 
+Certificat électronique qualifié : certificat électronique émis par un prestataire de certification agréé ; 
+Client : toute personne physique ou morale qui est en relation d’affaire par voie électronique avec un commer-
+çant ; 
+Commerce électronique : activité économique par laquelle une personne effectue ou assure par voie élec-
+tronique la fourniture de biens ou de services ; 
+Communication commerciale : toute forme de communication destinée à promouvoir, directement ou indi-
+rectement, des biens, des services, ou l’image d’une entreprise, d’une organisation ou d’une personne ayant 
+une activité commerciale, industrielle, artisanale ou exerçant une profession réglementée ; 
+Consommateur : toute personne physique ou morale qui bénéficie des prestations de services ou utilise les 
+produits de commerce pour satisfaire ses propres besoins et ceux des personnes à sa charge ; 
+Courrier électronique : tout message, sous forme de texte, de voix, de son ou d’image, envoyé à travers un 
+réseau de communication, stocké, sur un serveur du réseau ou dans l’équipement terminal du destinataire, 
+jusqu’à ce que ce dernier le récupère ; 
+Destinataire du service : toute personne physique ou morale qui, à des fins professionnelles ou non, utilise 
+un service par voie électronique, notamment pour rechercher une information ou la rendre accessible ; 
+Dispositif de création de signature électronique : ensemble d’équipements et/ou de logiciels privés de cryp-
+tage, homologués par une autorité compétente, configurés pour la création d’une signature électronique ; 
+Dispositif de vérification de signature électronique : ensemble d’équipements et/ou de logiciels publics de 
+cryptage, homologués par une autorité compétente, permettant la vérification par une autorité de certification 
+d’une signature électronique ; 
+Document électronique : ensemble de données enregistrées ou mises en mémoire sur quelque support que 
+ce soit par un système informatique ou un dispositif semblable et qui peuvent être lues ou perçues par une 
+personne ou par un tel système ou dispositif. Sont également visés, tout aﬃchage et toute sortie imprimée 
+ou autre de ces données ; 
+Données afférentes à la création de signature : données uniques, telles que des codes ou des clés cryptogra-
+phiques privées, que le signataire utilise pour créer une signature électronique ; 
+Echanges électroniques : échanges qui s’effectuent au moyen des documents électroniques ; 
+Echange de données informatisées (EDI) : transfert électronique d’une information d’ordinateur à ordinateur 
+mettant en œuvre une norme convenue pour structurer l’information ; 
+Message de données : information créée, envoyée, reçue ou conservée par des moyens électroniques, op-
+LOI N° 2010/021 DU 21 DECEMBRE 2010  
+Régissant le commerce électronique au Cameroun
+Le Parlement a délibéré et adopté,  
+le Président de la République promulgue 
+la loi dont la teneur suit :
+
+[PAGE 86 du recueil PDF]
+tiques ou des moyens analogues notamment, mais non exclusivement, l’échange de données informatisées 
+(EDI), la messagerie électronique, la télégraphie, le télex et la télécopie ;  
+Moyen de paiement électronique : moyen qui permet à son titulaire d’effectuer des opérations de paiement 
+à distance à travers les réseaux de télécommunications ; 
+Produit de signature électronique : tout produit matériel, logiciel, ou élément spécifique de ce produit, destiné 
+à être utilisé par un prestataire de service de certification pour la fourniture de services de signature électro-
+nique, ou destiné à être utilisé pour la création ou la vérification de signatures électroniques ; 
+Publicité commerciale : information publiée à travers des supports pour faire connaître un produit ou un ser-
+vice, en vue d’inciter le public à l’acheter ou à l’utiliser ; 
+Signataire électronique : personne qui détient un dispositif de création de signature et qui agit soit pour son 
+propre compte, soit pour celui d’une personne physique ou morale qu’elle représente ; 
+Signature électronique : signature obtenue par un algorithme de chiffrement asymétrique permettant d’au-
+thentifier l’émetteur d’un message et d’en vérifier l’intégrité ; 
+Système d’information : tout dispositif isolé ou groupe de dispositifs interconnectés ou apparentés qui assu-
+rent ou dont l’un ou plusieurs éléments assurent, conformément à un programme, un traitement automatisé 
+des données. 
+ 
+TITRE II 
+DES PRINCIPES REGISSANT L’EXERCICE DES ACTIVITES RELATIVES AU COMMERCE ELECTRONIQUE 
+ 
+CHAPITRE I 
+DES RESTRICTIONS ET DES DEROGATIONS  
+ 
+ARTICLE 3.- (1) L’exercice du commerce électronique est libre à l’exclusion : 
+- des jeux d’argent, des paris et des loteries légalement autorisés ; 
+- des activités de représentation et d’assistance en justice ; 
+- des activités exercées par les notaires.  
+(2)    L’exercice du commerce électronique est soumis au respect des dispositions relatives : 
+- aux conditions d’établissement et d’exercice dans le domaine de l’assurance, prévues par les instruments 
+internationaux et nationaux pertinents ; 
+- aux pratiques anticoncurrentielles et à la concentration économique ; 
+- à l’interdiction ou à l’autorisation de la publicité non sollicitée, envoyée par courrier électronique ; 
+- au Code des Douanes de la Communauté Economique et Monétaire de l’Afrique Centrale ; 
+- au Code Général des Impôts ; 
+- aux droits protégés par les lois et règlements relatifs à la propriété intellectuelle.  
+ 
+ARTICLE 4.- Dans les conditions prévues par voie réglementaire, des mesures restreignant, au cas par cas, le 
+libre exercice des activités relatives au commerce électronique peuvent être prises par l’autorité administrative, 
+lorsqu’il est porté atteinte ou qu’il existe un risque sérieux et grave d’atteinte à l’ordre et la sécurité publics, à 
+la protection des mineurs, à la protection de la santé publique, à la préservation des intérêts de la défense 
+nationale ou à la protection des personnes physiques. 
+ 
+CHAPITRE II 
+DE LA PUBLICITE PAR VOIE ELECTRONIQUE 
+ 
+ARTICLE 5.- (1) Toute publicité sous quelque forme que ce soit, accessible par un service en ligne, doit claire-
+ment identifier comme tels : 
+- la personne physique ou morale pour le compte de laquelle cette publicité est faite ; 
+- les offres promotionnelles, tels que les rabais, les primes ou les cadeaux, ainsi que les concours ou les 
+jeux promotionnels, dont les conditions de participation doivent par ailleurs être aisément accessibles 
+et présentées de manière précise et non équivoque. 
+(2)    Les dispositions de l’alinéa 1 ci-dessus s’appliquent sans préjudice des dispositions réprimant la publicité 
+trompeuse. 
+ 
+ 
+78
+
+Textes transversaux
+
+[PAGE 87 du recueil PDF]
+79
+Textes transversaux
+
+ARTICLE 6.- Les publicités non sollicitées, effectuées par un prestataire par courrier électronique doivent être 
+identifiées de manière claire et non équivoque dès leur réception par le destinataire. 
+ 
+ARTICLE 7.- (1) Est interdite, la prospection directe au moyen d’un automate d’appel, d’un télécopieur ou d’un 
+courrier électronique utilisant, sous quelque forme que ce soit, les coordonnées d’une personne physique ou 
+morale qui n’a pas exprimé son consentement préalable à recevoir des prospections directes par ce moyen. 
+(2)    Constitue une prospection directe, l’envoi de tout message destiné à promouvoir, directement ou indi-
+rectement, des biens, des services ou l’image d’une personne vendant des biens ou fournissant des services. 
+ 
+ARTICLE 8.- (1) Les membres des professions réglementées sont autorisés à faire usage des publicités dans le 
+cadre de l’exercice de leurs activités, sous réserve du respect des règles professionnelles visant, notamment, 
+l’indépendance, la dignité et l’honorabilité de la profession ainsi que le secret professionnel et la loyauté 
+envers les clients et les autres membres de la profession. 
+(2)    Les organismes et les associations professionnels élaborent des codes de conduite pour préciser les in-
+formations qui peuvent être données à des fins de publicité dans le respect des règles visées à l’alinéa 1 ci-
+dessus. 
+ 
+CHAPITRE III 
+DES CONTRATS SOUSCRITS PAR VOIE ELECTRONIQUE 
+ 
+ARTICLE 9.- La conclusion des contrats par voie électronique est autorisée sous réserve des prescriptions fixées 
+par les textes législatifs et réglementaires en vigueur. 
+ 
+ARTICLE 10.- Le régime des contrats écrits s’applique aux contrats électroniques quant à l’expression de la vo-
+lonté, à leur effet légal, à leur validité et à leur exécution, exception faite des types de contrats suivants : 
+- les contrats qui créent ou transfèrent des droits sur des biens immobiliers, à l’exception des droits de lo-
+cation ; 
+- les contrats pour lesquels la loi requiert l’intervention des tribunaux, des autorités publiques ou de pro-
+fessions exerçant une autorité publique ; 
+- les contrats de sûretés et garanties fournis par les personnes agissant à des fins qui n’entrent pas dans le 
+cadre de leur activité professionnelle ou commerciale ; 
+- les contrats relevant du droit de la famille ou du droit des successions. 
+ 
+ARTICLE 11.- (1) Les offres effectuées par voie électronique, concernant la fourniture de biens ou la prestation 
+de services, doivent s’accompagner des conditions contractuelles qui leur sont applicables d’une manière qui 
+permette leur conservation et leur reproduction. Sans préjudice des conditions de validité mentionnées dans 
+lesdites offres, celles-ci engagent leurs auteurs tant qu’elles restent accessibles en ligne de leur fait. 
+(2)    Les offres visées à l’alinéa 1 ci-dessus doivent clairement énoncer : 
+- les différentes étapes à suivre pour conclure le contrat par voie électronique ; 
+- les moyens techniques permettant à l’utilisateur, avant la conclusion du contrat, d’identifier les erreurs 
+commises dans la saisie des données et de les corriger ; 
+- la ou les langues proposée(s) pour la conclusion du contrat ; 
+- en cas d’archivage du contrat, les modalités de cet archivage par l’auteur de l’offre et les conditions d’accès 
+au contrat archivé ; 
+- les moyens de consulter par voie électronique les règles professionnelles et commerciales auxquelles 
+l’auteur de l’offre entend, le cas échéant, se soumettre. 
+(3)    Les clauses contractuelles et les conditions générales fournies au destinataire doivent l’être d’une manière 
+qui lui permette de les conserver et de les reproduire. 
+(4)    Les alinéas 1 et 2 du présent article ne sont pas applicables aux contrats conclus exclusivement par le 
+biais d’un échange de courriers électroniques ou par des communications individuelles équivalentes. Il peut, 
+en outre, être dérogé aux dispositions desdits alinéas dans les conventions conclues entre professionnels. 
+ 
+ARTICLE 12.- (1) Un contrat ne peut être considéré comme valablement conclu que si le destinataire de l’offre 
+a eu au préalable la possibilité de vérifier le détail de sa commande et son prix total, et de corriger d’éventuelles 
+erreurs avant de confirmer celle-ci pour exprimer son acceptation.
+
+[PAGE 88 du recueil PDF]
+(2)    L’auteur de l’offre doit accuser réception en ligne de la commande qui lui a été adressée dans un délai 
+ne devant pas excéder cinq (5) jours. 
+(3)    La commande, la confirmation de l’acceptation de l’offre et l’accusé de réception sont considérés comme 
+reçus lorsque les parties auxquelles ils sont adressés peuvent y avoir accès. 
+(4)    Les alinéas 1 et 2 ci-dessus ne sont pas applicables à des contrats conclus exclusivement au moyen d’un 
+échange de courriers électroniques ou au moyen de communications individuelles équivalentes. Il peut, en 
+outre, être dérogé aux dispositions desdits alinéas dans les conventions conclues entre professionnels. 
+ 
+ARTICLE 13.- (1) Lorsqu’un écrit est exigé pour la validité d’un acte juridique, il peut être établi et conservé 
+sous forme électronique dans les conditions prévues aux articles 1317 et suivants du Code civil, relatifs à la 
+preuve littérale. 
+(2)    Lorsqu’il est exigé une mention écrite de la main même de celui qui s’oblige, ce dernier peut l’apposer 
+sous forme électronique si les conditions de cette apposition sont de nature à garantir qu’elle ne peut être ef-
+fectuée que par lui-même, exception faite aux dispositions de l’alinéa 1 ci-dessus pour : 
+- les actes sous seing privé relatifs au droit de la famille et des successions ; 
+- les actes sous seing privé relatifs aux sûretés personnelles ou réelles, de nature civile ou commerciale, 
+sauf s’ils sont passés par une personne pour les besoins de sa profession. 
+ 
+ARTICLE 14.- Lorsque le contrat est conclu par voie électronique et qu’il porte sur une somme égale ou supé-
+rieure à un montant fixé par voie réglementaire, le contractant professionnel assure la conservation de l’écrit 
+qui le constate pendant un délai déterminé également par voie réglementaire et en garantit à tout moment 
+l’accès à son cocontractant si celui-ci en fait la demande. 
+ 
+CHAPITRE IV 
+DES TRANSACTIONS COMMERCIALES ELECTRONIQUES 
+ 
+ARTICLE 15.- (1) Avant la conclusion du contrat, le vendeur est tenu, lors des transactions commerciales élec-
+troniques, de fournir au consommateur de manière claire et compréhensible les informations suivantes : 
+- l’identité, l’adresse et le téléphone du vendeur ou du prestataire des services ; 
+- une description complète des différentes étapes d’exécution de la transaction ; 
+- la nature, les caractéristiques et le prix du produit ; 
+- le coût de livraison et, le cas échéant, les tarifs d’assurance du produit et les taxes exigées ; 
+- la durée de validation de l’offre du produit aux prix fixés ; 
+- les conditions de garantie commerciale et du service après-vente ; 
+- les modalités et les procédures de paiement et, le cas échéant, les conditions de crédit proposées ; 
+- les modalités et les délais de livraison, l’exécution du contrat et les résultats de l’inexécution des enga-
+gements ; 
+- la possibilité de rétraction et son délai ; 
+- le mode de confirmation de la commande ; 
+- le mode de retour du produit, d’échange ou de remboursement ; 
+- le coût d’utilisation des moyens de télécommunication lorsqu’ils sont calculés sur une autre base que 
+les tarifs en vigueur ; 
+- les conditions de résiliation du contrat lorsque celui-ci est conclu à durée indéterminée ou à une durée 
+supérieure à un (1) an ; 
+- la durée minimale du contrat pour les contrats portant sur la fourniture, à long terme ou périodiquement, 
+d’un produit ou d’un service. 
+(2)    Les informations prévues à l’alinéa 1 ci-dessus doivent être fournies par voies électroniques et mises à 
+la disposition du consommateur pour consultation à tous les stades de la transaction. 
+ 
+ARTICLE 16.- (1) Il est interdit au vendeur de délivrer un produit non commandé par le consommateur lorsqu’il 
+est assorti d’une demande de paiement. 
+(2)    En cas de délivrance d’un produit non commandé par le consommateur, celui-ci ne peut être sollicité 
+pour le paiement de son prix ou du coût de sa livraison. 
+(3)    Les frais de retour des marchandises non sollicitées sont à la charge du vendeur. 
+ 
+80
+
+Textes transversaux
+
+[PAGE 89 du recueil PDF]
+81
+Textes transversaux
+
+ARTICLE 17.- Avant la conclusion du contrat, le vendeur doit permettre au consommateur de récapituler dé-
+finitivement l’ensemble de ses choix, de confirmer la commande ou de la modifier selon sa volonté et de 
+consulter le certificat électronique relatif à sa signature. 
+ 
+ARTICLE 18.- Sauf accord contraire entre les parties, le contrat est conclu à l’adresse du vendeur et à la date 
+de l’acceptation de la commande par ce dernier au moyen d’un document électronique signé et adressé au 
+consommateur. 
+ 
+ARTICLE 19.- Le vendeur doit fournir au consommateur, à sa demande, et dans les dix (10) jours suivant la 
+conclusion du contrat, un document écrit ou électronique contenant l’ensemble des données relatives à l’opé-
+ration de vente. 
+ 
+ARTICLE 20.- (1) Sous réserve des dispositions de l’article 15 ci-dessus, le consommateur peut se rétracter 
+dans un délai de quinze (15) jours : 
+- à compter du lendemain de la date de leur réception par le consommateur, pour les marchandises ; 
+- à compter de la date de conclusion du contrat pour les services. 
+(2)    La notification de la rétraction se fait par voie électronique ou par tout autre moyen pertinent. 
+(3)    Au cas où les marchandises n’ont pas été altérées par le consommateur, le vendeur est tenu de rem-
+bourser les sommes perçues dans les quinze (15) jours à compter de la date de retour des marchandises ou 
+de la renonciation au service. 
+(4)    Le consommateur supporte les frais de retour des marchandises. 
+ 
+ARTICLE 21.- Sous réserve de la réparation du préjudice au profit du consommateur, ce dernier peut, dans un 
+délai de quinze (15) jours à compter de la date de livraison, restituer le produit en l’état s’il n’est pas conforme 
+à la commande ou si le vendeur n’a pas respecté les délais de livraison prévus à cet effet. Dans ce cas, le ven-
+deur doit rembourser au consommateur les sommes perçues, dans un délai de quinze (15) jours courants à 
+compter de la date de restitution du produit. 
+ 
+ARTICLE 22.- Sous réserve des dispositions de l’article 15 de la présente loi et exception faite des cas où le 
+contrat de vente ou les biens et services qui en résultent comporteraient des vices apparents ou cachés, le 
+consommateur ne peut pas se rétracter lorsqu’il : 
+- demande la livraison du service avant l’expiration du délai de rétractation et que le vendeur le lui a fourni ; 
+- reçoit des produits confectionnés selon des caractéristiques personnalisées ou des produits qui ne peu-
+vent être réexpédiés ou sont susceptibles d’être détériorés ou périmés à cause de l’expiration des délais 
+de validité ; 
+- descelle les enregistrements audio ou vidéo ou les logiciels informatiques livrés ou téléchargés ; 
+- achète des journaux et magazines. 
+ 
+ARTICLE 23.- Lorsque l’opération d’achat est entièrement ou partiellement couverte par un crédit accordé au 
+consommateur par le vendeur ou par un tiers sur la base d’un contrat conclu entre le vendeur et le tiers, la 
+rétractation du consommateur entraîne la résiliation sans pénalité du contrat de crédit. 
+ 
+ARTICLE 24.- Exception faite des cas de mauvaise utilisation, le vendeur supporte, dans les situations de vente 
+avec essai, les risques auxquels le produit est exposé et ce, jusqu’à l’accomplissement de la période d’essai du 
+produit. Est nulle et de nul effet, toute clause exonératoire de responsabilité contraire aux dispositions du pré-
+sent article. 
+ 
+ARTICLE 25.- (1) Lorsque le produit ou le service commandé est indisponible, le vendeur doit en informer le 
+client ou le consommateur au moins 24 heures avant la date de livraison prévue dans le contrat d’achat ou de 
+service. Le cas échéant, le vendeur ou le prestataire de service rembourse au client ou au consommateur l’in-
+tégralité des sommes perçues en vue de la livraison du produit ou de la réalisation du service. 
+(2)    Sauf cas de force majeure, le contrat est résilié si le vendeur ne respecte pas ses engagements et le 
+consommateur est remboursé des sommes payées, sans préjudice des dommages et intérêts. 
+ 
+ARTICLE 26.- Le vendeur doit prouver l’existence de l’information préalable, la confirmation des informations
+
+[PAGE 90 du recueil PDF]
+énumérées à l’article 15 ci-dessus, le respect des délais et le consentement du consommateur. Tout accord 
+contraire est nul et de nul effet. 
+ 
+ARTICLE 27.- Les opérations de paiement peuvent être effectuées auprès des services publics sous forme élec-
+tronique, dans les conditions fixées par les lois et règlements en vigueur. 
+ 
+ARTICLE 28.- (1) Le titulaire du moyen de paiement électronique est tenu de notifier à l’émetteur la perte ou 
+le vol de ce moyen ou des instruments qui en permettent l’utilisation, ainsi que toute utilisation frauduleuse 
+s’y rapportant dont il a connaissance. 
+(2)    L’émetteur d’un moyen de paiement électronique doit fixer les moyens appropriés pour cette notification 
+dans le contrat conclu avec son titulaire. 
+ 
+ARTICLE 29.- (1) Nonobstant les cas de fraude, le titulaire du moyen de paiement électronique : 
+- assume, jusqu’à sa notification à l’émetteur, les conséquences de la perte ou du vol du moyen de paie-
+ment ou son utilisation frauduleuse par un tiers ; 
+- est dégagé de toute responsabilité de l’utilisation du moyen de paiement électronique après la notifica-
+tion à l’émetteur. 
+(2)    L’utilisation du moyen de paiement électronique sans présentation dudit moyen de paiement et identi-
+fication par voie électronique n’engage pas son titulaire. 
+ 
+TITRE III 
+DE LA RESPONSABILITE DES PRESTATAIRES ET DES INTERMEDIAIRES 
+ 
+CHAPITRE I 
+DE L’OBLIGATION D’INFORMATION 
+ 
+ARTICLE 30.- (1) Sans préjudice des autres obligations d’information prévues par les textes législatifs et régle-
+mentaires en vigueur, toute personne exerçant une activité de prestataire de services dans le domaine du 
+commerce électronique est tenue d’assurer aux destinataires desdits services et aux autorités un accès facile, 
+direct et permanent aux informations minimales suivantes : 
+- s’il s’agit d’une personne physique, ses nom(s) et prénom(s) et, s’il s’agit d’une personne morale, sa 
+raison sociale, l’adresse où elle est établie, celle de son courrier électronique, ainsi que son numéro 
+de téléphone ; 
+- si elle est assujettie aux formalités d’inscription au registre du commerce et du crédit mobilier, le numéro 
+de son inscription, son capital social et l’adresse de son siège social ; 
+- si elle est assujettie à la taxe sur la valeur ajoutée et identifiée par un numéro individuel en application 
+du Livre 1 du Code Général des Impôts, son numéro de contribuable ;  
+- si son activité est soumise à un régime d’autorisation, le nom et l’adresse de l’autorité ayant délivré 
+celle-ci ; 
+- si elle est membre d’une profession réglementée, la référence aux règles professionnelles applicables, 
+son titre professionnel, le nom et l’ordre de l’organisme professionnel auprès duquel elle est inscrite. 
+(2)    Les obligations d’information et de transmission des conditions contractuelles visées à l’article 11 ci-des-
+sus et à l’alinéa 1 du présent article, sont satisfaites par voie électronique selon des modalités précisées par 
+voie réglementaire. 
+ 
+ARTICLE 31.- Sous réserve des conditions de tarification et d’imposition prévues par les textes législatifs et ré-
+glementaires en vigueur, toute personne exerçant une activité de prestataire de services dans le domaine du 
+commerce électronique doit, même en l’absence d’offre de contrat, dès lors qu’elle mentionne un prix, indiquer 
+celui-ci de manière claire et non ambiguë et notamment si les taxes et les frais de livraison sont inclus. 
+ 
+ARTICLE 32.- Tout prestataire de service est tenu de stocker et de conserver les données relatives à toute 
+transaction commerciale faite par voie électronique conformément aux lois et règlements en vigueur. 
+ 
+ 
+ 
+82
+
+Textes transversaux
+
+[PAGE 91 du recueil PDF]
+83
+Textes transversaux
+
+CHAPITRE II 
+DU STOCKAGE, DE LA CONSERVATION ET DE LA TRANSMISSION DES DONNEES 
+ 
+ARTICLE 33.- Toute personne physique ou morale exerçant une activité de stockage automatique, intermédiaire 
+et temporaire dans le seul but de rendre plus eﬃcace la transmission ultérieure des contenus, ne peut voir sa 
+responsabilité civile ou pénale engagée en raison de ces contenus que dans l’un des cas suivants : 
+- elle a modifié ces contenus, ne s’est pas conformée à leurs conditions d’accès et aux règles usuelles 
+concernant leur mise à jour ou a entravé l’utilisation licite et usuelle de la technologie utilisée pour obtenir 
+des données ; 
+- elle n’a pas agi avec promptitude pour retirer les contenus qu’elle a stockés ou pour en rendre l’accès 
+impossible, dès qu’elle a effectivement eu connaissance, soit du fait que les contenus transmis initiale-
+ment ont été retirés du réseau, soit du fait que l’accès aux contenus transmis initialement a été rendu 
+impossible, soit du fait que les autorités judiciaires ont ordonné de retirer du réseau les contenus transmis 
+initialement ou d’en rendre l’accès impossible. 
+ 
+ARTICLE 34.- (1) Le document électronique est conservé sur un support électronique permettant : 
+- la consultation de son contenu tout au long de la durée de sa validité ; 
+- sa conservation dans sa forme définitive de manière à assurer l’intégrité de son contenu, la conservation 
+des informations relatives à son origine et sa destination ainsi que la date et le lieu de son émission ou 
+de sa réception. 
+(2)    La conservation du document électronique fait foi au même titre que celle du document écrit. 
+(3)    L’émetteur s’engage à conserver le document électronique dans la forme de l’émission. Le destinataire 
+s’engage à conserver le document électronique dans la forme de la réception. 
+ 
+TITRE IV 
+DE LA SECURISATION ET DE L’AUTHENTIFICATION DES DONNEES ET DES RENSEIGNEMENTS 
+ 
+CHAPITRE I 
+DU CERTIFICAT ET DE LA SIGNATURE ELECTRONIQUES 
+ 
+ARTICLE 35.- (1) L’utilisation par toute personne physique ou morale du certificat et de la signature électroniques 
+dans le cadre du commerce électronique est autorisée dans les conditions fixées par un texte particulier. 
+(2)    L’authentification des documents à caractère oﬃciel peut être faite par des certificats et signature élec-
+troniques dans les Administrations publiques, suivant les conditions fixées par des textes particuliers. 
+ 
+ARTICLE 36.- Toute personne utilisant un dispositif de signature électronique doit : 
+- prendre les précautions minimales fixées par les textes en vigueur pour éviter toute utilisation illégitime 
+des équipements personnels relatifs à sa signature ; 
+- informer l’autorité de certification de toute utilisation illégitime de sa signature ; 
+- veiller à la véracité de toutes les données qu’elle a déclarées à ladite autorité ; 
+- s’assurer de la véracité de toutes les données qu’elle a déclarées à toute personne à qui elle a demandé 
+de se fier à sa signature. 
+ 
+ARTICLE 37.- En cas de violation des dispositions de l’article 36 ci-dessus, le titulaire de la signature est res-
+ponsable du préjudice causé à autrui. 
+ 
+ARTICLE 38.- Les conditions d’exercice des activités d’autorité de certification sont fixées par un texte particulier. 
+ 
+ARTICLE 39.- L’autorité de certification doit tenir un registre électronique des certificats à la disposition des 
+utilisateurs. 
+ 
+CHAPITRE II 
+DES EQUIVALENCES 
+ 
+ARTICLE 40.- (1) Les certificats et signatures délivrés par une autorité de certification établie à l’étranger ont
+
+[PAGE 92 du recueil PDF]
+la même valeur que ceux délivrés par une autorité de certification établie au Cameroun, si cette autorité est 
+reconnue dans le cadre d’un accord de reconnaissance mutuelle, conclu par les autorités compétentes des 
+Etats concernés. 
+(2)    Les conditions de la reconnaissance juridique des certificats et signatures électroniques émanant des 
+pays tiers seront précisées par un texte particulier. 
+ 
+TITRE V 
+DE LA CONSTATATION DES INFRACTIONS ET DES SANCTIONS 
+ 
+ARTICLE 41.- (1) Les infractions aux dispositions de la présente loi et des textes pris pour son application sont 
+constatées par les oﬃciers de police judiciaire à compétence générale, les agents assermentés des Ministères 
+en charge des télécommunications et de la publicité, de l’organisme chargé de la régulation et de la certification 
+électronique, ainsi que ceux du contrôle économique, conformément aux conditions prévues par les textes 
+législatifs et réglementaires en vigueur. 
+(2)    Les procès-verbaux constatant les infractions ainsi que les objets et documents saisis sont transmis au 
+Procureur de la République territorialement compétent. 
+ 
+ARTICLE 42.- Est puni des peines prévues à l’article 219 du Code Pénal, quiconque utilise de manière illégitime 
+la signature électronique d’autrui. 
+ 
+ARTICLE 43.- Est puni d’une amende de 250 000 à 2 500 000 F CFA, toute personne coupable de violation des 
+dispositions des articles 15, 17, 19, 21, 24, et 25 de la présente loi. 
+ 
+ARTICLE 44.- Est puni des peines prévues à l’article 349 du code pénal, quiconque abuse de la faiblesse ou de 
+l’ignorance d’une tierce personne pour lui faire souscrire, dans le cadre d’une vente électronique, des enga-
+gements au comptant ou à crédit sous quelque forme que ce soit, lorsqu’il est avéré que cette personne n’est 
+pas en mesure d’apprécier la portée des engagements qu’elle prend ou de déceler les ruses ou les artifices 
+déployées pour la convaincre à y souscrire ou qu’elle a été soumise à une contrainte. 
+ 
+ARTICLE 45.- Sont punis des peines prévues à l’article 310 du Code Pénal, l’autorité de certification et/ou ses 
+agents qui divulguent, incitent ou participent à la divulgation des informations qui leur sont confiées dans le 
+cadre de l’exercice de leurs activités, à l’exception de celles dont la publication ou la communication sont au-
+torisées par le titulaire du certificat par écrit ou par voie électronique ou dans les cas prévus par la législation 
+en vigueur. 
+ 
+ARTICLE 46.- Est punie des peines prévues aux articles 37 et 38 de la loi n° 90/031 du 10 août 1990 régissant 
+l’activité commerciale, toute violation des dispositions des articles 9 et 10 de la présente loi. 
+ 
+TITRE VI  
+DISPOSITIONS TRANSITOIRES ET FINALES 
+ 
+ARTICLE 47.- Toute personne physique ou morale exerçant le commerce électronique à la date de la promul-
+gation de la présente loi dispose d’un délai de six (6) mois pour se conformer à ses dispositions. 
+ 
+ARTICLE 48.- La présente loi sera enregistrée, publiée suivant la procédure d’urgence, puis insérée au Journal 
+Oﬃciel en français et en anglais./- 
+ 
+ 
+Yaoundé, le 21 DEC 2010 
+ 
+LE PRESIDENT DE LA REPUBLIQUE, 
+ 
+PAUL BIYA 
+84
+
+Textes transversaux
+
+[PAGE 93 du recueil PDF]
+85
+Textes transversaux
+
+CHAPITRE I  
+DES DISPOSITIONS GENERALES  
+  
+Article 1er.- (1) La présente loi fixe le cadre général de la protection du consommateur.  
+(2)    Elle s’applique à toutes les transactions relatives à la fourniture, la distribution, la vente, l’échange de 
+technologies, de biens et de services portant sur la protection du consommateur.  
+(3)    Les transactions visées à l’alinéa 2 ci-dessus, concernent notamment les secteurs de la santé, la pharma-
+cie, l’alimentation, l’eau, l’habitat, l’éducation, les services financiers, bancaires, le transport, l’énergie et les 
+communications.  
+ 
+Article 2.- Au sens de la présente loi et des textes d’application, les définitions suivantes sont admises :  
+- Consommateur : toute personne qui utilise des produits pour satisfaire ses propres besoins et ceux des 
+personnes à sa charge et non pour les revendre, transformer ou les utiliser dans le cadre de sa profession, 
+ou toute personne qui bénéficie des prestations de service ;  
+- Pratique commerciale restrictive : toute pratique commerciale qui exige du consommateur d’acheter, 
+de louer ou de se procurer toute technologie, bien ou service comme une condition ou un préalable pour 
+acheter, louer ou se procurer toute technologie, bien ou service ;  
+- Pratique commerciale inéquitable : toute pratique commerciale qui, dans le cadre de la promotion de 
+la vente, de l’utilisation ou de la fourniture d’un bien, d’un service ou d’une technologie, adopte une mé-
+thodologie, y compris la déclaration orale, écrite ou la représentation visuelle, qui porte atteinte à l’équité 
+dans une transaction ;  
+- Clause abusive : toute clause qui est ou qui semble être imposée au consommateur par un fournisseur 
+ou prestataire de service qui a une supériorité économique sur le consommateur, donnant au premier 
+un avantage injuste, déraisonnable ou excessif sur le second ;  
+- Contrat de consommation : un contrat autre que le contrat de location ou de l’emploi, établi entre un 
+consommateur et un fournisseur de bien ou un prestataire de service, pour la vente, la fourniture d’un 
+bien, d’une technologie ou d’une prestation de service.  
+  
+CHAPITRE II   
+DES PRINCIPES DE LA PROTECTION DU CONSOMMATEUR  
+  
+Article 3.- La politique nationale de protection des consommateurs s’inspire, dans le cadre des traités, lois et 
+règlements en vigueur notamment des principes suivants :  
+a) Le principe de protection selon lequel les consommateurs ont droit à la protection de la vie, de la santé, 
+de la sécurité et de l’environnement dans la consommation des technologies, biens ou services ;  
+b) Le principe de satisfaction selon lequel les consommateurs ont droit à la satisfaction des besoins élé-
+mentaires ou essentiels dans les domaines de la santé, de l’alimentation, de l’eau, de l’habitat, de l’édu-
+cation, de l’énergie, du transport, des communications et tout autre domaine technologique, des biens 
+et services ;  
+c) Le principe d’équité selon lequel les consommateurs ont droit à la réparation complète des torts pour 
+les dommages subis et qui, au terme des dispositions de la présente loi ou d’autres règlements en vi-
+gueur, sont imputables aux fournisseurs ou prestataires ;  
+d) Le principe de participation selon lequel les consommateurs ont le droit et la liberté de former des as-
+LOI-CADRE N° 2011/012 DU 6 MAI 2011  
+Portant protection du consommateur au Cameroun
+Le Parlement a délibéré et adopté,  
+le Président de la République promulgue 
+la loi dont la teneur suit :
+
+[PAGE 94 du recueil PDF]
+sociations ou organisations de consommateurs bénévoles, autonomes et indépendantes afin de réaliser 
+ou participer à la promotion et à la défense des droits visés par la présente loi.  
+  
+CHAPITRE III  
+DE LA PROTECTION ECONOMIQUE ET TECHNOLOGIQUE DU CONSOMMATEUR  
+  
+Article 4.- Les pratiques commerciales inéquitables, restrictives ou anticoncurrentielles, ainsi que les clauses 
+abusives des contrats et de consommation, doivent être réglementés et contrôlés et, autant que faire se peut, 
+interdits dans tous les contrats et transactions auxquels la présente loi s’applique.  
+  
+Article 5.- (1) Sont nulles, les clauses contractuelles qui :  
+- exonèrent, excluent, réduisent ou limitent la responsabilité des fournisseurs ou des prestataires de ser-
+vices pour les défauts, déficiences ou inéquations de toutes sortes dans la technologie, le bien fourni ou 
+le service rendu ;  
+- impliquent la perte des droits et libertés garantis au consommateur ou en limitent l’exercice ;  
+- créent des termes ou conditions contractuels injustes, déraisonnables, inéquitables, répressifs ou qui re-
+tournent à la responsabilité du consommateur des défauts, les déficiences ou inadéquations non immé-
+diatement apparents ;  
+- imposent une clause d’arbitrage unilatérale.  
+(2)    Les clauses contractuelles mentionnées à l’alinéa 1 ci-dessus peuvent être d’oﬃce déclarées nulles par 
+la juridiction compétente.  
+  
+Article 6.- (1) Les accords-standards ou contrats d’adhésion doivent être rédigés en français et en anglais en 
+caractères visibles et lisibles à première vue par toute personne ayant une vue normale. Ils doivent être ré-
+glementés et contrôlés pour assurer une protection légitime au consommateur.   
+(2)    Les accords ou contrats visés à l’alinéa 1 ci-dessus doivent en outre contenir des termes clairs et compré-
+hensibles pour le grand public, sans faire référence à d’autres contrats, règles, pratiques, textes et documents 
+non connus du public ou non mis à sa disposition avant ou pendant l’exécution desdits contrats.  
+(3)    Les parties à un accord ou contrat reçoivent et conservent chacune un exemplaire des textes ou docu-
+ments contenant ou prouvant la transaction.  
+ 
+Article 7.- Le consommateur a le droit de se rétracter dans un délai ne pouvant excéder quatorze (14) jours à 
+compter de la date de signature ou d’exécution d’un contrat, de réception d’une technologie, d’un bien ou 
+d’un service lorsque le contrat a été conclu, indépendamment du lieu, à l’initiative du fournisseur, du vendeur 
+ou de ses employés, agents ou serviteurs.  
+ 
+Article 8.- (1) Les pratiques commerciales restrictives et inéquitables qui peuvent avoir des effets négatifs sur 
+les droits du consommateur, notamment les ententes, les fusions, les abus de position dominante, le partage 
+du marché, la publicité erronée, mensongère ou abusive, sont strictement interdites.  
+(2)    Les pratiques d’une entreprise ou d’une société qui limitent ou sont susceptibles de limiter l’accès d’un 
+concurrent au marché sont interdites.  
+ 
+Article 9.- S’agissant de l’octroi des crédits au consommateur pour la fourniture de technologies, de biens et 
+services, le fournisseur ou prestataire est tenu d’informer le consommateur par écrit sur le prix comptant, le 
+montant de l’intérêt, le taux annuel à partir duquel cet intérêt est calculé, le taux d’intérêt sur les arriérés, le 
+nombre de traites payables, la fréquence et la périodicité de ces traites et le montant total à payer.  
+  
+Article 10.- (1) Le vendeur, le fournisseur ou prestataire d’une technologie doit fournir ou livrer au consom-
+mateur un produit, une technologie, un bien ou un service qui satisfait les exigences minimales de durabilité, 
+d’utilisation et de fiabilité et qui assure sa satisfaction légitime.  
+(2)    La technologie, le bien ou le service fourni livré doit être accompagné d’un manuel, d’un reçu ou de tout 
+autre document contenant, entre autres, des informations relatives aux caractéristiques techniques, au mode 
+de fonctionnement, à l’utilisation et à la garantie.  
+(3)    Pour les transactions concernant les biens durables, un service après-vente doit obligatoirement être as-
+suré au consommateur.  
+86
+
+Textes transversaux
+
+[PAGE 95 du recueil PDF]
+87
+Textes transversaux
+
+Article 11.- Lorsque les biens vendus au consommateur sont défectueux, d’occasion, reconditionnés ou répa-
+rés, il doit en être expressément fait mention, clairement et distinctement sur les factures, reçus, quittances 
+ou pièces comptables.  
+ 
+Article 12.- (1) La vente ou l’acquisition d’une technologie, d’un bien ou d’un service conditionnés à l’achat 
+d’une autre technologie, bien ou service par le même consommateur sont interdites et doivent être réprimées.  
+(2)    Le consommateur ne doit pas être privé de la possibilité d’acquérir une technologie, un bien ou service 
+à moins qu’il n’en soit exclu par un texte particulier.  
+ 
+Article 13.- Chaque fournisseur ou prestataire d’une technologie, d’un bien ou d’un service doit fournir au 
+consommateur, en français et en anglais, une information juste, suﬃsante, claire et lisible concernant les biens 
+et services offerts afin de lui permettre de faire des choix adéquats et raisonnables avant la conclusion d’un 
+contrat.  
+ 
+Article 14.- Toute publicité destinée au consommateur doit se conformer à la législation et à la réglementation 
+en vigueur en matière de publicité des prix et des conditions de vente.  
+ 
+CHAPITRE IV  
+DE LA SECURITE PHYSIQUE ET DE LA PROTECTION DE L’ENVIRONNEMENT  
+ 
+Article 15.- Les autorités compétentes et groupes de consommateurs doivent créer et renforcer des cadres 
+institutionnels appropriés afin de s’assurer que les activités se rapportant à la gestion, la collecte et l’évacuation 
+des déchets dangereux ou toxiques, la gestion de l’eau et le traitement des eaux usées sont conformes à la lé-
+gislation et à la réglementation en vigueur en matière de protection de l’environnement.  
+  
+Article 16.- (1) Toute technologie ou tout bien produit localement ou importé, doit être inspecté, testé et me-
+suré par les administrations compétentes, afin de s’assurer qu’il est propre à la consommation et qu’il respecte 
+les normes nationales et internationales sur l’environnement, la santé et la sécurité.  
+(2)    La vente d’une technologie ou d’un bien n’ayant pas préalablement satisfait aux normes nationales sur 
+l’environnement, la santé et la sécurité est interdite.  
+(3)    Toute technologie ou tout produit constituant un danger potentiel doit, dès constatation de cet état, être 
+immédiatement retiré de la vente et renvoyé au test, aux frais du fournisseur ou vendeur, sans préjudice des 
+autres sanctions prévues par la législation et la réglementation en vigueur.  
+ 
+Article 17.- Les normes relatives aux produits alimentaires, pharmaceutiques et aux médicaments doivent 
+être obligatoires et conformes à celles fixées par les organisations internationales compétentes et couvrir la 
+sécurité chimique et biologique.  
+ 
+Article 18.- Tout bien de consommation ou tout service dangereux pour la santé humaine, animale ou pour 
+l’environnement doit être accompagné d’un manuel d’instructions, en français et en anglais, comprenant des 
+avertissements facilement visibles afin de permettre une utilisation normale dans les conditions de sécurité 
+maximale.  
+ 
+Article 19.- (1) La vente des produits alimentaires non emballés, à l’exception des produits du cru, est interdite.   
+(2)    L’emballage de tout produit vendu doit être conforme à la norme sur l’étiquetage des denrées alimen-
+taires préemballées au Cameroun.  
+ 
+Article 20.- L’octroi des brevets, marques déposées, droits d’auteur, marques de service, autorisations, permis 
+ou tout autre document délivré par les administrations compétentes aux producteurs ou fournisseurs de biens, 
+de technologies ou de services n’exempte en aucun cas, les bénéficiaires de la responsabilité pour le dommage 
+effectivement causé aux consommateurs et qui leur est imputable ou à d’autres intervenants, dans la chaîne 
+de distribution de biens dangereux.
+
+[PAGE 96 du recueil PDF]
+CHAPITRE V  
+DE L’EDUCATION ET DE LA PARTICIPATION DU CONSOMMATEUR A LA PRISE DE DECISION  
+  
+Article 21.- Les consommateurs ont le droit et la liberté de former des associations ou organisations de consom-
+mateurs bénévoles, autonomes et indépendantes ayant un champ et des zones d’intervention bien définis. 
+Ils peuvent participer aux structures de prise de décision au niveau de l’Etat.  
+  
+Article 22.- Les associations des consommateurs sont des regroupements apolitiques et à but non lucratif. 
+Dans le cadre de leurs activités, elles doivent s’abstenir :  
+- de promouvoir des activités commerciales et/ou politiques ;  
+- d’insérer des publicités commerciales dans leurs publications ;  
+- de faire une exploitation commerciale sélective des informations et conseils destinés aux consommateurs.  
+  
+Article 23.- Les objectifs des associations de consommateurs sont, entre autres :  
+- la promotion et la protection des intérêts du consommateur ;  
+- la représentation des intérêts individuels ou collectifs des consommateurs auprès de l’Etat ou des four-
+nisseurs et prestataires des secteurs publics et privés ;  
+- la collecte, le traitement des informations objectives sur les biens et services qui existent sur le marché ;  
+- la mise en œuvre des programmes de formation et d’éducation du consommateur.  
+  
+Article 24 : Les programmes d’éducation et d’information du consommateur portent notamment sur :  
+- la santé ;  
+- la nutrition et la prévention des maladies liées à l’eau et aux aliments, ainsi qu’à l’altération des aliments ;  
+- l’hygiène alimentaire ;  
+- l’hygiène du milieu ;  
+- la sécurité et les dangers liés aux produits ;  
+- les normes, notamment celles relatives à l’étiquetage des produits ;  
+- l’information sur les poids et mesures, les prix et la qualité, la disponibilité des biens et services et la pré-
+servation de l’environnement ;  
+- les textes législatifs et réglementaires relatifs à la consommation notamment en ce qui concerne la ré-
+paration des dommages causés par les technologies, biens et services fournis.  
+  
+Article 25.- (1) Il est institué un Conseil national de la consommation, placé auprès du Ministre en charge de 
+la consommation.  
+(2)    Le Conseil national de la consommation est un organe consultatif qui a pour mission :  
+- de promouvoir l’échange de vues entre les pouvoirs publics, les organisations de protection des intérêts 
+collectifs des consommateurs et les organisations patronales ;  
+- de favoriser la concertation entre les représentants des intérêts des consommateurs et les délégués des 
+organisations patronales sur les questions relatives à la protection du consommateur ;  
+- d’émettre des avis sur tous les projets de textes à caractère législatif et réglementaire susceptibles d’avoir 
+une incidence sur la consommation de biens et services ou sur la protection du consommateur ;  
+- d’étudier toutes les questions relatives à la consommation de biens et services ou à la protection du 
+consommateur qui lui sont soumises par le Gouvernement.  
+(3)    L’organisation et le fonctionnement du Conseil National de la Consommation prévu à l’alinéa 1 ci-dessus 
+sont fixés par voie réglementaire. 
+  
+CHAPITRE VI 
+DE LA REPARATION DES DOMMAGES CAUSES AUX CONSOMMATEURS  
+ 
+Article 26.- (1) La défense en justice ou devant toute instance d’arbitrage des intérêts d’un consommateur ou 
+d’un groupe de consommateurs peut être individuelle ou collective.  
+(2)    La défense individuelle est celle qui est faite par le consommateur lésé ou par ses ayants droits.  
+(3)    La défense collective est assurée par une association de consommateurs ou une organisation non gou-
+vernementale oeuvrant pour la protection des consommateurs.  
+ 
+88
+
+Textes transversaux
+
+[PAGE 97 du recueil PDF]
+89
+Textes transversaux
+
+Article 27.- (1) L’action tendant à la défense des intérêts des consommateurs est intentée devant les juridictions 
+compétentes ou introduite devant les instances arbitrales soit par le consommateur lésé ou par ses ayants 
+droits, soit par l’une des structures visées à l’alinéa 3 de l’article 26 ci-dessus.  
+(2)    L’action visée à l’alinéa 1 ci-dessus peut être préventive ou réparatrice.  
+(3)    L’action préventive est celle qui tend à faire cesser la menace d’une atteinte aux droits du consommateur. 
+Elle ne peut être intentée que par une association de consommateurs ou par une organisation non gouverne-
+mentale.  
+(4)    L’action réparatrice est celle qui résulte d’une atteinte aux droits d’un consommateur ou d’un groupe de 
+consommateurs.  
+ 
+Article 28.- Dans le cadre de l’instruction de toute procédure relative à la protection du consommateur, la 
+charge de la preuve contraire des faits allégués incombe au vendeur, fournisseur ou prestataire de service.  
+ 
+Article 29.- Les décisions rendues dans le cadre des instances introduites par une association non gouverne-
+mentale produisent à l’égard de tous les consommateurs, tous leurs effets bénéfiques et peuvent être invo-
+quées par un consommateur ou groupe de consommateurs pour obtenir réparation du préjudice subi.  
+ 
+Article 30.- (1) Dans le cadre de la protection des consommateurs, il est créé au niveau de chaque Arrondis-
+sement, un comité de recours ayant pour mission d’assurer le service public d’arbitrage des différends relatifs 
+à la protection des consommateurs.  
+(2)    L’organisation et le fonctionnement des comités prévus à l’alinéa ci-dessus sont fixés par voie réglemen-
+taire.  
+ 
+Article 31.- (1) Le consommateur peut demander l’annulation ou la révision du contrat sans préjudice de la 
+réparation du dommage subi.  
+(2)    La demande d’annulation est fondée sur les défauts ou vices cachés qui altèrent la qualité de la techno-
+logie, du bien ou du service objet du contrat.  
+(3)    Le consommateur peut exiger le remplacement ou la réparation aux frais du vendeur, du fournisseur ou 
+du prestataire de service de la technologie, du bien ou du service sans préjudice de son droit à la réparation 
+du dommage subi.  
+(4)    Pendant la durée de la réparation, qui ne saurait excéder quinze jours à compter de la remise du bien ou 
+de la constatation de la défectuosité de la technologie ou du service, le vendeur, fournisseur ou prestataire 
+de service doit fournir au consommateur, un bien, une technologie ou un service de remplacement de manière 
+à éviter tout désagrément au consommateur. La non fourniture ou l’impossibilité de le faire se résout en dom-
+mages et intérêts négociés avec le consommateur.  
+(5)    Aux termes de la négociation prévue à l’alinéa 4 ci-dessus, le consommateur insatisfait conserve son droit 
+de se pourvoir en justice.  
+ 
+CHAPITRE VII  
+DES DISPOSITIONS PENALES  
+  
+Article 32.-  (1) Est puni d’un emprisonnement de six mois à deux ans et d’une amende de deux cent mille à 
+un million de francs ou de l’une de ces deux peines seulement, celui qui fournit des informations erronées sur 
+la qualité des technologies, biens ou services fournis à un consommateur.  
+(2)    Est puni des peines prévues à l’alinéa 1 ci-dessus, celui qui donne de fausses informations aux autorités 
+compétentes ou à toute autre structure, organisme ou association des consommateurs au cours d’une enquête 
+menée dans le cadre de la présente loi.  
+ 
+Article 33.- Sans préjudice de la responsabilité pénale des dirigeants ou employés des sociétés commerciales 
+de vente, de fourniture ou de prestation de service, de technologie ou de biens, les personnes morales peuvent 
+être condamnées au double des peines d’amende prévues à l’article 32 ci-dessus, si les infractions commises 
+par leurs dirigeants ou employés l’ont été à l’occasion ou dans l’exercice de leurs fonctions au sein desdites 
+structures.  
+ 
+Article 34.- (1) Lorsque l’une des infractions visées au présent chapitre a causé un préjudice à un consomma-
+
+[PAGE 98 du recueil PDF]
+teur, le montant des indemnités réparatrices des droits compromis est doublé, majoré des intérêts de droit à 
+compter de la date de réception ou de compromission.  
+(2)    Dans ce cas, l’exécution provisoire portant sur le remboursement du principal est prononcée nonobstant 
+toute voie de recours.  
+ 
+Article 35.-  Est nulle, toute clause d’exonération ou de limitation de responsabilité ou réduisant la portée des 
+garanties contenues dans le contrat de vente, de fourniture des biens ou technologies, de prestation de service 
+à un consommateur.  
+ 
+Article 36.- Les personnes morales dont les dirigeants se sont rendus coupables des infractions à la présente 
+loi peuvent faire l’objet des peines complémentaires prévues par le code pénal.  
+  
+CHAPITRE VIII  
+DISPOSITIONS DIVERSES ET FINALES  
+  
+Article 37.- Les contrats de consommation doivent être interprétés de manière à préserver les droits des 
+consommateurs.  
+ 
+Article 38.- Les modalités d’application de la présente loi sont, en tant que de besoin, définies par voie régle-
+mentaire.   
+ 
+Article 39.- La présente loi, qui abroge toutes les dispositions antérieures contraires, sera enregistrée et publiée 
+suivant la procédure d’urgence, puis insérée au Journal Oﬃciel en français et en anglais./- 
+  
+  
+Yaoundé, le 6 mai 2011  
+ 
+LE PRESIDENT DE LA REPUBLIQUE, 
+  
+PAUL BIYA  
+90
+
+Textes transversaux

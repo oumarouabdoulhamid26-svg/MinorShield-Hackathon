@@ -1,0 +1,268 @@
+"""Agent institutionnel de la simulation de crise.
+
+Chaque agent :
+  1. ne connait que les etapes qui lui ont ete revelees et les messages qui
+     lui sont adresses (asymetrie d'information exigee par l'enonce) ;
+  2. cherche dans la base de connaissances les articles pertinents, en
+     privilegiant ses textes prioritaires ;
+  3. presente ces extraits au modele sous des identifiants [E1], [E2]... ;
+  4. exige une reponse JSON structuree dont chaque action juridique cite ces
+     identifiants. Les citations sont ensuite verifiees par le journal
+     d'audit (server/crisis/audit.py).
+"""
+
+from __future__ import annotations
+
+import json
+import logging
+import re
+from dataclasses import dataclass, field
+from typing import Any, Optional
+
+from agent.commun import llm
+from agent.agent1_institutions.roles import ROLES, Role
+from bd.knowledge.ingest import embed_texts
+from bd.knowledge.kb import KnowledgeBase
+
+logger = logging.getLogger(__name__)
+
+LEGAL_CATEGORY = "Child_Online_Protection"
+# Budget : une simulation complete doit tenir dans le quota journalier gratuit
+# (200 000 jetons). Une premiere simulation complete en consommait 174 000 ;
+# ces reglages en economisent environ 20 %.
+EXTRACT_CHARS = 600          # longueur maximale d'un extrait presente au modele
+DEFAULT_EXTRACTS = 4
+
+
+@dataclass
+class Extract:
+    """Un extrait de la base presente a l'agent, citable par son identifiant."""
+    id: str
+    source_file: str
+    article: str
+    page: str
+    country: str
+    similarity: float
+    text: str
+
+    def label(self) -> str:
+        first = self.text.splitlines()[0] if self.text else self.source_file
+        title = first.strip("[]").split("] —")[0] if first.startswith("[") else self.source_file
+        art = f", article {self.article}" if self.article and self.article.isdigit() else ""
+        page = f", p. {self.page}" if self.page else ""
+        return f"{title}{art}{page}"
+
+    def to_dict(self) -> dict[str, Any]:
+        return {"id": self.id, "source_file": self.source_file, "article": self.article,
+                "page": self.page, "country": self.country,
+                "similarity": round(self.similarity, 3), "label": self.label(),
+                # Le texte exact presente a l'agent : le lecteur du journal peut
+                # ainsi verifier lui-meme ce que dit l'article cite.
+                "texte": self.text}
+
+
+@dataclass
+class Turn:
+    """Trace complete d'une intervention d'agent (pour le journal d'audit)."""
+    agent: str
+    kind: str                         # "reaction", "reponse" ou "analyse"
+    step: int
+    visible_info: list[str]
+    messages_in: list[dict[str, str]]
+    query: str
+    extracts: list[Extract]
+    output: dict[str, Any]
+    raw: str
+    model: str
+    tokens: int
+    seconds: float
+    parse_error: Optional[str] = None
+
+
+# Les lois camerounaises designent les institutions par leur fonction, rarement
+# par leur nom. Sans ce lexique, les agents confondaient les acteurs (ex. :
+# « l'organe charge de la regulation des TIC (MINESEC) » au lieu de l'ANTIC).
+LEXIQUE = """CORRESPONDANCE ENTRE LES TERMES DES LOIS ET LES ACTEURS :
+- « l'organe charge de la regulation des TIC » (ou des Technologies de l'information et de la communication) = ANTIC (identifiant : antic)
+- « l'organe charge de la regulation des telecommunications » = ART (identifiant : art)
+- « le Ministere en charge des telecommunications » = MINPOSTEL (identifiant : minpostel)
+- « le Ministere en charge des affaires sociales » = MINAS (identifiant : minas)
+- « le Ministere en charge de la femme et de la famille » = MINPROFF (identifiant : minproff)
+- « les Ministeres en charge de l'education » = notamment MINESEC pour l'enseignement secondaire (identifiant : minesec)
+- « les officiers de police judiciaire » = Police judiciaire (identifiant : police)
+- « le Procureur de la Republique » = Parquet (identifiant : parquet)
+- « les fournisseurs d'acces a Internet » et « les operateurs des reseaux de communications electroniques » = operateurs (identifiant : operateurs)
+- « les promoteurs de reseau social » et « les fournisseurs de contenus » = notamment Tchatlink (identifiant : tchatlink)
+- « l'Autorite de protection des donnees a caractere personnel » = APDP (identifiant : apdp)"""
+
+SCHEMA_REACTION = """{
+  "evaluation": "ta lecture de la situation, a partir de ce que tu sais",
+  "inconnues": ["ce que tu ignores et qui compte pour decider"],
+  "actions": [
+    {"action": "ce que tu fais, dans les limites de ta mission",
+     "base_legale": ["E1"],
+     "justification": "pourquoi cet extrait fonde l'action"}
+  ],
+  "demandes": [{"destinataire": "identifiant d'un autre acteur", "objet": "ce que tu lui demandes"}],
+  "lacunes": ["ce que la loi ne te permet pas de faire, ou ne prevoit pas"],
+  "confiance": 0.0,
+  "raisonnement": ["etape 1 de ton raisonnement", "etape 2", "..."]
+}"""
+
+SCHEMA_REPONSE = """{
+  "reponse": "ta reponse a la demande",
+  "base_legale": ["E1"],
+  "peut_agir": true,
+  "raisonnement": ["etape 1", "etape 2"]
+}"""
+
+
+class CrisisAgent:
+    def __init__(self, role: Role, kb: KnowledgeBase, essai: bool = False):
+        self.role = role
+        self.kb = kb
+        # Mode essai : tout passe par le petit modele (quota separe), pour
+        # garder le quota du grand modele aux simulations de reference.
+        self.essai = essai
+        self.known_steps: list[str] = []
+        self.inbox: list[dict[str, str]] = []
+
+    # ------------------------------------------------------------------ memoire
+    def receive_step(self, step: dict[str, Any]) -> None:
+        self.known_steps.append(f"Etape {step['numero']} ({step['moment']}) — {step['titre']} : {step['information']}")
+
+    def receive_message(self, sender: str, content: str) -> None:
+        self.inbox.append({"de": sender, "contenu": content})
+
+    # ---------------------------------------------------------------- recherche
+    def retrieve(self, query: str, n: int = DEFAULT_EXTRACTS,
+                 country: Optional[str] = None) -> list[Extract]:
+        """Cherche les extraits juridiques les plus pertinents.
+
+        On recupere un large lot dans le corpus juridique, puis on fait passer
+        en tete les textes prioritaires de l'agent, a pertinence comparable.
+        """
+        where: dict[str, Any] = {"document_category": LEGAL_CATEGORY}
+        if country:
+            where = {"$and": [where, {"country": country}]}
+        res = self.kb.search(embed_texts([query])[0], n_results=max(n * 4, 16), where=where)
+
+        docs, metas, dists = res["documents"][0], res["metadatas"][0], res["distances"][0]
+        prio = self.role.sources_prioritaires
+        scored = []
+        for doc, meta, dist in zip(docs, metas, dists):
+            sim = 1 - dist
+            bonus = 0.05 if any(meta.get("source_file", "").startswith(p) for p in prio) else 0.0
+            scored.append((sim + bonus, sim, doc, meta))
+        scored.sort(key=lambda x: x[0], reverse=True)
+
+        out: list[Extract] = []
+        seen: set[tuple[str, str]] = set()
+        for _, sim, doc, meta in scored:
+            key = (meta.get("source_file", ""), meta.get("article", "") or meta.get("chunk_index", ""))
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(Extract(
+                id="", source_file=meta.get("source_file", ""), article=meta.get("article", ""),
+                page=meta.get("page", ""), country=meta.get("country", ""),
+                similarity=sim, text=doc[:EXTRACT_CHARS],
+            ))
+            if len(out) >= n:
+                break
+        return out
+
+    @staticmethod
+    def number(extracts: list[Extract], start: int = 1) -> list[Extract]:
+        for i, e in enumerate(extracts, start=start):
+            e.id = f"E{i}"
+        return extracts
+
+    @staticmethod
+    def format_extracts(extracts: list[Extract]) -> str:
+        if not extracts:
+            return "(aucun extrait pertinent trouve dans la base)"
+        return "\n\n".join(f"[{e.id}] {e.label()} — pays : {e.country}\n{e.text}" for e in extracts)
+
+    # ------------------------------------------------------------------ prompts
+    def system_prompt(self) -> str:
+        r = self.role
+        autres = ", ".join(f"{x.id} ({x.nom.split(' —')[0]})" for x in ROLES.values()
+                           if x.id not in (r.id, "animateur"))
+        return f"""Tu joues le role de : {r.nom}, dans une simulation de crise au Cameroun.
+
+TA MISSION : {r.mission}
+
+FONDEMENTS DE TES POUVOIRS :
+{chr(10).join('- ' + f for f in r.fondements) or '- aucun'}
+
+LIMITES DE TON MANDAT :
+{chr(10).join('- ' + l for l in r.limites) or '- aucune precisee'}
+
+REGLES IMPERATIVES :
+1. Tu ne connais QUE les informations qui te sont transmises. N'invente aucun fait et ne suppose rien sur ce que savent les autres acteurs.
+2. Tu n'agis que dans les limites de ta mission. Si une mesure releve d'un autre acteur, adresse-lui une demande.
+3. Toute action fondee sur le droit cite au moins un extrait fourni. "base_legale" contient UNIQUEMENT des identifiants d'extraits (exemple : ["E2", "E4"]), JAMAIS un numero d'article ecrit de memoire. Ne mentionne aucun article absent des extraits. Si aucun extrait ne fonde une action, laisse "base_legale" vide et explique-le dans "lacunes".
+4. Dis clairement ce que tu ignores.
+5. Reponds uniquement en francais, uniquement en JSON valide.
+
+{LEXIQUE}
+
+AUTRES ACTEURS (identifiants a utiliser dans "demandes") : {autres}"""
+
+    def situation(self) -> str:
+        known = "\n".join(f"- {s}" for s in self.known_steps) or "- (aucune)"
+        msgs = "\n".join(f"- De {m['de']} : {m['contenu']}" for m in self.inbox) or "- (aucun)"
+        return f"CE QUE TU SAIS :\n{known}\n\nMESSAGES RECUS :\n{msgs}"
+
+    # ------------------------------------------------------------------- actes
+    def react(self, step_no: int) -> Turn:
+        """Reaction a la derniere etape revelee."""
+        query = f"{self.role.mission}\n{self.known_steps[-1] if self.known_steps else ''}"
+        extracts = self.number(self.retrieve(query))
+        user = (f"{self.situation()}\n\nEXTRAITS DE LA BASE DE CONNAISSANCES :\n{self.format_extracts(extracts)}"
+                f"\n\nQue fais-tu maintenant ? Reponds avec exactement cette structure JSON :\n{SCHEMA_REACTION}")
+        return self._call("reaction", step_no, query, extracts, user, fast=self.essai)
+
+    def answer(self, step_no: int, sender: str, request: str) -> Turn:
+        """Reponse courte a une demande d'un autre acteur.
+
+        Meme modele que les reactions : en mode reference, toute la simulation
+        doit tourner sur le grand modele (et ne pas dependre du quota du petit).
+        """
+        query = f"{self.role.mission}\n{request}"
+        extracts = self.number(self.retrieve(query, n=3))
+        user = (f"{self.situation()}\n\nDEMANDE DE {sender} : {request}\n\n"
+                f"EXTRAITS DE LA BASE DE CONNAISSANCES :\n{self.format_extracts(extracts)}"
+                f"\n\nReponds a cette demande avec exactement cette structure JSON :\n{SCHEMA_REPONSE}")
+        return self._call("reponse", step_no, query, extracts, user, fast=self.essai)
+
+    # ----------------------------------------------------------------- interne
+    def _call(self, kind: str, step_no: int, query: str, extracts: list[Extract],
+              user: str, fast: bool) -> Turn:
+        visible = list(self.known_steps)
+        inbox = list(self.inbox)
+        try:
+            res = llm.chat(self.system_prompt(), user, fast=fast, max_tokens=2500)
+        except Exception as e:  # noqa: BLE001
+            logger.error("Agent %s : appel LLM impossible (%s)", self.role.id, e)
+            return Turn(self.role.id, kind, step_no, visible, inbox, query, extracts,
+                        {}, "", llm.model_name(fast), 0, 0.0, parse_error=f"appel LLM : {e}")
+        output, err = parse_json(res.text)
+        if res.finish_reason == "length":
+            err = "reponse tronquee (limite de longueur atteinte)" + (f" ; {err}" if err else "")
+        return Turn(self.role.id, kind, step_no, visible, inbox, query, extracts,
+                    output, res.text, res.model, res.total_tokens, res.seconds, parse_error=err)
+
+
+def parse_json(raw: str) -> tuple[dict[str, Any], Optional[str]]:
+    """Lit la reponse JSON du modele, en tolerant un enrobage ```json ... ```."""
+    text = raw.strip()
+    m = re.search(r"\{.*\}", text, re.S)
+    if not m:
+        return {}, "aucun objet JSON dans la reponse"
+    try:
+        data = json.loads(m.group(0))
+        return (data, None) if isinstance(data, dict) else ({}, "JSON non objet")
+    except json.JSONDecodeError as e:
+        return {}, f"JSON invalide : {e}"

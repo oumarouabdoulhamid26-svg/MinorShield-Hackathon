@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Couleur du LIBELLÉ de la barre : actif = bleu (posé sur la pilule sombre),
+     inactif = gris. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/accent_blue" android:state_checked="true" />
+    <item android:color="@color/nav_inactive" />
+</selector>
