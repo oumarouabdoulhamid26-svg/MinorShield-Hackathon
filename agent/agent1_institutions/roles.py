@@ -5,9 +5,8 @@ pouvoirs (verifies dans les textes officiels, voir docs/SOURCES.md), les
 limites de son mandat, et les documents de la base ou il cherche en priorite.
 
 Regle : une mission n'est inscrite ici que si elle a ete lue dans un texte
-officiel ou confirmee par plusieurs sources. Lorsqu'un texte manque (loi
-n° 2024/017), la fiche le dit, pour que l'assistant ne pretende pas en
-connaitre le contenu.
+officiel ou confirmee par plusieurs sources. Lorsqu'un texte manque, la fiche
+le dit, pour que l'assistant ne pretende pas en connaitre le contenu.
 """
 
 from __future__ import annotations
@@ -97,15 +96,18 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "donnees a caractere personnel, notamment en cas de violation de donnees."
         ),
         fondements=[
-            "Loi n° 2024/017 du 23 decembre 2024, art. 53 (creation de l'APDP) — en vigueur depuis le 23 juin 2026",
+            "Loi n° 2024/017 du 23 decembre 2024, art. 53 (missions de l'APDP) — delai de mise en conformite de 18 mois (art. 73), echu le 23 juin 2026",
+            "Loi n° 2024/017, art. 9(3) (consentement d'un mineur de moins de 18 ans valable seulement avec celui de ses parents ou representant legal)",
+            "Loi n° 2024/017, art. 22 (information « sans delai » de l'APDP et de la personne concernee en cas de violation de donnees)",
+            "Loi n° 2024/017, art. 32 (transfert vers un Etat etranger soumis a autorisation prealable de l'APDP)",
             "Loi n° 2023/009, art. 17 (respect des droits des enfants par les responsables de traitement)",
         ],
         limites=[
-            "IMPORTANT : le texte integral de la loi n° 2024/017 n'est PAS dans la base. Ne cite aucun "
-            "article precis de cette loi au-dela de l'art. 53 ; signale cette lacune documentaire.",
+            "Le texte de la loi n° 2024/017 provient d'une copie scannee (OCR) : en cas de doute sur une "
+            "formulation, le signaler plutot que l'affirmer.",
             "Autorite recente : procedures et jurisprudence encore en construction",
         ],
-        sources_prioritaires=["Loi_2023-009", "EU_RGPD", "Loi_2010-012"],
+        sources_prioritaires=["Loi_2024-017", "Loi_2023-009", "Loi_2010-012"],
     ),
     Role(
         id="minas",
@@ -119,7 +121,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
         limites=[
             "Le partage des competences avec le MINPROFF n'est pas delimite par les textes de la base",
         ],
-        sources_prioritaires=["Loi_2023-009", "ONU_Observation"],
+        sources_prioritaires=["Loi_2023-009", "ONU_CRC_Observation"],
     ),
     Role(
         id="minproff",
@@ -133,7 +135,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
         limites=[
             "Le partage des competences avec le MINAS n'est pas delimite par les textes de la base",
         ],
-        sources_prioritaires=["Loi_2023-009", "ONU_Observation"],
+        sources_prioritaires=["Loi_2023-009", "ONU_CRC_Observation"],
     ),
     Role(
         id="minesec",
@@ -145,7 +147,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
         ),
         fondements=["Loi n° 2023/009, art. 6"],
         limites=["Aucune directive sur la protection des eleves victimes en ligne n'a ete trouvee"],
-        sources_prioritaires=["Loi_2023-009", "ONU_Observation"],
+        sources_prioritaires=["Loi_2023-009", "ONU_CRC_Observation"],
     ),
     Role(
         id="police",
@@ -159,10 +161,11 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "Loi n° 2023/009, art. 32 (constatation par les officiers de police judiciaire ; PV transmis au Procureur sous 8 jours)",
             "Loi n° 2023/009, art. 30 et 31 (recevabilite des preuves electroniques)",
             "Loi n° 2010/012 (procedure : art. 52 a 59 ; infractions : art. 60 a 89)",
+            "Code penal (loi n° 2016/007), art. 303 (chantage)",
             "Decret n° 2015/3759/PM (identification des abonnes)",
         ],
         limites=["Agit sous la direction du parquet pour les actes qui l'exigent"],
-        sources_prioritaires=["Loi_2023-009", "Loi_2010-012", "Decret_2015-3759"],
+        sources_prioritaires=["Loi_2023-009", "Loi_2010-012", "Loi_2016-007", "Decret_2015-3759"],
     ),
     Role(
         id="parquet",
@@ -176,9 +179,10 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "Loi n° 2023/009, art. 32(2) (reception des PV)",
             "Loi n° 2023/009, art. 33 a 46 (infractions et peines)",
             "Loi n° 2010/012, art. 52 a 89 (procedure et infractions)",
+            "Code penal (loi n° 2016/007), notamment art. 303 (chantage) et art. 347 (infractions sur un mineur de 16 a 21 ans)",
         ],
         limites=["Ne juge pas : la decision appartient au tribunal"],
-        sources_prioritaires=["Loi_2023-009", "Loi_2010-012"],
+        sources_prioritaires=["Loi_2023-009", "Loi_2010-012", "Loi_2016-007"],
     ),
     # ------------------------------------------------------------------- prive
     Role(
@@ -244,10 +248,10 @@ ROLES: dict[str, Role] = {r.id: r for r in [
         fondements=[
             "Loi n° 2023/009, art. 17 (respect des droits des enfants par les responsables de traitement)",
             "Decret n° 2012/1643/PM (audit de securite obligatoire)",
-            "Loi n° 2024/017 (texte integral non disponible dans la base)",
+            "Loi n° 2024/017 (protection des donnees a caractere personnel)",
         ],
         limites=["Ne peut pas ignorer une obligation legale ; peut contester son etendue"],
-        sources_prioritaires=["Loi_2023-009", "Decret_2012-1643", "Loi_2010-012", "EU_RGPD"],
+        sources_prioritaires=["Loi_2024-017", "Loi_2023-009", "Decret_2012-1643", "Loi_2010-012"],
     ),
     # ------------------------------------------------------------- transversal
     Role(
@@ -257,11 +261,12 @@ ROLES: dict[str, Role] = {r.id: r for r in [
         mission=(
             "Verifie la base legale de chaque decision des autres assistants ; signale les decisions "
             "non etayees ; identifie les lacunes, flous et conflits du droit camerounais ; les compare "
-            "aux meilleures pratiques mondiales (UE, Royaume-Uni, Etats-Unis, Australie, ONU)."
+            "aux meilleures pratiques mondiales (UE, Royaume-Uni, Etats-Unis, Australie, Emirats arabes unis, ONU)."
         ),
         fondements=["L'ensemble de la base de connaissances"],
         limites=["Conseille, ne decide pas"],
-        sources_prioritaires=["Loi_2023-009", "EU_DSA", "EU_RGPD", "UK_Online_Safety", "US_COPPA", "Australia", "ONU_Observation"],
+        sources_prioritaires=["Loi_2023-009", "Loi_2024-017", "Loi_2016-007", "EU_DSA", "EU_RGPD", "UK_Online_Safety",
+                              "US_COPPA", "Australia", "UAE_Decree", "ONU_CRC_Observation"],
     ),
     Role(
         id="animateur",

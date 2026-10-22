@@ -1,0 +1,172 @@
+Federal Decree by Law No. (26) of 2025 Regarding Child Digital Safety (United Arab Emirates)
+
+Source : uaelegislation.gov.ae, legislation 3912, official English version (consulted 22 October 2026). Issued 1 Oct 2025; Official Gazette No. 809 (supplement 1) of 14 Oct 2025; in force 1 Jan 2026; status: active. The Arabic text prevails in case of conflict. Article headings rewritten "Article N - Title" (original: "Article (N) Title") so that the text can be split article by article.
+
+[PAGE 1]
+We, Mohamed bin Zayed Al Nahyan, President of the United Arab Emirates,
+− Having reviewed the Constitution;
+− Federal Law No. (1) of 1972 Regarding the Competences of Ministries and the Powers of Ministers, as amended;
+− Federal Decree by Law No. (3) of 2003 Regarding the Regulation of the Telecommunications, as amended;
+− Federal Law No. (3) of 2016 Regarding the Child Rights Law (Wadeema), as amended;
+− Federal Decree by Law No. (34) of 2021 Regarding the Countering Rumors and Cybercrimes, as amended;
+− Federal Decree by Law No. (45) of 2021 Regarding the Protection of Personal Data;
+− Federal Decree by Law No. (55) of 2023 Regarding the Regulation of Media;
+− Federal Decree by Law No. (42) of 2024 Regarding the Establishment and Regulation of the Education, Human Development, and Community Council; and
+− Upon the proposal of the Minister of Family, and the approval of the Cabinet,
+Hereby promulgate the following Decree by Law:
+
+Article 1 - Definitions
+For the purposes of implementing the provisions of this Decree by Law, the following terms and expressions shall have the meanings assigned to each of them, unless the context requires otherwise:
+State: The United Arab Emirates.
+Ministry: The Ministry of Family.
+Minister: The Minister of Family.
+Authority: The Telecommunications and Digital Government Regulatory Authority (TDRA).
+Council: The Child Digital Safety Council established pursuant to this Decree by Law.
+Competent Authorities: Federal and local authorities concerned with child affairs.
+Concerned Authorities: Federal and local authorities concerned with cybersecurity, digital environment protection, and digital media regulation.
+Child: Any human being who has not completed the age of eighteen (18) Gregorian years.
+Child Caregiver: The person legally responsible for the child, whether a parent, guardian, or any person entrusted by law with the care of the child and the authority to take decisions relating to the child’s protection and safety.
+Internet Service Provider: Any licensed person, pursuant to Federal Decree by Law No. (3) of 2003 Regarding the Regulation of the Telecommunications as amended, who provides users with access services to the information network.
+Digital Platform: An electronic means that enables interaction and communication among users in the digital space and provides digital services or content.
+Digital Environment: A set of information systems, applications, software, electronic devices, and networks that enable users to communicate, interact, and carry out various activities on the Internet.
+Media Content Standards: The set of principles and regulatory controls binding on any person practicing media activity in the State, including production, broadcasting, publication, or distribution by any means whatsoever, whether printed, visual, or digital, as well as all related advertisements, artistic works, or electronic publishing, as set out in Federal Decree by Law No. (55) of 2023 Regarding the Regulation of Media, its Executive Regulations, or any law superseding it.
+Harmful Content: Any readable, audible, visual, or digital material containing information, data, opinions, and any intellectual, artistic, cultural, social, economic, cinematic, musical, or similar human production, including advertising or promotional content, which is published through digital platforms in any form for the purposes of expression, distribution, marketing, publication, or broadcasting, whether for consideration or free of charge, and which may adversely affect the moral, psychological, or social values of Children or society, and contravenes Media Content Standards.
+Electronic Devices: Any digital or electronic device that enables users to access the information network or interact with digital content.
+Electronic Advertising: Any advertisement on digital platforms intended to introduce or promote specific content or encourage the sale of a product or the provision of a service, whether directly or indirectly.
+Targeted Electronic Advertising: Any electronic advertisement displayed to a child and based on the collection or processing of personal or digital data relating to the child’s behavior, preferences, interests, or online activities, including browsing data, geolocation data, usage history, or interaction patterns on digital platforms, for the purpose of creating a profile or inferring individual or group characteristics in order to direct customized advertising content, or for the purpose of using such data for marketing purposes.
+Electronic Games: Interactive digital products developed and marketed for the purpose of entertainment and generating financial returns, displayed through digital platforms, and designed in accordance with marketing and psychological strategies to attract users and promote sustained engagement.
+Online Commercial Gaming: Any game offered through digital media or Internet networks whose primary purpose is to generate direct or indirect financial return for its operator, including gambling games and digital activities involving betting or wagering in exchange for monetary consideration or anything of value.
+Virtual World: A computer-generated simulation of reality or imaginary environment, typically presented in two-dimensional or three-dimensional form, including three-dimensional environments and metaverse technologies, in which users participate through virtual digital avatars and interact with one another and with the components of the environment in accordance with specific rules within a continuous virtual temporal and spatial framework.
+Child Pornography Material: Any content that includes an image, video, or drawing published, displayed, or circulated through any means of communication, social media networks, or any electronic or virtual medium, depicting a child engaged in a sexual act or sexual display, whether real, simulated, or fictional, or any representation of a child’s genital organs for sexual purposes.
+Enhanced Child Protection Controls: A set of technical features, measures, and procedures on digital platforms that enhance the protection of Children from harmful content, including age classification, enforcement of age limits and age verification mechanisms, parental control tools, age-appropriate content restrictions, Children personal data protection features, communication and usage time restrictions, the ability to search for children’s accounts, reporting channels, and other related measures and features.
+Parental Control Tools: A set of technical settings or features on digital platforms enabling the Child Caregiver to monitor, manage, and restrict the child’s use of electronic devices, applications, or digital content, such as tools for linking the caregiver’s account to the accounts of the Children under their care, the ability to automatically disable an application upon expiration of the permitted daily usage periods, and the ability of the caregiver to fully manage the child’s account.
+
+Article 2 - Objectives of the Decree by Law
+This Decree by Law aims to enhance child digital safety through the following:
+1. Protecting Children from digital risks, harmful content, and practices that adversely affect their physical, psychological, and moral well-being, and ensuring Children’s right to access appropriate and safe digital content.
+2. Raising awareness among Children and their caregivers of digital rights and obligations, and encouraging responsible use and safe interaction with digital platforms in accordance with best standards and practices.
+3. Establishing a governance framework to enhance Children’s safety in the digital environment, defining the roles and responsibilities of competent and concerned authorities, and ensuring coordination and integration among them to protect Children and their rights in the digital environment.
+
+Article 3 - Scope of Application of the Decree by Law
+This Decree by Law shall apply to:
+1. Internet Service Providers and digital platforms operating within the State or directed at users in the State, whether natural or legal persons and whether public or private sector entities, whenever Children use digital platforms or are exposed to their content or services, including, without limitation:
+a. Websites;
+b. Electronic search engines;
+c. Smart applications, messaging applications, and forums;
+d. Electronic gaming platforms;
+e. Social media platforms;
+f. Live-streaming platforms;
+g. Audio content platforms (podcasts);
+h. Streaming services and on-demand visual content platforms via the Internet;
+i. E-commerce platforms.
+2. Child caregivers.
+
+Article 4 - Child Digital Safety Council
+A council named the “Child Digital Safety Council” shall be established pursuant to this Decree by Law, chaired by the Minister, with the aim of achieving integration and coordination among ministries and federal, local, and private entities concerned with child digital safety, in a manner that ensures the protection of Children in the digital environment and promotes a culture of safe and responsible use of modern technologies. The Council shall be formed by a Resolution of the Cabinet based on the proposal of the Minister and the approval of the Education, Human Development, and Community Council.
+
+Article 5 - Competences of the Child Digital Safety Council
+The Child Digital Safety Council shall exercise the following competences:
+1. Propose the strategic directions, policies, strategies, and national initiatives relating to child digital safety, in a manner that achieves a balance between protecting Children from risks and enhancing their ability to benefit from the digital environment, and submit the same to the Cabinet after the approval of the Education, Human Development, and Community Council.
+2. Propose and review legislation relating to child digital safety to ensure that it keeps pace with technological developments and emerging risks, and to ensure its alignment with international standards and practices and the legislation in force, and submit the same to the Cabinet after the approval of the Education, Human Development and Community Council.
+3. Propose an integrated framework of awareness programs relating to digital safety in a manner that ensures the protection of Children and promotes a culture of safe use of the digital environment, and submit the same to the Cabinet after the approval of the Education, Human Development, and Community Council.
+4. Propose national indicators to measure the level of digital awareness and digital safety of Children, monitor their measurement and development, and submit the results to the Cabinet.
+5. Conduct studies and research relating to monitoring and analyzing phenomena and risks, and the proactive foresight of emerging local and international developments concerning child digital safety, and submit the relevant recommendations and measures to the concerned federal and local authorities.
+6. Monitor and evaluate the effectiveness of national policies, strategies, legislation, and initiatives relating to child digital safety, and submit periodic reports on the results and recommendations thereof to the Cabinet.
+7. Propose general standards for Children’s privacy and digital security, and general controls and guidelines for the safe use of digital platforms by Children, and support the development of technical tools that enhance the protection of Children from harmful content, and submit the same to the Cabinet.
+8. Provide advice and guidance to the relevant federal and local authorities and coordinate their efforts to ensure the implementation of national policies, strategies, and initiatives relating to child digital safety.
+9. Any other duties or competences assigned thereto by the Cabinet.
+
+Article 6 - Digital Platform Classification System Based on Risk Assessment
+The Cabinet shall, based on the proposal of the Minister, after coordination with the competent and concerned authorities and approval of the Education, Human Development and Community Council, issue a Resolution regarding a classification system for digital platforms operating within the State or directed to users therein. Such Resolution shall include, in particular, the following:
+1. Criteria for classifying digital platforms according to their type, content, scale of use, impact, and other appropriate regulatory criteria.
+2. Controls and restrictions relating to the use of digital platforms by different age categories of Children, the means for enforcing such age restrictions, and the appropriate age verification mechanisms.
+3. Detailed obligations, tools, measures, and enhanced child protection controls, the methods for their implementation, as well as the disclosure requirements and frequency applicable to digital platforms, in accordance with their classification.
+4. Procedures and mechanisms for verifying digital platforms’ compliance with their obligations, in accordance with their classification.
+
+Article 7 - Protection of Privacy and Personal Data
+1. Subject to the provisions set out in the applicable legislation concerning the protection of personal data, digital platforms operating within the State or directed to users therein shall be prohibited from collecting, processing, publishing, or sharing the personal data of Children under the age of thirteen (13), unless the following conditions are fulfilled and verified:
+a. Obtaining parental consent from the child caregiver, provided that such consent is explicit, documented, and verifiable.
+b. Providing a rapid and continuously accessible mechanism for withdrawing parental consent without complexity or any adverse effects on the child.
+c. Disclosing the data privacy policy and the purpose of data collection in a clear and comprehensible manner to the child and their caregiver.
+d. Restricting access to personal data to authorized persons only within the digital platform and to the minimum extent necessary for service provision.
+e. Refraining from using the data for commercial purposes, for the purpose of providing targeted electronic advertising to the child, or for tracking the activity of Children’s personal accounts for purposes exceeding the originally authorized purpose.
+f. Any other controls determined by Cabinet Resolutions issued in implementation of this Decree by Law.
+2. Subject to the controls referred to in Clause (1) of this Article, the Cabinet shall issue, based on a proposal by the Minister and after coordination with the competent and concerned authorities and approval of the Education, Human Development and Community Council, a Resolution specifying the personal data permitted to be collected from Children under the age of thirteen (13), and the technical and procedural mechanisms and means for obtaining parental consent and the methods for verifying such consent.
+3. The platforms used for educational or health purposes shall be exempted from the prohibition stipulated in this Article, pursuant to a Cabinet Resolution issued based on a proposal by the Minister and after the approval of the Education, Human Development, and Community Council, provided that the necessary measures are taken to protect Children’s safety and privacy.
+
+Article 8 - Age Verification
+Digital platforms operating in the State or directed to users therein shall be required to adopt effective and reasonable age-verification mechanisms, standards, and procedures, in accordance with the classification of digital platforms pursuant to the system referred to in Article (6) of this Decree by Law, taking into account the linkage between the robustness of age verification mechanisms and the level of risk posed by digital platforms and the impact of their content on Children, and to take appropriate measures in accordance with the obligations specified for digital platforms herein and in line with their classification.
+
+Article 9 - Betting and Commercial Games
+1. Digital platforms shall be prohibited from allowing Children to participate in, create accounts for, or access Online Commercial Gaming, whether directly or indirectly, including through advertising, promotion, or exploitation of personal data.
+2. Digital Platforms and Internet Service Providers shall be required to take the necessary technical and administrative measures to prevent Children’s access to games prohibited under this Article, including age-verification mechanisms, Parental Control Tools, and blocking Harmful Content.
+
+Article 10 - Obligations of Digital Platforms
+1. All Digital Platforms operating in the State or directed to users therein shall, according to their classification under the system referred to in Article (6) of this Decree by Law, develop and implement procedures, measures, and Enhanced Child Protection Controls to ensure Children’s digital safety and protection from Harmful Content within the Digital Environment, including the following:
+a. Establishing and applying default and initial privacy settings that ensure the highest levels of privacy and protection for Children’s accounts.
+b. Providing tools to apply age-based controls and restrictions on the use of Digital Platforms, as well as appropriate age verification mechanisms.
+c. Activating blocking and filtering tools, age classification tools for content, regulating Targeted Electronic Advertising, and disabling features related to excessive interaction and participation by Children according to age group.
+d. Applying Child privacy and personal data protection features according to age group.
+e. Providing guidance tools and software for Parental Control Tools, including tools enabling the setting of time limits for the Children’s daily usage of Digital Platforms, including the designation of mandatory rest and disconnection periods from Electronic Devices.
+f. Enhancing awareness of risks arising from excessive or uncontrolled use of Digital Platforms.
+g. Providing clear and user-friendly tools for the immediate reporting of Child Pornography Materials, Harmful Content, or harmful behaviors affecting Children, and leveraging their technical capabilities, including artificial intelligence systems and machine learning algorithms, for proactive detection, removal, or reporting thereof.
+h. Immediately reporting to the Concerned Authorities any Child Pornography Materials or any Harmful Content for Children circulated on Digital Platforms, and providing the relevant information and data on persons, entities, or websites involved, as requested, for investigation purposes.
+i. Implementing orders issued by the Concerned Authorities to remove or report Child Pornography Materials or any Harmful Content for Children, in accordance with the legislation in force.
+j. Providing statistics and periodic reports to the Concerned Authorities regarding measures taken and the extent of compliance with the controls and obligations stipulated in this Decree by Law and the decisions issued in implementation thereof.
+k. Any other obligations stipulated in this Decree by Law or in the decisions issued in implementation thereof.
+2. The Concerned Authorities, each within their respective competence, shall coordinate with Digital Platforms to examine the effective application of Enhanced Child Protection tools, measures, and Controls, while allowing flexibility in selecting the most appropriate administrative and technical means for Digital Platforms to apply such controls.
+3. The Concerned Authorities, each within their respective competence, shall verify Digital Platforms’ compliance with the obligations set forth in this Decree by Law and the decisions issued in implementation thereof, and may take the necessary measures upon the establishment of a violation or negligence, including closure, partial blocking, total blocking, or the imposition of other administrative penalties prescribed under the administrative penalties list issued pursuant to this Decree by Law.
+
+Article 11 - Obligations of Internet Service Providers
+1. The Authority shall issue policies, standards, and regulatory instructions specifying the obligations of Internet Service Providers related to ensuring Child digital safety and protection from Harmful Content within the Digital Environment, including the following obligations:
+a. Activating content filtering systems within networks to enhance compliance with policies prohibiting Harmful Content for Children.
+b. Taking the necessary measures to ensure safe and supervised use where the beneficiary of internet services or Electronic Devices is a Child, including requiring the Child Caregiver to sign service terms, including those mandating linkage of the service to Parental Control Tools.
+c. Providing guidance tools and software enabling Parental Control Tools and allowing monitoring and supervision of Children’s access to Digital Content.
+d. Immediately reporting to the Concerned Authorities any Child Pornography Materials or Harmful Content for Children circulated via the internet, and providing the relevant information and data on persons, entities, or websites involved, within the limits of the Internet Service Providers’ technical capabilities.
+e. Any other obligations stipulated in this Decree by Law or in the decisions issued in implementation thereof.
+2. The Authority shall review the policies of Internet Service Providers and supervise and monitor their compliance with the obligations set forth in this Decree by Law and the decisions issued in implementation thereof.
+
+Article 12 - Disclosure of Digital Platform Policies
+All Digital Platforms operating in the State or directed to users therein shall be required to periodically disclose their user and content management policies.
+The detailed disclosure requirements shall be determined according to the classification of Digital Platforms under the system referred to in Article (6) of this Decree by Law.
+
+Article 13 - Obligations of the Child Caregiver
+1. The Child Caregiver shall be obligated to:
+a. Monitor the digital activities of the Children under their care and use Parental Control Tools that ensure safe use and prevent exposure to Harmful Content, while respecting Children’s digital independence in accordance with their age categories.
+b. Refrain from creating accounts for Children under their care on Digital Platforms that are not appropriate for their age group or are not compliant with Enhanced Child Protection Controls, and refrain from allowing Children to share others’ accounts on Digital Platforms or their screens where such accounts or content are not suitable for their age categories.
+c. Refrain from showcasing or negatively exploiting Children under their care via Digital Platforms or within the Virtual World, in a manner that threatens their privacy, dignity, psychological, or social well-being, or exposes them to bullying.
+d. Comply with the requirements for protecting Children’s privacy and personal data in accordance with the controls stipulated in this Decree by Law, the decisions issued in implementation thereof, and the legislation in force.
+e. Raise awareness among Children under their care regarding safe and responsible use of Electronic Devices and Digital Platforms, the psychological, behavioral, and health risks arising from excessive or unsafe use, as well as the methods of prevention.
+f. Immediately report to the Competent Authorities any Harmful Content or Child Pornography Materials to which Children under their care are exposed.
+g. Any other obligations stipulated in this Decree by Law or in the decisions issued in implementation thereof.
+2. The Ministry and the Competent Authorities, each within their respective competence, shall establish programs and mechanisms to ensure that Child Caregivers comply with the obligations stipulated in this Decree by Law and the decisions issued in implementation thereof.
+
+Article 14 - Child Digital Safety Awareness System
+The Council shall, in coordination with the relevant authorities, establish an integrated system of awareness programs relating to digital safety that ensures Child protection and promotes a culture of safe use of the Digital Environment, including the following:
+1. Establishing platforms, applications, and awareness programs targeting various segments of society, including Child Caregivers, Children, adolescents, and professionals working with Children, and providing awareness and educational content on safe use of digital technologies and guidance on mechanisms for monitoring Children’s digital behavior.
+2. Enhancing the role of the private sector and Digital Platforms in awareness efforts through the dissemination of awareness and educational tools and the integration of cautionary and educational messages on their platforms, including advisory guidance and reporting channels for Harmful Content.
+3. Coordinating with the Ministry of Education and local educational authorities to implement awareness and training programs for students, parents, and teachers on digital safety concepts, the protection of Children’s privacy, and digital safety in the school environment.
+4. Coordinating with the Ministry of Health and Prevention and local health authorities to implement awareness programs on the health, psychological, and behavioral impacts resulting from exposure to Harmful Content or excessive use of Electronic Devices and Digital Platforms, and to train medical and psychological personnel to identify indicators of digital abuse or exploitation of Children and provide appropriate care.
+5. Engaging Children in designing awareness campaigns to ensure their relevance to Children’s needs and to achieve positive interaction.
+6. Establishing indicators and standards to measure the effectiveness of awareness programs and continuously developing and improving them.
+
+Article 15 - Reporting Harmful Content for Children on Digital
+1. The Concerned Authorities, each within their respective competence, shall conduct periodic monitoring of content on Digital Platforms.
+2. The Concerned Authorities shall report to the security authorities any Child Pornography Materials, Harmful Content, incidents, or digital incidents and violations to which Children may be exposed that constitute criminal offenses, and provide the required data in this regard.
+3. The security authorities shall take the necessary legal and criminal measures to address such reports, refer them to the Public Prosecution to complete investigations and judicial procedures, and provide the required data to the judicial authorities to ensure prompt handling of cases of digital abuse or exploitation of Children.
+4. The Ministry or the Competent Authorities, each within their respective competence, shall coordinate with the Public Prosecution, the Ministry of Interior, and the Concerned Authorities to establish policies for reporting Harmful Content for Children on Digital Platforms and to determine the roles and responsibilities of each authority.
+
+Article 16 - Administrative Penalties
+The Cabinet, upon the proposal of the Minister and after coordination with the Competent and Concerned Authorities, shall issue a regulation specifying the administrative penalties applicable to acts committed in violation of the provisions of this Decree by Law and the decisions issued in implementation thereof, the authorities competent to impose such penalties, and the mechanisms for enforcement and grievance.
+
+Article 17 - Integration of Child Rights
+The provisions of this Decree by Law shall not prejudice any rights or enhanced protection afforded to Children under any other legislation or any penalties prescribed under any other legislation.
+
+Article 18 - Regularization of Status
+All persons subject to the provisions of this Decree by Law at the time of its issuance shall regularize their status in accordance with its provisions within a period not exceeding one year from the date of its entry into force. Such period may be extended by a Cabinet Resolution.
+
+Article 19 - Executive Resolutions
+Without prejudice to the competences stipulated in this Decree by Law, the Cabinet may, upon the proposal of the Minister and after coordination with the Competent and Concerned Authorities and the Education, Human Development and Community Council, issue any other resolutions necessary for the implementation of the provisions of this Decree by Law.
+
+Article 20 - Publication and Entry into Force
+This Decree by Law shall be published in the Official Gazette and shall enter into force as of 1 January 2026.

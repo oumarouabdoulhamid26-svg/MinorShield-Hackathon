@@ -1,0 +1,1678 @@
+Observation générale n° 25 (2021) sur les droits de l'enfant en relation avec l'environnement numérique — Comité des droits de l'enfant des Nations Unies (CRC/C/GC/25)
+
+Source : HCDH (OHCHR), base des organes conventionnels, symbole CRC/C/GC/25, version française officielle du 2 mars 2021 ; consulté le 22 octobre 2026
+
+[PAGE 1]
+Nations Unies
+CRC/C/GC/25
+Convention relative aux droits de l’enfant
+Distr. générale
+2 mars 2021
+Français
+Original : anglais
+Comité des droits de l’enfant
+Observation générale no 25 (2021) sur les droits de l’enfant en
+relation avec l’environnement numérique
+I. Introduction
+1. Les enfants consultés aux fins de la présente observations
+générale ont souligné que les technologies numériques étaient
+essentielles pour leur vie d’enfant et pour leur avenir : « Grâce aux
+technologies numériques, nous pouvons obtenir des informations
+venant du monde entier » ; « [Les technologies numériques] m’ont
+fait découvrir des aspects très importants concernant la manière
+dont je m’identifie » ; « Quand tu es triste, Internet peut t’aider à
+voir quelque chose qui t’apporte de la joie »« Our rights in a digital
+world », compte rendu de la consultation des enfants menée aux
+fins de la présente observation générale, p. 14 et 22. Disponible à
+l’adresse : https://5rightsfoundation.com/uploads/
+Our%20Rights%20in%20a%20Digital%20World.pdf. Toutes les
+références aux opinions des enfants sont tirées de ce rapport..
+2. L’environnement numérique évolue et s’étend constamment, et
+comprend les technologies de l’information et des communications,
+y compris les réseaux, les contenus, les services et les applications
+numériques, les appareils et environnements connectés, la réalité
+
+[PAGE 2]
+virtuelle et augmentée, l’intelligence artificielle, la robotique, les
+systèmes automatisés, les algorithmes et l’analyse de données, la
+biométrie et la technologie dans le domaine des implantsUn
+glossaire terminologique est consultable sur la page Web du Comité,
+à l’adresse : https://tbinternet.ohchr.org/_layouts/15/
+treatybodyexternal/Download.aspx?
+symbolno=INT%2fCRC%2fINF%2f9314&Lang=en..
+3. L’environnement numérique prend une place de plus en plus
+importante dans la plupart des aspects de la vie des enfants, y
+compris en temps de crise, lorsque les fonctions sociétales, dont
+l’éducation, les services de l’État et le commerce, en viennent
+progressivement à reposer sur les technologies numériques. Il offre
+de nouvelles possibilités pour la réalisation des droits de l’enfant,
+mais comporte aussi des risques de violations de ces droits ou
+d’atteinte à ces droits. Pendant les consultations, les enfants ont
+émis l’avis que l’environnement numérique devrait favoriser et
+promouvoir des interactions sûres et équitables et les protéger :
+« Nous voudrions que l’État, les entreprises technologiques et les
+enseignants nous aident à gérer les informations douteuses qui sont
+sur Internet » ; « Je voudrais obtenir des éclaircissements sur ce
+qu’il advient réellement de mes données […] Pourquoi les
+collecter ? Comment sont-elles collectées ? » ; « Je […] m’inquiète
+du fait que mes données soient communiquées à d’autres. »« Our
+rights in a digital world », p. 14, 16, 22 et 25..
+4. Les droits de chaque enfant doivent être respectés, protégés et
+mis en œuvre dans l’environnement numérique. Les innovations
+dans le domaine des technologies numériques ont sur la vie et sur
+leurs droits des enfants d’importants effets, qui sont
+interdépendants, même lorsque les enfants n’accèdent pas eux-
+mêmes à l’Internet. Un accès effectif aux technologies numériques
+peut aider les enfants à réaliser l’ensemble de leurs droits civils,
+politiques, culturels, économiques et sociaux. Toutefois, si l’on ne
+parvient pas à l’inclusion numérique, les inégalités existantes
+risquent de s’accroître et de nouvelles inégalités pourraient
+apparaître.
+5. La présente observation générale s’appuie sur l’expérience
+acquise par le Comité dans le cadre de l’examen des rapports des
+
+[PAGE 3]
+États parties, sur sa journée de débat général sur les médias
+numériques et les droits de l’enfant, sur la jurisprudence des
+organes créés en vertu d’instruments internationaux relatifs aux
+droits de l’homme, sur les recommandations du Conseil des droits
+de l’homme et des titulaires de mandant au titre des procédures
+spéciales du Conseil, sur deux séries de consultations avec les États,
+des experts et d’autres parties prenantes concernant la note de
+réflexion et l’avant-projet et une consultation internationale avec
+709 enfants ayant des conditions de vie très diverses et venant de
+28 pays de différentes régions.
+6. L’observation générale devrait être lue conjointement avec les
+autres observations générales pertinentes du Comité et avec les
+Lignes directrices concernant l’application du Protocole facultatif à
+la Convention, concernant la vente d’enfants, la prostitution des
+enfants et la pornographie mettant en scène des enfants.
+II. Objectif
+7. Dans la présente observation générale, le Comité explique de
+quelle manière les États parties devraient mettre en œuvre la
+Convention en relation avec l’environnement numérique, et donne
+des orientations sur les mesures législatives, stratégiques et autres
+visant à garantir le plein respect de leurs obligations découlant de la
+Convention et des Protocoles facultatifs s’y rapportant, compte tenu
+des possibilités, des risques et des difficultés associés à la
+promotion, au respect, à la protection et à la mise en œuvre de tous
+les droits de l’enfant dans l’environnement numérique.
+III. Principes généraux
+8. Les quatre principes ci-après constituent le filtre à travers lequel
+il faudrait envisager la mise en œuvre de tous les autres droits
+consacrés par la Convention. Ils devraient servir de guide pour
+déterminer les mesures à prendre en vue de garantir la réalisation
+des droits de l’enfant en relation avec l’environnement numérique.
+A. Non-discrimination
+9. Le droit de ne pas faire l’objet de discrimination exige des États
+qu’ils veillent à ce que tous les enfants aient un accès égal, effectif
+
+[PAGE 4]
+et satisfaisant à l’environnement numériqueObservation générale
+no 9 (2006), par. 37 et 38.. Les États parties devraient prendre
+toutes les mesures nécessaires pour venir à bout de l’exclusion
+numérique. Ils devraient à ces fins garantir aux enfants un accès
+libre et sécurisé, dans des lieux publics spécialement prévus à cet
+effet, et investir dans des politiques et des programmes visant à
+favoriser, pour tous les enfants, un accès abordable aux
+technologies numériques et l’utilisation de ces technologies à bon
+escient, dans les établissements d’enseignement, les communautés
+et à la maison.
+10. Les enfants peuvent être victimes de discrimination du fait
+d’une exclusion de l’utilisation des technologies et services
+numériques, de messages haineux ou d’un traitement injuste dans le
+cadre de l’utilisation de ces technologies. D’autres formes de
+discrimination peuvent survenir lorsque les processus automatisés
+qui aboutissent au filtrage de l’information, au profilage ou à la
+prise de décisions sont fondés sur des données concernant un enfant
+qui sont partiales, partielles ou obtenues de manière inéquitable.
+11. Le Comité invite les États parties à prendre des mesures
+proactives pour prévenir la discrimination fondée sur le sexe, le
+handicap, le milieu socioéconomique, l’origine ethnique ou
+nationale, la langue ou tout autre motif, ainsi que la discrimination
+à l’égard des enfants
+issus de minorités et des enfants autochtones, des enfants
+demandeurs d’asile, réfugiés et migrants, des enfants lesbiennes,
+gays, bisexuels, transgenres et intersexes, des enfants victimes et
+survivants de la traite ou de l’exploitation sexuelle, des enfants
+bénéficiant d’une protection de remplacement, des enfants privés de
+liberté et des autres enfants vulnérables. Des mesures spécifiques
+seront nécessaires pour combler la fracture numérique liée au genre
+concernant les filles et pour qu’une attention particulière soit
+accordée à l’accès, à la culture numérique, à la protection de la vie
+privée et à la sécurité en ligne.
+B. Intérêt supérieur de l’enfant
+12. L’intérêt supérieur de l’enfant est une notion dynamique qui
+nécessite une évaluation adaptée au contexte
+
+[PAGE 5]
+particulierObservations générale no 14 (2013), par. 1. .
+L’environnement numérique n’a pas été conçu à l’origine pour les
+enfants, mais il joue un rôle important dans la vie des enfants. Les
+États parties doivent veiller à ce que, dans toutes les décisions
+concernant la fourniture, la réglementation, la conception, la
+gestion et l’utilisation de l’environnement numérique, l’intérêt
+supérieur de chaque enfant soit une considération primordiale.
+13. Les États parties devraient associer à ces décisions les organes
+nationaux et locaux qui supervisent la mise en œuvre des droits de
+l’enfant. Lorsqu’ils examinent l’intérêt supérieur de l’enfant, ils
+devraient tenir compte de tous les droits de l’enfant, y compris le
+droit de chercher, de recevoir et de répandre des informations, le
+droit d’être protégé contre tout préjudice et celui de voir son
+opinion dûment prise en considération, et garantir la transparence
+en ce qui concerne l’évaluation de l’intérêt supérieur de l’enfant et
+les critères qui ont été appliqués.
+C. Droit à la vie, à la survie et au développement
+14. Les possibilités offertes par l’environnement numérique jouent
+un rôle de plus en plus critique dans le développement des enfants
+et peuvent être essentielles pour la vie et la survie des enfants,
+notamment dans les situations de crise. Les États parties devraient
+prendre toutes les mesures nécessaires pour protéger les enfants
+contre les risques qui menacent leur droit à la vie, à la survie et au
+développement. Les risques liés aux contenus, aux contacts, aux
+comportements et aux contrats englobent, entre autres, les contenus
+violents, les contenus à caractère sexuel, les cyberagressions et le
+harcèlement, les jeux d’argent, l’exploitation et les mauvais
+traitements, y compris l’exploitation sexuelle et les abus sexuels,
+ainsi que la promotion du suicide ou des activités mettant la vie en
+danger, ou l’incitation à ces activités, y compris par des criminels
+ou des groupes armés qualifiés de terroristes ou d’extrémistes
+violents. Les États parties devraient identifier les risques émergents
+auxquels les enfants font face dans divers contextes et y remédier,
+notamment en écoutant le point de vue des enfants sur la nature des
+risques particuliers auxquels ils font face.
+15. L’utilisation d’appareils numériques ne devrait pas être nocive,
+ni se substituer aux interactions en personne entre les enfants ou
+
+[PAGE 6]
+entre les enfants et leurs parents ou les personnes qui s’occupent
+d’eux. Les États parties devraient accorder une attention particulière
+aux effets de la technologie dans les premières années de la vie,
+lorsque la plasticité du cerveau est maximale et que
+l’environnement social, en particulier les relations avec les parents
+et les personnes qui s’occupent des enfants, est déterminant pour ce
+qui est d’orienter le développement cognitif, émotionnel et social
+des enfants. Au cours des premières années de la vie, il peut être
+nécessaire de prendre des précautions, en fonction de la conception,
+de l’objectif et des utilisations des technologies. Une formation et
+des conseils sur l’utilisation appropriée des appareils numériques
+devraient être dispensés aux parents, aux personnes qui s’occupent
+des enfants, aux éducateurs et aux autres acteurs concernés, en
+tenant compte des recherches sur les effets des technologies
+numériques sur le développement des enfants, en particulier
+pendant les périodes critiques de croissance neurologique que sont
+la petite enfance et l’adolescenceObservation générale no 24
+(2019), par. 22 ; et observation générale no 20 (2016), par. 9 à 11..
+D. Respect de l’opinion de l’enfant
+16. Les enfants ont déclaré que l’environnement numérique leur
+offrait des possibilités essentielles de faire entendre leur voix dans
+les domaines qui les concernent« Our rights in a digital world »,
+p. 17.. L’utilisation des technologies numériques peut favoriser la
+participation des enfants aux niveaux local, national et
+internationalObservation générale no 14 (2013), par. 89 à 91.. Les
+États parties devraient promouvoir la sensibilisation et l’accès aux
+moyens numériques permettant aux enfants d’exprimer leur opinion
+et offrir une formation et un soutien aux enfants pour qu’ils
+participent dans des conditions d’égalité avec les adultes, de
+manière anonyme si nécessaire, afin qu’ils puissent plaider
+efficacement en faveur de leurs droits, individuellement et en tant
+que groupe.
+17. Lorsqu’ils élaborent des lois, des politiques et des programmes
+et organisent des services et des formations sur les droits de l’enfant
+en relation avec l’environnement numérique, les États parties
+devraient associer tous les enfants, être à l’écoute de leurs besoins
+et tenir dûment compte de leur opinion. Ils devraient veiller à ce
+
+[PAGE 7]
+que les fournisseurs de services numériques dialoguent activement
+avec les enfants, appliquent les garanties appropriées et prennent
+dûment en considération l’opinion des enfants dans le cadre du
+développement de produits et de services.
+18. Les États parties sont invités à utiliser l’environnement
+numérique pour consulter les enfants sur les mesures législatives,
+administratives et autres mesures pertinentes et à veiller à ce que
+l’opinion des enfants soit prise au sérieux et à ce que la
+participation des enfants n’aboutisse pas à une surveillance indue
+ou à une collecte de données qui viole leur droit au respect de la vie
+privée et leur droit à la liberté de pensée et d’opinion. Ils devraient
+veiller à ce que les processus consultatifs incluent les enfants qui
+n’ont pas accès à la technologie ou n’ont pas les compétences
+nécessaires pour l’utiliser.
+IV. Développement des capacités
+19. Les États parties devraient respecter le principe du
+développement des capacités de l’enfant, qui concerne le processus
+d’acquisition progressive de compétences, de compréhension et d’un
+pouvoir d’action (agency)Observation générale no 7 (2005),
+par. 17 ; et observation générale no 20 (2016), par. 18 et 20.. Ce
+processus revêt une importance particulière dans l’environnement
+numérique, dans lequel les enfants peuvent interagir sans être
+toujours sous la supervision des parents et des personnes qui
+s’occupent d’eux. Les risques et les possibilités associés à
+l’interaction des enfants avec l’environnement numérique varient en
+fonction de l’âge des enfants et de leur stade de développement. Les
+États parties devraient être guidés par ces considérations lorsqu’ils
+conçoivent des mesures visant à protéger les enfants dans cet
+environnement ou à leur en faciliter l’accès. La conception de
+mesures adaptées à l’âge devrait s’appuyer sur les meilleures
+recherches disponibles, qui soient les plus récentes possibles et
+concernent toute une série de disciplines.
+20. Les États parties devraient tenir compte de l’évolution de la
+place des enfants et de leur pouvoir d’action dans le monde
+moderne, des aptitudes et de la capacité de compréhension des
+enfants, qui se développent de manière inégale selon les domaines
+de compétence et d’activité, et de la nature diverse des risques
+
+[PAGE 8]
+encourus. Ces considérations doivent être conciliées avec
+l’importance que revêt l’exercice des droits de l’enfant dans des
+environnements pris en charge et avec la diversité des expériences
+et situations individuellesObservation générale no 20 (2016),
+par. 20.. Les États parties devraient veiller à ce que les fournisseurs
+de services numériques offrent des services adaptés au
+développement des capacités des enfants.
+21. Conformément au devoir qu’ont les États de fournir une
+assistance appropriée aux parents et aux personnes qui s’occupent
+des enfants dans l’exercice de leurs responsabilités éducatives, les
+États parties devraient sensibiliser les parents et les personnes qui
+s’occupent des enfants à la nécessité de respecter le développement
+de l’autonomie, des capacités et de la vie privée des enfants. Ils
+devraient aider les parents et les personnes qui s’occupent des
+enfants à acquérir une culture numérique et à prendre conscience
+des risques que courent les enfants, afin de les aider à apporter un
+appui aux enfants aux fins de la réalisation de leurs droits, y
+compris le droit à une protection, en relation avec l’environnement
+numérique.
+V. Mesures d’application générales
+22. Les possibilités de réalisation des droits de l’enfant et leur
+protection dans l’environnement numérique nécessitent un large
+éventail de mesures législatives, administratives et autres, y compris
+des mesures de précaution.
+A. Législation
+23. Les États parties devraient revoir leur législation nationale et la
+rendre conforme aux normes internationales relatives aux droits de
+l’homme et adopter des textes de loi qui soient conformes à ces
+normes, pour faire en sorte que l’environnement numérique soit
+compatible avec les droits énoncés dans la Convention et les
+Protocoles facultatifs s’y rapportant. Les législations devraient rester
+pertinentes, dans le contexte des avancées technologiques et des
+pratiques émergentes. Ils devraient rendre obligatoire l’utilisation
+d’études d’impact sur les droits de l’enfant, afin d’ancrer les droits
+de l’enfant dans la législation, les allocations budgétaires et les
+
+[PAGE 9]
+autres décisions administratives relatives à l’environnement
+numérique, et promouvoir l’utilisation de ces études auprès des
+organismes publics et des entreprises en rapport avec
+l’environnement numériqueObservation générale no 5 (2003),
+par. 45 ; observation générale no 14 (2013), par. 99 ; et observation
+générale no 16 (2013), par. 78 à 81..
+B. Politique et stratégie globales
+24. Les États parties devraient veiller à ce que les politiques
+nationales relatives aux droits de l’enfant traitent expressément de
+l’environnement numérique, et devraient mettre en œuvre des
+réglementations, des codes professionnels, des normes de
+conception et des plans d’action en conséquence, lesquels devraient
+tous être régulièrement évalués et mis à jour. Ces politiques
+nationales devraient viser à donner aux enfants la possibilité de
+tirer profit de leur interaction avec l’environnement numérique et à
+leur garantir un accès sécurisé à cet environnement.
+25. La protection des enfants en ligne devrait être intégrée dans les
+politiques nationales de protection de l’enfance. Les États parties
+devraient mettre en œuvre des mesures qui protègent les enfants
+contre les risques, notamment les cyberagressions et l’exploitation
+sexuelle et les abus sexuels en ligne facilités par les technologies
+numériques, veiller à ce que ces infractions donnent lieu à des
+enquêtes et offrir un recours et un soutien aux enfants qui en sont
+victimes. Ils devraient également répondre aux besoins des enfants
+défavorisés ou vulnérables, notamment en fournissant des
+informations qui soient adaptées aux enfants et, si nécessaire,
+traduites dans les langues minoritaires pertinentes.
+26. Les États parties devraient veiller à ce que des mécanismes
+efficaces de protection des enfants en ligne et des garde-fous soient
+mis en place, tout en respectant les autres droits de l’enfant, dans
+tous les lieux où les enfants ont accès à l’environnement numérique,
+à savoir le domicile, les établissements d’enseignement, les
+cybercafés, les centres de jeunesse, les bibliothèques, les
+établissements de santé et les institutions de protection de
+remplacement.
+C. Coordination
+
+[PAGE 10]
+27. Afin que les conséquences transversales de l’environnement
+numérique pour les droits de l’enfant soient prises en compte, les
+États parties devraient désigner un organe gouvernemental chargé
+de coordonner les politiques, directives et programmes relatifs aux
+droits de l’enfant entre les services du gouvernement central et les
+différents niveaux de
+l’administrationObservation générale no 5 (2003), par. 37.. Ce
+mécanisme de coordination national devrait nouer un dialogue avec
+les écoles et le secteur des technologies de l’information et des
+communications et coopérer avec les entreprises, la société civile,
+les universités et les organisations aux fins de la réalisation des
+droits de l’enfant en relation avec l’environnement numérique, aux
+niveaux intersectoriel, national, régional et localIbid., par. 27 et
+39.. Il devrait s’appuyer sur des compétences technologiques et
+d’autres compétences pertinentes au sein et en dehors de
+l’administration, selon les besoins, et faire l’objet d’une évaluation
+indépendante concernant son efficacité en matière d’exécution de
+ses obligations.
+D. Allocation de ressources
+28. Les États parties devraient mobiliser, allouer et utiliser des
+ressources publiques pour mettre en œuvre la législation, les
+politiques et les programmes visant à réaliser pleinement les droits
+de l’enfant dans l’environnement numérique et à améliorer
+l’inclusion numérique, ce qui est nécessaire pour faire face à
+l’impact croissant de l’environnement numérique sur la vie des
+enfants et pour promouvoir l’égalité d’accès aux services et à la
+connectivité, ainsi que leur caractère abordableObservation
+générale no 19 (2016), par. 21..
+29. Lorsque des ressources sont fournies par le secteur privé ou
+obtenues dans le cadre de la coopération internationale, les États
+parties devraient veiller à ce que des tiers n’entravent pas ou ne
+compromettent pas leur propre mandat, la mobilisation des recettes,
+les allocations budgétaires et les dépensesIbid., par. 27 b)..
+E. Collecte de données et recherches
+30. Il est essentiel de disposer de données et de travaux de
+
+[PAGE 11]
+recherche régulièrement mis à jour pour comprendre les incidences
+de l’environnement numérique sur la vie des enfants, évaluer son
+impact sur leurs droits et apprécier l’efficacité des interventions de
+l’État. Les États parties devraient garantir la collecte de données
+fiables et complètes, ventilées par âge, sexe, handicap, zone
+géographique, origine ethnique et nationale et situation
+socioéconomique, et prévoir à cet effet des ressources suffisantes.
+Ces données et ces travaux de recherche, y compris ceux menées
+avec et par les enfants, devraient éclairer la législation, les
+politiques et les pratiques et être disponibles dans le domaine
+publicObservation générale no 5 (2003), par. 48 et 50.. La collecte
+de données et les recherches relatives à la vie numérique des
+enfants doivent respecter la vie privée des enfants et répondre aux
+normes éthiques les plus élevées.
+F. Mécanisme de suivi indépendant
+31. Les États parties devraient veiller à ce que les mandats des
+institutions nationales des droits de l’homme et des autres
+institutions indépendantes appropriées couvrent les droits de
+l’enfant dans l’environnement numérique et à ce que ces institutions
+soient en mesure de recevoir, d’examiner et de traiter les plaintes
+des enfants et de leurs représentantsObservation générale no 2
+(2002), par. 2 et 7.. Lorsqu’il existe des organes de contrôle
+indépendants chargés de suivre les activités liées à l’environnement
+numérique, les institutions nationales des droits de l’homme
+devraient travailler en étroite collaboration avec eux dans le cadre
+de l’exécution efficace de leur mandat concernant les droits de
+l’enfantIbid., par. 7..
+G. Diffusion de l’information, sensibilisation et formation
+32. Les États parties devraient diffuser des informations et mener
+des campagnes de sensibilisation sur les droits de l’enfant dans
+l’environnement numérique, ciblant en particulier ceux dont les
+actions ont un impact direct ou indirect sur les enfants. Ils devraient
+faciliter l’élaboration de programmes éducatifs à l’intention des
+enfants, des parents et des personnes qui s’occupent des enfants, du
+grand public et des responsables politiques, afin d’améliorer leur
+connaissance des droits de l’enfant en relation avec les possibilités
+
+[PAGE 12]
+et les risques associés aux produits et services numériques. Ces
+programmes devraient comprendre des informations sur la manière
+dont les enfants peuvent tirer parti des produits et services
+numériques et développer leur culture et leurs compétences
+numériques, sur la manière de protéger la vie privée des enfants et
+d’empêcher les enfants d’être victimes de préjudices et sur la
+manière de reconnaître un enfant victime d’un préjudice qui lui a
+été causé en ligne ou hors ligne et d’intervenir de manière
+appropriée. Ces programmes devraient s’appuyer sur des travaux de
+recherche et des consultations avec les enfants, les parents et les
+personnes qui s’occupent des enfants.
+33. Les professionnels qui travaillent pour et avec les enfants et les
+entreprises, y compris les entreprises technologiques, devraient
+recevoir une formation portant notamment sur les incidences que
+l’environnement numérique a sur les droits de l’enfant dans de
+multiples contextes, sur la manière dont les enfants exercent leurs
+droits dans l’environnement numérique et sur la manière dont ils
+accèdent aux technologies et les utilisent. Ils devraient également
+recevoir une formation sur l’application des normes internationales
+relatives aux droits de l’homme à l’environnement numérique. Les
+États parties devraient veiller à ce que les professionnels qui
+travaillent à tous les niveaux de l’enseignement reçoivent une
+formation initiale et une formation continue relative à
+l’environnement numérique, afin de favoriser le développement de
+leurs connaissances, de leurs compétences et de leurs pratiques.
+H. Coopération avec la société civile
+34. Les États parties devraient systématiquement associer la société
+civile, y compris les groupes dirigés par des enfants et les
+organisations non gouvernementales qui travaillent dans le domaine
+des droits de l’enfant et celles concernées par l’environnement
+numérique, à l’élaboration, à la mise en œuvre, au suivi et à
+l’évaluation des lois, politiques, plans et programmes relatifs aux
+droits de l’enfant. Ils devraient également veiller à ce que les
+organisations de la société civile soient en mesure de mettre en
+œuvre leurs activités relatives à la promotion et à la protection des
+droits de l’enfant en relation avec l’environnement numérique.
+I. Droits de l’enfant et entreprises
+
+[PAGE 13]
+35. Les entreprises, y compris les organisations à but non lucratif,
+ont des incidences directes et indirectes sur les droits de l’enfant
+dans le cadre de la fourniture de services et de produits liés à
+l’environnement numérique. Les entreprises sont tenues de respecter
+les droits de l’enfant et de prévenir et réparer les atteintes à ces
+droits en relation avec l’environnement numérique. Les États parties
+ont l’obligation de veiller à ce que les entreprises assument ces
+responsabilitésObservation générale no 16 (2013), par. 28, 42 et 82.
+.
+36. Les États parties devraient prendre des mesures, notamment
+élaborer des lois, des réglementations et des politiques et en assurer
+le suivi, l’application et l’évaluation, pour faire en sorte que les
+entreprises s’acquittent de l’obligation qui leur incombe d’empêcher
+que leurs réseaux ou services en ligne ne soient utilisés d’une
+manière qui entraîne des violations des droits de l’enfant ou des
+atteintes à ces droits, y compris le droit au respect de la vie privée
+et à la protection, ou contribue à ces violations ou atteintes, et offrir
+aux enfants, aux parents et aux personnes qui s’occupent des
+enfants des recours rapides et efficaces. Ils
+devraient également encourager les entreprises à fournir des
+informations publiques et des conseils accessibles en temps
+opportun, en vue de favoriser des activités numériques sûres et
+bénéfiques pour les enfants.
+37. Les États parties ont le devoir de protéger les enfants contre
+toute atteinte à leurs droits due aux entreprises, y compris le droit
+d’être protégé contre toutes les formes de violence dans
+l’environnement numérique. Bien que les entreprises puissent ne
+pas être directement impliquées dans la commission d’actes
+préjudiciables, elles peuvent être à l’origine de violations du droit
+de l’enfant de ne pas subir de violences ou contribuer à ces
+violations, notamment par la conception et l’exploitation de services
+numériques. Les États parties devraient mettre en place et faire
+appliquer des lois et des réglementations visant à prévenir les
+violations du droit à la protection contre la violence, ainsi que des
+lois et des réglementations tendant à ce que les violations commises
+en relation avec l’environnement numérique donnent lieu à des
+enquêtes, à des décisions de justice et à des mesures de réparation,
+
+[PAGE 14]
+et contrôler l’application de ces textesIbid., par. 60..
+38. Les États parties devraient exiger des entreprises qu’elles fassent
+preuve de diligence raisonnable en matière de droits de l’enfant, en
+particulier qu’elles réalisent des évaluations d’impact sur les droits
+de l’enfant et les rendent publiques, en accordant une attention
+particulière aux impacts différenciés et parfois graves de
+l’environnement numérique sur les enfantsIbid., par. 50 et 62 à 65..
+Ils devraient prendre les mesures appropriées pour prévenir et
+suivre les violations des droits de l’enfant dues aux entreprises,
+enquêter sur ces violations et punir leurs auteurs.
+39. En dehors de l’élaboration de lois et de politiques, les États
+partie devraient exiger de toutes les entreprises qui ont des
+incidences sur les droits de l’enfant en relation avec
+l’environnement numérique qu’elles mettent en œuvre des cadres
+réglementaires, des codes professionnels et des conditions générales
+d’utilisation conformes aux normes les plus élevées en matière
+d’éthique, de protection de la vie privée et de sécurité s’agissant de
+la conception, de la réalisation technique, du développement, de
+l’exploitation, de la distribution et de la commercialisation de leurs
+produits et services. Sont notamment concernées les entreprises qui
+ciblent les enfants, dont les enfants sont les utilisateurs finals ou qui
+ont des incidences sur les enfants de toute autre manière. Ils
+devraient exiger de ces entreprises qu’elles maintiennent des
+normes élevées de transparence et de responsabilité et les
+encourager à prendre des mesures pour innover dans l’intérêt
+supérieur de l’enfant. Ils devraient également exiger que les
+conditions générales d’utilisation soient expliquées aux enfants
+d’une manière adaptée à leur âge, ou aux parents et aux personnes
+qui s’occupent de très jeunes enfants.
+J. Publicité commerciale et marketing
+40. L’environnement numérique comprend des entreprises qui
+reposent financièrement sur le traitement des données personnelles
+pour le ciblage de contenus générateurs de revenus ou payants, et
+ces processus ont, intentionnellement et non intentionnellement,
+des incidences sur les expériences numériques des enfants. Nombre
+de ces processus supposent de multiples partenaires commerciaux,
+créant ainsi une chaîne d’activités commerciales et un traitement
+
+[PAGE 15]
+des données à caractère personnel qui peut entraîner des violations
+des droits de l’enfant ou des atteintes à ces droits, notamment en
+raison de caractéristiques de conception publicitaire qui anticipent
+les actions de l’enfant et les guident vers des contenus plus
+extrêmes, de notifications automatisées qui peuvent interrompre le
+sommeil ou de l’utilisation des informations personnelles ou de la
+localisation de l’enfant pour le ciblage de contenus à caractère
+commercial potentiellement dangereux.
+41. Les États parties devraient faire de l’intérêt supérieur de l’enfant
+une considération primordiale lorsqu’ils réglementent la publicité et
+le marketing destinés et accessibles aux enfants. Le parrainage, le
+placement de produits et toutes les autres formes de contenus à
+caractère commercial doivent être clairement distingués de tout
+autre contenu et ne doivent pas perpétuer les stéréotypes liés au
+genre ou les stéréotypes raciaux.
+42. Les États parties devraient interdire par la loi le profilage ou le
+ciblage d’enfants de tous âges à des fins commerciales fondés sur
+l’enregistrement numérique de leurs caractéristiques réelles ou
+déduites, y compris les données de groupe ou données collectives, le
+ciblage par association ou le profilage par affinités. Les pratiques
+qui s’appuient sur le neuromarketing, l’analytique émotionnelle, la
+publicité immersive et la publicité dans des environnements de
+réalité virtuelle et augmentée pour promouvoir des produits, des
+applications et des services devraient également être interdites
+lorsqu’elles impliquent une interaction directe ou indirecte avec les
+enfants.
+K. Accès à la justice et à des voies de recours
+43. Les enfants se heurtent à des obstacles particuliers en matière
+d’accès à la justice en ce qui concerne l’environnement numérique,
+pour plusieurs raisons. Ces obstacles tiennent à l’absence de
+législation prévoyant des sanctions pour les violations des droits de
+l’enfant spécifiquement liées à l’environnement numérique, à la
+difficulté d’obtenir des preuves ou d’identifier les auteurs, ou au fait
+que les enfants et leurs parents ou les personnes qui s’occupent des
+enfants connaissent mal leurs droits ou ce qui constitue une
+violation de leurs droits ou une atteinte à ces droits dans
+
+[PAGE 16]
+l’environnement numérique, entre autres facteurs. D’autres
+obstacles peuvent surgir si les enfants sont tenus de divulguer des
+informations sur les activités en ligne sensibles ou privées ou s’ils
+craignent des représailles de la part de leurs pairs ou une exclusion
+sociale.
+44. Les États parties devraient veiller à ce que les mécanismes de
+recours judiciaires et non judiciaires appropriés et efficaces pour les
+violations des droits de l’enfant liées à l’environnement numérique
+soient largement connus et facilement accessibles à tous les enfants
+et à leurs représentants. Les mécanismes de plainte et de
+signalement devraient être gratuits, sûrs, confidentiels, adaptés aux
+besoins des enfants et disponibles dans des formats accessibles. Les
+États parties devraient également prévoir la possibilité de plaintes
+collectives, y compris des recours collectifs et des litiges d’intérêt
+public, ainsi qu’une aide juridique ou toute autre assistance
+appropriée, notamment dans le cadre de services spécialisés, pour
+les enfants dont les droits ont été violés dans l’environnement
+numérique ou en relation avec l’environnement numérique.
+45. Les États parties devraient mettre en place des cadres pour
+l’orientation de ces cas et la fourniture d’un soutien efficace aux
+enfants victimes, et en assurer la coordination, le suivi et
+l’évaluation régulièreObservation générale no 21 (2017), par. 22.
+Voir aussi la résolution 60/147 de l’Assemblée générale, annexe..
+Les cadres devraient comprendre des mesures concernant le
+repérage des enfants victimes, les thérapies à conduire et le suivi à
+assurer ainsi que la réinsertion sociale. Une formation au repérage
+des enfants victimes devrait être prévue dans les mécanismes
+d’orientation, y compris pour les fournisseurs de services
+numériques. Les mesures prises dans un tel cadre devraient être
+interinstitutionnelles et adaptées aux enfants, afin d’éviter une
+revictimisation et une victimisation secondaire de l’enfant dans le
+contexte des processus d’enquête et de justice. Des mesures de
+protection spécialisées visant à assurer la confidentialité et la
+réparation des préjudices liés à l’environnement numérique peuvent
+à cet égard être nécessaires.
+46. Une réparation appropriée comprend la restitution,
+l’indemnisation et la satisfaction et peut passer par des excuses, des
+
+[PAGE 17]
+corrections, le retrait du contenu illicite, l’accès à des services de
+réadaptation psychologique ou d’autres mesuresObservation
+générale no 5 (2003), par. 24.. En ce qui concerne les violations
+dans l’environnement numérique, les mécanismes de recours
+devraient tenir compte de la vulnérabilité des enfants et de la
+nécessité d’agir rapidement pour mettre fin aux dommages actuels
+et prévenir les dommages futurs. Les États parties devraient garantir
+la non-répétition des violations, notamment par la modification des
+lois et politiques pertinentes et la mise en œuvre effective de ces
+textes.
+47. Les technologies numériques rendent encore plus complexes les
+enquêtes et les poursuites relatives aux infractions commises contre
+des enfants, qui peuvent dépasser les frontières nationales. Les États
+parties devraient réfléchir à la manière dont l’utilisation des
+technologies numériques peut faciliter ou entraver les enquêtes et
+les poursuites relatives aux infractions commises contre des enfants
+et prendre toutes les mesures préventives, répressives et correctives
+disponibles, y compris en coopération avec des partenaires
+internationaux. Ils devraient dispenser une formation spécialisée
+aux forces de l’ordre, aux procureurs et aux juges concernant les
+violations des droits de l’enfant spécifiquement associées à
+l’environnement numérique, notamment dans le cadre de la
+coopération internationale.
+48. Les enfants peuvent rencontrer des difficultés particulières pour
+ce qui est d’obtenir réparation lorsque leurs droits ont été violés
+dans l’environnement numérique par des entreprises, en particulier
+dans le contexte de leurs opérations mondialesObservation générale
+no 16 (2013), par. 66 et 67. . Les États parties devraient envisager
+des mesures visant à respecter, protéger et mettre en œuvre les
+droits de l’enfant dans le cadre des activités et opérations
+extraterritoriales des entreprises, pour autant qu’il existe un lien
+raisonnable entre l’État et le comportement concerné. Ils devraient
+veiller à ce que les entreprises mettent en place des mécanismes de
+plainte efficaces ; ces mécanismes ne devraient toutefois pas
+empêcher les enfants d’avoir accès à des recours étatiques. Ils
+devraient également veiller à ce que les organismes dotés de
+pouvoirs de contrôle en matière de droits de l’enfant, tels que ceux
+
+[PAGE 18]
+relatifs à la santé et à la sécurité, à la protection des données et aux
+droits des consommateurs, à l’éducation, à la publicité et au
+marketing, enquêtent sur les plaintes et offrent des recours adéquats
+en cas de violation des droits de l’enfant ou d’atteinte à ces droits
+dans l’environnement numériqueIbid., par. 30 et 43..
+49. Les États parties devraient fournir aux enfants des informations
+adaptées à leur âge, dans un langage adapté, sur leurs droits et sur
+les mécanismes de signalement et de plainte et les services et les
+recours à leur disposition en cas de violation de leurs droits en
+relation avec l’environnement numérique ou d’atteinte à ces droits.
+Ces informations devraient également être fournies aux parents, aux
+personnes qui s’occupent des enfants et aux professionnels qui
+travaillent avec et pour les enfants.
+VI. Libertés et droits civils
+A. Accès à l’information
+50. L’environnement numérique offre aux enfants une occasion
+unique de réaliser leur droit d’avoir accès à l’information. À cet
+égard, les moyens d’information et de communication, y compris les
+contenus numériques et les contenus en ligne, remplissent une
+fonction importanteObservation générale no 7 (2005), par. 35 ; et
+observation générale no 20 (2016), par. 47.. Les États parties
+devraient veiller à ce que les enfants aient accès à l’information
+dans l’environnement numérique et à ce que l’exercice de ce droit
+ne soit limité que lorsque cela est prévu par la loi et nécessaire aux
+fins énoncées à l’article 13 de la Convention.
+51. Les États parties devraient garantir et soutenir la création de
+contenus numériques adaptés à l’âge des enfants et présentant un
+intérêt pour leur autonomisation, en fonction du développement de
+leurs capacités, et veiller à ce que les enfants aient accès à une
+grande diversité d’informations, y compris celles détenues par des
+organismes publics, sur la culture, les sports, les arts, la santé, les
+affaires civiles et politiques et les droits de l’enfant.
+52. Les États parties devraient encourager la production et la
+diffusion de ces contenus sous des formes multiples et à partir d’une
+pluralité de sources nationales et internationales, notamment les
+
+[PAGE 19]
+médias d’information, les organismes de radio et de télévision, les
+musées, les bibliothèques et les organisations éducatives,
+scientifiques et culturelles. Ils devraient en particulier s’efforcer
+d’améliorer la fourniture de contenus diversifiés, accessibles et
+bénéfiques pour les enfants handicapés et les enfants appartenant à
+des groupes ethniques,
+linguistiques et autochtones et à d’autres groupes minoritaires. La
+possibilité pour les enfants d’accéder à des renseignements utiles,
+dans un langage qu’ils comprennent, peut être un important facteur
+d’égalitéObservation générale no 17 (2013), par. 46 ; et observation
+générale no 20 (2016), par. 47 et 48..
+53. Les États parties devraient veiller à ce que tous les enfants aient
+accès à des informations diverses et de bonne qualité en ligne,
+faciles à trouver, y compris des contenus indépendants des intérêts
+commerciaux ou politiques. Ils devraient veiller à ce que la
+recherche automatisée et le filtrage de l’information, y compris les
+systèmes de recommandation, ne donnent pas la priorité aux
+contenus payants ayant une motivation commerciale ou politique,
+au détriment des choix des enfants ou du droit des enfants à
+l’information.
+54. L’environnement numérique peut contenir des informations
+véhiculant des stéréotypes de genre, des informations
+discriminatoires, racistes, violentes, pornographiques ou abusives,
+ainsi que des récits mensongers, de la désinformation et des
+informations encourageant les enfants à se livrer à des activités
+illégales ou nocives. Ces informations peuvent provenir de sources
+multiples, notamment d’autres utilisateurs, de créateurs de contenus
+commerciaux, de délinquants sexuels ou de groupes armés qualifiés
+de terroristes ou d’extrémistes violents. Les États parties devraient
+protéger les enfants contre les contenus nocifs et douteux et veiller
+à ce que les entreprises concernées et les autres fournisseurs de
+contenus numériques élaborent et appliquent des directives
+permettant aux enfants d’accéder en toute sécurité à des contenus
+diversifiés, en reconnaissant le droit de l’enfant à l’information et
+son droit à la liberté d’expression, tout en protégeant les enfants
+contre les matériels nocifs, conformément à leurs droits et au
+développement de leurs capacitésObservation générale no 16
+
+[PAGE 20]
+(2013), par. 58 ; et observation générale no 7 (2005), par. 35..
+Toute restriction imposée au fonctionnement de tout système de
+diffusion de l’information en ligne, électronique ou autre, devrait
+être conforme à l’article 13 de la ConventionComité des droits de
+l’homme, observation générale no 34 (2011), par. 43. . Les États
+parties ne devraient pas faire intentionnellement obstacle ou
+permettre à d’autres acteurs de faire obstacle à l’approvisionnement
+en électricité, aux réseaux cellulaires ou à la connectivité Internet
+dans une partie ou dans l’ensemble d’une zone géographique, car
+cela peut avoir pour effet d’entraver l’accès des enfants à
+l’information et à la communication.
+55. Les États parties devraient encourager les fournisseurs de
+services numériques utilisés par les enfants à appliquer un
+étiquetage des contenus concis et intelligible, par exemple sur le
+caractère approprié selon l’âge ou la fiabilité du contenu. Ils
+devraient également encourager la fourniture de conseils,
+l’organisation de formations et la mise au point de matériels
+éducatifs et de mécanismes de signalement accessibles pour les
+enfants, les parents et les personnes qui s’occupent des enfants, les
+éducateurs et les groupes professionnels concernésObservation
+générale no 16 (2013), par. 19 et 59.. Les systèmes fondés sur l’âge
+ou le contenu, conçus pour protéger les enfants contre des contenus
+inappropriés pour leur âge, devraient être compatibles avec le
+principe de la minimisation des données.
+56. Les États parties devraient veiller à ce que les fournisseurs de
+services numériques se conforment aux directives, normes et codes
+pertinentsIbid., par. 58 et 61. et appliquent des règles de
+modération des contenus qui soient légales, nécessaires et
+proportionnées. Les contrôles de contenus, les systèmes de filtrage
+scolaires et les autres techniques axées sur la sécurité ne devraient
+pas être utilisés pour restreindre l’accès des enfants à l’information
+dans l’environnement numérique ; ils ne devraient être utilisés que
+pour prévenir les flux de matériels nocifs pour les enfants. La
+modération et le contrôle des contenus devraient être conciliés avec
+le droit à la protection contre les violations des autres droits de
+l’enfant, notamment le droit à la liberté d’expression et le droit à la
+protection de la vie privée.
+
+[PAGE 21]
+57. Les codes de conduite professionnels établis par les médias
+d’information et les autres organisations concernées devraient
+comporter des conseils sur la manière de signaler les risques que
+l’univers numérique présente pour les enfants et les possibilités qu’il
+leur offre. Ces conseils devraient déboucher sur des signalements
+fondés sur des faits qui ne révèlent pas l’identité des enfants
+victimes et soient conformes aux normes internationales en matière
+de droits de l’homme.
+B. Liberté d’expression
+58. Le droit de l’enfant à la liberté d’expression englobe le droit de
+rechercher, de recevoir et de répandre des informations et des idées
+de toutes sortes. Les enfants ont déclaré« Our rights in a digital
+world », p. 16. que l’environnement numérique leur offrait
+largement la possibilité d’exprimer leurs idées, leurs opinions et
+leurs points de vue politiques. En ce qui concerne les enfants
+défavorisés ou vulnérables, l’interaction facilitée par la technologie
+avec ceux qui sont dans une situation similaire peut les aider à
+s’exprimer.
+59. Toute restriction imposée au droit de l’enfant à la liberté
+d’expression dans l’environnement numérique, comme les filtres, y
+compris les mesures de sécurité, doit être légale, nécessaire et
+proportionnée. Les raisons de ces restrictions doivent être
+transparentes et communiquées aux enfants dans un langage adapté
+à leur âge. Les États parties devraient fournir aux enfants des
+informations et des possibilités de formation sur la manière
+d’exercer effectivement ce droit, en particulier sur la manière de
+créer et de partager des contenus numériques en toute sécurité, tout
+en respectant les droits et la dignité d’autrui et en ne violant pas la
+législation, notamment celle relative à l’incitation à la haine et à la
+violence.
+60. Les enfants qui révèlent leur opinion et leur identité politiques
+ou autres dans l’environnement numérique peuvent s’attirer des
+critiques et de l’hostilité et faire l’objet de menaces ou de sanctions.
+Les États parties devraient protéger les enfants contre les
+cyberagressions et les menaces, la censure, les atteintes à la
+protection des données et la surveillance numérique. Les enfants ne
+
+[PAGE 22]
+devraient pas être poursuivis pour avoir exprimé leurs opinions
+dans l’environnement numérique, sauf s’ils violent les restrictions
+prévues par la législation pénale qui sont compatibles avec
+l’article 13 de la Convention.
+61. Étant donné l’existence de motivations commerciales et
+politiques visant à promouvoir des visions du monde particulières,
+les États parties devraient veiller à ce que les utilisations de
+processus automatisés de filtrage de l’information, de profilage, de
+marketing et de prise de décisions ne supplantent pas, n’altèrent pas
+ou ne compromettent pas la capacité des enfants de former et
+d’exprimer leur opinion dans l’environnement numérique.
+C. Liberté de pensée, de conscience et de religion
+62. Les États Parties devraient respecter le droit de l’enfant à la
+liberté de pensée, de conscience et de religion dans l’environnement
+numérique. Le Comité engage les États parties à adopter une
+réglementation sur la protection des données et des normes de
+conception qui recensent, définissent et interdisent les pratiques qui
+altèrent ou compromettent le droit de l’enfant à la liberté de pensée
+et de croyance dans l’environnement numérique, par exemple par
+l’analyse ou l’inférence émotionnelle, ou à mettre à jour les
+réglementations et normes existantes. Les systèmes automatisés
+peuvent être utilisés pour tirer des conclusions sur l’état intérieur
+d’un enfant. Les États parties devraient veiller à ce que les systèmes
+automatisés ou les systèmes de filtrage de l’information ne soient
+pas utilisés pour agir sur le comportement ou les émotions des
+enfants ou les influencer ou pour limiter les perspectives ou le
+développement des enfants.
+63. Les États parties devraient veiller à ce que les enfants ne soient
+pas pénalisés en raison de leur religion ou de leurs convictions et à
+ce que leurs perspectives d’avenir ne soient pas restreintes de
+quelque autre manière. L’exercice du droit de l’enfant de manifester
+sa religion ou ses convictions dans l’environnement numérique ne
+peut faire l’objet que de limitations légales, nécessaires et
+proportionnées.
+D. Liberté d’association et de réunion pacifique
+
+[PAGE 23]
+64. L’environnement numérique peut permettre aux enfants de
+former leur identité sociale, religieuse, culturelle, ethnique, sexuelle
+et politique et de participer à la vie des communautés
+correspondantes et aux espaces publics de délibération, d’échanges
+culturels,
+de cohésion sociale et de diversitéObservation générale no 17
+(2013), par. 21 ; et observation générale no 20 (2016), par. 44 et
+45.. Les enfants ont déclaré que l’environnement numérique leur
+offrait des occasions précieuses de rencontrer des pairs, des
+décideurs et d’autres personnes partageant leurs intérêts et
+d’échanger et de débattre avec eux« Our rights in a digital world »,
+p. 20..
+65. Les États parties devraient veiller à ce que leurs lois, règlements
+et politiques protègent le droit de l’enfant de participer à des
+organisations qui fonctionnent partiellement ou exclusivement dans
+l’environnement numérique. L’exercice par les enfants de leur droit
+à la liberté d’association et de réunion pacifique dans
+l’environnement numérique ne peut pas faire l’objet de restrictions
+autres que celles qui sont légales, nécessaires et
+proportionnéesComité des droits de l’homme, observation générale
+no 37 (2020), par. 6 et 34.. Cette participation ne devrait pas en soi
+entraîner pour ces enfants de conséquences négatives, telles que
+l’exclusion d’une école, la restriction ou la privation de possibilités
+futures ou un fichage dans les services de police. Cette participation
+devrait être sûre, privée et exempte de toute surveillance par des
+entités publiques ou privées.
+66. La visibilité publique et les possibilités de mise en réseau
+offertes par l’environnement numérique peuvent également soutenir
+les activités de militantisme dirigées par des enfants et donner à
+ceux-ci les moyens de défendre les droits humains. Le Comité
+reconnaît que l’environnement numérique permet aux enfants,
+notamment aux enfants défenseurs des droits humains, ainsi qu’aux
+enfants en situation de vulnérabilité, de communiquer entre eux, de
+défendre leurs droits et de former des associations. Les États parties
+devraient les soutenir, notamment en facilitant la création d’espaces
+numériques spécifiques, et assurer leur sécurité.
+E. Droit à la protection de la vie privée
+
+[PAGE 24]
+67. La protection de la vie privée est essentielle pour le pouvoir
+d’action, la dignité et la sécurité des enfants et pour l’exercice des
+droits de l’enfant. Les données personnelles des enfants sont traitées
+pour offrir à ceux-ci des bienfaits en matière d’éducation, de santé
+et autres. Les atteintes à la vie privée des enfants peuvent résulter
+de la collecte et du traitement des données par des institutions
+publiques, des entreprises et d’autres organisations, ainsi que
+d’activités criminelles telles que l’usurpation d’identité. Ces
+atteintes peuvent également être dues aux activités des enfants eux-
+mêmes et à celles de membres de leur famille, de leurs pairs ou
+d’autres personnes, par exemple lorsque des parents partagent des
+photos en ligne ou lorsqu’un inconnu partage des informations sur
+un enfant.
+68. Les données peuvent comprendre des informations sur l’identité
+des enfants, leurs activités, le lieu où ils se trouvent, leur
+communication, leurs émotions, leur santé et leurs relations, entre
+autres. Certaines combinaisons de données personnelles, y compris
+les données biométriques, peuvent permettre d’identifier un enfant
+en particulier. Les pratiques numériques telles que le traitement
+automatisé des données, le profilage, le ciblage comportemental, la
+vérification obligatoire de l’identité, le filtrage des informations et
+la surveillance de masse, deviennent courantes. Ces pratiques
+peuvent conduire à une immixtion arbitraire ou illégale dans la vie
+privée des enfants ; elles peuvent avoir sur les enfants des
+conséquences négatives, qu’ils peuvent continuer à subir à des
+stades ultérieurs de leur vie.
+69. L’immixtion dans la vie privée d’un enfant n’est admissible que
+si elle n’est ni arbitraire ni illégale. Une telle immixtion doit donc
+être prévue par la loi, servir un but légitime, respecter le principe
+de la minimisation des données, être proportionnée et conçue pour
+respecter l’intérêt supérieur de l’enfant et ne doit pas être contraire
+aux dispositions, buts ou objectifs de la Convention.
+70. Les États parties devraient prendre des mesures législatives,
+administratives et autres pour faire en sorte que la vie privée des
+enfants soit respectée et protégée par toutes les organisations et
+dans tous les environnements qui traitent les données des enfants.
+La législation devrait prévoir des garanties solides, la transparence,
+
+[PAGE 25]
+une surveillance indépendante et l’accès à des recours. Les États
+parties devraient exiger l’intégration de la protection de la vie
+privée dès la conception dans les produits et services numériques
+qui
+concernent les enfants. Ils devraient revoir régulièrement la
+législation relative à la vie privée et à la protection des données et
+veiller à ce que les procédures et les pratiques permettent de
+prévenir les atteintes délibérées au droit de l’enfant à la protection
+de sa vie privée ou les violations accidentelles de ce droit. Lorsque
+le cryptage est considéré comme opportun, les États parties
+devraient envisager des mesures permettant la détection et le
+signalement de l’exploitation sexuelle des enfants et des abus
+sexuels sur enfants ou de matériel pédopornographique. Ces
+mesures devraient être strictement limitées, selon les principes de
+légalité, de nécessité et de proportionnalité.
+71. Lorsqu’un consentement est nécessaire pour traiter les données
+d’un enfant, les États parties devraient veiller à ce que ce
+consentement soit éclairé et donné librement par l’enfant ou, selon
+son âge et le développement de ses capacités, par le parent ou la
+personne qui s’occupe de l’enfant, et à ce qu’il soit obtenu avant que
+les données soient traitées. Lorsque le consentement de l’enfant est
+considéré comme insuffisant et que le consentement parental est
+requis pour le traitement des données personnelles d’un enfant, les
+États parties devraient exiger que les organisations qui traitent ces
+données vérifient que le consentement est éclairé, valable et donné
+par le parent ou la personne qui s’occupe de l’enfant.
+72. Les États parties devraient veiller à ce que les enfants et leurs
+parents ou les personnes qui s’occupent des enfants puissent
+facilement accéder aux données stockées, rectifier les données qui
+sont inexactes ou obsolètes et effacer les données stockées
+illégalement ou inutilement par des autorités publiques, des
+particuliers ou d’autres organismes, sous réserve de limites
+raisonnables et légalesComité des droits de l’homme, observation
+générale no 16 (1988), par. 10.. Ils devraient en outre garantir aux
+enfants le droit de retirer leur consentement et de s’opposer au
+traitement des données à caractère personnel lorsque le responsable
+du traitement des données ne démontre pas l’existence de motifs
+
+[PAGE 26]
+légitimes et impérieux justifiant ce traitement. Ils devraient
+également fournir des informations sur ces questions aux enfants,
+aux parents et aux personnes qui s’occupent des enfants, dans un
+langage adapté aux enfants et dans des formats accessibles.
+73. Les données personnelles des enfants ne devraient être
+accessibles qu’aux autorités, organisations et personnes désignées
+par la loi pour les traiter conformément aux garanties d’une
+procédure régulière, telles que des audits réguliers et des mesures
+de responsabilisationIbid. ; et Comité des droits de l’enfant,
+observation générale no 20 (2016), par. 46.. Les données relatives
+aux enfants recueillies à des fins bien définies, dans quelque cadre
+que ce soit, y compris les casiers judiciaires numérisés, devraient
+être protégées et réservées à ces fins et ne devraient pas être
+conservées illégalement ou inutilement ou utilisées à d’autres fins.
+Lorsque des informations sont fournies dans un cadre et que leur
+utilisation dans un autre cadre pourrait légitimement bénéficier à
+l’enfant, par exemple dans le contexte de la scolarité et de
+l’enseignement supérieur, l’utilisation de ces données devrait être
+transparente, responsable et soumise au consentement de l’enfant,
+du parent ou de la personne qui s’occupe de l’enfant, selon le cas.
+74. La législation et les mesures relatives à la protection de la vie
+privée et des données ne devraient pas limiter arbitrairement les
+autres droits de l’enfant, tels que le droit à la liberté d’expression ou
+le droit à une protection. Les États parties devraient veiller à ce que
+la législation sur la protection des données respecte la vie privée et
+les données personnelles des enfants en relation avec
+l’environnement numérique. Les innovations technologiques
+constantes font que l’environnement numérique s’élargit pour
+englober toujours plus de services et de produits, tels que les
+vêtements et les jouets. Étant donné que les lieux dans lesquels les
+enfants passent du temps deviennent « connectés » du fait de
+l’utilisation de capteurs intégrés reliés à des systèmes automatisés,
+les États parties devraient veiller à ce que les produits et services
+qui contribuent à ces environnements soient soumis à des
+réglementations et normes strictes relatives à la protection des
+données et de la vie privée. Il s’agit notamment des lieux publics,
+tels que les rues, les écoles, les bibliothèques, les installations de
+sport et de divertissement et les locaux commerciaux, y compris les
+
+[PAGE 27]
+magasins et les cinémas, ainsi que le domicile.
+75. Toute surveillance numérique des enfants − ainsi que tout
+traitement automatisé des données à caractère personnel qui y est
+associé − devrait respecter le droit de l’enfant à la protection de sa
+vie privée et ne devrait pas être effectuée de manière systématique,
+sans discernement ou à l’insu de l’enfant ou, dans le cas des très
+jeunes enfants, de leurs parents ou de la personne qui s’occupe
+d’eux ; elle ne devrait pas non plus être effectuée sans que
+l’intéressé ait le droit de s’opposer à une telle surveillance, dans les
+locaux commerciaux ou dans les structures éducatives et les
+établissements de soins, et il faudrait toujours envisager les moyens
+les moins intrusifs possible en matière de vie privée pour atteindre
+l’objectif recherché.
+76. L’environnement numérique pose des problèmes particuliers aux
+parents et aux personnes qui s’occupent des enfants en ce qui
+concerne le respect du droit de l’enfant à la protection de sa vie
+privée. Si elles ne sont pas mises en œuvre avec prudence, les
+technologies qui permettent de surveiller les activités en ligne à des
+fins de sécurité, comme les dispositifs et services de localisation,
+peuvent empêcher un enfant d’accéder à une ligne d’assistance ou
+de rechercher des informations sensibles. Les États parties devraient
+informer les enfants, les parents, les personnes qui s’occupent des
+enfants et le public de l’importance du droit de l’enfant à la
+protection de sa vie privée et de la manière dont leurs propres
+pratiques peuvent menacer ce droit. Ils devraient également être
+informés des pratiques pouvant leur permettre de respecter et
+protéger la vie privée des enfants dans l’environnement numérique,
+tout en assurant leur sécurité. La surveillance des activités
+numériques de l’enfant par les parents et les personnes qui
+s’occupent de l’enfant doit être proportionnée et correspondre au
+développement des capacités de l’enfant.
+77. De nombreux enfants utilisent des avatars ou des pseudonymes
+en ligne qui protègent leur identité, et ces pratiques peuvent être
+importantes pour protéger la vie privée des enfants. Les États
+parties devraient exiger une approche de l’anonymat intégrant la
+sécurité et la protection de la vie privée dès la conception, tout en
+veillant à ce que les pratiques anonymes ne soient pas couramment
+
+[PAGE 28]
+utilisées pour dissimuler des comportements préjudiciables ou
+illégaux, tels que les cyberagressions, les discours de haine ou
+l’exploitation sexuelle et les abus sexuels. La protection de la vie
+privée d’un enfant dans l’environnement numérique peut s’avérer
+essentielle dans les cas où les parents ou les personnes qui
+s’occupent de l’enfant constituent eux-mêmes une menace pour la
+sécurité de l’enfant ou lorsqu’ils sont en conflit au sujet de la garde
+de l’enfant. Ces situations peuvent nécessiter une intervention
+supplémentaire, ainsi que des consultations familiales ou d’autres
+services, afin de préserver le droit de l’enfant à la protection de sa
+vie privée.
+78. Les fournisseurs de services de prévention ou de conseil destinés
+aux enfants dans l’environnement numérique devraient être
+exemptés de toute obligation d’obtention du consentement parental
+par l’enfant utilisateur pour l’accès à ces servicesObservation
+générale no 20 (2016), par. 60.. Ces services devraient répondre à
+des normes élevées en matière de protection de la vie privée et de
+l’enfance.
+F. Enregistrement des naissances et nationalité
+79. Les États parties devraient promouvoir l’utilisation de systèmes
+d’identification numérique permettant que toutes les naissances
+soient enregistrées et reconnues officiellement par les autorités
+nationales, afin de faciliter l’accès des enfants aux services,
+notamment aux services de santé, d’éducation et de protection
+sociale. L’absence d’enregistrement des naissances facilite la
+violation des droits de l’enfant garantis par la Convention et les
+Protocoles facultatifs s’y rapportant. Les États parties devraient
+utiliser des technologies de pointe, y compris des unités
+d’enregistrement mobiles, pour garantir l’accès à l’enregistrement
+des naissances, en particulier pour les enfants qui vivent dans des
+zones reculées, les enfants réfugiés, les enfants migrants, les enfants
+à risque et ceux qui sont marginalisés, et prendre en compte les
+enfants nés avant l’introduction des systèmes d’identification
+numérique. Pour que les enfants bénéficient de ces systèmes, les
+États parties devraient mener des campagnes de sensibilisation,
+mettre en place des mécanismes de suivi, promouvoir la
+participation des communautés locales et assurer une coordination
+
+[PAGE 29]
+efficace
+entre les différents acteurs, notamment les agents des services de
+l’état civil, les juges, les notaires, les responsables de la santé
+publique et le personnel des organismes de protection de l’enfance.
+Ils devraient également veiller à ce qu’un cadre solide de protection
+de la vie privée et des données soit mis en place.
+VII. Violence à l’égard des enfants
+80. L’environnement numérique peut offrir de nouveaux moyens de
+commettre des violences à l’égard des enfants, en facilitant les
+situations dans lesquelles les enfants subissent des violences et/ou
+peuvent être incités à se faire du mal ou à faire du mal aux autres.
+Les crises, telles que les pandémies, peuvent entraîner un risque
+accru de violence en ligne, étant donné que les enfants passent
+davantage de temps sur les plateformes virtuelles dans de telles
+circonstances.
+81. Les délinquants sexuels peuvent utiliser les technologies
+numériques pour solliciter des enfants à des fins sexuelles et pour
+participer à des abus sexuels en ligne sur des enfants, par exemple
+en diffusant des vidéos en direct, en produisant et en distribuant du
+matériel pédopornographique et en pratiquant la sextorsion. Les
+formes de violence, d’exploitation et d’abus sexuels facilités par les
+technologies numériques peuvent également être commises dans le
+cercle de confiance d’un enfant, par des membres de sa famille ou
+des amis ou, pour les adolescents, par des partenaires intimes, et
+peuvent inclure des cyberagressions, notamment le harcèlement et
+des menaces d’atteinte à la réputation, la création ou le partage non
+consenti de textes ou d’images à caractère sexuel, tels que des
+contenus autogénérés par sollicitation et/ou coercition, et la
+promotion de comportements autodestructeurs, tels que les
+coupures, les comportements suicidaires ou les troubles
+alimentaires. Lorsque de tels actes sont commis par des enfants, les
+États parties devraient, dans la mesure du possible, adopter des
+approches de prévention, de protection et de justice réparatrice
+pour les enfants concernésObservation générale no 24 (2019),
+par. 101 ; et CRC/C/156, par. 71..
+82. Les États parties devraient prendre des mesures législatives et
+
+[PAGE 30]
+administratives pour protéger les enfants contre la violence dans
+l’environnement numérique, et notamment examiner régulièrement,
+actualiser et appliquer des cadres législatifs, réglementaires et
+institutionnels solides qui protègent les enfants contre les risques,
+connus et émergents, de toute forme de violence dans
+l’environnement numérique. Ces risques comprennent la violence
+physique ou mentale, les blessures ou les sévices, la négligence ou
+la maltraitance, l’exploitation et les sévices, y compris l’exploitation
+sexuelle et les abus sexuels, la traite des enfants, la violence fondée
+sur le genre, les cyberagressions, les cyberattaques et la guerre de
+l’information. Les États parties devraient mettre en œuvre des
+mesures de sécurité et de protection correspondant au
+développement des capacités des enfants.
+83. L’environnement numérique peut offrir aux groupes non
+étatiques, y compris aux groupes armés qualifiés de terroristes ou
+d’extrémistes violents, de nouveaux moyens d’enrôler et d’exploiter
+les enfants pour qu’ils commettent des actions violentes ou
+y participent. Les États parties devraient veiller à ce que la
+législation interdise l’enrôlement d’enfants par des groupes
+terroristes ou extrémistes violents. Les enfants accusés d’infractions
+pénales dans ce contexte devraient être traités avant tout comme
+des victimes mais, s’ils sont inculpés, le système de justice pour
+enfants devrait s’appliquer.
+VIII. Milieu familial et protection de remplacement
+84. Beaucoup de parents et de personnes qui s’occupent des enfants
+ont besoin de soutien pour acquérir la compréhension, les capacités
+et les compétences techniques nécessaires pour aider les enfants en
+relation avec l’environnement numérique. Les États parties
+devraient veiller à ce que les parents et les personnes qui s’occupent
+des enfants aient la possibilité d’acquérir une culture numérique,
+d’apprendre de quelle manière la technologie peut soutenir les
+droits de l’enfant et de reconnaître un enfant victime d’un préjudice
+en ligne et de réagir
+de manière appropriée. Une attention particulière devrait être
+accordée aux parents d’enfants défavorisés ou vulnérables et aux
+personnes qui s’occupent de ces enfants.
+
+[PAGE 31]
+85. Dans le cadre du soutien et des orientations fournies aux parents
+et aux personnes qui s’occupent des enfants en ce qui concerne
+l’environnement numérique, les États parties devraient assurer une
+sensibilisation au respect de l’autonomie croissante des enfants et
+de leur besoin d’intimité, en fonction du développement de leurs
+capacités. Les États parties devraient tenir compte du fait que les
+enfants saisissent et expérimentent souvent les possibilités offertes
+par l’univers numérique et qu’ils peuvent être exposés à des risques,
+y compris avant l’âge auquel les parents et les personnes chargées
+de s’occuper des enfants pensent que ces risques pourraient
+survenir. Certains enfants ont indiqué qu’ils souhaitaient être
+davantage soutenus et encouragés dans leurs activités numériques,
+en particulier lorsqu’ils percevaient l’approche des parents et des
+personnes qui s’occupent d’eux comme punitive, trop restrictive ou
+non adaptée au développement de leurs capacités« Our rights in a
+digital world », p. 30..
+86. Les États parties devraient tenir compte du fait que le soutien et
+les orientations fournies aux parents et aux personnes qui
+s’occupent des enfants devraient être fondés sur une compréhension
+de la spécificité et du caractère unique des relations parents-enfants.
+Ces conseils devraient aider les parents à maintenir un équilibre
+approprié entre la protection de l’enfant et son autonomie
+naissante, fondé sur l’empathie et le respect mutuels, plutôt que sur
+l’interdiction ou le contrôle. L’intérêt supérieur de l’enfant et la
+prise en compte du développement des capacités de l’enfant
+devraient être les principes directeurs permettant d’aider les parents
+et les personnes qui s’occupent des enfants à maintenir un équilibre
+entre les responsabilités parentales et les droits de l’enfant. Il
+conviendrait de conseiller les parents et les personnes qui
+s’occupent des enfants d’encourager les activités sociales et
+créatives et les activités d’apprentissage des enfants dans
+l’environnement numérique et de souligner que l’utilisation des
+technologies numériques ne devrait pas remplacer les interactions
+directes et spontanées entre les enfants eux-mêmes ou entre les
+enfants et leurs parents ou les personnes qui s’occupent des enfants.
+87. Il est important que les enfants séparés de leur famille aient
+accès aux technologies numériquesObservation générale no 21
+(2017), par. 35.. Il est prouvé que les technologies numériques sont
+
+[PAGE 32]
+bénéfiques pour le maintien des relations familiales, par exemple en
+cas de séparation des parents, lorsque les enfants sont placés dans
+une structure de protection de remplacement, pour établir des
+relations entre les enfants et les futurs parents adoptifs ou parents
+d’accueil et pour réunir les enfants et leur famille dans les situations
+de crise humanitaire. Par conséquent, dans le contexte des familles
+séparées, les États parties devraient favoriser l’accès des enfants et
+de leurs parents, des personnes qui s’occupent des enfants ou des
+autres personnes concernées aux services numériques, en tenant
+compte de la sécurité et de l’intérêt supérieur de l’enfant.
+88. Les mesures prises pour renforcer l’inclusion numérique
+devraient être conciliées avec la nécessité de protéger les enfants
+dans les cas où les parents ou d’autres membres de la famille ou des
+personnes qui s’occupent des enfants, qu’ils soient ou non présents
+physiquement, peuvent les mettre en danger. Les États parties
+devraient considérer que de tels risques peuvent être favorisés par
+la conception et l’utilisation des technologies numériques, par
+exemple lorsqu’elles permettent de révéler à un agresseur potentiel
+le lieu où se trouve un enfant. Compte tenu de ces risques, les États
+parties devraient exiger une approche intégrant la sécurité et la
+protection de la vie privée dès la conception et veiller à ce que les
+parents et les personnes qui s’occupent des enfants soient
+pleinement conscients des risques et des stratégies disponibles pour
+soutenir et protéger les enfants.
+IX. Enfants handicapés
+89. L’environnement numérique offre aux enfants handicapés de
+nouvelles possibilités d’établir des relations sociales avec leurs
+pairs, d’accéder à l’information et de participer aux processus de
+décision publics. Les États parties devraient étudier ces possibilités
+et prendre des mesures pour empêcher la création de nouvelles
+barrières et éliminer les barrières
+existantes auxquelles se heurtent les enfants handicapés en relation
+avec l’environnement numérique.
+90. Les enfants présentant différents types de handicaps,
+notamment des handicaps physiques, intellectuels, psychosociaux,
+auditifs ou visuels, se heurtent à différentes barrières en matière
+
+[PAGE 33]
+d’accès à l’environnement numérique, tels que des contenus dans
+des formats non accessibles, un accès limité à des technologies
+d’assistance abordables à la maison, à l’école et dans la
+communauté et l’interdiction d’utiliser des appareils numériques à
+l’école, dans les établissements de santé et dans d’autres contextes.
+Les États parties devraient veiller à ce que les enfants handicapés
+aient accès à des contenus dans des formats accessibles et abolir les
+politiques qui ont des effets discriminatoires sur ces enfants. Ils
+devraient garantir l’accès à des technologies d’assistance
+abordables, le cas échéant, en particulier pour les enfants
+handicapés qui vivent dans la pauvreté, et organiser des campagnes
+de sensibilisation et des cours de formation et mettre des ressources
+à disposition pour les enfants handicapés, leur famille et le
+personnel des établissements d’enseignement et des autres
+établissements concernés, afin qu’ils aient les connaissances et les
+compétences suffisantes pour utiliser efficacement les technologies
+numériques.
+91. Les États parties devraient promouvoir les innovations
+technologiques qui répondent aux besoins des enfants présentant
+différents types de handicap et veiller à ce que les produits et
+services numériques soient conçus dans un souci d’accessibilité
+universelle afin qu’ils puissent être utilisés par tous les enfants sans
+exception et sans qu’il soit nécessaire de les adapter. Les enfants
+handicapés devraient être associés à la conception et à la mise en
+œuvre des politiques, produits et services qui ont une incidence sur
+la réalisation de leurs droits dans l’environnement numérique.
+92. Les enfants handicapés peuvent être davantage exposés aux
+risques, notamment aux cyberagressions et à l’exploitation sexuelle
+et aux abus sexuels, dans l’environnement numérique. Les États
+parties devraient recenser et combattre les risques auxquels les
+enfants handicapés sont exposés, en prenant des mesures pour que
+l’environnement numérique soit sûr pour ces enfants, tout en luttant
+contre les préjugés auxquels se heurtent les enfants handicapés et
+qui pourraient conduire à une surprotection ou à l’exclusion. Les
+informations sur la sécurité, les stratégies de protection et les
+informations, services et forums publics relatifs à l’environnement
+numérique devraient être fournis dans des formats accessibles.
+
+[PAGE 34]
+X. Santé et bien-être
+93. Les technologies numériques peuvent faciliter l’accès aux
+services de santé et aux informations sur la santé et améliorer les
+services de diagnostic et de traitement concernant la santé physique
+et mentale et la nutrition des mères, des nouveau-nés, des enfants et
+des adolescents. Elles offrent également des possibilités
+intéressantes en matière de contact avec les enfants défavorisés ou
+vulnérables ou avec les enfants qui vivent dans des communautés
+éloignées. Dans les situations de danger public ou de crise sanitaire
+ou humanitaire, il pourrait arriver que les technologies numériques
+soient le seul moyen d’accéder aux services et informations dans le
+domaine de la santé.
+94. Les enfants ont déclaré qu’ils jugeaient très utile la recherche en
+ligne d’informations et de soutien en matière de santé et de bien-
+être, notamment en ce qui concerne la santé physique, mentale,
+sexuelle et procréative, la puberté, la sexualité et la
+conception« Our rights in a digital world », p. 37.. Les adolescents
+souhaitaient en particulier avoir accès en ligne à des services de
+santé mentale et de santé sexuelle et procréative gratuits,
+confidentiels, adaptés à leur âge et non discriminatoiresObservation
+générale no 20 (2016), par. 59.. Les États parties devraient veiller à
+ce que les enfants aient un accès sûr, sécurisé et confidentiel à des
+informations et services de santé dignes de confiance, y compris des
+services de conseil psychologiqueIbid., par. 47 et 59.. Ces services
+devraient limiter le traitement des données relatives aux enfants à
+ce qui est nécessaire au fonctionnement du service et devraient être
+fournis par des professionnels ou des personnes ayant reçu une
+formation
+appropriée, et être assortis de mécanismes de contrôle réglementés.
+Les États parties devraient veiller à ce que les produits et services de
+santé numériques ne créent pas d’inégalités en matière d’accès des
+enfants aux services de santé en personne, ou n’aggravent pas ces
+inégalités.
+95. Les États parties devraient encourager la recherche et le
+développement axés sur les besoins spécifiques des enfants en
+matière de santé et favorisant des résultats positifs pour la santé des
+enfants grâce aux progrès technologiques, et investir dans ce
+
+[PAGE 35]
+domaine. Les services numériques devraient être utilisés pour
+compléter ou améliorer la fourniture aux enfants de services de
+santé en personneIbid., par. 47 et 48.. Les États parties devraient
+adopter une réglementation exigeant des fournisseurs de
+technologies et de services de santé qu’ils intègrent les droits de
+l’enfant dans les fonctionnalités, le contenu et la distribution de ces
+services et technologies, ou mettre à jour les réglementations
+existantes.
+96. Les États parties devraient légiférer contre les préjudices connus
+et prendre en compte de manière proactive les avancées de la
+recherche et les nouveaux éléments d’information dans le domaine
+de la santé publique, afin d’empêcher la diffusion de fausses
+informations et de matériels et services susceptibles de nuire à la
+santé mentale ou physique des enfants. Il pourrait également être
+nécessaire de prendre des mesures pour prévenir une participation
+malsaine aux jeux numériques ou aux médias sociaux, par exemple
+en légiférant contre la conception de produits numériques portant
+atteinte au développement et aux droits de l’enfantObservation
+générale no 15 (2013), par. 84..
+97. Les États parties devraient encourager l’utilisation des
+technologies numériques pour promouvoir des modes de vie sains,
+notamment les activités physiques et socialesObservation générale
+no 17 (2013), par. 13.. Ils devraient réglementer la publicité ciblée
+ou inadaptée à l’âge, le marketing et les autres services numériques
+pertinents, afin d’éviter que les enfants ne soient exposés à la
+promotion de produits malsains, notamment certains aliments et
+certaines boissons, l’alcool, les drogues et le tabac et les autres
+produits à base de nicotineObservation générale no 15 (2013),
+par. 77.. Ces réglementations relatives à l’environnement
+numérique devraient être compatibles et aller de pair avec les
+réglementations relatives à l’environnement hors ligne.
+98. Les technologies numériques offrent aux enfants de multiples
+possibilités d’améliorer leur santé et leur bien-être lorsqu’un
+équilibre est maintenu avec leur besoin de repos, d’exercice et
+d’interaction directe avec leurs pairs, leur famille et leur
+communauté. Les États parties devraient élaborer des conseils à
+l’intention des enfants, des parents, des personnes qui s’occupent
+
+[PAGE 36]
+des enfants et des éducateurs concernant l’importance d’un bon
+équilibre entre les activités numériques et non numériques et un
+repos suffisant.
+XI. Éducation, loisirs et activités culturelles
+A. Droit à l’éducation
+99. L’environnement numérique peut grandement faciliter et
+améliorer l’accès des enfants à une éducation inclusive de qualité,
+notamment à des ressources fiables pour l’apprentissage formel, non
+formel, informel, entre pairs et autodirigé. L’utilisation des
+technologies numériques peut également renforcer l’interaction
+entre l’enseignant et l’élève et entre les apprenants. Les enfants ont
+souligné l’importance des technologies numériques pour ce qui est
+d’améliorer leur accès à l’éducation et de soutenir leur
+apprentissage et leur participation aux activités extrascolaires« Our
+rights in a digital world », p. 14, 16 et 30..
+100. Les États parties devraient aider les institutions éducatives et
+culturelles, telles que les archives, les bibliothèques et les musées, à
+favoriser l’accès des enfants à diverses ressources pédagogiques
+numériques et interactives, y compris les ressources autochtones, et
+à des
+ressources dans les langues qu’ils comprennent. Ces ressources et
+d’autres ressources très utiles peuvent aider les enfants à se livrer à
+leurs propres pratiques créatives, civiques et culturelles et leur
+permettre de découvrir celles des autresObservation générale no 17
+(2013), par. 10.. Les États parties devraient améliorer les
+possibilités d’apprentissage en ligne et d’apprentissage tout au long
+de la vie pour les enfants.
+101. Les États parties devraient investir équitablement dans
+l’infrastructure technologique des écoles et des autres lieux
+d’apprentissage, en veillant à ce que ces établissements disposent
+d’un nombre suffisant d’ordinateurs et aient accès à un haut débit
+de qualité et à une source d’électricité stable à un prix abordable, à
+ce que les enseignants soient formés à l’utilisation des technologies
+éducatives numériques, et en assurant l’accessibilité et la
+maintenance en temps voulu des technologies scolaires. Ils
+
+[PAGE 37]
+devraient également soutenir la création et la diffusion de
+ressources éducatives numériques diverses et de bonne qualité dans
+les langues que les enfants comprennent et veiller à ce que les
+inégalités existantes, comme celles qui touchent les filles, ne
+s’aggravent pas. Les États parties devraient veiller à ce que
+l’utilisation des technologies numériques ne nuise pas à
+l’enseignement en présentiel et soit justifiée à des fins éducatives.
+102. Pour les enfants qui ne sont pas physiquement présents à
+l’école ou pour ceux qui vivent dans des zones reculées, sont
+défavorisés ou sont dans des situations de vulnérabilité, les
+technologies éducatives numériques peuvent permettre un
+enseignement à distance ou mobileRecommandation générale no 31
+du Comité pour l’élimination de la discrimination à l’égard des
+femmes et observation générale no 18 du Comité des droits de
+l’enfant, adoptées conjointement (2019), par. 64 ; et Comité des
+droits de l’enfant, observation générale no 11 (2009), par. 61 ; et
+observation générale no 21 (2017), par. 55.. Les États parties
+devraient veiller à la mise en place d’une infrastructure appropriée,
+permettant l’accès de tous les enfants aux services publics de base
+nécessaires à l’apprentissage à distance, notamment l’accès aux
+appareils, à l’électricité, à la connectivité, aux matériels
+pédagogiques et à un soutien professionnel. Ils devraient également
+veiller à ce que les écoles disposent de ressources suffisantes pour
+fournir aux personnes qui s’occupent des enfants des conseils sur
+l’apprentissage à distance à domicile et à ce que les produits et
+services d’éducation numérique ne créent pas d’inégalités dans
+l’accès des enfants aux services d’éducation en présentiel ou
+n’aggravent pas les inégalités existantes.
+103. Les États parties devraient élaborer des politiques, des normes
+et des lignes directrices fondées sur des données factuelles à
+l’intention des écoles et des autres organismes chargés d’acquérir et
+d’utiliser des technologies et des matériels éducatifs, afin de
+renforcer encore les prestations éducatives. Les normes relatives aux
+technologies éducatives numériques devraient garantir une
+utilisation éthique et appropriée de ces technologies à des fins
+éducatives et l’absence d’exposition des enfants à la violence, à la
+discrimination, à l’utilisation abusive de leurs données personnelles,
+à l’exploitation commerciale ou à d’autres atteintes à leurs droits,
+
+[PAGE 38]
+comme l’utilisation de technologies numériques pour recueillir des
+informations sur les activités d’un enfant et les partager avec ses
+parents ou les personnes qui s’occupent de lui à son insu ou sans
+son consentement.
+104. Les États parties devraient veiller à ce que la culture
+numérique soit enseignée dans les écoles, dans le cadre des
+programmes d’éducation de base, dès le niveau préscolaire et tout
+au long de la scolarité, et à ce que ces enseignements soient évalués
+en fonction de leurs résultatsObservation générale no 20 (2016),
+par. 47.. Les programmes d’enseignement devraient englober les
+connaissances et les compétences nécessaires à la manipulation en
+toute sécurité d’un large éventail d’outils et de ressources
+numériques, y compris ceux liés aux contenus, à la création, à la
+collaboration, à la participation, à la socialisation et à l’engagement
+citoyen. Les programmes devraient également prévoir l’acquisition
+de connaissances critiques, la fourniture de conseils sur la façon de
+trouver des sources d’information fiables et de repérer les fausses
+informations et d’autres formes de contenu biaisé ou mensonger,
+notamment sur les questions de santé sexuelle et procréative, les
+droits de l’homme, y compris les droits de l’enfant dans
+l’environnement numérique, et les formes de soutien et les recours
+disponibles. Ils devraient promouvoir la sensibilisation des enfants
+aux possibles conséquences négatives de
+l’exposition aux risques liés aux contenus, aux contacts, aux
+comportements et aux contrats, y compris la cyberagression, la
+traite, l’exploitation sexuelle et les abus sexuels et d’autres formes
+de violence, ainsi qu’aux stratégies d’adaptation permettant de
+réduire les préjudices et aux stratégies visant à protéger leurs
+données personnelles et celles d’autrui et à renforcer les
+compétences sociales et émotionnelles et la résilience des enfants.
+105. Il est de plus en plus important que les enfants acquièrent une
+compréhension de l’environnement numérique, notamment de son
+infrastructure, des pratiques commerciales, des stratégies de
+persuasion et des utilisations du traitement automatisé et des
+données personnelles et de la surveillance, ainsi que des effets
+négatifs possibles de la numérisation sur les sociétés. Les
+enseignants, en particulier ceux qui s’occupent de l’éducation
+
+[PAGE 39]
+numérique et de l’éducation à la santé sexuelle et procréative,
+devraient être formés aux mesures de protection se rapportant à
+l’environnement numérique.
+B. Droit à la culture, aux loisirs et au jeu
+106. L’environnement numérique favorise le droit de l’enfant à la
+culture, aux loisirs et au jeu, qui est essentiel au bien-être et au
+développement de l’enfantObservation générale no 17 (2013),
+par. 7.. Les enfants de tous âges ont déclaré avoir éprouvé du
+plaisir, de l’intérêt et un sentiment de détente lors de l’utilisation
+d’une variété de produits et services numériques de leur choix« Our
+rights in a digital world », p. 22., mais ont dit craindre que les
+adultes ne comprennent pas l’importance des jeux numériques et la
+façon dont ils peuvent être partagés avec des amisObservation
+générale no 17 (2013), par. 33..
+107. Les formes numériques de culture, de loisirs et de jeux
+devraient aider les enfants et leur être bénéfiques, et refléter et
+promouvoir les différentes identités des enfants, en particulier leurs
+identités culturelles, leurs langues et leur patrimoine. Elles peuvent
+favoriser les compétences sociales des enfants, l’apprentissage,
+l’expression, les activités créatives, telles que la musique et l’art,
+ainsi que le sentiment d’appartenance et une culture communeIbid.,
+par. 5.. La participation à la vie culturelle en ligne contribue à la
+créativité, à l’identité, à la cohésion sociale et à la diversité
+culturelle. Les États parties devraient veiller à ce que les enfants
+aient la possibilité d’utiliser leur temps libre pour expérimenter les
+technologies de l’information et des communications, s’exprimer et
+participer à la vie culturelle en ligne.
+108. Les États parties devraient légiférer, fournir des orientations
+aux professionnels, aux parents et aux personnes qui s’occupent des
+enfants et collaborer avec les fournisseurs de services numériques,
+le cas échéant, pour que les technologies et services numériques qui
+sont destinés aux enfants, auxquels les enfants ont accès ou qui ont
+un impact sur les enfants pendant leurs loisirs, soient conçus,
+distribués et utilisés de manière à renforcer les possibilités d’accès à
+la cuture, aux loisirs et au jeu pour les enfants. Il peut notamment
+s’agir d’encourager l’innovation dans le cadre du jeu numérique et
+des activités connexes qui favorisent l’autonomie, le développement
+
+[PAGE 40]
+personnel et le plaisir des enfants.
+109. Les États parties devraient veiller à ce que la promotion des
+possibilités de culture, de loisirs et de jeu dans l’environnement
+numérique soit conciliées avec l’existence d’alternatives attrayantes
+dans les lieux physiques où vivent les enfants. Dans les premières
+années de leur vie en particulier, les enfants acquièrent le langage,
+la coordination, les compétences sociales et l’intelligence
+émotionnelle principalement grâce à des jeux qui impliquent des
+mouvements physiques et une communication directe en face à face
+avec d’autres personnes. Pour les enfants plus âgés, les jeux et les
+loisirs qui impliquent des activités physiques, des sports d’équipe et
+d’autres activités récréatives de plein air peuvent être bénéfiques
+pour la santé, ainsi que pour les compétences fonctionnelles et
+sociales.
+110. Le temps de loisirs passé dans l’environnement numérique peut
+exposer les enfants à des risques de préjudice en raison, par
+exemple, de publicités opaques ou trompeuses ou de
+caractéristiques très persuasives ou proches du jeu. En adoptant ou
+en utilisant une approche fondée sur la protection des données, le
+respect de la vie privée et la sécurité dès la
+conception, ainsi que d’autres mesures réglementaires, les États
+parties devraient garantir que les entreprises ne ciblent pas les
+enfants en utilisant ces techniques ou d’autres techniques conçues
+pour privilégier les intérêts commerciaux au détriment de ceux de
+l’enfant.
+111. Les conseils, classifications selon l’âge, étiquetages ou
+certifications concernant certaines formes de jeux et de loisirs
+numériques émanant des États parties ou des entreprises devraient
+être formulés de manière à ne pas restreindre l’accès des enfants à
+l’environnement numérique dans son ensemble et à ne pas porter
+atteinte à leurs possibilités de loisirs ou à leurs autres droits.
+XII. Mesures de protection spéciales
+A. Protection contre l’exploitation économique, l’exploitation
+sexuelle et les autres formes d’exploitation
+
+[PAGE 41]
+112. Les enfants devraient être protégés contre toute forme
+d’exploitation portant atteinte à tout aspect de leur bien-être en
+relation avec l’environnement numérique. L’exploitation peut
+prendre de nombreuses formes, telles que l’exploitation
+économique, y compris le travail des enfants, l’exploitation sexuelle
+et les abus sexuels, la vente, la traite et l’enlèvement d’enfants et le
+recrutement d’enfants aux fins de leur participation à des activités
+criminelles, y compris des formes de cybercriminalité. En créant et
+en partageant des contenus, les enfants peuvent être des acteurs
+économiques dans l’environnement numérique, ce qui peut
+entraîner leur exploitation.
+113. Les États parties devraient revoir les lois et politiques
+pertinentes pour veiller à ce que les enfants soient protégés contre
+l’exploitation économique, l’exploitation sexuelle et les autres
+formes d’exploitation et à ce que leurs droits en matière de travail
+dans l’environnement numérique et les possibilités de rémunération
+qui y sont liées soient protégés.
+114. Les États parties devraient veiller à la mise en place de
+mécanismes d’application appropriés et aider les enfants, les parents
+et les personnes qui s’occupent des enfants à accéder aux mesure de
+protection applicablesObservation générale no 16 (2013), par. 37..
+Ils devraient légiférer pour que les enfants soient protégés contre les
+produits dangereux, tels que les armes ou les drogues, ou les
+services dangereux, tels que les jeux d’argent. De solides systèmes
+de vérification de l’âge devraient être utilisés pour empêcher les
+enfants d’accéder à des produits et services dont la possession ou
+l’utilisation est illégale en ce qui les concerne. Ces systèmes
+devraient être compatibles avec les exigences en matière de
+protection et de sauvegarde des données.
+115. Compte tenu de l’obligation qu’ont les États d’enquêter sur la
+traite des personnes, y compris les actions qui font partie de la
+traite et les comportements qui y sont liés, et d’en poursuivre et
+punir les auteurs, les États parties devraient élaborer une législation
+visant à lutter contre la traite des personnes qui interdise le
+recrutement d’enfants par des groupes criminels facilité par la
+technologie, et mettre à jour les lois existantes.
+116. Les États parties devraient se doter d’une législation
+
+[PAGE 42]
+permettant de protéger les enfants contre les infractions commises
+dans l’environnement numérique, notamment la fraude et
+l’usurpation d’identité, et allouer des ressources suffisantes pour que
+ces infractions fassent l’objet d’enquêtes et de poursuites. Les États
+parties devraient également exiger un niveau élevé de
+cybersécurité, de protection de la vie privée et de sécurité dès la
+conception dans les services et produits numériques utilisés par les
+enfants, afin de minimiser le risque que de telles infractions se
+produisent.
+B. Administration de la justice pour enfants
+117. Des enfants peuvent être présumés, accusés ou reconnus
+coupables d’infractions aux lois relatives à la cybercriminalité. Les
+États parties devraient veiller à ce que les responsables politiques
+tiennent compte des effets de ces lois sur les enfants, se concentrent
+sur la prévention et mettent tout en œuvre pour créer et utiliser des
+solutions autres que le recours à la justice pénale.
+118. Les matériels sexuels générés par les enfants eux-mêmes que
+les enfants possèdent ou partagent de manière consensuelle et
+uniquement pour leur usage privé ne devraient pas être soumis à la
+législation pénale. Des canaux adaptés aux enfants devraient être
+créés pour permettre aux enfants de demander en toute sécurité des
+conseils et de l’aide en ce qui concerne les contenus sexuellement
+explicites générés par eux-mêmes.
+119. Les États parties devraient veiller à ce que les technologies
+numériques, les mécanismes de surveillance, tels que les logiciels de
+reconnaissance faciale, et les procédures de détermination du profil
+de risque qui sont mis en œuvre dans le cadre de la prévention, des
+enquêtes et des poursuites pénales ne soient pas utilisés pour cibler
+injustement les enfants soupçonnés ou accusés d’infractions pénales
+ni utilisés d’une manière qui viole les droits de l’enfant, en
+particulier le droit à la protection de la vie privée, le droit à la
+dignité et le droit à la liberté d’association.
+120. Le Comité est conscient que lorsque la numérisation des
+procédures judiciaires entraîne un manque de contacts en personne
+avec les enfants, il peut y avoir des effets négatifs sur les mesures de
+
+[PAGE 43]
+réadaptation et de justice réparatrice fondées sur le développement
+de relations avec l’enfant. Dans de tels cas, et également lorsque
+l’enfant est privé de liberté, les États parties devraient prévoir le
+maintien de contacts en personne afin de faciliter la capacité de
+l’enfant de collaborer utilement avec les tribunaux et de s’impliquer
+dans sa réadaptation.
+C. Protection des enfants touchés par des conflits armés, des enfants
+migrants et des autres enfants vulnérables
+121. L’environnement numérique peut permettre aux enfants
+vulnérables, notamment les enfants touchés par des conflits armés,
+les enfants déplacés à l’intérieur de leur pays, les enfants migrants,
+demandeurs d’asile et réfugiés, les enfants non accompagnés, les
+enfants en situation de rue et les enfants touchés par des
+catastrophes naturelles, d’accéder à des informations vitales pour
+leur protection. L’environnement numérique peut également leur
+permettre de maintenir le contact avec leur famille, de faciliter leur
+accès à l’éducation, à la santé et à d’autres services de base, et de se
+procurer de la nourriture et un abri sûr. Les États parties devraient
+garantir à ces enfants un accès sûr, sécurisé, privé et bénéfique à
+l’environnement numérique et les protéger contre toutes les formes
+de violence, d’exploitation et de mauvais traitements.
+122. Les États parties devraient veiller à ce que les enfants ne soient
+pas enrôlés ou utilisés dans des conflits, y compris des conflits
+armés, par l’intermédiaire de l’environnement numérique. Ils
+devraient notamment prévenir, criminaliser et réprimer les
+différentes formes de sollicitation et de mise en confiance des
+enfants à des fins sexuelles (grooming) facilitées par la technologie,
+par exemple par l’utilisation de plateformes de réseaux sociaux ou
+de services de discussion dans les jeux en ligne.
+XIII. Coopération internationale et régionale
+123. La nature transfrontalière et transnationale de l’environnement
+numérique nécessite une forte coopération internationale et
+régionale pour garantir que toutes les parties prenantes, y compris
+les États, les entreprises et les autres acteurs, respectent, protègent
+et mettent en œuvre effectivement les droits de l’enfant en relation
+avec l’environnement numérique. Il est donc essentiel que les États
+
+[PAGE 44]
+parties coopèrent aux niveaux bilatéral et multilatéral avec les
+organisations non gouvernementales nationales et internationales,
+les
+organismes des Nations Unies, les entreprises et les organisations
+spécialisées dans la protection de l’enfance et les droits de l’homme
+en relation avec l’environnement numérique.
+124. Les États parties devraient promouvoir les échanges
+internationaux et régionaux de connaissances spécialisées et de
+bonnes pratiques et contribuer à ces échanges, et mettre en place et
+promouvoir des activités de renforcement des capacités, des
+ressources, des normes, des réglementations et des mesures de
+protection dépassant les frontières nationales qui favorisent la
+réalisation des droits de l’enfant dans l’environnement numérique
+par tous les États. Ils devraient encourager la formulation d’une
+définition commune de ce qui constitue une infraction dans
+l’environnement numérique, l’entraide judiciaire et la collecte
+conjointe et le partage des éléments de preuve.
+XIV. Diffusion
+125. Les États parties devraient veiller à ce que la présente
+observation générale soit largement diffusée, notamment au moyen
+des technologies numériques, auprès de toutes les parties
+concernées, en particulier les parlements et les autorités
+gouvernementales, y compris celles qui sont chargées de la
+transformation numérique transversale et sectorielle, et auprès des
+membres de l’appareil judiciaire, des entreprises commerciales,
+dans les médias et auprès des organisations de la société civile et du
+grand public, des éducateurs et des enfants, et qu’elle soit
+disponible dans de multiples formats et langues, y compris dans des
+versions adaptées aux enfants.

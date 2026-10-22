@@ -32,6 +32,18 @@ LEGAL_CATEGORY = "Child_Online_Protection"
 # ces reglages en economisent environ 20 %.
 EXTRACT_CHARS = 600          # longueur maximale d'un extrait presente au modele
 DEFAULT_EXTRACTS = 4
+PRIO_MARGIN = 0.15           # ecart de similarite toleree pour un extrait prioritaire
+
+_LEGAL_FILES: dict[str, str] = {}
+
+
+def _legal_files(kb: KnowledgeBase) -> dict[str, str]:
+    """Fichiers du corpus juridique et leur pays (lus une fois, puis gardes)."""
+    if not _LEGAL_FILES:
+        res = kb.main.get(where={"document_category": LEGAL_CATEGORY}, include=["metadatas"])
+        for m in res["metadatas"]:
+            _LEGAL_FILES.setdefault(m.get("source_file", ""), m.get("country", ""))
+    return _LEGAL_FILES
 
 
 @dataclass
@@ -139,38 +151,71 @@ class CrisisAgent:
                  country: Optional[str] = None) -> list[Extract]:
         """Cherche les extraits juridiques les plus pertinents.
 
-        On recupere un large lot dans le corpus juridique, puis on fait passer
-        en tete les textes prioritaires de l'agent, a pertinence comparable.
+        Deux recherches : une dans tout le corpus juridique, une limitee aux
+        textes prioritaires de l'agent. Les gros textes etrangers (RGPD, DSA,
+        Online Safety Act) dominent sinon la premiere recherche et evincent le
+        texte national qui fonde le mandat de l'agent. La moitie des extraits
+        est donc reservee aux textes prioritaires, s'ils sont assez pertinents
+        (au plus PRIO_MARGIN de similarite sous le meilleur resultat general) ;
+        le reste suit la pertinence, avec un leger bonus aux textes prioritaires.
         """
         where: dict[str, Any] = {"document_category": LEGAL_CATEGORY}
         if country:
             where = {"$and": [where, {"country": country}]}
-        res = self.kb.search(embed_texts([query])[0], n_results=max(n * 4, 16), where=where)
+        emb = embed_texts([query])[0]
+        res = self.kb.search(emb, n_results=max(n * 4, 16), where=where)
+        general = list(zip(res["documents"][0], res["metadatas"][0], res["distances"][0]))
 
-        docs, metas, dists = res["documents"][0], res["metadatas"][0], res["distances"][0]
-        prio = self.role.sources_prioritaires
-        scored = []
-        for doc, meta, dist in zip(docs, metas, dists):
-            sim = 1 - dist
-            bonus = 0.05 if any(meta.get("source_file", "").startswith(p) for p in prio) else 0.0
-            scored.append((sim + bonus, sim, doc, meta))
-        scored.sort(key=lambda x: x[0], reverse=True)
+        prio_files = self._priority_files(country)
+        prio_hits: list[tuple[str, dict[str, Any], float]] = []
+        if prio_files:
+            res_p = self.kb.search(emb, n_results=n * 2,
+                                   where={"$and": [where, {"source_file": {"$in": prio_files}}]})
+            prio_hits = list(zip(res_p["documents"][0], res_p["metadatas"][0], res_p["distances"][0]))
 
         out: list[Extract] = []
         seen: set[tuple[str, str]] = set()
-        for _, sim, doc, meta in scored:
+
+        def add(doc: str, meta: dict[str, Any], sim: float) -> None:
             key = (meta.get("source_file", ""), meta.get("article", "") or meta.get("chunk_index", ""))
-            if key in seen:
-                continue
+            if key in seen or len(out) >= n:
+                return
             seen.add(key)
             out.append(Extract(
                 id="", source_file=meta.get("source_file", ""), article=meta.get("article", ""),
                 page=meta.get("page", ""), country=meta.get("country", ""),
                 similarity=sim, text=doc[:EXTRACT_CHARS],
             ))
-            if len(out) >= n:
-                break
+
+        best = max((1 - d for _, _, d in general), default=0.0)
+        # Le premier texte prioritaire fonde le mandat de l'agent : il a
+        # toujours au moins un extrait, s'il est assez pertinent.
+        main_files = [f for f in prio_files if f.startswith(self.role.sources_prioritaires[0])]
+        if main_files:
+            res_m = self.kb.search(emb, n_results=1,
+                                   where={"$and": [where, {"source_file": {"$in": main_files}}]})
+            for doc, meta, dist in zip(res_m["documents"][0], res_m["metadatas"][0], res_m["distances"][0]):
+                if 1 - dist >= best - PRIO_MARGIN:
+                    add(doc, meta, 1 - dist)
+        for doc, meta, dist in prio_hits[: (n + 1) // 2]:
+            if 1 - dist >= best - PRIO_MARGIN:
+                add(doc, meta, 1 - dist)
+
+        scored = []
+        for doc, meta, dist in general + prio_hits:
+            sim = 1 - dist
+            bonus = 0.05 if meta.get("source_file", "") in prio_files else 0.0
+            scored.append((sim + bonus, sim, doc, meta))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        for _, sim, doc, meta in scored:
+            add(doc, meta, sim)
         return out
+
+    def _priority_files(self, country: Optional[str]) -> list[str]:
+        """Fichiers de la base dont le nom commence par un prefixe prioritaire."""
+        prio = self.role.sources_prioritaires
+        return [f for f, c in _legal_files(self.kb).items()
+                if any(f.startswith(p) for p in prio) and (not country or c == country)]
 
     @staticmethod
     def number(extracts: list[Extract], start: int = 1) -> list[Extract]:

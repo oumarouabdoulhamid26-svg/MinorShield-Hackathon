@@ -73,6 +73,7 @@ _COUNTRY_PATTERNS: list[tuple[str, str]] = [
     (_w("turkiye", "turkey"), "Turkiye"),
     (_w("france"), "France"),
     (_w("australia", "esafety"), "Australia"),
+    (_w("UAE", "emirates"), "United Arab Emirates"),
     (_w("US", "USA", "united.states", "americas?", "COPPA"), "United States"),
     (_w("UK", "united.kingdom", "britain", "british"), "United Kingdom"),
     (_w("EU", "european.union", "GDPR", "RGPD", "DSA"), "European Union"),

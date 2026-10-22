@@ -42,12 +42,26 @@ des Télécommunications (ART) et le Ministère des Postes et Télécommunicatio
   « www.prc.cm » (site de la Présidence de la République) a aussi été obtenue
   via Digital Business Africa ; elle sert de contrôle croisé par OCR.
 
+### Textes ajoutés le 22 octobre 2026 (hors recueil de l'ART)
+
+| Fichier | Texte officiel | Source | Traitement |
+|---|---|---|---|
+| `Loi_2024-017_…` | Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun | Présidence de la République, prc.cm (Médias > Documents, id 10258) : copie certifiée conforme scannée, 24 pages, filigrane « www.prc.cm » | OCR Tesseract (français) à 300 dpi après suppression du filigrane gris par seuillage ; bruit du tampon retiré ; **75 articles** retrouvés, de l'article 1 à la formule de promulgation ; relu par sondage (ex. art. 9 et 13 comparés au scan) |
+| `Loi_2016-007_…` | Loi n° 2016/007 du 12 juillet 2016 portant Code pénal | WIPO Lex (OMPI), fiche 16366, PDF français `cm014fr.pdf` | Couche texte du PDF (140 pages, articles 1 à 372) ; certains accents sont absents dans la source |
+
+- **Âge de la minorité :** aucune source officielle n'a été trouvée pour la
+  majorité civile à 21 ans (une déclaration de presse de 2019 évoque même
+  18 ans). Le Code pénal fournit en revanche une base citable : l'article 347
+  vise les infractions commises « sur la personne d'un mineur de seize (16) à
+  vingt et un (21) ans », alors que la loi 2023/009 (art. 3) définit l'enfant
+  comme une personne de moins de 18 ans.
+
 ### Textes recherchés mais non obtenus
 
 | Texte | Situation |
 |---|---|
-| Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel | Existence et principales dispositions confirmées par plusieurs sources secondaires (création de l'APDP, art. 53 ; entrée en vigueur le 23 juin 2026). **Texte intégral officiel introuvable en ligne à ce jour.** |
 | Décret portant organisation du Gouvernement (attributions MINAS / MINPROFF / MINESEC) | Non inclus dans le recueil de l'ART. |
+| Code civil applicable au Cameroun (âge de la majorité civile) | Aucune version officielle consultable en ligne trouvée. |
 
 ---
 
@@ -67,7 +81,8 @@ sont découpés en blocs de taille fixe, chacun précédé du titre.
 | COPPA Rule, 16 CFR Part 312 (États-Unis) | eCFR — version incluant la modification du 22 avril 2025 | Anglais | Obtenu |
 | Online Safety Act 2021 (Australie) | Federal Register of Legislation (C2021A00076), **version d'origine du 23 juillet 2021** | Anglais | Obtenu |
 | Online Safety Act 2021 consolidé au 11 décembre 2024 (Australie), incluant la réforme sur l'âge minimum des réseaux sociaux | Federal Register of Legislation (C2024C00852) | Anglais | **Non obtenu** — le serveur renvoie une page d'erreur au téléchargement automatisé |
-| Observation générale n° 25 (2021), Comité des droits de l'enfant de l'ONU | Bibliothèque numérique de l'ONU (CRC/C/GC/25, fiche 3906061) | Français | **Non obtenu** — protection anti-robots du serveur ; à télécharger manuellement. Une copie disponible sur le site du BICE a été écartée : il s'agit d'un résumé illustré de 5 pages, pas du texte officiel. |
+| Observation générale n° 25 (2021), Comité des droits de l'enfant de l'ONU | HCDH (OHCHR), base des organes conventionnels, symbole CRC/C/GC/25, version française officielle du 2 mars 2021 | Français | Obtenu le 22/10/2026 — 125 paragraphes numérotés, découpés en blocs (le texte n'est pas organisé en articles). Une copie du BICE avait été écartée : résumé illustré de 5 pages, pas le texte officiel. |
+| Federal Decree by Law No. (26) of 2025 Regarding Child Digital Safety (Émirats arabes unis) | uaelegislation.gov.ae, législation 3912, version anglaise officielle (l'arabe fait foi) ; publiée au Journal officiel n° 809 du 14/10/2025, en vigueur le 01/01/2026 | Anglais | Obtenu le 22/10/2026 — 20 articles ; titres réécrits « Article N - Titre » (au lieu de « Article (N) Titre ») pour le découpage article par article. Le téléchargement automatisé étant refusé (HTTP 403), le texte a été relevé depuis la page affichée dans un navigateur. |
 
 > **Conséquence pour la simulation :** la version australienne utilisée
 > précède la réforme de 2024. Les comparaisons avec l'Australie portent donc
