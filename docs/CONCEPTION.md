@@ -43,7 +43,27 @@ Chaque assistant a :
 - un **périmètre d'information** (ce qu'il apprend, et quand) ;
 - des **sources prioritaires** dans la base de connaissances.
 
-**15 assistants** (liste validée le 17/10/2026 après vérification des sources).
+> **Regroupement validé avec le mentor le 22/10/2026.** Plusieurs institutions
+> ne disposaient que d'un article de loi chacune (MINAS, MINPROFF, MINESEC) et
+> d'autres partageaient exactement les mêmes textes (police et parquet). Les
+> 13 acteurs initiaux sont donc regroupés en **6 agents** par objectif commun,
+> sans réunir des acteurs dont les intérêts s'opposent :
+>
+> | Agent (identifiant) | Institutions représentées (n° du tableau ci-dessous) |
+> |---|---|
+> | Régulateurs du numérique (`regulateurs`) | ANTIC, ART, MINPOSTEL (1, 2, 3) |
+> | Protection des données (`apdp`) | APDP (4) |
+> | Chaîne pénale (`penal`) | Police judiciaire, Parquet (8, 9) |
+> | Protection sociale et éducative (`social`) | MINAS, MINPROFF, MINESEC (5, 6, 7) |
+> | Entreprises du numérique (`entreprises`) | Opérateurs, Tchatlink, ScolaPlus (11, 12, 13) |
+> | Agent innovant (`minorshield`) | MinorShield (10) |
+>
+> Avec le conseiller et l'animateur : **8 assistants**, dont 7 agents IA.
+> Un agent qui regroupe plusieurs institutions précise, pour chaque action,
+> laquelle agit. Les tableaux ci-dessous détaillent les institutions
+> représentées.
+
+**15 assistants** (liste initiale validée le 17/10/2026 après vérification des sources).
 
 ### Institutions publiques
 
@@ -107,7 +127,9 @@ Les noms d'entreprises sont fictifs : la messagerie étrangère s'appelle
 
 Le **conseiller juridique** intervient à chaque étape. L'**animateur** gère la
 circulation de l'information. Chacun des 13 acteurs intervient au moins une
-fois avant l'étape 5.
+fois avant l'étape 5. Depuis le regroupement du 22/10/2026, les destinataires
+de chaque étape sont les 6 agents correspondants (voir
+`agent/scenarios/operation_miroir.json`).
 
 ### Ce que chaque étape doit faire émerger
 

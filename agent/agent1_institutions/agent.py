@@ -33,6 +33,7 @@ LEGAL_CATEGORY = "Child_Online_Protection"
 EXTRACT_CHARS = 600          # longueur maximale d'un extrait presente au modele
 DEFAULT_EXTRACTS = 4
 PRIO_MARGIN = 0.15           # ecart de similarite toleree pour un extrait prioritaire
+MAX_PER_FILE = 2             # extraits au plus par texte, pour garder des sources variees
 
 _LEGAL_FILES: dict[str, str] = {}
 
@@ -95,33 +96,38 @@ class Turn:
 # par leur nom. Sans ce lexique, les agents confondaient les acteurs (ex. :
 # « l'organe charge de la regulation des TIC (MINESEC) » au lieu de l'ANTIC).
 LEXIQUE = """CORRESPONDANCE ENTRE LES TERMES DES LOIS ET LES ACTEURS :
-- « l'organe charge de la regulation des TIC » (ou des Technologies de l'information et de la communication) = ANTIC (identifiant : antic)
-- « l'organe charge de la regulation des telecommunications » = ART (identifiant : art)
-- « le Ministere en charge des telecommunications » = MINPOSTEL (identifiant : minpostel)
-- « le Ministere en charge des affaires sociales » = MINAS (identifiant : minas)
-- « le Ministere en charge de la femme et de la famille » = MINPROFF (identifiant : minproff)
-- « les Ministeres en charge de l'education » = notamment MINESEC pour l'enseignement secondaire (identifiant : minesec)
-- « les officiers de police judiciaire » = Police judiciaire (identifiant : police)
-- « le Procureur de la Republique » = Parquet (identifiant : parquet)
-- « les fournisseurs d'acces a Internet » et « les operateurs des reseaux de communications electroniques » = operateurs (identifiant : operateurs)
-- « les promoteurs de reseau social » et « les fournisseurs de contenus » = notamment Tchatlink (identifiant : tchatlink)
-- « l'Autorite de protection des donnees a caractere personnel » = APDP (identifiant : apdp)"""
+- « l'organe charge de la regulation des TIC » (ou des Technologies de l'information et de la communication) = ANTIC (agent : regulateurs)
+- « l'organe charge de la regulation des telecommunications » = ART (agent : regulateurs)
+- « le Ministere en charge des telecommunications » = MINPOSTEL (agent : regulateurs)
+- « le Ministere en charge des affaires sociales » = MINAS (agent : social)
+- « le Ministere en charge de la femme et de la famille » = MINPROFF (agent : social)
+- « les Ministeres en charge de l'education » = notamment MINESEC pour l'enseignement secondaire (agent : social)
+- « les officiers de police judiciaire » = Police judiciaire (agent : penal)
+- « le Procureur de la Republique » = Parquet (agent : penal)
+- « les fournisseurs d'acces a Internet » et « les operateurs des reseaux de communications electroniques » = Operateurs (agent : entreprises)
+- « les promoteurs de reseau social » et « les fournisseurs de contenus » = notamment Tchatlink (agent : entreprises)
+- « les responsables du traitement des donnees » = notamment ScolaPlus (agent : entreprises)
+- « l'Autorite de protection des donnees a caractere personnel » = APDP (agent : apdp)
+Dans "demandes", "destinataire" est TOUJOURS un identifiant d'agent (regulateurs, apdp, penal, social, entreprises, minorshield), jamais le nom d'une institution."""
 
 SCHEMA_REACTION = """{
   "evaluation": "ta lecture de la situation, a partir de ce que tu sais",
   "inconnues": ["ce que tu ignores et qui compte pour decider"],
   "actions": [
-    {"action": "ce que tu fais, dans les limites de ta mission",
+    {"institution": "l'institution qui agit, choisie dans ta liste",
+     "action": "ce qu'elle fait, dans les limites de sa mission",
      "base_legale": ["E1"],
      "justification": "pourquoi cet extrait fonde l'action"}
   ],
-  "demandes": [{"destinataire": "identifiant d'un autre acteur", "objet": "ce que tu lui demandes"}],
+  "demandes": [{"destinataire": "identifiant d'un autre acteur", "objet": "ce que tu lui demandes",
+                "raison": "pourquoi ton action depend de lui"}],
   "lacunes": ["ce que la loi ne te permet pas de faire, ou ne prevoit pas"],
   "confiance": 0.0,
   "raisonnement": ["etape 1 de ton raisonnement", "etape 2", "..."]
 }"""
 
 SCHEMA_REPONSE = """{
+  "institution": "l'institution qui repond, choisie dans ta liste",
   "reponse": "ta reponse a la demande",
   "base_legale": ["E1"],
   "peut_agir": true,
@@ -175,12 +181,16 @@ class CrisisAgent:
 
         out: list[Extract] = []
         seen: set[tuple[str, str]] = set()
+        per_file: dict[str, int] = {}
 
         def add(doc: str, meta: dict[str, Any], sim: float) -> None:
             key = (meta.get("source_file", ""), meta.get("article", "") or meta.get("chunk_index", ""))
-            if key in seen or len(out) >= n:
+            # Au plus MAX_PER_FILE extraits d'un meme texte : un long document
+            # (Observation generale, RGPD) ne doit pas occuper toutes les places.
+            if key in seen or len(out) >= n or per_file.get(key[0], 0) >= MAX_PER_FILE:
                 return
             seen.add(key)
+            per_file[key[0]] = per_file.get(key[0], 0) + 1
             out.append(Extract(
                 id="", source_file=meta.get("source_file", ""), article=meta.get("article", ""),
                 page=meta.get("page", ""), country=meta.get("country", ""),
@@ -232,11 +242,14 @@ class CrisisAgent:
     # ------------------------------------------------------------------ prompts
     def system_prompt(self) -> str:
         r = self.role
-        autres = ", ".join(f"{x.id} ({x.nom.split(' —')[0]})" for x in ROLES.values()
+        autres = "\n".join(f"- {x.id} : {x.nom}" for x in ROLES.values()
                            if x.id not in (r.id, "animateur"))
+        institutions = ", ".join(r.institutions) or r.nom
         return f"""Tu joues le role de : {r.nom}, dans une simulation de crise au Cameroun.
 
 TA MISSION : {r.mission}
+
+INSTITUTIONS QUE TU REPRESENTES : {institutions}
 
 FONDEMENTS DE TES POUVOIRS :
 {chr(10).join('- ' + f for f in r.fondements) or '- aucun'}
@@ -246,14 +259,16 @@ LIMITES DE TON MANDAT :
 
 REGLES IMPERATIVES :
 1. Tu ne connais QUE les informations qui te sont transmises. N'invente aucun fait et ne suppose rien sur ce que savent les autres acteurs.
-2. Tu n'agis que dans les limites de ta mission. Si une mesure releve d'un autre acteur, adresse-lui une demande.
-3. Toute action fondee sur le droit cite au moins un extrait fourni. "base_legale" contient UNIQUEMENT des identifiants d'extraits (exemple : ["E2", "E4"]), JAMAIS un numero d'article ecrit de memoire. Ne mentionne aucun article absent des extraits. Si aucun extrait ne fonde une action, laisse "base_legale" vide et explique-le dans "lacunes".
-4. Dis clairement ce que tu ignores.
-5. Reponds uniquement en francais, uniquement en JSON valide.
+2. Tu n'agis que dans les limites de ta mission. Chaque action indique dans "institution" UNE seule institution, recopiee exactement de cette liste : {institutions}.
+3. Coordination : pour chaque mesure, information ou decision qui releve d'un AUTRE acteur de la liste ci-dessous (un pouvoir que tu n'as pas, une donnee qu'il detient, une decision qu'il doit prendre), adresse-lui une demande dans "demandes", avec la raison. Dans une crise, presque toute action depend d'un autre acteur : si tu n'adresses aucune demande, explique pourquoi dans "raisonnement".
+4. Toute action fondee sur le droit cite au moins un extrait fourni. "base_legale" contient UNIQUEMENT des identifiants d'extraits (exemple : ["E2", "E4"]), JAMAIS un numero d'article ecrit de memoire. Ne mentionne aucun article absent des extraits. Si aucun extrait ne fonde une action, laisse "base_legale" vide et explique-le dans "lacunes".
+5. Dis clairement ce que tu ignores.
+6. Reponds uniquement en francais, uniquement en JSON valide.
 
 {LEXIQUE}
 
-AUTRES ACTEURS (identifiants a utiliser dans "demandes") : {autres}"""
+AUTRES ACTEURS (identifiant a utiliser dans "demandes" : qui ils representent) :
+{autres}"""
 
     def situation(self) -> str:
         known = "\n".join(f"- {s}" for s in self.known_steps) or "- (aucune)"

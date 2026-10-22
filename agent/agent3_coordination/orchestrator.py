@@ -45,6 +45,7 @@ class Orchestrator:
         self.audit = AuditLog(run_dir, scenario["id"])
         self.on_event = on_event or (lambda e: None)
         self.steps_out: list[dict[str, Any]] = []
+        self.deja_demande: set[tuple[str, str, str]] = set()
 
     def _emit(self, entry: dict[str, Any]) -> None:
         self.on_event(entry)
@@ -87,13 +88,25 @@ class Orchestrator:
                 if not isinstance(dem, dict):
                     continue
                 to = str(dem.get("destinataire", "")).strip().lower()
-                if to in self.agents and to != t.agent:
-                    demandes.append((t.agent, to, str(dem.get("objet", ""))))
+                objet = str(dem.get("objet", ""))
+                cle = (t.agent, to, " ".join(objet.lower().split()))
+                if to in self.agents and to != t.agent and cle in self.deja_demande:
+                    # Meme demande deja transmise a une etape precedente : la
+                    # reponse est deja dans la memoire de l'agent.
+                    self._emit(self.audit.event("demande_repetee", etape=n, de=t.agent, a=to, objet=objet))
+                elif to in self.agents and to != t.agent:
+                    demandes.append((t.agent, to, objet))
+                else:
+                    # Destinataire inconnu (nom d'institution au lieu d'un agent,
+                    # ou l'agent lui-meme) : trace dans le journal, pas d'oubli silencieux.
+                    self._emit(self.audit.event("demande_non_transmise", etape=n, de=t.agent,
+                                                destinataire=to, objet=str(dem.get("objet", ""))))
         if len(demandes) > self.max_demandes:
             self._emit(self.audit.event("demandes_ecartees", etape=n,
                                         nombre=len(demandes) - self.max_demandes,
                                         raison="limite de demandes par etape (quota du modele)"))
         for sender, to, objet in demandes[: self.max_demandes]:
+            self.deja_demande.add((sender, to, " ".join(objet.lower().split())))
             self.agents[to].receive_message(sender, objet)
             self._emit(self.audit.event("demande_transmise", etape=n, de=sender, a=to, objet=objet))
             rep = self.agents[to].answer(n, sender, objet)

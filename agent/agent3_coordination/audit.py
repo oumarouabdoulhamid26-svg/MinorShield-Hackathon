@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from collections import Counter
 from dataclasses import asdict
 from datetime import datetime, timezone
@@ -24,6 +25,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from agent.agent1_institutions.agent import Turn
+from agent.agent1_institutions.roles import ROLES
 
 _ARTICLE_MENTION = re.compile(r"\bart(?:icle|\.)?\s*(\d{1,3})\b", re.I)
 # Textes nommes par leur numero : « Directive 2018/1725 », « Règlement (UE) 2016/679 »,
@@ -130,11 +132,33 @@ def check_citations(cited: list[str], text: str, extracts_by_id: dict[str, Any],
     }
 
 
+def _institution(agent_id: str, value: Any) -> dict[str, Any]:
+    """L'institution nommee pour une action appartient-elle a l'agent ?
+
+    Un agent qui regroupe plusieurs institutions doit dire laquelle agit ;
+    une institution absente ou etrangere a l'agent est signalee.
+    """
+    role = ROLES.get(agent_id)
+    allowed = role.institutions if role else []
+    name = str(value or "").strip()
+
+    def norm(s: str) -> str:
+        return "".join(ch for ch in unicodedata.normalize("NFD", s.lower()) if unicodedata.category(ch) != "Mn")
+
+    match = next((i for i in allowed if name and (norm(name) in norm(i) or norm(i) in norm(name))), "")
+    return {"institution": match or name, "institution_valide": bool(match) or not allowed}
+
+
 def verify_turn(turn: Turn) -> list[dict[str, Any]]:
     """Verifie chaque action (ou la reponse) d'une intervention."""
     by_id = {e.id: e for e in turn.extracts}
     out = turn.output or {}
     checks: list[dict[str, Any]] = []
+    if not out:
+        # Appel au modele echoue (quota, reseau) ou reponse illisible : rien a
+        # verifier. L'erreur reste visible dans le journal, mais n'est pas
+        # comptee comme une action « non etayee ».
+        return checks
     if turn.kind == "reaction":
         for a in out.get("actions", []) or []:
             if not isinstance(a, dict):
@@ -142,10 +166,12 @@ def verify_turn(turn: Turn) -> list[dict[str, Any]]:
             text = f"{a.get('action', '')} {a.get('justification', '')}"
             c = check_citations(_ids(a.get("base_legale")), text, by_id)
             c["action"] = a.get("action", "")
+            c.update(_institution(turn.agent, a.get("institution")))
             checks.append(c)
     elif turn.kind == "reponse":
         c = check_citations(_ids(out.get("base_legale")), out.get("reponse", ""), by_id)
         c["action"] = out.get("reponse", "")
+        c.update(_institution(turn.agent, out.get("institution")))
         checks.append(c)
     elif turn.kind == "analyse":
         # 1. Verdicts du conseiller sur les actions des acteurs
@@ -186,6 +212,7 @@ class AuditLog:
         self.entries: list[dict[str, Any]] = []
         self.status_counter: Counter = Counter()
         self.tokens = 0
+        self.institutions = Counter()   # actions avec / sans institution valide
 
     def event(self, kind: str, **data: Any) -> dict[str, Any]:
         entry = {"horodatage": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -199,6 +226,8 @@ class AuditLog:
         checks = verify_turn(turn)
         for c in checks:
             self.status_counter[c["statut"]] += 1
+            if "institution_valide" in c:
+                self.institutions["valide" if c["institution_valide"] else "manquante"] += 1
         self.tokens += turn.tokens
         return self.event(
             f"intervention_{turn.kind}",
@@ -227,6 +256,9 @@ class AuditLog:
             "verifications": dict(self.status_counter),
             "taux_etayees": round(self.status_counter["etayee"] / total, 3) if total else None,
             "jetons_total": self.tokens,
+            "institution_nommee": dict(self.institutions),
+            "demandes_transmises": sum(1 for e in self.entries if e["evenement"] == "demande_transmise"),
+            "demandes_non_transmises": sum(1 for e in self.entries if e["evenement"] == "demande_non_transmise"),
         }
 
     def save(self, extra: Optional[dict[str, Any]] = None) -> Path:

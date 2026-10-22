@@ -13,8 +13,8 @@ Projet soumis au hackathon *ITU AI for Good Lab — United Arab Emirates*.
 ```
 MinorShield-Hackathon/
 ├── agent/                       Les agents IA (Policy Lab)
-│   ├── agent1_institutions/     13 acteurs : ANTIC, ART, MINPOSTEL, APDP, MINAS, MINPROFF,
-│   │                            MINESEC, police, parquet, MinorShield, opérateurs, plateformes
+│   ├── agent1_institutions/     6 agents acteurs : régulateurs (ANTIC, ART, MINPOSTEL), APDP,
+│   │                            chaîne pénale, protection sociale et éducative, entreprises, MinorShield
 │   ├── agent2_conseiller/       conseiller juridique : verdicts, lacunes, comparaisons mondiales
 │   ├── agent3_coordination/     animateur neutre, journal d'audit, vérification des citations, rapport
 │   ├── commun/                  configuration et accès unique au modèle de langage
@@ -34,12 +34,28 @@ MinorShield-Hackathon/
 
 ## En une phrase
 
-Treize assistants IA, jouant chacun une institution ou un acteur réel, gèrent
-ensemble une crise de chantage sexuel visant des élèves. Chacun ne sait que ce
-qu'on lui a révélé, agit dans les limites de son mandat et **justifie chaque
-décision par l'article de loi qu'il a réellement retrouvé** ; un conseiller
-juridique relève les lacunes du droit et les compare aux pratiques de l'Union
-européenne, du Royaume-Uni, des États-Unis et de l'Australie.
+Six agents IA, représentant chacun un groupe d'institutions ou d'acteurs réels
+qui partagent le même objectif, gèrent ensemble une crise de chantage sexuel
+visant des élèves. Chacun ne sait que ce qu'on lui a révélé, agit dans les
+limites de son mandat et **justifie chaque décision par l'article de loi qu'il
+a réellement retrouvé** ; un conseiller juridique relève les lacunes du droit
+et les compare aux pratiques de l'Union européenne, du Royaume-Uni, des
+États-Unis, de l'Australie, des Émirats arabes unis et de l'ONU. Un animateur
+programmé, sans modèle de langage, révèle les étapes et transmet les demandes.
+
+| Agent | Institutions représentées |
+|---|---|
+| Régulateurs du numérique | ANTIC (dont le CIRT national), ART, MINPOSTEL |
+| Protection des données | APDP |
+| Chaîne pénale | Police judiciaire, Parquet |
+| Protection sociale et éducative | MINAS, MINPROFF, MINESEC |
+| Entreprises du numérique | Opérateurs télécoms, Tchatlink et ScolaPlus (entreprises fictives) |
+| Agent innovant | MinorShield |
+
+Les institutions sont regroupées par objectif, mais les acteurs dont les
+intérêts s'opposent (régulateur et entreprise régulée, protection de l'enfant
+et protection de ses données) restent des agents distincts : leurs désaccords
+font apparaître les lacunes du droit.
 
 ## Correspondance avec les exigences du hackathon
 

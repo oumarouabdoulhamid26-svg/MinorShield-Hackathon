@@ -108,7 +108,7 @@ function checks(entry){
     const flags = [...(c.citations_invalides||[]).map(i => "identifiant inexistant : "+i),
                    ...(c.mentions_non_verifiees||[]), ...(c.textes_non_verifies||[]).map(t => "texte absent de la base : "+t),
                    ...(c.incoherences||[])];
-    return `<div class="act"><span class="badge s-${c.statut}">${STATUT[c.statut]||c.statut}</span> ${esc(c.action)}
+    return `<div class="act"><span class="badge s-${c.statut}">${STATUT[c.statut]||c.statut}</span> ${c.institution ? "<b>"+esc(c.institution)+"</b> — " : ""}${esc(c.action)}
       ${flags.length ? `<div class="flags">${flags.map(esc).join(" · ")}</div>` : ""}
       ${(c.citations_valides||[]).map(i => extractBox(byId[i])).join("")}</div>`;
   }).join("");

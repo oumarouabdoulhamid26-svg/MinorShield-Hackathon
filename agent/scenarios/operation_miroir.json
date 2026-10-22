@@ -9,7 +9,10 @@
       "moment": "J0, 08h00",
       "titre": "Une hausse anormale de contenus bloqués",
       "information": "Le système MinorShield constate depuis 48 heures une hausse de 400 % des contenus bloqués sur les appareils d'enfants protégés à Douala et à Yaoundé. Les messages interceptés partagent le même vocabulaire d'argot local et des formules du type « envoie ta photo sinon… ». Il est encore impossible de dire s'il s'agit d'une campagne organisée ou d'une coïncidence. MinorShield ne détient que des données agrégées et anonymisées.",
-      "destinataires": ["minorshield", "antic"],
+      "destinataires": [
+        "minorshield",
+        "regulateurs"
+      ],
       "questions_attendues": [
         "Un outil privé peut-il alerter les autorités, et avec quelles données, sans porter atteinte à la vie privée des enfants ?"
       ],
@@ -22,7 +25,10 @@
       "moment": "J0, 16h00",
       "titre": "Deux victimes identifiées",
       "information": "Des parents se présentent dans des centres sociaux de Douala. Deux victimes : une collégienne de 15 ans et une lycéenne de 19 ans, menacées de voir publiées des photos intimes si elles ne versent pas 50 000 FCFA par Mobile Money. Les photos ont été obtenues après plusieurs jours de manipulation par un faux profil. Le collège de la plus jeune envisage de l'exclure pour « atteinte à l'image de l'établissement ».",
-      "destinataires": ["minas", "minproff", "police", "minesec"],
+      "destinataires": [
+        "social",
+        "penal"
+      ],
       "questions_attendues": [
         "Quelle qualification pénale pour les faits ?",
         "Qui pilote la prise en charge des victimes : MINAS ou MINPROFF ?",
@@ -39,7 +45,11 @@
       "moment": "J1, 10h00",
       "titre": "Les images circulent sur une plateforme étrangère",
       "information": "Des images de la victime de 15 ans circulent dans des groupes de la messagerie Tchatlink, dont le siège est hors du Cameroun. Sollicitée, Tchatlink répond qu'elle traitera la demande « selon ses délais habituels de modération », sans s'engager sur une date. Les opérateurs de télécommunications sont sollicités pour un filtrage.",
-      "destinataires": ["minpostel", "art", "operateurs", "tchatlink", "police", "parquet"],
+      "destinataires": [
+        "regulateurs",
+        "entreprises",
+        "penal"
+      ],
       "questions_attendues": [
         "Peut-on contraindre une plateforme étrangère, et dans quel délai ?",
         "Les opérateurs peuvent-ils filtrer un contenu précis sans bloquer tout un service ?"
@@ -54,7 +64,13 @@
       "moment": "J1, 18h00",
       "titre": "L'origine : une fuite de données scolaires",
       "information": "L'enquête établit que les escrocs ont obtenu les numéros de téléphone des victimes et de leurs parents par une fuite de données de l'application de gestion scolaire ScolaPlus, utilisée par 300 établissements. L'éditeur de ScolaPlus avait détecté une anomalie trois semaines plus tôt mais n'a encore prévenu ni les établissements, ni les familles, ni aucune autorité.",
-      "destinataires": ["apdp", "antic", "scolaplus", "minesec", "police", "parquet"],
+      "destinataires": [
+        "apdp",
+        "regulateurs",
+        "entreprises",
+        "social",
+        "penal"
+      ],
       "questions_attendues": [
         "Quelles obligations de notification pour l'éditeur, et dans quel délai ?",
         "Quelle responsabilité et quelles sanctions pour ScolaPlus ?"
@@ -69,7 +85,14 @@
       "moment": "J2, 09h00",
       "titre": "Pression médiatique : faut-il bloquer Tchatlink ?",
       "information": "L'affaire fait la une des médias et des réseaux sociaux. Une proposition circule : bloquer entièrement l'accès à Tchatlink sur le territoire national jusqu'à la fin de la crise. Tchatlink compte plusieurs millions d'utilisateurs au Cameroun, dont de nombreux commerçants.",
-      "destinataires": ["minorshield", "antic", "art", "minpostel", "apdp", "minas", "minproff", "minesec", "police", "parquet", "operateurs", "tchatlink", "scolaplus"],
+      "destinataires": [
+        "minorshield",
+        "regulateurs",
+        "apdp",
+        "social",
+        "penal",
+        "entreprises"
+      ],
       "questions_attendues": [
         "Un blocage national est-il proportionné, et qui peut l'ordonner ?"
       ],

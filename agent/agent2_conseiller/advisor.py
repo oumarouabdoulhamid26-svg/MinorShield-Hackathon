@@ -154,7 +154,8 @@ class Advisor(CrisisAgent):
                 lines.append(f"## {t.agent}\nEvaluation : {str(o.get('evaluation', ''))[:eval_chars]}")
                 for a in (o.get("actions") or [])[:4]:
                     if isinstance(a, dict):
-                        lines.append(f"- Action : {a.get('action', '')} | extraits invoques : "
+                        qui = f" ({a.get('institution')})" if a.get("institution") else ""
+                        lines.append(f"- Action{qui} : {a.get('action', '')} | extraits invoques : "
                                      f"{ids(t.agent, a.get('base_legale') or []) or 'aucun'}")
                 for g in (o.get("lacunes") or [])[:3]:
                     lines.append(f"- Lacune signalee : {str(g)[:eval_chars]}")

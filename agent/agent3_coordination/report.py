@@ -62,6 +62,13 @@ def build(run_dir: Path) -> Path:
         out.append(f"| Citations invalides | {v.get('citation_invalide', 0)} |")
         taux = r.get("taux_etayees")
         out.append(f"| Taux d'actions étayées | {f'{taux:.0%}' if taux is not None else '—'} |")
+        inst = r.get("institution_nommee") or {}
+        if inst:
+            out.append(f"| Actions avec institution nommée | {inst.get('valide', 0)} sur "
+                       f"{inst.get('valide', 0) + inst.get('manquante', 0)} |")
+        if "demandes_transmises" in r:
+            out.append(f"| Demandes entre agents | {r['demandes_transmises']} transmises, "
+                       f"{r.get('demandes_non_transmises', 0)} non transmises |")
         out.append(f"| Jetons consommés | {r.get('jetons_total')} |\n")
 
     for e in entries:
@@ -72,6 +79,9 @@ def build(run_dir: Path) -> Path:
             out.append(f"> {e['information']}\n")
         elif ev == "demande_transmise":
             out.append(f"\n**Demande** — {_name(e['de'])} → {_name(e['a'])} : {e['objet']}\n")
+        elif ev == "demande_non_transmise":
+            out.append(f"\n*Demande non transmise (destinataire inconnu « {e['destinataire']} »)* — "
+                       f"{_name(e['de'])} : {e['objet']}\n")
         elif ev.startswith("intervention_"):
             rep = e.get("reponse") or {}
             kind = ev.replace("intervention_", "")
@@ -91,7 +101,10 @@ def build(run_dir: Path) -> Path:
                     for c in checks:
                         src = "<br>".join(c["sources"]) or "—"
                         warn = _warnings(c)
-                        out.append(f"| {c['action']} | {STATUT.get(c['statut'], c['statut'])}{warn} | {src} |")
+                        qui = f"**{c['institution']}** — " if c.get("institution") else ""
+                        if c.get("institution_valide") is False:
+                            warn += " ⚠️ institution non précisée"
+                        out.append(f"| {qui}{c['action']} | {STATUT.get(c['statut'], c['statut'])}{warn} | {src} |")
                     out.append("")
                 lac = _list(rep.get("lacunes"))
                 if lac:
