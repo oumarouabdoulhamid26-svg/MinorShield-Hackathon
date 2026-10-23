@@ -214,6 +214,29 @@ class AuditLog:
         self.tokens = 0
         self.institutions = Counter()   # actions avec / sans institution valide
 
+    def read_existing(self) -> list[dict[str, Any]]:
+        """Evenements deja ecrits dans le journal (reprise d'une simulation)."""
+        if not self.path.exists():
+            return []
+        return [json.loads(l) for l in self.path.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+    def load_existing(self, entries: list[dict[str, Any]], keep_steps: set[int]) -> None:
+        """Reprend le bilan la ou il s'etait arrete : seules les etapes terminees
+        (``keep_steps``) et les evenements hors etape sont comptes. Le fichier
+        n'est pas modifie : la suite s'ecrit a la fin."""
+        for e in entries:
+            if "etape" in e and e["etape"] not in keep_steps:
+                continue
+            if e["evenement"] in ("simulation_fin",):
+                continue
+            self.entries.append(e)
+            if e["evenement"].startswith("intervention_"):
+                self.tokens += e.get("jetons", 0) or 0
+                for c in e.get("verification", []):
+                    self.status_counter[c["statut"]] += 1
+                    if "institution_valide" in c:
+                        self.institutions["valide" if c["institution_valide"] else "manquante"] += 1
+
     def event(self, kind: str, **data: Any) -> dict[str, Any]:
         entry = {"horodatage": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                  "evenement": kind, **data}
@@ -259,6 +282,7 @@ class AuditLog:
             "institution_nommee": dict(self.institutions),
             "demandes_transmises": sum(1 for e in self.entries if e["evenement"] == "demande_transmise"),
             "demandes_non_transmises": sum(1 for e in self.entries if e["evenement"] == "demande_non_transmise"),
+            "coordinations_internes": sum(1 for e in self.entries if e["evenement"] == "coordination_interne"),
         }
 
     def save(self, extra: Optional[dict[str, Any]] = None) -> Path:

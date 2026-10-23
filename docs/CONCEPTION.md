@@ -24,7 +24,7 @@ pratiques mondiales.
 | Agent « conseiller en politique et juridique » | **Conseiller juridique** : cite la loi, identifie les lacunes face aux pratiques mondiales |
 | Agents « participants institutionnels » | **6 institutions** camerounaises (§3) |
 | Coordination multi-agents, mandats et informations différents | Protocole par tours, visibilité de l'information propre à chaque agent (§5) |
-| Scénario de crise séquencé, informations incomplètes et décalées | **5 étapes** révélées progressivement, chacune à une partie des agents seulement (§4) |
+| Scénario de crise séquencé, informations incomplètes et décalées | **6 étapes** révélées progressivement, chacune à une partie des agents seulement (§4) |
 | Journal d'audit et traçabilité du raisonnement | Chaque étape enregistrée : informations vues, extraits de loi retrouvés, raisonnement, décision (§7) |
 | Alignement UIT-T Y.3172 et cadre de préparation à l'IA | Correspondance explicite dans l'architecture (§8) |
 
@@ -120,10 +120,11 @@ Les noms d'entreprises sont fictifs : la messagerie étrangère s'appelle
 | Étape | Moment | Ce qui se passe | Qui est informé |
 |---|---|---|---|
 | **1** | J0, 08h | MinorShield constate une **hausse de 400 %** des contenus bloqués sur des appareils de Douala et Yaoundé, avec le même vocabulaire d'argot local et des messages type « envoie ta photo sinon… ». **On ne sait pas encore s'il s'agit d'une campagne organisée.** | MinorShield, ANTIC |
-| **2** | J0, 16h | Des parents se présentent dans des centres sociaux. **Deux victimes** : une collégienne de **15 ans** et une lycéenne de **19 ans**, menacées de voir publiées des photos intimes si elles ne paient pas. Le collège de la plus jeune **envisage de l'exclure**. | MINAS, MINPROFF, Police judiciaire, MINESEC |
-| **3** | J1, 10h | Des images circulent sur **Tchatlink**, dont le siège est à l'étranger. La plateforme répond qu'elle traitera la demande « selon ses délais habituels ». Les opérateurs sont sollicités pour un filtrage. | MINPOSTEL, ART, Opérateurs, Tchatlink, Police judiciaire, Parquet |
-| **4** | J1, 18h | Les escrocs ont obtenu les numéros des victimes par une **fuite de données de ScolaPlus**, utilisée par 300 établissements. L'éditeur **n'a encore notifié personne**. | APDP, ANTIC, ScolaPlus, MINESEC, Police judiciaire, Parquet |
-| **5** | J2, 09h | Pression médiatique ; une proposition circule : **bloquer entièrement Tchatlink** dans le pays. | Tous |
+| **2** | J0, 12h | Sortie de détection **simulée, au format réel de l'API de MinorShield** : une conversation est bloquée sur le téléphone d'une collégienne de 14 ans (score 0,62, proche du seuil). Fonctionnement réel : la capture part sur le serveur de MinorShield puis, pour la violence et le texte, vers le service de modération d'**OpenAI (États-Unis)**. MinorShield propose de conserver les captures 30 jours pour les autorités ; la collégienne parle d'un jeu entre amies. | MinorShield, APDP, Protection sociale et éducative, Chaîne pénale |
+| **3** | J0, 16h | Des parents se présentent dans des centres sociaux. **Deux victimes** : une collégienne de **15 ans** et une lycéenne de **19 ans**, menacées de voir publiées des photos intimes si elles ne paient pas. Le collège de la plus jeune **envisage de l'exclure**. | MINAS, MINPROFF, Police judiciaire, MINESEC |
+| **4** | J1, 10h | Des images circulent sur **Tchatlink**, dont le siège est à l'étranger. La plateforme répond qu'elle traitera la demande « selon ses délais habituels ». Les opérateurs sont sollicités pour un filtrage. | MINPOSTEL, ART, Opérateurs, Tchatlink, Police judiciaire, Parquet |
+| **5** | J1, 18h | Les escrocs ont obtenu les numéros des victimes par une **fuite de données de ScolaPlus**, utilisée par 300 établissements. L'éditeur **n'a encore notifié personne**. | APDP, ANTIC, ScolaPlus, MINESEC, Police judiciaire, Parquet |
+| **6** | J2, 09h | Pression médiatique ; une proposition circule : **bloquer entièrement Tchatlink** dans le pays. | Tous |
 
 Le **conseiller juridique** intervient à chaque étape. L'**animateur** gère la
 circulation de l'information. Chacun des 13 acteurs intervient au moins une
@@ -136,10 +137,11 @@ de chaque étape sont les 6 agents correspondants (voir
 | Étape | Questions juridiques attendues | Lacunes ou conflits attendus | Comparaison mondiale |
 |---|---|---|---|
 | **1** | Un outil privé peut-il alerter les autorités ? Avec quelles données, sans violer la vie privée des enfants ? | Pas de cadre de signalement entre acteurs privés et autorités | Obligation de signalement des plateformes (DSA) ; signalement des contenus pédocriminels (États-Unis) |
-| **2** | Prise en charge des victimes ; qualification pénale ; qui pilote : MINAS ou MINPROFF ? Une école peut-elle exclure une victime ? | **La victime de 19 ans n'est pas couverte** par la loi 2023/009 (moins de 18 ans, alors que la majorité civile est à 21 ans) ; **chevauchement MINAS/MINPROFF** ; aucune directive scolaire | Observation générale n° 25 de l'ONU : intérêt supérieur de l'enfant, ne pas punir la victime |
-| **3** | Peut-on contraindre une plateforme étrangère ? Dans quel délai ? Les opérateurs peuvent-ils filtrer un contenu précis ? | Portée extraterritoriale limitée ; absence de délai légal de retrait | DSA européen ; Online Safety Act britannique ; pouvoirs de retrait en 24 h du commissaire australien |
-| **4** | Obligation et délai de notification de la fuite ; responsabilité de ScolaPlus ; sanctions | APDP en place depuis juin 2026 seulement : procédures en construction | Notification en 72 h (RGPD) ; données des moins de 13 ans (COPPA) |
-| **5** | Un blocage national est-il proportionné ? Qui peut l'ordonner ? | **Conflit d'objectifs** : protection de l'enfance contre liberté d'expression et impact économique ; **absence de mécanisme formel de coordination de crise** | Exigences de proportionnalité dans les cadres européens et onusiens |
+| **2** | Transfert des captures d'un enfant vers un service étranger sans autorisation de l'APDP ? Qui consent : le parent, l'enfant ? Conservation et communication à la police sans réquisition ? Qui répond d'un faux positif ? | Surveillance et consentement ; transfert transfrontalier (loi 2024/017 art. 32) ; responsabilité ; absence de norme de performance des détecteurs ; « contenu inapproprié » (loi 2023/009 art. 3) contre catégories du détecteur | RGPD (consentement des enfants, transferts) ; Online Safety Act britannique ; décret-loi émirien 26/2025 (art. 7) ; Observation générale n° 25 |
+| **3** | Prise en charge des victimes ; qualification pénale ; qui pilote : MINAS ou MINPROFF ? Une école peut-elle exclure une victime ? | **La victime de 19 ans n'est pas couverte** par la loi 2023/009 (moins de 18 ans, alors que la majorité civile est à 21 ans) ; **chevauchement MINAS/MINPROFF** ; aucune directive scolaire | Observation générale n° 25 de l'ONU : intérêt supérieur de l'enfant, ne pas punir la victime |
+| **4** | Peut-on contraindre une plateforme étrangère ? Dans quel délai ? Les opérateurs peuvent-ils filtrer un contenu précis ? | Portée extraterritoriale limitée ; absence de délai légal de retrait | DSA européen ; Online Safety Act britannique ; pouvoirs de retrait en 24 h du commissaire australien |
+| **5** | Obligation et délai de notification de la fuite ; responsabilité de ScolaPlus ; sanctions | APDP en place depuis juin 2026 seulement : procédures en construction | Notification en 72 h (RGPD) ; données des moins de 13 ans (COPPA) |
+| **6** | Un blocage national est-il proportionné ? Qui peut l'ordonner ? | **Conflit d'objectifs** : protection de l'enfance contre liberté d'expression et impact économique ; **absence de mécanisme formel de coordination de crise** | Exigences de proportionnalité dans les cadres européens et onusiens |
 
 ### Inspiration réelle
 
@@ -262,7 +264,7 @@ Dimensions du cadre de préparation de l'UIT principalement concernées :
 
 Une **page web** pour la vidéo et le jury :
 
-- une ligne du temps des 5 étapes ;
+- une ligne du temps des 6 étapes ;
 - les messages de chaque assistant, avec son institution ;
 - pour chaque décision, l'article de loi cité, consultable ;
 - le rapport final de lacunes, comparé aux pratiques mondiales.
@@ -295,5 +297,5 @@ Une **page web** pour la vidéo et le jury :
 1. La liste des **9 assistants** convient-elle ? Faut-il en ajouter ou en retirer ?
 2. Le **scénario « Opération Miroir »** est-il le bon ? (Alternative possible :
    une fuite de données d'enfants par une application éducative.)
-3. Les **5 étapes** et la répartition de l'information sont-elles réalistes ?
+3. Les **6 étapes** et la répartition de l'information sont-elles réalistes ?
 4. Nom du projet : **MinorShield Policy Lab** — à garder ?

@@ -8,7 +8,7 @@
       "numero": 1,
       "moment": "J0, 08h00",
       "titre": "Une hausse anormale de contenus bloqués",
-      "information": "Le système MinorShield constate depuis 48 heures une hausse de 400 % des contenus bloqués sur les appareils d'enfants protégés à Douala et à Yaoundé. Les messages interceptés partagent le même vocabulaire d'argot local et des formules du type « envoie ta photo sinon… ». Il est encore impossible de dire s'il s'agit d'une campagne organisée ou d'une coïncidence. MinorShield ne détient que des données agrégées et anonymisées.",
+      "information": "Le système MinorShield constate depuis 48 heures une hausse de 400 % des contenus bloqués sur les appareils d'enfants protégés à Douala et à Yaoundé. Les messages interceptés partagent le même vocabulaire d'argot local et des formules du type « envoie ta photo sinon… ». Il est encore impossible de dire s'il s'agit d'une campagne organisée ou d'une coïncidence. MinorShield propose de ne partager avec les autorités que des statistiques agrégées et anonymisées.",
       "destinataires": [
         "minorshield",
         "regulateurs"
@@ -17,11 +17,51 @@
         "Un outil privé peut-il alerter les autorités, et avec quelles données, sans porter atteinte à la vie privée des enfants ?"
       ],
       "lacunes_attendues": [
-        "Absence de cadre de signalement entre acteurs privés de protection et autorités"
+        "La loi n° 2023/009 (art. 33) oblige les fournisseurs d'accès à signaler les contenus portant atteinte aux enfants, mais ne prévoit ni canal ni seuil d'alerte pour un outil tiers de protection de l'enfance ou pour des signaux agrégés"
       ]
     },
     {
       "numero": 2,
+      "moment": "J0, 12h00",
+      "titre": "Un blocage sur le téléphone d'une collégienne",
+      "information": "Sortie de détection SIMULÉE, au format réel de l'API de MinorShield (DetectionResponse) : {\"request_id\": \"SIMULE-0001\", \"label\": \"nsfw\", \"category\": \"texte\", \"nsfw_score\": 0.62, \"image_score\": 0.48, \"text_score\": 0.83, \"extracted_text\": \"envoie ta photo sinon...\", \"processing_ms\": 2140, \"timestamp\": \"J0T12:04:31\"}. Le contenu concerne une conversation sur le téléphone d'une collégienne de 14 ans ; le score combiné (image × 60 % + texte × 40 %) est proche du seuil de blocage. L'écran a été masqué et le parent alerté. Fonctionnement réel de MinorShield : la capture d'écran est envoyée au serveur de MinorShield ; pour la violence et le texte, elle est aussi transmise au service de modération d'OpenAI, situé aux États-Unis. Pour confirmer les cas douteux et aider d'éventuels enquêteurs, MinorShield propose de conserver ces captures 30 jours et de les communiquer aux autorités sur demande. Le parent demande pourquoi le message a été bloqué ; la collégienne affirme qu'il s'agit d'un jeu entre amies.",
+      "destinataires": [
+        "minorshield",
+        "apdp",
+        "social",
+        "penal"
+      ],
+      "entree_simulee": {
+        "source": "MinorShield, API de détection (format DetectionResponse)",
+        "simule": true,
+        "sortie": {
+          "request_id": "SIMULE-0001",
+          "label": "nsfw",
+          "category": "texte",
+          "nsfw_score": 0.62,
+          "image_score": 0.48,
+          "text_score": 0.83,
+          "extracted_text": "envoie ta photo sinon...",
+          "processing_ms": 2140,
+          "timestamp": "J0T12:04:31"
+        }
+      },
+      "questions_attendues": [
+        "L'envoi des captures d'écran d'un enfant à un service étranger (OpenAI, États-Unis) est-il licite sans autorisation de l'APDP ?",
+        "Qui doit consentir à l'analyse de l'écran d'un mineur : le parent, l'enfant, ou les deux ?",
+        "MinorShield peut-il conserver des captures et les communiquer à la police sans réquisition ?",
+        "Qui répond d'un blocage injustifié ou d'une détection manquée ?"
+      ],
+      "lacunes_attendues": [
+        "Surveillance et vie privée : au-delà du consentement parental exigé pour un mineur (loi n° 2024/017, art. 9(3)), aucun texte ne dit quand la surveillance de l'écran d'un enfant par un outil privé est licite, ni quelle place donner à l'avis de l'enfant",
+        "Transfert transfrontalier : la loi n° 2024/017 (art. 32) soumet tout transfert vers un État étranger à l'autorisation préalable de l'APDP, mais rien n'encadre les services d'IA étrangers appelés en temps réel",
+        "Responsabilité : aucun texte ne désigne qui répond d'un blocage injustifié ou d'une détection manquée (développeur, parent, école)",
+        "Normes : aucune norme pour mesurer et publier les performances d'un détecteur de contenus, ni pour expliquer un blocage à l'enfant",
+        "Définition : le « contenu inapproprié » de la loi n° 2023/009 (art. 3) ne correspond pas aux catégories du détecteur (nudité, violence, texte)"
+      ]
+    },
+    {
+      "numero": 3,
       "moment": "J0, 16h00",
       "titre": "Deux victimes identifiées",
       "information": "Des parents se présentent dans des centres sociaux de Douala. Deux victimes : une collégienne de 15 ans et une lycéenne de 19 ans, menacées de voir publiées des photos intimes si elles ne versent pas 50 000 FCFA par Mobile Money. Les photos ont été obtenues après plusieurs jours de manipulation par un faux profil. Le collège de la plus jeune envisage de l'exclure pour « atteinte à l'image de l'établissement ».",
@@ -41,7 +81,7 @@
       ]
     },
     {
-      "numero": 3,
+      "numero": 4,
       "moment": "J1, 10h00",
       "titre": "Les images circulent sur une plateforme étrangère",
       "information": "Des images de la victime de 15 ans circulent dans des groupes de la messagerie Tchatlink, dont le siège est hors du Cameroun. Sollicitée, Tchatlink répond qu'elle traitera la demande « selon ses délais habituels de modération », sans s'engager sur une date. Les opérateurs de télécommunications sont sollicités pour un filtrage.",
@@ -60,7 +100,7 @@
       ]
     },
     {
-      "numero": 4,
+      "numero": 5,
       "moment": "J1, 18h00",
       "titre": "L'origine : une fuite de données scolaires",
       "information": "L'enquête établit que les escrocs ont obtenu les numéros de téléphone des victimes et de leurs parents par une fuite de données de l'application de gestion scolaire ScolaPlus, utilisée par 300 établissements. L'éditeur de ScolaPlus avait détecté une anomalie trois semaines plus tôt mais n'a encore prévenu ni les établissements, ni les familles, ni aucune autorité.",
@@ -81,7 +121,7 @@
       ]
     },
     {
-      "numero": 5,
+      "numero": 6,
       "moment": "J2, 09h00",
       "titre": "Pression médiatique : faut-il bloquer Tchatlink ?",
       "information": "L'affaire fait la une des médias et des réseaux sociaux. Une proposition circule : bloquer entièrement l'accès à Tchatlink sur le territoire national jusqu'à la fin de la crise. Tchatlink compte plusieurs millions d'utilisateurs au Cameroun, dont de nombreux commerçants.",

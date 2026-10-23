@@ -57,11 +57,29 @@ def estimate_tokens(text: str) -> int:
     return len(text) // 3 + 1
 
 
+# Modele impose par le ML Intent (agent/intent.json) ; il peut changer en cours
+# de simulation lors d'une reconfiguration (bascule sur le modele de secours).
+_model_override: Optional[str] = None
+
+
+def use_model(name: Optional[str]) -> None:
+    global _model_override
+    _model_override = name
+
+
 def model_name(fast: bool = False) -> str:
     """Nom du modele effectivement utilise (pour les journaux d'audit)."""
+    if _model_override and settings.llm_provider == "groq":
+        return _model_override
     if settings.llm_provider == "groq":
         return settings.groq_model_fast if fast else settings.groq_model
     return settings.llm_model
+
+
+def is_quota_error(message: str) -> bool:
+    """L'erreur vient-elle d'un quota epuise (HTTP 429) ?"""
+    low = (message or "").lower()
+    return "429" in low or "rate limit" in low
 
 
 @dataclass

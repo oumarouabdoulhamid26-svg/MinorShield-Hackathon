@@ -79,6 +79,20 @@ def build(run_dir: Path) -> Path:
             out.append(f"> {e['information']}\n")
         elif ev == "demande_transmise":
             out.append(f"\n**Demande** — {_name(e['de'])} → {_name(e['a'])} : {e['objet']}\n")
+        elif ev == "reconfiguration":
+            retenue = f" — tentative {e['retenue']} retenue" if e.get("retenue") else ""
+            out.append(f"\n> 🔧 **Reconfiguration automatique** ({e['type']}, {_name(e['agent'])}) : "
+                       f"{e['raison']}{retenue}. Règle : {e.get('regle', '')}\n")
+        elif ev == "simulation_interrompue":
+            out.append(f"\n> ⏸️ **Simulation interrompue** à l'étape {e['etape']} ({e['raison']}). "
+                       f"Reprise : `{e['reprise']}`\n")
+        elif ev == "simulation_reprise":
+            out.append(f"\n---\n\n> ⏯️ **Reprise de la simulation** (étapes déjà jouées : "
+                       f"{', '.join(map(str, e['etapes_deja_jouees'])) or 'aucune'})\n")
+        elif ev == "etape_abandonnee":
+            out.append(f"\n> Étape {e['etape']} interrompue puis rejouée entièrement à la reprise.\n")
+        elif ev == "coordination_interne":
+            out.append(f"\n*Coordination interne* — {_name(e['agent'])} ({e['destinataire']}) : {e['objet']}\n")
         elif ev == "demande_non_transmise":
             out.append(f"\n*Demande non transmise (destinataire inconnu « {e['destinataire']} »)* — "
                        f"{_name(e['de'])} : {e['objet']}\n")

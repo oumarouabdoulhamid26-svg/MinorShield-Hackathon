@@ -182,20 +182,25 @@ ROLES: dict[str, Role] = {r.id: r for r in [
         nom="MinorShield — solution de protection des mineurs par IA (agent innovant)",
         categorie="prive",
         mission=(
-            "Application qui analyse et bloque les contenus inappropries sur les appareils d'enfants "
-            "proteges. Detecte des tendances anormales. Ne detient que des donnees agregees et "
-            "anonymisees ; ne connait pas l'identite des enfants ni le contenu des conversations privees."
+            "Application qui analyse les ecrans des appareils d'enfants proteges et bloque les contenus "
+            "inappropries, en alertant le parent. Fonctionnement reel : la capture d'ecran est envoyee au "
+            "serveur de MinorShield (detection de nudite) ; pour la violence et le texte, elle est aussi "
+            "transmise au service de moderation d'OpenAI (Etats-Unis). Detecte des tendances anormales. "
+            "Defend l'utilite de son outil tout en reconnaissant ses limites (faux positifs, donnees "
+            "transmises a l'etranger)."
         ),
         fondements=[
             "Loi n° 2023/009, art. 11 a 13 (role du secteur prive)",
             "Loi n° 2023/009, art. 23(2) (protection de la vie privee des enfants)",
+            "Loi n° 2024/017 : MinorShield est responsable du traitement des captures (consentement art. 9, transfert a l'etranger art. 32)",
         ],
         limites=[
             "N'a aucun pouvoir d'enquete ni de sanction",
             "Ne doit pas transmettre de donnees personnelles d'enfants sans base legale",
+            "Un score de detection n'est pas une preuve : il peut se tromper (faux positif)",
         ],
         institutions=["MinorShield"],
-        sources_prioritaires=["Loi_2023-009", "MinorShield"],
+        sources_prioritaires=["Loi_2023-009", "Loi_2024-017", "MinorShield"],
     ),
     # ------------------------------------------------------------- transversal
     Role(

@@ -12,6 +12,7 @@ references etrangeres, afin que la comparaison s'appuie sur des textes reels.
 from __future__ import annotations
 
 import json
+import re
 from typing import Any
 
 from agent.commun import llm
@@ -27,7 +28,7 @@ SCHEMA_ANALYSE = """{
   "lacunes": [
     {"lacune": "ce que le droit camerounais ne prevoit pas, ou prevoit mal",
      "texte_camerounais": ["E1"],
-     "comparaison": [{"juridiction": "UE, Royaume-Uni, Etats-Unis, Australie ou ONU",
+     "comparaison": [{"juridiction": "UE, Royaume-Uni, Etats-Unis, Australie, Emirats arabes unis ou ONU",
                       "pratique": "ce qui y est prevu", "reference": "E6"}],
      "references": ["E1", "E6"],
      "recommandation": "proposition concrete pour combler la lacune"}
@@ -48,7 +49,8 @@ class Advisor(CrisisAgent):
         return self.number(local + foreign)
 
     # Juridictions de comparaison presentes dans la base.
-    FOREIGN = ("European Union", "United Kingdom", "United States", "Australia")
+    FOREIGN = ("European Union", "United Kingdom", "United States", "Australia",
+               "United Arab Emirates", "global")   # « global » : Observation generale n° 25 (ONU)
 
     def _retrieve_foreign(self, query: str, n: int) -> list[Extract]:
         """Meilleur extrait de CHAQUE juridiction etrangere, pour une comparaison equilibree.
@@ -78,7 +80,8 @@ class Advisor(CrisisAgent):
         return (e.source_file, e.article, e.text[:80])
 
     def gather(self, turns: list[Turn], query: str, max_cited: int = 8,
-               n_foreign: int = 4, n_local: int = 3) -> tuple[list[Extract], dict, int]:
+               n_foreign: int = 4, n_local: int = 3,
+               checks: tuple[str, ...] = ()) -> tuple[list[Extract], dict, int]:
         """Construit UNE liste d'extraits numerotee pour toute l'etape.
 
         Chaque agent numerote ses extraits a partir de E1 : sans renumerotation,
@@ -125,16 +128,24 @@ class Advisor(CrisisAgent):
             e = first_seen[k]
             index[k] = Extract("", e.source_file, e.article, e.page, e.country, e.similarity, e.text)
             cited_pool.append(index[k])
-        # 2. References etrangeres, puis 3. droit camerounais complementaire.
+        # 2. Textes de controle (definitions, delais) : jamais sacrifies, car
+        # ils servent a verifier le champ des textes et le realisme des delais.
+        control: list[Extract] = []
+        for q in checks:
+            for e in self.retrieve(q, n=1, country="Cameroon"):
+                if self._key(e) not in index:
+                    index[self._key(e)] = e
+                    control.append(e)
+        # 3. References etrangeres, puis 4. droit camerounais complementaire.
         foreign = [e for e in self._retrieve_foreign(query, n=n_foreign) if self._key(e) not in index]
         for e in foreign:
             index[self._key(e)] = e
         local = [e for e in self.retrieve(query, n=n_local, country="Cameroon") if self._key(e) not in index]
-        pool = self.number(cited_pool + foreign + local)
+        pool = self.number(cited_pool + control + foreign + local)
         # Correspondance ; un extrait cite mais ecarte (au-dela de max_cited)
         # apparaitra comme « non fourni » dans le resume.
         remap = {owner: index[k].id for owner, k in owners if k in index}
-        return pool, remap, len(cited_pool) + len(foreign)
+        return pool, remap, len(cited_pool) + len(control) + len(foreign)
 
     @staticmethod
     def digest(turns: list[Turn], remap: dict, eval_chars: int = 400, max_chars: int = 0) -> str:
@@ -176,6 +187,12 @@ class Advisor(CrisisAgent):
                 f"REGLES DE CITATION : les SEULS identifiants valides sont {', '.join(e.id for e in extracts) or 'aucun'}. "
                 "Dans chaque commentaire, cite l'identifiant de l'extrait sur lequel tu t'appuies. "
                 "Ne nomme AUCUN texte (directive, reglement, loi) qui ne figure pas dans ces extraits. "
+                "Avant d'ecrire qu'un texte camerounais « ne prevoit pas » quelque chose, verifie les extraits "
+                "camerounais : s'il le prevoit, ce n'est pas une lacune (au plus une imprecision, a qualifier ainsi). "
+                "Pour chaque personne concernee (victime, auteur), verifie avec les definitions fournies qu'elle entre "
+                "bien dans le champ du texte invoque (age, qualite) ; signale tout ecart entre les seuils d'age des "
+                "textes. Quand un texte fixe un delai, juge s'il est adapte au rythme de la crise (contenus viraux, "
+                "donnees exposees). "
                 "Une comparaison avec un pays doit citer un extrait de CE pays ; s'il n'y en a pas, ecris "
                 "« aucun extrait disponible pour cette juridiction » au lieu d'inventer.\n"
                 f"Reponds avec exactement cette structure JSON :\n{SCHEMA_ANALYSE}")
@@ -205,7 +222,12 @@ class Advisor(CrisisAgent):
 
     def analyse(self, step: dict[str, Any], turns: list[Turn]) -> Turn:
         query = f"{step['titre']}. {step['information']}\n" + " ".join(step.get("questions_attendues", []))
-        extracts, remap, n_keep = self.gather(turns, query)
+        checks = []
+        if re.search(r"\d+\s*ans", step["information"]):
+            checks.append("definition de l'enfant : age en dessous duquel une personne est un enfant ou un mineur")
+        if re.search(r"(?i)d[ée]lai|mise en demeure|notifi|retrait|suppression|bloqu", step["information"]):
+            checks.append("delai impose pour se conformer, retirer un contenu ou notifier")
+        extracts, remap, n_keep = self.gather(turns, query, checks=tuple(checks))
         max_tokens = 3000
         extracts, digest, user = self.fit_budget(step, turns, extracts, remap, n_keep, max_tokens)
         visible = [f"Etape {step['numero']} : {step['information']}"]

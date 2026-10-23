@@ -17,9 +17,11 @@ MinorShield-Hackathon/
 │   │                            chaîne pénale, protection sociale et éducative, entreprises, MinorShield
 │   ├── agent2_conseiller/       conseiller juridique : verdicts, lacunes, comparaisons mondiales
 │   ├── agent3_coordination/     animateur neutre, journal d'audit, vérification des citations, rapport
-│   ├── commun/                  configuration et accès unique au modèle de langage
-│   ├── scenarios/               le scénario « Opération Miroir » (5 étapes)
-│   └── scripts/                 page de démonstration, re-vérification d'une simulation
+│   ├── commun/                  configuration, lecture du ML Intent, accès unique au modèle de langage
+│   ├── intent.json              ML Intent (Y.3172) : sources, agents, modèles, contraintes, seuil de qualité
+│   ├── scenarios/               le scénario « Opération Miroir » (6 étapes)
+│   ├── scripts/                 page de démonstration, re-vérification d'une simulation
+│   └── tests/                   tests de l'orchestrateur (faux modèle : aucun jeton consommé)
 ├── application/                 L'application MinorShield (la « solution d'IA innovante »)
 │   ├── frontend/                applications Android : parent (app/) et enfant (app-enfant/)
 │   └── backend/                 API FastAPI : détection d'images et de textes, comptes, alertes
@@ -68,7 +70,7 @@ font apparaître les lacunes du droit.
 | Coordination multi-agents | `agent/agent3_coordination/orchestrator.py` |
 | Scénario séquencé, information inégale | `agent/scenarios/operation_miroir.json` |
 | Journal d'audit et traçabilité | `agent/agent3_coordination/audit.py`, `docs/exemple_simulation/` |
-| Alignement UIT-T Y.3172 | [docs/CONCEPTION.md](docs/CONCEPTION.md) et rapport technique |
+| Alignement UIT-T Y.3172 | `agent/intent.json` (ML Intent), reconfiguration automatique dans l'orchestrateur, [docs/CONCEPTION.md](docs/CONCEPTION.md) et rapport technique |
 
 ### La vérification des citations
 
@@ -102,6 +104,23 @@ Lancer une simulation :
 ```bash
 python run_simulation.py --essai --etapes 1     # essai rapide (petit modèle, étape 1)
 python run_simulation.py                        # simulation complète de référence
+python run_simulation.py --reprendre runs/<date>_<scénario>   # reprise après un quota épuisé
+```
+
+La simulation est pilotée par le **ML Intent** `agent/intent.json` (UIT-T
+Y.3172, REQ-ML-SPEC-001 à 004) : agents actifs, modèles principal et de
+secours, contraintes (jetons, extraits, historique), seuil de qualité et
+sorties. L'orchestrateur se **reconfigure seul** et l'inscrit au journal
+(REQ-ML-MNG-001 et MNG-004) :
+
+- si le taux d'actions étayées d'un agent passe sous le seuil, nouvelle
+  tentative avec plus d'extraits ; la meilleure est gardée ;
+- si le quota du modèle principal est épuisé, bascule sur le modèle de secours.
+
+Tests de l'orchestrateur (faux modèle de langage, aucun jeton consommé) :
+
+```bash
+python -m unittest agent.tests.test_orchestration -v
 ```
 
 Chaque simulation produit dans `runs/<date>_<scénario>/` un journal d'audit

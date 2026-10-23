@@ -30,8 +30,13 @@ LEGAL_CATEGORY = "Child_Online_Protection"
 # Budget : une simulation complete doit tenir dans le quota journalier gratuit
 # (200 000 jetons). Une premiere simulation complete en consommait 174 000 ;
 # ces reglages en economisent environ 20 %.
+# Valeurs par defaut ; le ML Intent (agent/intent.json) les remplace au demarrage.
 EXTRACT_CHARS = 600          # longueur maximale d'un extrait presente au modele
 DEFAULT_EXTRACTS = 4
+ANSWER_EXTRACTS = 3          # extraits pour repondre a une demande
+OLD_STEP_CHARS = 0           # 0 = etapes anciennes en entier ; sinon tronquees a N caracteres
+INBOX_KEEP = 0               # 0 = tous les messages ; sinon les N derniers
+MESSAGE_CHARS = 0            # 0 = messages en entier ; sinon tronques a N caracteres
 PRIO_MARGIN = 0.15           # ecart de similarite toleree pour un extrait prioritaire
 MAX_PER_FILE = 2             # extraits au plus par texte, pour garder des sources variees
 
@@ -95,20 +100,14 @@ class Turn:
 # Les lois camerounaises designent les institutions par leur fonction, rarement
 # par leur nom. Sans ce lexique, les agents confondaient les acteurs (ex. :
 # « l'organe charge de la regulation des TIC (MINESEC) » au lieu de l'ANTIC).
-LEXIQUE = """CORRESPONDANCE ENTRE LES TERMES DES LOIS ET LES ACTEURS :
-- « l'organe charge de la regulation des TIC » (ou des Technologies de l'information et de la communication) = ANTIC (agent : regulateurs)
-- « l'organe charge de la regulation des telecommunications » = ART (agent : regulateurs)
-- « le Ministere en charge des telecommunications » = MINPOSTEL (agent : regulateurs)
-- « le Ministere en charge des affaires sociales » = MINAS (agent : social)
-- « le Ministere en charge de la femme et de la famille » = MINPROFF (agent : social)
-- « les Ministeres en charge de l'education » = notamment MINESEC pour l'enseignement secondaire (agent : social)
-- « les officiers de police judiciaire » = Police judiciaire (agent : penal)
-- « le Procureur de la Republique » = Parquet (agent : penal)
-- « les fournisseurs d'acces a Internet » et « les operateurs des reseaux de communications electroniques » = Operateurs (agent : entreprises)
-- « les promoteurs de reseau social » et « les fournisseurs de contenus » = notamment Tchatlink (agent : entreprises)
-- « les responsables du traitement des donnees » = notamment ScolaPlus (agent : entreprises)
-- « l'Autorite de protection des donnees a caractere personnel » = APDP (agent : apdp)
-Dans "demandes", "destinataire" est TOUJOURS un identifiant d'agent (regulateurs, apdp, penal, social, entreprises, minorshield), jamais le nom d'une institution."""
+LEXIQUE = """AGENTS (identifiant a mettre dans "destinataire") ET TERMES DES LOIS QUI LES DESIGNENT :
+- regulateurs : ANTIC = « organe charge de la regulation des TIC » ; ART = « organe charge de la regulation des telecommunications » ; MINPOSTEL = « Ministere en charge des telecommunications »
+- apdp : APDP = « Autorite de protection des donnees a caractere personnel »
+- penal : Police judiciaire = « officiers de police judiciaire » ; Parquet = « Procureur de la Republique »
+- social : MINAS = « Ministere en charge des affaires sociales » ; MINPROFF = « Ministere en charge de la femme et de la famille » ; MINESEC (« Ministeres en charge de l'education »)
+- entreprises : Operateurs = « fournisseurs d'acces a Internet », « operateurs des reseaux de communications electroniques » ; Tchatlink = « promoteur de reseau social » ; ScolaPlus = « responsable du traitement des donnees »
+- minorshield : MinorShield
+"destinataire" est TOUJOURS l'un de ces identifiants, jamais le nom d'une institution."""
 
 SCHEMA_REACTION = """{
   "evaluation": "ta lecture de la situation, a partir de ce que tu sais",
@@ -153,7 +152,7 @@ class CrisisAgent:
         self.inbox.append({"de": sender, "contenu": content})
 
     # ---------------------------------------------------------------- recherche
-    def retrieve(self, query: str, n: int = DEFAULT_EXTRACTS,
+    def retrieve(self, query: str, n: Optional[int] = None,
                  country: Optional[str] = None) -> list[Extract]:
         """Cherche les extraits juridiques les plus pertinents.
 
@@ -165,6 +164,7 @@ class CrisisAgent:
         (au plus PRIO_MARGIN de similarite sous le meilleur resultat general) ;
         le reste suit la pertinence, avec un leger bonus aux textes prioritaires.
         """
+        n = n or DEFAULT_EXTRACTS
         where: dict[str, Any] = {"document_category": LEGAL_CATEGORY}
         if country:
             where = {"$and": [where, {"country": country}]}
@@ -242,8 +242,6 @@ class CrisisAgent:
     # ------------------------------------------------------------------ prompts
     def system_prompt(self) -> str:
         r = self.role
-        autres = "\n".join(f"- {x.id} : {x.nom}" for x in ROLES.values()
-                           if x.id not in (r.id, "animateur"))
         institutions = ", ".join(r.institutions) or r.nom
         return f"""Tu joues le role de : {r.nom}, dans une simulation de crise au Cameroun.
 
@@ -260,26 +258,35 @@ LIMITES DE TON MANDAT :
 REGLES IMPERATIVES :
 1. Tu ne connais QUE les informations qui te sont transmises. N'invente aucun fait et ne suppose rien sur ce que savent les autres acteurs.
 2. Tu n'agis que dans les limites de ta mission. Chaque action indique dans "institution" UNE seule institution, recopiee exactement de cette liste : {institutions}.
-3. Coordination : pour chaque mesure, information ou decision qui releve d'un AUTRE acteur de la liste ci-dessous (un pouvoir que tu n'as pas, une donnee qu'il detient, une decision qu'il doit prendre), adresse-lui une demande dans "demandes", avec la raison. Dans une crise, presque toute action depend d'un autre acteur : si tu n'adresses aucune demande, explique pourquoi dans "raisonnement".
+3. Coordination : pour chaque mesure, information ou decision qui releve d'un AUTRE agent de la liste ci-dessous (un pouvoir que tu n'as pas, une donnee qu'il detient, une decision qu'il doit prendre), adresse-lui une demande dans "demandes", avec la raison. Dans une crise, presque toute action depend d'un autre agent : si tu n'adresses aucune demande, explique pourquoi dans "raisonnement".
 4. Toute action fondee sur le droit cite au moins un extrait fourni. "base_legale" contient UNIQUEMENT des identifiants d'extraits (exemple : ["E2", "E4"]), JAMAIS un numero d'article ecrit de memoire. Ne mentionne aucun article absent des extraits. Si aucun extrait ne fonde une action, laisse "base_legale" vide et explique-le dans "lacunes".
 5. Dis clairement ce que tu ignores.
-6. Reponds uniquement en francais, uniquement en JSON valide.
+6. Sois concis : au plus 3 actions et 3 demandes, une evaluation de 2 phrases, un raisonnement de 4 etapes courtes au plus.
+7. Reponds uniquement en francais, uniquement en JSON valide.
 
-{LEXIQUE}
-
-AUTRES ACTEURS (identifiant a utiliser dans "demandes" : qui ils representent) :
-{autres}"""
+{LEXIQUE}"""
 
     def situation(self) -> str:
-        known = "\n".join(f"- {s}" for s in self.known_steps) or "- (aucune)"
-        msgs = "\n".join(f"- De {m['de']} : {m['contenu']}" for m in self.inbox) or "- (aucun)"
+        """Ce que l'agent sait. Pour limiter les jetons (ML Intent, « historique »),
+        les etapes anciennes et les messages peuvent etre abreges : l'etape en
+        cours reste toujours en entier."""
+        def cut(s: str, limit: int) -> str:
+            return s if not limit or len(s) <= limit else s[:limit].rstrip() + " [...]"
+        steps = [cut(s, OLD_STEP_CHARS) for s in self.known_steps[:-1]] + self.known_steps[-1:]
+        inbox = self.inbox[-INBOX_KEEP:] if INBOX_KEEP else self.inbox
+        known = "\n".join(f"- {s}" for s in steps) or "- (aucune)"
+        msgs = "\n".join(f"- De {m['de']} : {cut(m['contenu'], MESSAGE_CHARS)}" for m in inbox) or "- (aucun)"
+        older = len(self.inbox) - len(inbox)
+        if older > 0:
+            msgs = f"- ({older} messages plus anciens non repetes)\n" + msgs
         return f"CE QUE TU SAIS :\n{known}\n\nMESSAGES RECUS :\n{msgs}"
 
     # ------------------------------------------------------------------- actes
-    def react(self, step_no: int) -> Turn:
-        """Reaction a la derniere etape revelee."""
+    def react(self, step_no: int, n_extracts: Optional[int] = None) -> Turn:
+        """Reaction a la derniere etape revelee (``n_extracts`` : plus d'extraits
+        lors d'une nouvelle tentative decidee par l'orchestrateur)."""
         query = f"{self.role.mission}\n{self.known_steps[-1] if self.known_steps else ''}"
-        extracts = self.number(self.retrieve(query))
+        extracts = self.number(self.retrieve(query, n=n_extracts))
         user = (f"{self.situation()}\n\nEXTRAITS DE LA BASE DE CONNAISSANCES :\n{self.format_extracts(extracts)}"
                 f"\n\nQue fais-tu maintenant ? Reponds avec exactement cette structure JSON :\n{SCHEMA_REACTION}")
         return self._call("reaction", step_no, query, extracts, user, fast=self.essai)
@@ -291,7 +298,7 @@ AUTRES ACTEURS (identifiant a utiliser dans "demandes" : qui ils representent) :
         doit tourner sur le grand modele (et ne pas dependre du quota du petit).
         """
         query = f"{self.role.mission}\n{request}"
-        extracts = self.number(self.retrieve(query, n=3))
+        extracts = self.number(self.retrieve(query, n=ANSWER_EXTRACTS))
         user = (f"{self.situation()}\n\nDEMANDE DE {sender} : {request}\n\n"
                 f"EXTRAITS DE LA BASE DE CONNAISSANCES :\n{self.format_extracts(extracts)}"
                 f"\n\nReponds a cette demande avec exactement cette structure JSON :\n{SCHEMA_REPONSE}")

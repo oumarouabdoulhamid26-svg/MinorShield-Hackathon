@@ -1,0 +1,64 @@
+{
+  "_description": "ML Intent (UIT-T Y.3172, REQ-ML-SPEC-001 a 004) : specification declarative de la simulation, lue par l'orchestrateur au demarrage et traduite en configuration des agents. Un tiers peut ajouter un agent (fiche dans roles.py puis identifiant ci-dessous), un scenario ou des textes de loi sans modifier le code de l'orchestrateur.",
+  "id": "minorshield-policy-lab",
+  "version": "1.0",
+  "cas_usage": "Simulation de crise multi-agents sur la protection des mineurs en ligne : chaque decision est justifiee par un article de loi retrouve et verifie.",
+
+  "sources": {
+    "base_de_connaissances": {
+      "collection": "kb_main",
+      "categorie_juridique": "Child_Online_Protection",
+      "dossier": "bd/InputDocs",
+      "provenance": "bd/SOURCES.md",
+      "embeddings": "bge-m3 (local, Ollama)"
+    },
+    "scenario": "agent/scenarios/operation_miroir.json",
+    "entrees_externes": [
+      {"nom": "Detecteur MinorShield", "format": "DetectionResponse (application/backend/app/schemas/response.py)", "mode": "simule"}
+    ]
+  },
+
+  "agents": ["regulateurs", "apdp", "penal", "social", "entreprises", "minorshield"],
+  "conseiller": "conseiller",
+
+  "modeles": {
+    "reference": {"principal": "openai/gpt-oss-120b", "secours": "openai/gpt-oss-20b"},
+    "essai": {"principal": "openai/gpt-oss-20b", "secours": "qwen/qwen3.8-27b"}
+  },
+
+  "contraintes": {
+    "jetons_par_jour_et_par_modele": 200000,
+    "jetons_max_par_requete": 7600,
+    "duree_max_par_etape_s": 900,
+    "demandes_max_par_etape": 6,
+    "extraits_par_agent": 4,
+    "extraits_par_reponse": 3,
+    "longueur_extrait": 500,
+    "historique": {"etapes_anciennes_caracteres": 280, "messages_gardes": 8, "message_caracteres": 400}
+  },
+
+  "qualite": {
+    "seuil_taux_etayees_agent": 0.5,
+    "nouvelles_tentatives": 1,
+    "extraits_supplementaires": 2
+  },
+
+  "sorties": {
+    "dossier": "runs/<date>_<scenario>/",
+    "journal": "journal.jsonl",
+    "rapport": "rapport.md",
+    "resume": "resume.json",
+    "demonstration": "demo.html (agent/scripts/export_demo.py)"
+  },
+
+  "pipeline_y3172": {
+    "SRC": "textes de loi, scenario, sortie du detecteur MinorShield (simulee)",
+    "C": "bd/scripts (ingestion, OCR, decoupage), chargement du scenario",
+    "PP": "decoupage article par article, embeddings bge-m3",
+    "M": "agents sur le modele de langage, recherche dans la base",
+    "P": "limites de mandat, verification des citations, verdicts du conseiller",
+    "D": "orchestrateur : revelation des etapes, transmission des demandes",
+    "SINK": "journal d'audit, rapport, page de demonstration",
+    "MLFO": "agent/agent3_coordination/orchestrator.py, pilote par ce fichier"
+  }
+}
