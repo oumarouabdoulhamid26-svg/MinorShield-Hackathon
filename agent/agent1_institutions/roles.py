@@ -35,6 +35,10 @@ class Role:
     sources_prioritaires: list[str] = field(default_factory=list)
     # Institutions representees : chaque action doit en nommer une.
     institutions: list[str] = field(default_factory=list)
+    # Articles cles du mandat (« prefixe_fichier:article ») : les plus pertinents
+    # pour l'etape sont toujours fournis a l'agent, pour qu'il puisse citer
+    # l'extrait au lieu de citer l'article de memoire.
+    articles_cles: list[str] = field(default_factory=list)
 
 
 ROLES: dict[str, Role] = {r.id: r for r in [
@@ -69,6 +73,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "L'art. 10(2) de la loi n° 2023/009 renvoie a un texte particulier precisant le role de l'ANTIC, non disponible dans la base",
         ],
         institutions=["ANTIC", "ART", "MINPOSTEL"],
+        articles_cles=["Loi_2023-009:4", "Loi_2023-009:5", "Loi_2023-009:10", "Loi_2023-009:20", "Loi_2023-009:27", "Loi_2023-009:28", "Loi_2023-009:29"],
         sources_prioritaires=["Loi_2023-009", "Decret_2019-150", "Loi_2010-013", "Loi_2015-006",
                               "Decret_2020-727", "Decret_2012-512", "Loi_2010-012"],
     ),
@@ -94,6 +99,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "Autorite recente : procedures et jurisprudence encore en construction",
         ],
         institutions=["APDP"],
+        articles_cles=["Loi_2024-017:9", "Loi_2024-017:13", "Loi_2024-017:22", "Loi_2024-017:32", "Loi_2024-017:53", "Loi_2023-009:17"],
         sources_prioritaires=["Loi_2024-017", "Loi_2023-009", "Loi_2010-012"],
     ),
     Role(
@@ -119,6 +125,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "Ne juge pas : la decision appartient au tribunal",
         ],
         institutions=["Police judiciaire", "Parquet"],
+        articles_cles=["Loi_2016-007:303", "Loi_2016-007:347", "Loi_2010-012:80", "Loi_2010-012:81", "Loi_2010-012:82", "Loi_2023-009:30", "Loi_2023-009:31", "Loi_2023-009:32"],
         sources_prioritaires=["Loi_2016-007", "Loi_2010-012", "Loi_2023-009", "Decret_2015-3759"],
     ),
     Role(
@@ -143,6 +150,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "Chaque ministere ne dispose que d'un article de la loi n° 2023/009 : ne pas lui preter d'autres pouvoirs",
         ],
         institutions=["MINAS", "MINPROFF", "MINESEC"],
+        articles_cles=["Loi_2023-009:6", "Loi_2023-009:7", "Loi_2023-009:8"],
         sources_prioritaires=["Loi_2023-009", "ONU_CRC_Observation"],
     ),
     # ------------------------------------------------------------------- prive
@@ -174,6 +182,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "Les operateurs executent les decisions des autorites ; ils ne decident pas seuls d'un blocage",
         ],
         institutions=["Operateurs", "Tchatlink", "ScolaPlus"],
+        articles_cles=["Loi_2023-009:14", "Loi_2023-009:16", "Loi_2023-009:17", "Loi_2023-009:20", "Loi_2023-009:21", "Loi_2023-009:23", "Loi_2023-009:24", "Loi_2023-009:25", "Loi_2023-009:33", "Loi_2024-017:22"],
         sources_prioritaires=["Loi_2023-009", "Loi_2024-017", "Loi_2010-013", "Decret_2015-3759",
                               "Decret_2013-0399", "Decret_2012-1643"],
     ),
@@ -200,6 +209,7 @@ ROLES: dict[str, Role] = {r.id: r for r in [
             "Un score de detection n'est pas une preuve : il peut se tromper (faux positif)",
         ],
         institutions=["MinorShield"],
+        articles_cles=["Loi_2023-009:11", "Loi_2023-009:12", "Loi_2023-009:13", "Loi_2023-009:23", "Loi_2024-017:9", "Loi_2024-017:32"],
         sources_prioritaires=["Loi_2023-009", "Loi_2024-017", "MinorShield"],
     ),
     # ------------------------------------------------------------- transversal

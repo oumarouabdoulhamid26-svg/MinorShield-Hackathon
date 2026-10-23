@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import json
 import logging
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Optional
@@ -52,6 +53,29 @@ class SimulationInterrompue(Exception):
 def _fatal(error: Optional[str]) -> bool:
     low = (error or "").lower()
     return llm.is_quota_error(low) or "404" in low or "does not exist" in low or "model_not_found" in low
+
+
+def _norm(s: str) -> str:
+    s = unicodedata.normalize("NFD", (s or "").lower())
+    return " ".join("".join(ch for ch in s if unicodedata.category(ch) != "Mn").split())
+
+
+def resolve_agent(name: str, agents: dict[str, Any]) -> Optional[str]:
+    """Identifiant d'agent correspondant a un destinataire ecrit par le modele.
+
+    Le modele ecrit souvent le nom de l'institution (« antic », « Police
+    judiciaire », « Tchatlink ») au lieu de l'identifiant de l'agent qui la
+    represente : on le traduit plutot que de perdre la demande.
+    """
+    n = _norm(name)
+    if n in agents:
+        return n
+    for aid in agents:
+        for inst in ROLES[aid].institutions:
+            i = _norm(inst)
+            if n == i or i.startswith(n + " ") or n.startswith(i + " "):
+                return aid
+    return None
 
 
 def _support_rate(turn: Turn) -> Optional[float]:
@@ -151,8 +175,12 @@ class Orchestrator:
             for dem in (t.output or {}).get("demandes", []) or []:
                 if not isinstance(dem, dict):
                     continue
-                to = str(dem.get("destinataire", "")).strip().lower()
+                ecrit = str(dem.get("destinataire", "")).strip()
                 objet = str(dem.get("objet", ""))
+                to = resolve_agent(ecrit, self.agents) or _norm(ecrit)
+                if to in self.agents and _norm(ecrit) != to:
+                    self._emit(self.audit.event("destinataire_corrige", etape=n, de=t.agent,
+                                                ecrit=ecrit, agent=to))
                 cle = (t.agent, to, " ".join(objet.lower().split()))
                 if to in self.agents and to != t.agent and cle in self.deja_demande:
                     # Meme demande deja transmise a une etape precedente : la

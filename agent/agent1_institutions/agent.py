@@ -39,6 +39,7 @@ INBOX_KEEP = 0               # 0 = tous les messages ; sinon les N derniers
 MESSAGE_CHARS = 0            # 0 = messages en entier ; sinon tronques a N caracteres
 PRIO_MARGIN = 0.15           # ecart de similarite toleree pour un extrait prioritaire
 MAX_PER_FILE = 2             # extraits au plus par texte, pour garder des sources variees
+KEY_ARTICLES = 2             # articles cles du mandat fournis en priorite
 
 _LEGAL_FILES: dict[str, str] = {}
 
@@ -198,6 +199,12 @@ class CrisisAgent:
             ))
 
         best = max((1 - d for _, _, d in general), default=0.0)
+        # Articles cles du mandat : les KEY_ARTICLES plus pertinents pour cette
+        # recherche sont fournis en premier (l'agent les connait par sa fiche ;
+        # sans eux, il les citerait de memoire, ce que la verification refuse).
+        for doc, meta, sim in self._key_articles(emb, where, country)[:KEY_ARTICLES]:
+            if sim >= best - PRIO_MARGIN:
+                add(doc, meta, sim)
         # Le premier texte prioritaire fonde le mandat de l'agent : il a
         # toujours au moins un extrait, s'il est assez pertinent.
         main_files = [f for f in prio_files if f.startswith(self.role.sources_prioritaires[0])]
@@ -220,6 +227,25 @@ class CrisisAgent:
         for _, sim, doc, meta in scored:
             add(doc, meta, sim)
         return out
+
+    def _key_articles(self, emb: list[float], where: dict[str, Any],
+                      country: Optional[str]) -> list[tuple[str, dict[str, Any], float]]:
+        """Articles cles du mandat, classes par pertinence pour la recherche."""
+        pairs = [k.split(":", 1) for k in self.role.articles_cles if ":" in k]
+        if not pairs:
+            return []
+        files = [f for f, c in _legal_files(self.kb).items()
+                 if any(f.startswith(p) for p, _ in pairs) and (not country or c == country)]
+        if not files:
+            return []
+        arts = sorted({a for _, a in pairs})
+        res = self.kb.search(emb, n_results=len(pairs) * 2, where={"$and": [
+            where, {"source_file": {"$in": files}}, {"article": {"$in": arts}}]})
+        hits = []
+        for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0], res["distances"][0]):
+            if any(meta.get("source_file", "").startswith(p) and meta.get("article") == a for p, a in pairs):
+                hits.append((doc, meta, 1 - dist))
+        return hits
 
     def _priority_files(self, country: Optional[str]) -> list[str]:
         """Fichiers de la base dont le nom commence par un prefixe prioritaire."""

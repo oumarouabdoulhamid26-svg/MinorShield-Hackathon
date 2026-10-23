@@ -137,6 +137,22 @@ class OrchestrationTest(unittest.TestCase):
         # La memoire de MinorShield (destinataire des etapes 1 et 2) contient les deux etapes.
         self.assertEqual(len(orch.agents["minorshield"].known_steps), 2)
 
+    def test_destinataire_ecrit_avec_le_nom_de_l_institution(self):
+        from agent.agent3_coordination.orchestrator import resolve_agent
+        agents = {a: None for a in intent_mod.load()["agents"]}
+        for ecrit, attendu in [("antic", "regulateurs"), ("Police judiciaire", "penal"), ("Tchatlink", "entreprises"),
+                               ("opérateurs télécoms", "entreprises"), ("MINPROFF", "social"), ("apdp", "apdp")]:
+            self.assertEqual(resolve_agent(ecrit, agents), attendu, ecrit)
+        self.assertIsNone(resolve_agent("inconnu", agents))
+
+    def test_articles_cles_fournis_a_l_agent(self):
+        from bd.knowledge.kb import KnowledgeBase
+        intent_mod.apply(intent_mod.load(), essai=True)
+        a = agent_mod.CrisisAgent(agent_mod.ROLES["apdp"], KnowledgeBase())
+        ex = a.retrieve("transfert des captures d'ecran d'une mineure vers un serveur a l'etranger")
+        self.assertIn(("Loi_2024-017_Protection_donnees_personnelles_Cameroun.txt", "32"),
+                      [(e.source_file, e.article) for e in ex])
+
     def test_historique_abrege(self):
         a = agent_mod.CrisisAgent(agent_mod.ROLES["apdp"], kb=None)
         with mock.patch.multiple(agent_mod, OLD_STEP_CHARS=50, INBOX_KEEP=2, MESSAGE_CHARS=30):
