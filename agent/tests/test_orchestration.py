@@ -153,6 +153,14 @@ class OrchestrationTest(unittest.TestCase):
         self.assertIn(("Loi_2024-017_Protection_donnees_personnelles_Cameroun.txt", "32"),
                       [(e.source_file, e.article) for e in ex])
 
+    def test_contrainte_de_temps_controlee(self):
+        intent = intent_mod.load()
+        intent["contraintes"]["duree_max_par_etape_s"] = 0.001
+        with mock.patch.object(llm, "chat", FakeLLM([])):
+            Orchestrator(scenario([1]), self.run_dir, essai=True, intent=intent).run()
+        dep = [e for e in self.journal() if e["evenement"] == "contrainte_depassee"]
+        self.assertEqual(dep[0]["contrainte"], "duree_max_par_etape_s")
+
     def test_historique_abrege(self):
         a = agent_mod.CrisisAgent(agent_mod.ROLES["apdp"], kb=None)
         with mock.patch.multiple(agent_mod, OLD_STEP_CHARS=50, INBOX_KEEP=2, MESSAGE_CHARS=30):

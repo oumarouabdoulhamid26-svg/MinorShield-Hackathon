@@ -53,7 +53,8 @@ def show(entry: dict) -> None:
         for c in entry.get("verification", [])[:6]:
             src = "; ".join(c["sources"]) or "aucune source"
             extra = f"  (mention non verifiee : {', '.join(c['mentions_non_verifiees'])})" if c["mentions_non_verifiees"] else ""
-            print(f"       {STATUS_ICON.get(c['statut'], '   ')}{c['action'][:90]}  <- {src[:80]}{extra}")
+            qui = f"[{c['institution']}] " if c.get("institution") else ""
+            print(f"       {STATUS_ICON.get(c['statut'], '   ')}{qui}{c['action'][:90]}  <- {src[:80]}{extra}")
         if kind == "analyse" and rep.get("synthese"):
             print(f"       synthese : {rep['synthese'][:300]}")
     elif ev == "demande_transmise":

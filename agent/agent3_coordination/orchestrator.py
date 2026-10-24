@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import json
 import logging
+import time
 import unicodedata
 from datetime import datetime
 from pathlib import Path
@@ -137,7 +138,9 @@ class Orchestrator:
             if steps is not None and step["numero"] not in steps:
                 continue
             try:
+                debut = time.time()
                 self.steps_out.append(self.run_step(step))
+                self._check_constraints(step["numero"], time.time() - debut)
             except SimulationInterrompue as e:
                 self._emit(self.audit.event(
                     "simulation_interrompue", etape=step["numero"], raison=str(e),
@@ -147,6 +150,20 @@ class Orchestrator:
         self._emit(self.audit.event("simulation_fin", resume=summary))
         self.audit.save({"scenario": self.scenario, "intent": self._intent_trace(), "etapes": self.steps_out})
         return summary
+
+    def _check_constraints(self, n: int, duree: float) -> None:
+        """Contraintes de temps et de ressources du ML Intent (Y.3172 REQ-ML-SPEC-002) :
+        tout depassement est inscrit au journal."""
+        c = self.config["contraintes"]
+        max_s = c.get("duree_max_par_etape_s")
+        if max_s and duree > max_s:
+            self._emit(self.audit.event("contrainte_depassee", etape=n, contrainte="duree_max_par_etape_s",
+                                        limite=max_s, mesure=round(duree)))
+        max_jetons = c.get("jetons_par_jour_et_par_modele")
+        if max_jetons and self.audit.tokens > 0.9 * max_jetons:
+            self._emit(self.audit.event("contrainte_depassee", etape=n, contrainte="jetons_par_jour_et_par_modele",
+                                        limite=max_jetons, mesure=self.audit.tokens,
+                                        note="plus de 90 % du quota journalier consomme"))
 
     def _intent_trace(self) -> dict[str, Any]:
         return {k: self.config[k] for k in ("fichier", "empreinte", "mode", "modele_principal", "modele_secours")}

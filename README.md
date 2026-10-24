@@ -70,7 +70,8 @@ font apparaître les lacunes du droit.
 | Coordination multi-agents | `agent/agent3_coordination/orchestrator.py` |
 | Scénario séquencé, information inégale | `agent/scenarios/operation_miroir.json` |
 | Journal d'audit et traçabilité | `agent/agent3_coordination/audit.py`, `docs/exemple_simulation/` |
-| Alignement UIT-T Y.3172 | `agent/intent.json` (ML Intent), reconfiguration automatique dans l'orchestrateur, [docs/CONCEPTION.md](docs/CONCEPTION.md) et rapport technique |
+| Alignement UIT-T Y.3172 | [docs/Y3172.md](docs/Y3172.md) : les 20 exigences, état et preuve de chacune ; `agent/intent.json` (ML Intent) |
+| Lacunes de politiques et de normes | [docs/LACUNES.md](docs/LACUNES.md) : 10 lacunes du domaine et 5 lacunes de normes, avec exemples internationaux vérifiés |
 
 ### La vérification des citations
 
@@ -133,6 +134,16 @@ python agent/scripts/export_demo.py runs/<date>_<scénario>
 
 Réappliquer les contrôles de citation à une simulation déjà jouée, sans appel
 au modèle : `python agent/scripts/reverify.py runs/<date>_<scénario>`.
+
+Indicateurs d'une simulation (citations, coordination, jetons, lacunes
+attendues retrouvées) : `python agent/scripts/indicateurs.py runs/<date>_<scénario>`.
+
+Démonstration de secours, sans connexion ni quota : rejouer une simulation à
+partir de son journal, étape par étape.
+
+```bash
+python agent/scripts/rejouer.py docs/exemple_simulation --pas-a-pas --details
+```
 
 Modèles : `gpt-oss-120b` (raisonnement, via Groq, poids ouverts),
 `gpt-oss-20b` (essais), `bge-m3` (embeddings multilingues, local via Ollama).
