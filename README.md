@@ -71,7 +71,8 @@ font apparaître les lacunes du droit.
 | Scénario séquencé, information inégale | `agent/scenarios/operation_miroir.json` |
 | Journal d'audit et traçabilité | `agent/agent3_coordination/audit.py`, `docs/exemple_simulation/` |
 | Alignement UIT-T Y.3172 | [docs/Y3172.md](docs/Y3172.md) : les 20 exigences, état et preuve de chacune ; `agent/intent.json` (ML Intent) |
-| Lacunes de politiques et de normes | [docs/LACUNES.md](docs/LACUNES.md) : 10 lacunes du domaine et 5 lacunes de normes, avec exemples internationaux vérifiés |
+| Lacunes de politiques et de normes | [docs/LACUNES.md](docs/LACUNES.md) : 10 lacunes du domaine et 5 lacunes de normes, avec exemples internationaux vérifiés, et relecture humaine de la simulation de référence |
+| Ce qui est prouvé, et ses limites | [docs/PREUVES.md](docs/PREUVES.md) : chaque affirmation, sa preuve, sa limite |
 
 ### La vérification des citations
 
