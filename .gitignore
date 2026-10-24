@@ -48,3 +48,6 @@ application/backend/firebase-service-account.json
 *.bak
 .DS_Store
 ~$*
+
+# Sauvegardes locales des rapports
+docs/rapport_technique/_backup/

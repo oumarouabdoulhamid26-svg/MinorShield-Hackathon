@@ -1,12 +1,11 @@
 # MinorShield Policy Lab — Technical report, version 2 (draft)
 
-> Draft written on 24/10/2026, to be poured into the official template
-> (5 pages maximum). Figures marked `{{…}}` come from the reference run
-> (planned for 24/10 evening) and are filled in afterwards. Section order
-> follows the FAQ of the hackathon page (a to h).
+> Draft of 24/10/2026, figures filled in on 25/10/2026 from the reference run
+> (`docs/exemple_simulation/`); every figure is backed in `docs/PREUVES.md`.
+> Section order follows the FAQ of the hackathon page (a to h).
 
-AI for Good Sandbox Hackathon – {{Team name}} – MinorShield Policy Lab
-Team leader: Abdoul-Hamid Oumarou — Team members: {{to complete}} — Contact: oumarouabdoulhamid26@gmail.com
+AI for Good Sandbox Hackathon – [Team Name] – MinorShield Policy Lab
+Team leader: Abdoul-Hamid Oumarou — Team members: [to be completed] — Contact: oumarouabdoulhamid26@gmail.com
 GitHub: https://github.com/oumarouabdoulhamid26-svg/MinorShield-Hackathon
 
 ## 1. Introduction
@@ -25,9 +24,9 @@ MinorShield Policy Lab answers these questions in a sandbox. Six AI agents, each
 
 ## 3. Use case requirements
 
-- **Data (SRC, C, PP).** Official legal texts only, with source, date and page recorded (`bd/SOURCES.md`): 13 Cameroonian texts, including the Child Online Protection Charter (Law 2023/009), the data protection law (2024/017, obtained from the Presidency's certified copy by OCR) and the Penal Code; 7 international references (EU DSA and GDPR, UK and Australian Online Safety Acts, US COPPA Rule, UAE Federal Decree-Law 26/2025 on Child Digital Safety, UN General Comment No. 25); the ITU strategy corpus. Article-level chunks, local multilingual embeddings (bge-m3): {{8,344}} chunks. No real child data: the detector output of stage 2 is simulated in the real API format and labelled as such.
+- **Data (SRC, C, PP).** Official legal texts only, with source, date and page recorded (`bd/SOURCES.md`): 13 Cameroonian texts, including the Child Online Protection Charter (Law 2023/009), the data protection law (2024/017, obtained from the Presidency's certified copy by OCR) and the Penal Code; 7 international references (EU DSA and GDPR, UK and Australian Online Safety Acts, US COPPA Rule, UAE Federal Decree-Law 26/2025 on Child Digital Safety, UN General Comment No. 25); the ITU strategy corpus. Article-level chunks, local multilingual embeddings (bge-m3): 8,344 chunks. No real child data: the detector output of stage 2 is simulated in the real API format and labelled as such.
 - **Retrieval quality.** 15 control queries with a hand-verified expected article: the agents' retrieval finds it in 14/15 cases (MRR 0.82), against 7/15 for a plain search, thanks to two rules: the key articles of each agent's mandate are always offered, and at most two extracts per text.
-- **Model (M).** Open-weight gpt-oss-120b (Groq), structured JSON output with explicit reasoning; fallback model declared in the ML Intent. Each request fits the free-tier limit (8,000 tokens per minute); a full run uses {{tokens}} tokens.
+- **Model (M).** Open-weight gpt-oss-120b (Groq), structured JSON output with explicit reasoning; fallback model declared in the ML Intent. Each request fits the free-tier limit (8,000 tokens per minute); a full run uses 165,279 tokens (21 minutes on a laptop without GPU).
 - **Policy (P).** An agent acts only on information revealed to it; it cites only extract IDs it received; every action names the institution acting; it states what the law does not allow.
 - **Sink and human oversight.** Outputs (audit log, report, demonstration page, indicators) are deliberation material for human decision-makers, not legal advice.
 
@@ -43,7 +42,7 @@ MinorShield Policy Lab answers these questions in a sandbox. Six AI agents, each
 | SINK | Audit log, readable report, demonstration page, indicators |
 | MLFO / ML Intent | Orchestrator configured by `agent/intent.json` (sources, agents, models, constraints, quality threshold, outputs) |
 
-Of the 20 requirements of Y.3172 (detail and evidence in `docs/Y3172.md`), **15 are implemented, 4 partially and 2 not**. Highlights: declarative ML Intent translated into configuration (SPEC-001/002, time and token constraints logged when exceeded); automatic reconfiguration when the share of supported actions falls below the threshold, and fallback model when a quota is exhausted (MNG-001/004: {{n}} reconfigurations in the reference run); monitoring through citation checks and indicators (MNG-003); chaining retrieve → reason → verify → coordinate → advise → report (MNG-005). Not claimed: transfer of trained models and training data (INT-001/002), since no model is fine-tuned and no real child data may be used.
+Of the 20 requirements of Y.3172 (detail and evidence in `docs/Y3172.md`), **15 are implemented, 4 partially and 2 not**. Highlights: declarative ML Intent translated into configuration (SPEC-001/002, time and token constraints logged when exceeded); automatic reconfiguration when the share of supported actions falls below the threshold, and fallback model when a quota is exhausted (MNG-001/004: 2 reconfigurations in the reference run, both improving the result); monitoring through citation checks and indicators (MNG-003); chaining retrieve → reason → verify → coordinate → advise → report (MNG-005). Not claimed: transfer of trained models and training data (INT-001/002), since no model is fine-tuned and no real child data may be used.
 
 ## 5. Mapping with the ITU AI Readiness Report 2.0
 
@@ -82,9 +81,13 @@ Of the 20 requirements of Y.3172 (detail and evidence in `docs/Y3172.md`), **15 
 | 5 | The source is a leak from a school app, unreported for three weeks | Breach notification, liability |
 | 6 | Media pressure: block the platform nationwide? | Proportionality, freedom of expression (controversy) |
 
-**Results of the reference run** ({{date}}, gpt-oss-120b): {{interventions}} interventions, {{requests}} requests routed between agents, {{rate}} of legal claims supported by an extract provided, institution named in {{x}}/{{y}} actions, {{n}} automatic reconfigurations, {{tokens}} tokens. Of the {{k}} gaps written into the scenario beforehand, {{found}} were identified (automatic matching confirmed by human review). {{Two or three illustrations: what worked, what was missed, AI errors caught and not caught.}}
+**Results of the reference run** (24 October 2026, gpt-oss-120b, full log in `docs/exemple_simulation/`): 53 interventions; 25 requests routed between agents, none lost (29 requests addressed to an institution's name were redirected to the right agent); **86.4% of the 110 legal claims supported by an extract actually provided** (data protection authority 100%, advisor 95%); institution named in 69/69 actions; 2 automatic reconfigurations; 165,279 tokens. Of the 15 gaps written into the scenario beforehand, human review finds **7 identified, 3 partially, 5 missed**, plus 4 gaps we had not anticipated (police access to mobile-money records, anonymisation before transmission, overlap between the data protection authority and the ICT regulator, a missing implementing text).
 
-**Handling the controversy.** The system never decides: it produces the material for a human deliberation. On stage 6 the advisor {{…}}; our answer favours targeted, motivated measures under judicial control before any general block.
+**What worked.** Stage 2: the data protection authority required anonymisation before any transmission to the police, the police noted that no procedure allows obtaining data hosted on a foreign AI provider's servers, and MinorShield explained the risk of a false positive to the parent while finding no legal basis for a right of appeal. Stage 5: the advisor flagged that "without delay" sets no deadline and recommended 72 hours. **What was missed.** For the third run in a row, no agent noticed that the 19-year-old victim falls outside the Charter (under 18) while the Penal Code protects minors aged 16 to 21; nobody questioned the lawfulness of monitoring the child's screen itself. These gaps come from our human analysis and are reported as such.
+
+**AI errors caught, and not caught.** The verifier flagged 1 invented extract ID, 4 doubtful citations and 10 unsupported actions. It cannot see a real extract used for a wrong claim: human review found 4 (DSA art. 25 presented as a takedown duty, a breach-notification duty attributed to COPPA, Australian blocking powers overstated, a retention rule declared missing although art. 13 of Law 2024/017 covers it).
+
+**Handling the controversy.** The system never decides: it produces the material for a human deliberation. On stage 6 the advisor found no legal basis for blocking a whole platform, recorded the conflict between child protection and freedom of expression, and recommended a temporary block under judicial control with review after 15 days; our answer favours targeted, motivated measures under judicial control before any general block.
 
 **Limits.** The verifier cannot detect a correct citation used for a wrong claim; the detector input is simulated; results come from one model and one scenario. A human legal review remains mandatory.
 
