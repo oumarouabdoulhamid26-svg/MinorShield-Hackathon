@@ -97,9 +97,12 @@ def main() -> int:
     args.sortie.write_text("\n".join(out) + "\n", encoding="utf-8")
     print(f"Brute : 1re position {b1}/{n}, trouvé {bk}/{n}, MRR {bmrr:.2f}")
     print(f"Agent : 1re position {a1}/{n}, trouvé {ak}/{n}, MRR {amrr:.2f}")
-    for q, rb, ra, premier, _ in lignes:
-        if rb is None or ra is None:
-            print(f"  echec {q['id']} (brute {rb}, agent {ra}) : 1er brut = {premier[0][:30]} art. {premier[1]}")
+    echecs = [(q, rb) for q, rb, ra, _, _ in lignes if ra is None]
+    if echecs:
+        print("Questions ou l'article attendu n'est pas fourni a l'agent (analyse : bd/controle/README.md) :")
+        for q, rb in echecs:
+            print(f"  {q['id']} — {q['question'][:90]}")
+    print("(La recherche brute sert de point de comparaison : ses echecs sont normaux et ne sont pas listes.)")
     print(f"Detail : {args.sortie}")
     return 0
 

@@ -1,6 +1,6 @@
 # Contrôle de la recherche dans la base de connaissances
 
-Mesure du 23/10/2026 21:00 — 15 requêtes (`bd/controle/requetes_controle.json`), embeddings `bge-m3`, aucun appel au modèle de langage.
+Mesure du 27/10/2026 01:29 — 15 requêtes (`bd/controle/requetes_controle.json`), embeddings `bge-m3`, aucun appel au modèle de langage.
 
 | Mode | Article attendu en 1re position | Article attendu trouvé | MRR |
 |---|---|---|---|

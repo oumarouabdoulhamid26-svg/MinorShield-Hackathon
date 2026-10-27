@@ -54,7 +54,12 @@ def show(entry: dict) -> None:
             src = "; ".join(c["sources"]) or "aucune source"
             extra = f"  (mention non verifiee : {', '.join(c['mentions_non_verifiees'])})" if c["mentions_non_verifiees"] else ""
             qui = f"[{c['institution']}] " if c.get("institution") else ""
+            if c.get("institution_valide") is False:
+                extra += f"  ! institution hors du mandat de l'agent {entry['agent']}"
             print(f"       {STATUS_ICON.get(c['statut'], '   ')}{qui}{c['action'][:90]}  <- {src[:80]}{extra}")
+        if kind == "reaction" and not entry.get("erreur") and not rep.get("actions"):
+            n_dem = len(rep.get("demandes") or [])
+            print(f"       (aucune action decidee a cette etape ; {n_dem} demande(s) adressee(s) a d'autres agents)")
         if kind == "analyse" and rep.get("synthese"):
             print(f"       synthese : {rep['synthese'][:300]}")
     elif ev == "demande_transmise":

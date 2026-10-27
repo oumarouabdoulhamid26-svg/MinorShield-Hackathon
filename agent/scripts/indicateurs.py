@@ -70,7 +70,10 @@ def main() -> int:
     ev = Counter(e["evenement"] for e in journal)
     reconf = [e for e in journal if e["evenement"] == "reconfiguration"]
 
-    out = [f"# Indicateurs — {args.run.name}", ""]
+    # Titre tire du journal (date de la simulation), pas du nom du dossier : le
+    # fichier reste identique quand la simulation est archivee ailleurs.
+    debut = journal[0]["horodatage"][:16].replace("T", " ")
+    out = [f"# Indicateurs — simulation du {debut} (UTC)", ""]
     modeles = Counter(e.get("modele") for e in inter if not e.get("erreur"))
     out += ["## Citations", "",
             f"- Modèle(s) : {', '.join(f'{m} ({n})' for m, n in modeles.items())}",
@@ -128,8 +131,12 @@ def main() -> int:
     out.insert(2, f"**Lacunes attendues retrouvées (automatique) : {retrouvees}/{attendues}** — "
                   "à confirmer par relecture humaine.\n")
     (args.run / "indicateurs.md").write_text("\n".join(out) + "\n", encoding="utf-8")
-    print(f"taux etayees {statuts['etayee'] / total:.1%} | lacunes {retrouvees}/{attendues} | "
-          f"jetons {sum(sum(v) for v in jetons.values())} -> {args.run / 'indicateurs.md'}")
+    print(f"Affirmations etayees : {statuts['etayee'] / total:.1%} ({statuts['etayee']}/{total})")
+    print(f"Jetons des interventions retenues : {sum(sum(v) for v in jetons.values())} "
+          f"(le resume du journal compte aussi les tentatives ecartees lors des reconfigurations)")
+    print(f"Lacunes attendues, rapprochement automatique (seuil {args.seuil}, volontairement severe) : "
+          f"{retrouvees}/{attendues} — le bilan qui fait foi est la relecture humaine (docs/LACUNES.md, section C)")
+    print(f"Detail : {args.run / 'indicateurs.md'}")
     return 0
 
 

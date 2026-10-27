@@ -6,6 +6,40 @@ mondiales, adossée à une application réelle de protection des enfants.**
 
 Projet soumis au hackathon *ITU AI for Good Lab — United Arab Emirates*.
 
+## In English, in one minute
+
+MinorShield Policy Lab is a multi-agent policy sandbox for **child online
+protection**. Six AI agents, each representing real institutions with one
+objective (regulators, data protection authority, criminal justice chain,
+social and educational protection, digital companies, and MinorShield, a
+parental-control app already deployed in Cameroon), handle a sextortion crisis
+revealed in six stages. Each agent knows only what it was told, acts within
+its legal mandate and must cite the article it actually retrieved; a legal
+advisor identifies the gaps of the law and compares them with the EU, UK, US,
+Australia, the UAE and the UN. Every citation is checked automatically and
+every exchange is logged. The orchestrator follows ITU-T Y.3172 and is driven
+by a declarative ML Intent.
+
+**Results of the reference run** (24 Oct 2026, open-weight gpt-oss-120b,
+laptop without GPU):
+
+| | |
+|---|---|
+| Legal claims supported by an extract actually provided | **86.4%** of 110 |
+| Requests routed between agents | 25, none lost |
+| Retrieval of the right article (15 hand-verified control questions) | **14/15**, MRR 0.82 |
+| Expected gaps (written before the run) found, after human review | 7 found, 3 partly, 5 missed, + 4 unexpected |
+| AI errors not caught by the checker, found by human review | 4 (reported) |
+| ITU-T Y.3172 requirements | 15 implemented, 4 partly, 2 not |
+| Cost of a full run | 165,279 tokens, 21 minutes |
+
+**Read first:** the technical report
+([PDF, English](docs/rapport_technique/MinorShield_Policy_Lab_Technical_Report.pdf)),
+the [policy and standards gaps](docs/LACUNES.md), the
+[Y.3172 mapping](docs/Y3172.md), what is [proven and its limits](docs/PREUVES.md),
+and the full [reference run](docs/exemple_simulation/) (open `demo.html` in a
+browser). The rest of this README is in French.
+
 ---
 
 ## Organisation du dépôt
@@ -88,18 +122,34 @@ font apparaître les lacunes du droit.
 Prérequis : Python 3.11, [Ollama](https://ollama.com) (embeddings), une clé
 d'API [Groq](https://console.groq.com) (gratuite).
 
+Créer l'environnement **avec Python 3.11** : si plusieurs versions sont
+installées, `python` peut désigner une version plus récente que les
+dépendances ne prennent pas encore en charge (`py -0` les liste sous Windows).
+
 ```bash
-python -m venv venv
+py -3.11 -m venv venv               # Linux / macOS : python3.11 -m venv venv
 venv\Scripts\pip install -r requirements.txt
 ollama pull bge-m3
 copy .env.example .env      # puis renseigner AIREADY_GROQ_API_KEY
 ```
 
-Construire la base de connaissances (dans `bd/chromadb/`) :
+Construire la base de connaissances (dans `bd/chromadb/`). Les embeddings
+sont calculés en local : sans carte graphique, la base complète demande
+**plusieurs heures** (environ 7 h sur un portable, à cause des longs PDF de
+stratégies de l'UIT). Les agents n'interrogent que les textes juridiques : le
+mode rapide suffit pour lancer les simulations et les tests.
 
 ```bash
-python -m bd.knowledge.ingest --dir bd/InputDocs --reset
+python -m bd.knowledge.ingest --dir bd/InputDocs --reset --categories Child_Online_Protection   # mode rapide : textes juridiques seulement
+python -m bd.knowledge.ingest --dir bd/InputDocs --reset                                        # base complète (avec les documents de l'UIT)
 ```
+
+> ⚠️ `--reset` **efface la base existante** avant de la reconstruire : ces
+> commandes servent à une première installation. Pour ajouter des textes à une
+> base déjà construite, utiliser `python bd/scripts/add_documents.py <fichiers>`.
+> Toutes les commandes Python se lancent avec l'environnement virtuel activé
+> (`venv\Scripts\activate`), sinon les dépendances (ollama, chromadb…) sont
+> introuvables.
 
 Lancer une simulation :
 

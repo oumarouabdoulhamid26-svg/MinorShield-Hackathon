@@ -6,13 +6,18 @@ mal etayee, quota epuise, simulation interrompue). La recherche dans la base
 reste reelle (embeddings locaux via Ollama).
 
     python -m unittest agent.tests.test_orchestration -v
+
+Les erreurs que les tests provoquent volontairement (quota epuise...) ne sont
+pas affichees : seul compte le verdict de chaque test.
 """
 
 from __future__ import annotations
 
 import json
+import logging
 import tempfile
 import unittest
+import warnings
 from pathlib import Path
 from unittest import mock
 
@@ -72,8 +77,13 @@ class OrchestrationTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.run_dir = Path(self.tmp.name) / "run"
+        # Connexions HTTP laissees ouvertes par le client Ollama (sans effet sur
+        # les resultats) et erreurs provoquees volontairement : non affichees.
+        warnings.simplefilter("ignore", ResourceWarning)
+        logging.disable(logging.CRITICAL)
 
     def tearDown(self):
+        logging.disable(logging.NOTSET)
         llm.use_model(None)
         self.tmp.cleanup()
 

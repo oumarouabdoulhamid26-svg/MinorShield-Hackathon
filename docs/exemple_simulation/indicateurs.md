@@ -1,4 +1,4 @@
-# Indicateurs — 20261024-214752_operation_miroir
+# Indicateurs — simulation du 2026-10-24 20:47 (UTC)
 
 **Lacunes attendues retrouvées (automatique) : 1/15** — à confirmer par relecture humaine.
 

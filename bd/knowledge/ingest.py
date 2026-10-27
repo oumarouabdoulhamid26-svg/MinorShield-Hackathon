@@ -437,8 +437,13 @@ def ingest_directory(
     kb: KnowledgeBase,
     collection_name: Optional[str] = None,
     skip_manifest: bool = True,
+    categories: Optional[list[str]] = None,
 ) -> dict[str, int]:
     """Ingest all supported files from a directory (recursively).
+
+    ``categories`` (optionnel) : ne traiter que ces sous-dossiers, par exemple
+    ``["Child_Online_Protection"]`` pour construire en quelques minutes la
+    seule partie de la base que les agents interrogent.
 
     Subdirectories are used as document categories. For example files
     under ``InputDocs/AI_Strategies/`` get ``document_category: AI_Strategies``
@@ -455,10 +460,12 @@ def ingest_directory(
     for item in sorted(directory.iterdir()):
         if item.is_dir():
             category = item.name  # e.g. "AI_Strategies", "AI_Use_Cases"
+            if categories and category not in categories:
+                continue
             for sub_file in sorted(item.iterdir()):
                 if sub_file.is_file():
                     all_files.append((sub_file, category))
-        elif item.is_file():
+        elif item.is_file() and not categories:
             all_files.append((item, "general"))
 
     for filepath, category in all_files:
@@ -575,6 +582,13 @@ def main():
         help="Reset the Knowledge Base before ingesting",
     )
     parser.add_argument(
+        "--categories",
+        nargs="+",
+        default=None,
+        help="Ne traiter que ces sous-dossiers de --dir (ex. Child_Online_Protection : "
+             "la partie interrogee par les agents, construite en quelques minutes)",
+    )
+    parser.add_argument(
         "--framework-only",
         action="store_true",
         help="Only load framework definitions (dimensions.json)",
@@ -610,7 +624,7 @@ def main():
             sys.exit(1)
 
         print(f"\nIngesting all documents from: {doc_dir}")
-        results = ingest_directory(doc_dir, kb)
+        results = ingest_directory(doc_dir, kb, categories=args.categories)
 
         print("\n--- Ingestion Results ---")
         total = 0
