@@ -36,11 +36,18 @@ def scenario(steps: list[int]) -> dict:
     return s
 
 
-def reaction(supported: bool) -> str:
+def first_line(user: str, ext: str = "E1") -> str:
+    """Une ligne de l'extrait ``ext`` tel qu'il figure dans la requete : le faux
+    modele la recopie comme citation, ce que ferait un modele discipline."""
+    block = user.split(f"[{ext}]", 1)[-1].split("\n")[1:]
+    return next((l.strip() for l in block if len(l.strip()) >= 30), "")
+
+
+def reaction(supported: bool, quote: str = "") -> str:
     return json.dumps({
         "evaluation": "situation lue", "inconnues": [],
         "actions": [{"institution": "MinorShield", "action": "Informer le parent du blocage",
-                     "base_legale": ["E1"] if supported else [],
+                     "base_legale": ["E1"] if supported else [], "citation": quote,
                      "justification": "l'extrait fourni fonde cette information" if supported else ""}],
         "demandes": [], "lacunes": [], "confiance": 0.5, "raisonnement": ["etape 1"]})
 
@@ -69,7 +76,7 @@ class FakeLLM:
             kind = self.plan.pop(0) if self.plan else "ok"
             if kind == "quota":
                 raise RuntimeError("Error code: 429 - Rate limit reached")
-            text = reaction(kind == "ok")
+            text = reaction(kind == "ok", first_line(user))
         return llm.LLMResult(text=text, model=llm.model_name(fast), prompt_tokens=100, completion_tokens=50)
 
 
@@ -154,6 +161,8 @@ class OrchestrationTest(unittest.TestCase):
                                ("opérateurs télécoms", "entreprises"), ("MINPROFF", "social"), ("apdp", "apdp")]:
             self.assertEqual(resolve_agent(ecrit, agents), attendu, ecrit)
         self.assertIsNone(resolve_agent("inconnu", agents))
+        self.assertEqual(resolve_agent("antinc", agents), "regulateurs")    # faute de frappe vue le 27/10
+        self.assertIsNone(resolve_agent("ministere", agents))
 
     def test_articles_cles_fournis_a_l_agent(self):
         from bd.knowledge.kb import KnowledgeBase
@@ -170,6 +179,52 @@ class OrchestrationTest(unittest.TestCase):
             Orchestrator(scenario([1]), self.run_dir, essai=True, intent=intent).run()
         dep = [e for e in self.journal() if e["evenement"] == "contrainte_depassee"]
         self.assertEqual(dep[0]["contrainte"], "duree_max_par_etape_s")
+
+    def test_citation_mot_pour_mot(self):
+        from agent.agent1_institutions.agent import Extract, Turn
+        from agent.agent3_coordination.audit import check_quote, verify_turn
+        art = ("ARTICLE 25.- (1) Les opérateurs des réseaux de communications électroniques facilitent le déploie-\n"
+               "ment, par l'organe chargé de la régulation des TIC, de tout dispositif visant à protéger les enfants.\n"
+               "(2) Ils facilitent également les opérations de collecte des données nécessaires aux investigations.")
+        self.assertTrue(check_quote("facilitent le déploiement, par l’organe chargé de la régulation des TIC", [art]))
+        self.assertTrue(check_quote("LES OPERATEURS DES RESEAUX ... collecte des donnees necessaires", [art]))
+        self.assertFalse(check_quote("facilitent les opérations de collecte de signalements", [art]))
+        self.assertFalse(check_quote("collecte des données", [art]))          # trop court pour prouver
+        self.assertFalse(check_quote(None, [art]))
+        # Tiret insecable du modele, numero d'alinea omis entre deux alineas
+        self.assertTrue(check_quote("visant à protéger les enfants. Ils facilitent également les opérations", [art]))
+        self.assertTrue(check_quote("les procès‑verbaux constatant les infractions sont transmis",
+                                    ["(2) Les procès-verbaux constatant les infractions sont transmis"]))
+        # Un element de liste saute sans points de suspension reste refuse
+        self.assertFalse(check_quote("chargée, notamment : de traiter les plaintes",
+                                     ["chargée, notamment :\n- de veiller à l'application ;\n- de traiter les plaintes"]))
+        ex = [Extract("E1", "Loi_2023-009.txt", "25", "227", "Cameroon", 0.6, art)]
+
+        def statut(action: dict) -> str:
+            t = Turn("entreprises", "reaction", 1, [], [], "", ex, {"actions": [action]}, "", "m", 0, 0.0)
+            return verify_turn(t)[0]["statut"]
+        base = {"institution": "Operateurs", "action": "Faciliter le dispositif de l'ANTIC", "base_legale": ["E1"]}
+        def statut(action: dict, require: bool = True) -> str:
+            t = Turn("entreprises", "reaction", 1, [], [], "", ex, {"actions": [action]}, "", "m", 0, 0.0)
+            return verify_turn(t, require)[0]["statut"]
+        self.assertEqual(statut(base, require=False), "etayee")     # journal anterieur au controle
+        self.assertEqual(statut(base), "citation_douteuse")         # citation exigee mais absente
+        self.assertEqual(statut({**base, "citation": "visant à protéger les enfants dans tout le pays"}),
+                         "citation_douteuse")
+        self.assertEqual(statut({**base, "citation": "de tout dispositif visant à protéger les enfants"}), "etayee")
+        # Verdict du conseiller qui nomme l'article au lieu de l'identifiant : la
+        # citation designe l'extrait.
+        v = {"acteur": "entreprises", "action": "x", "verdict": "fondee", "commentaire": "selon l'article 25",
+             "citation": "collecte des données nécessaires aux investigations"}
+        t = Turn("conseiller", "analyse", 1, [], [], "", ex, {"verifications": [v]}, "", "m", 0, 0.0)
+        self.assertEqual(verify_turn(t)[0]["statut"], "etayee")
+
+    def test_extrait_coupe_signale(self):
+        long = "\n".join(f"(alinea {i}) " + "texte " * 20 for i in range(20))
+        cut = agent_mod.cut_extract(long, 500)
+        self.assertTrue(cut.endswith(agent_mod.CUT_MARK))
+        self.assertLessEqual(len(cut), 500 + len(agent_mod.CUT_MARK) + 1)
+        self.assertEqual(agent_mod.cut_extract("court", 500), "court")
 
     def test_historique_abrege(self):
         a = agent_mod.CrisisAgent(agent_mod.ROLES["apdp"], kb=None)

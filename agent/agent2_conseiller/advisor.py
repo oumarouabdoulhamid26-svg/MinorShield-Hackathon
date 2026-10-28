@@ -23,13 +23,15 @@ from bd.knowledge.kb import KnowledgeBase
 SCHEMA_ANALYSE = """{
   "verifications": [
     {"acteur": "identifiant", "action": "action examinee",
-     "verdict": "fondee | a_verifier | non_fondee", "commentaire": "pourquoi"}
+     "verdict": "fondee | a_verifier | non_fondee", "commentaire": "pourquoi, avec l'identifiant de l'extrait",
+     "citation": "la phrase de l'extrait sur laquelle repose le verdict, recopiee mot pour mot"}
   ],
   "lacunes": [
     {"lacune": "ce que le droit camerounais ne prevoit pas, ou prevoit mal",
      "texte_camerounais": ["E1"],
      "comparaison": [{"juridiction": "UE, Royaume-Uni, Etats-Unis, Australie, Emirats arabes unis ou ONU",
-                      "pratique": "ce qui y est prevu", "reference": "E6"}],
+                      "pratique": "ce qui y est prevu", "reference": "E6",
+                      "citation": "la phrase de l'extrait E6 qui le prevoit, recopiee mot pour mot"}],
      "references": ["E1", "E6"],
      "recommandation": "proposition concrete pour combler la lacune"}
   ],
@@ -58,7 +60,7 @@ class Advisor(CrisisAgent):
         Une recherche globale ramenait surtout le texte australien (blocs longs
         et generalistes) au detriment du DSA, du RGPD ou de la loi britannique.
         """
-        from agent.agent1_institutions.agent import EXTRACT_CHARS
+        from agent.agent1_institutions.agent import EXTRACT_CHARS, cut_extract
         from bd.knowledge.ingest import embed_texts
         vec = embed_texts([query])[0]
         found: list[Extract] = []
@@ -71,7 +73,7 @@ class Advisor(CrisisAgent):
             for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0], res["distances"][0]):
                 found.append(Extract("", meta.get("source_file", ""), meta.get("article", ""),
                                      meta.get("page", ""), meta.get("country", ""), 1 - dist,
-                                     doc[:EXTRACT_CHARS]))
+                                     cut_extract(doc, EXTRACT_CHARS)))
         found.sort(key=lambda e: e.similarity, reverse=True)
         return found[:n]
 
@@ -186,6 +188,11 @@ class Advisor(CrisisAgent):
                 "lacunes du droit camerounais et compare-les aux pratiques etrangeres.\n"
                 f"REGLES DE CITATION : les SEULS identifiants valides sont {', '.join(e.id for e in extracts) or 'aucun'}. "
                 "Dans chaque commentaire, cite l'identifiant de l'extrait sur lequel tu t'appuies. "
+                "Dans \"citation\", recopie MOT POUR MOT la phrase de l'extrait qui fonde ton verdict ou la pratique "
+                "etrangere decrite : elle est verifiee automatiquement. Une action n'est « fondee » que si cette phrase "
+                "couvre TOUTE l'action ; si elle n'en couvre qu'une partie, le verdict est « a_verifier » et le "
+                "commentaire dit quelle partie manque. Une pratique etrangere ne decrit que ce que dit la citation "
+                "(aucun delai ni pouvoir ajoute). "
                 "Ne nomme AUCUN texte (directive, reglement, loi) qui ne figure pas dans ces extraits. "
                 "Avant d'ecrire qu'un texte camerounais « ne prevoit pas » quelque chose, verifie les extraits "
                 "camerounais : s'il le prevoit, ce n'est pas une lacune (au plus une imprecision, a qualifier ainsi). "

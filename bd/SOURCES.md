@@ -4,6 +4,13 @@ Chaque document de la base est listé ici avec sa provenance exacte et la façon
 dont il a été traité. Les textes sont dans
 `bd/InputDocs/<catégorie>/`.
 
+Le **manifeste** `bd/MANIFESTE.csv` reprend ces informations sous forme de
+tableau, une ligne par fichier (87), avec le statut de vérification de chaque
+texte et ses empreintes SHA-256 : celle du texte ingéré dans la base, et celle
+du PDF officiel quand un fichier figé existe. `python bd/scripts/manifeste.py
+verifier` signale tout fichier modifié, ajouté ou retiré depuis, ainsi que les
+PDF tronqués.
+
 ---
 
 ## 1. Textes juridiques camerounais — `Child_Online_Protection/`

@@ -33,7 +33,7 @@
     "demandes_max_par_etape": 6,
     "extraits_par_agent": 4,
     "extraits_par_reponse": 3,
-    "longueur_extrait": 500,
+    "longueur_extrait": 1200,
     "historique": {"etapes_anciennes_caracteres": 280, "messages_gardes": 8, "message_caracteres": 400}
   },
 

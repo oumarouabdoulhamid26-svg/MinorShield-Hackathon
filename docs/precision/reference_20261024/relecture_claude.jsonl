@@ -1,0 +1,30 @@
+{"cas": 1, "etiquette": "partielle", "commentaire": "art. 25 : les operateurs facilitent le dispositif deploye par l'ANTIC ; il ne leur fait pas installer eux-memes un controle parental ; la justification invente une « collecte de signalements » (l'agent n'a recu que le debut de l'alinea 2, coupe a « collecte des »)"}
+{"cas": 2, "etiquette": "partielle", "commentaire": "constatation et proces-verbal fondes (art. 32) ; aucune duree de conservation de 30 jours dans les extraits ; l'art. 49 vise l'interception, pas la conservation"}
+{"cas": 3, "etiquette": "fondee", "commentaire": "art. 25(2) : faciliter la collecte des donnees necessaires aux investigations judiciaires ; l'agent n'a pourtant recu que le debut de cet alinea"}
+{"cas": 4, "etiquette": "partielle", "commentaire": "art. 24 fonde le mecanisme de signalement, pas la suspension du compte ; le verdict « fondee » porte sur l'action entiere"}
+{"cas": 5, "etiquette": "non_fondee", "commentaire": "art. 16 : signaler la pedopornographie et suspendre les sites ; il ne prevoit pas l'identification du titulaire d'un compte"}
+{"cas": 6, "etiquette": "fondee", "commentaire": "transmission des journaux : art. 25(2) ; concours au retrait : art. 16"}
+{"cas": 7, "etiquette": "partielle", "commentaire": "art. 25 vise les operateurs et exploitants qui facilitent le dispositif de l'ANTIC ; il ne prevoit pas de statistiques de blocage ; « fondee » est trop fort (le meme conseiller avait dit « a verifier » a l'etape 1)"}
+{"cas": 8, "etiquette": "partielle", "commentaire": "lacune par absence : l'art. 8 ne mentionne que le MINAS, ce qui va dans le sens de la lacune, mais deux extraits ne suffisent pas a etablir l'absence de cadre de coordination"}
+{"cas": 9, "etiquette": "partielle", "commentaire": "les removal notices figurent dans l'extrait ; le delai de 24 h n'y figure pas (il est ailleurs dans la loi australienne)"}
+{"cas": 10, "etiquette": "fondee", "commentaire": "verdict « a verifier » justifie : art. 27 et 10 donnent a l'ANTIC un pouvoir general, mais ni l'obligation d'informer ni le delai de 15 jours"}
+{"cas": 11, "etiquette": "partielle", "commentaire": "logs pour l'enquete : art. 25(2) ; transmettre les contacts des parents aux regulateurs n'est pas couvert et pose une question au regard de la loi 2024/017"}
+{"cas": 12, "etiquette": "partielle", "commentaire": "art. 8 fonde la formation du personnel, pas le deploiement d'une equipe d'intervention ; verdict « fondee » sur l'action entiere"}
+{"cas": 13, "etiquette": "non_fondee", "commentaire": "l'extrait porte sur les exceptions au consentement parental ; la COPPA Rule ne prevoit pas de notification des violations aux parents (erreur deja relevee dans LACUNES.md, section C)"}
+{"cas": 14, "etiquette": "non_fondee", "commentaire": "art. 13 et 23(2) n'imposent aucune transmission de statistiques aux autorites ; « obligations de transparence » sans base"}
+{"cas": 15, "etiquette": "fondee", "commentaire": "l'art. 10(2) renvoie le role de l'ANTIC a un « texte particulier » : l'extrait appuie directement la lacune"}
+{"cas": 16, "etiquette": "fondee", "commentaire": "art. 13 : aider les utilisateurs a maitriser l'utilisation appropriee ; une alerte invitant a verifier le controle parental en releve"}
+{"cas": 17, "etiquette": "non_fondee", "commentaire": "l'extrait ne parle que des removal notices ; rien sur des rapports statistiques reguliers (la loi australienne a d'autres mecanismes, absents de l'extrait)"}
+{"cas": 18, "etiquette": "partielle", "commentaire": "l'art. 5 definit l'anonymisation sans l'imposer ; l'art. 17 est un renvoi general ; la demande est raisonnable mais sa base est ailleurs (pouvoirs de l'APDP, art. 53)"}
+{"cas": 19, "etiquette": "partielle", "commentaire": "art. 24 fonde le mecanisme de signalement, pas la suspension du compte"}
+{"cas": 20, "etiquette": "fondee", "commentaire": "verdict « non fondee » justifie : la charte (art. 17) n'impose pas d'anonymiser avant transmission ; la base serait la loi 2024/017"}
+{"cas": 21, "etiquette": "partielle", "commentaire": "meme cas que le 1 : faciliter le dispositif de l'ANTIC n'est pas installer soi-meme un controle parental"}
+{"cas": 22, "etiquette": "partielle", "commentaire": "art. 23(2) fonde la protection de la vie privee (anonymisation), pas la transmission aux autorites"}
+{"cas": 23, "etiquette": "partielle", "commentaire": "art. 32(2) : transmission des proces-verbaux au procureur ; la requete d'autorisation pour les releves Mobile Money n'y est pas"}
+{"cas": 24, "etiquette": "partielle", "commentaire": "le retrait d'images intimes est dans l'extrait ; l'obtention des informations d'identification du compte ne l'est pas"}
+{"cas": 25, "etiquette": "partielle", "commentaire": "art. 10(1) donne un mandat general de moyens preventifs et repressifs ; l'acces aux logs des fournisseurs n'y est pas precise (l'art. 10(2) renvoie a un autre texte)"}
+{"cas": 26, "etiquette": "non_fondee", "commentaire": "l'art. 53 (missions de l'APDP) ne traite pas de la notification des violations ; le bon article est l'art. 22 (« sans delai », sans delai chiffre), qui rend la lacune defendable mais mal citee"}
+{"cas": 27, "etiquette": "partielle", "commentaire": "art. 52(1) : enquetes selon le Code de procedure penale ; l'autorisation judiciaire invoquee dans la justification n'est pas dans le texte (l'al. 3 permet meme de demander directement les documents professionnels)"}
+{"cas": 28, "etiquette": "partielle", "commentaire": "art. 8 fonde la formation, pas le deploiement d'une equipe d'intervention"}
+{"cas": 29, "etiquette": "partielle", "commentaire": "art. 23(2) fonde un systeme protecteur de la vie privee ; ni la transmission de la documentation ni les details techniques (AES-256) ne viennent du texte"}
+{"cas": 30, "etiquette": "fondee", "commentaire": "art. 32 : constatation par les OPJ et transmission du proces-verbal au procureur sous 8 jours"}

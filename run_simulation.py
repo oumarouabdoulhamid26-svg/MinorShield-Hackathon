@@ -54,6 +54,8 @@ def show(entry: dict) -> None:
             src = "; ".join(c["sources"]) or "aucune source"
             extra = f"  (mention non verifiee : {', '.join(c['mentions_non_verifiees'])})" if c["mentions_non_verifiees"] else ""
             qui = f"[{c['institution']}] " if c.get("institution") else ""
+            if c.get("citation_exacte") is False:
+                extra += "  ! citation non retrouvee mot pour mot"
             if c.get("institution_valide") is False:
                 extra += f"  ! institution hors du mandat de l'agent {entry['agent']}"
             print(f"       {STATUS_ICON.get(c['statut'], '   ')}{qui}{c['action'][:90]}  <- {src[:80]}{extra}")

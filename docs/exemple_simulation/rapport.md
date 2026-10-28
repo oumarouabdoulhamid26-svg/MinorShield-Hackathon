@@ -1,19 +1,19 @@
 # Rapport de simulation — Opération Miroir
 
-*Mode : reference (grand modele) · 2026-10-24T20:47:53+00:00*
+*Mode : reference (grand modele) · 2026-10-27T21:05:55+00:00*
 
 ## Bilan
 
 | Indicateur | Valeur |
 |---|---|
-| Interventions d'agents | 53 |
-| Actions étayées par un extrait | 95 |
-| Actions non étayées | 10 |
+| Interventions d'agents | 47 |
+| Actions étayées par un extrait | 79 |
+| Actions non étayées | 8 |
 | Citations invalides | 1 |
-| Taux d'actions étayées | 86% |
-| Actions avec institution nommée | 69 sur 69 |
-| Demandes entre agents | 25 transmises, 0 non transmises |
-| Jetons consommés | 165279 |
+| Taux d'actions étayées | 84% |
+| Actions avec institution nommée | 61 sur 61 |
+| Demandes entre agents | 19 transmises, 1 non transmises |
+| Jetons consommés | 178041 |
 
 
 ---
@@ -27,94 +27,80 @@
 
 ### MinorShield
 
-**Évaluation.** Une hausse de 400 % des blocages détectés en 48 h, avec un vocabulaire d'argot local, suggère une possible campagne de chantage ou d'exploitation. MinorShield ne dispose d'aucune preuve concrète et ne peut que proposer des mesures de suivi et de partage de données agrégées.
+**Évaluation.** Une hausse de 400 % des contenus bloqués, avec un vocabulaire suspect, indique un risque potentiel pour les enfants à Douala et Yaoundé. MinorShield doit poursuivre le blocage et informer les parents tout en préparant des statistiques agrégées anonymisées.
 
-**Ce qu'il ignore :** l'origine exacte des messages (campagne organisée ou phénomène isolé) ; le nombre réel d'enfants affectés ; les éventuels auteurs ou réseaux derrière les messages
+**Ce qu'il ignore :** si la hausse résulte d'une campagne coordonnée ou d'une coïncidence ; identité des auteurs des messages
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **MinorShield** — Activer le mode de collecte de statistiques agrégées et anonymisées sur les blocages, puis les transmettre aux autorités compétentes conformément aux obligations de transparence. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 13, p. 226<br>Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227 |
+| **MinorShield** — Continuer de bloquer les contenus identifiés comme atteignant la dignité ou l'intégrité des enfants et alerter les parents concernés. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227 |
 
 **Lacunes signalées :**
-- La loi ne précise pas les modalités exactes de partage de statistiques agrégées avec les autorités
-- Aucun cadre légal n'autorise la transmission de captures d'écran brutes sans consentement explicite.
+- La loi ne prévoit pas explicitement la transmission de statistiques agrégées aux autorités ; aucune base légale directe n'est citée pour cette opération.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier l'anomalie de blocage et son caractère potentiellement dangereux.
-2. Vérifier les obligations légales de protection et de respect de la vie privée (E1, E2).
-3. Décider de collecter uniquement des données agrégées pour limiter les risques de violation de la vie privée.
-4. Solliciter l'APDP afin de garantir la conformité du processus avant tout partage.
+1. Identifier l'anomalie (hausse de 400 % des blocages).
+2. Vérifier les obligations légales de blocage des contenus nuisibles (E2).
+3. Appliquer la mesure de blocage et d'alerte parentale conformément à la loi.
+4. Demander à l'APDP le cadre légal pour le partage de statistiques agrégées.
 
 </details>
 
 
 ### Regulateurs du numerique
 
-**Évaluation.** Une hausse soudaine de contenus bloqués signale une possible campagne de chantage ciblant des enfants, mais aucune preuve concrète n'est encore disponible.
+**Évaluation.** Le système MinorShield signale une hausse importante de contenus à caractère coercitif sur les appareils d'enfants à Douala et Yaoundé, sans indication sur l'origine ou la nature exacte de la menace.
 
-**Ce qu'il ignore :** identité des auteurs des messages ; si les contenus proviennent d'opérateurs locaux ou de plateformes étrangères
+**Ce qu'il ignore :** l'identité des fournisseurs d'accès concernés ; le type exact de contenus bloqués et leur localisation sur le réseau ; si les contenus relèvent d'une infraction pénale ou uniquement d'une atteinte aux droits des enfants
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **ANTIC** — Émettre un avis de vigilance aux opérateurs d'accès Internet et aux fournisseurs de services de messagerie, les invitant à renforcer le filtrage des messages contenant le vocabulaire suspect et à signaler tout incident au CIRT. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225 |
-| **ART** — Coordonner avec les opérateurs de communications électroniques pour vérifier la conformité des filtres et, le cas échéant, appliquer les mesures correctives prévues à l'article 27. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 |
-| **MINPOSTEL** — Lancer, dans le cadre du Plan d'Action National de Protection des Enfants en Ligne, une campagne d'information auprès des parents et des établissements scolaires sur les risques de chantage numérique. | ⚠️ non étayée · mention non vérifiée : article 4 | — |
+| **ANTIC** — Déployer des moyens préventifs en lançant une campagne d'alerte et de sensibilisation auprès des opérateurs d'accès Internet et des utilisateurs concernant les menaces de chantage à l'image signalées. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225 |
 
 **Lacunes signalées :**
-- La loi ne précise pas les modalités de partage de statistiques agrégées par un tiers privé comme MinorShield.
-- Aucun texte ne donne à l'ANTIC le droit d'imposer directement des mesures techniques aux plateformes étrangères sans présence locale.
+- La loi ne précise pas les modalités exactes de la campagne d'alerte ni les obligations de partage de données avec MinorShield.
+- Aucun texte ne définit le rôle du CIRT dans ce contexte précis.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier le phénomène anormal (hausse de contenus bloqués).
-2. Vérifier les prérogatives légales applicables (E1, E2).
-3. Déterminer les acteurs capables d'agir (ANTIC, ART, MINPOSTEL).
-4. Proposer des actions coordonnées et formuler les demandes nécessaires.
+1. Constater la hausse de contenus à risque signalée par MinorShield.
+2. Identifier le cadre légal permettant d'agir (E1, article 10).
+3. Décider d'une mesure préventive de sensibilisation, compétence de l'ANTIC.
+4. Solliciter l'ART pour la coopération requise par l'article 27.
 
 </details>
 
 
-*Coordination interne* — Regulateurs du numerique (regulateurs) : Fournir le statut de conformité des filtres de contenu des opérateurs et signaler tout manquement.
+*Coordination interne* — Regulateurs du numerique (regulateurs) : Coordination pour identifier les opérateurs de communications électroniques impactés et partager les statistiques agrégées de MinorShield.
 
 
-*Coordination interne* — Regulateurs du numerique (regulateurs) : Valider et financer la campagne d'information prévue.
+**Demande** — MinorShield → APDP : Confirmation du cadre légal applicable à la transmission de statistiques agrégées et anonymisées aux autorités camerounaises.
 
-
-**Demande** — MinorShield → APDP : Validation du protocole d'anonymisation des données de blocage avant transmission aux autorités
-
-**Réponse de APDP** (✅ étayée) : Nous ne pouvons pas valider le protocole d'anonymisation tant que nous n'avons pas reçu la description détaillée des méthodes employées, les garanties techniques et les mesures de contrôle mises en place pour assurer la non‑identifiabilité des données d'enfants. Merci de nous transmettre ces informations afin de vérifier leur conformité aux exigences de protection des données des mineurs.
+**Réponse de APDP** (⚠️ non étayée) : Aucun texte fourni ne précise explicitement les conditions de transmission de statistiques agrégées et anonymisées aux autorités camerounaises. En l'absence d'une disposition claire, nous vous recommandons de solliciter une autorisation préalable auprès de l'APDP conformément aux exigences générales de transfert de données.
 
 
 ### ⚖️ Analyse du conseiller juridique
 
-Les actions de l'ANTIC et de l'ART sont solidement fondées sur les articles E3 et E4, tandis que les mesures de MinorShield et de MINPOSTEL nécessitent des précisions légales. Le droit camerounais manque de dispositions détaillées sur le partage de statistiques agrégées et sur l'application de mesures techniques aux acteurs étrangers, contrairement à l'Australie et aux Émirats arabes unis. Il est recommandé d'amender la charte pour combler ces lacunes et d'établir un protocole de coordination inter‑institutionnel.
+Le droit camerounais oblige les fournisseurs à bloquer les contenus illicites et le régulateur à agir préventivement, mais il ne prévoit pas le partage de statistiques par un acteur privé comme MinorShield. Cette lacune contraste avec les exigences de reporting des Émirats arabes unis. Il faut donc créer un cadre légal de transmission de données agrégées pour améliorer la réponse coordonnée.
 
 | Acteur | Action | Verdict | Commentaire |
 |---|---|---|---|
-| MinorShield | Activer le mode de collecte de statistiques agrégées et anonymisées sur les blocages, puis les transmettre aux autorités compétentes | ⚠️ à vérifier | L'extrait E1 impose aux entreprises d'aider les enfants à comprendre les services, mais ne précise pas le partage de statistiques agrégées aux autorités ; l'extrait E2 décrit des obligations de transparence sur la vie privée, sans mentionner de transmission aux pouvoirs publics. La base légale est donc partielle. |
-| ANTIC | Émettre un avis de vigilance aux opérateurs d'accès Internet et aux fournisseurs de services de messagerie, les invitant à renforcer le filtrage des messages contenant le vocabulaire suspect et à signaler tout incident au CIRT | ✅ fondée | L'extrait E3 stipule que l'organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs pour protéger les enfants en ligne, ce qui justifie l'émission d'un avis de vigilance. |
-| ART | Coordonner avec les opérateurs de communications électroniques pour vérifier la conformité des filtres et, le cas échéant, appliquer les mesures correctives prévues à l'article 27 | ✅ fondée | L'extrait E4 indique que l'organe de régulation des TIC, en collaboration avec les régulateurs des télécommunications, prend des mesures correctives lorsque les atteintes aux droits des enfants ne constituent pas des infractions pénales. |
-| MINPOSTEL | Lancer, dans le cadre du Plan d'Action National de Protection des Enfants en Ligne, une campagne d'information auprès des parents et des établissements scolaires | ⚠️ à vérifier | Aucun extrait fourni ne mentionne explicitement une mission d'information publique pour le ministère des télécommunications ; la mesure repose donc sur une interprétation large de la charte (E1‑E4) mais n'est pas directement fondée. |
-| APDP | Demander la description détaillée des méthodes d'anonymisation avant validation du protocole | ✅ fondée | L'extrait E5 impose aux responsables du traitement des données le respect de la réglementation en matière de protection des droits des enfants, incluant la garantie de non‑identifiabilité. |
+| MinorShield | partager des statistiques agrégées et anonymisées avec les autorités | ❌ non fondée | Aucun extrait camerounais ne prévoit la transmission de données agrégées par un acteur privé de protection des enfants. Aucun texte fourni ne mentionne ce type de partage. |
+| MINPOSTEL | déployer des moyens préventifs et répressifs pour protéger les enfants en ligne | ✅ fondée | E2 article 10‑1 prévoit que l’organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs nécessaires à la protection des enfants dans le cyberespace national. |
+| Operateurs | mettre en place des mécanismes permettant de bloquer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants | ✅ fondée | E1 article 23‑3 impose aux fournisseurs de contenus et de services en ligne d’instaurer des mécanismes de blocage immédiat des publications portant atteinte aux enfants. |
 
-**Lacune : Absence de cadre précis pour le partage de statistiques agrégées et anonymisées avec les autorités publiques**
+**Lacune : Absence de cadre légal encadrant le partage de données agrégées par un acteur privé de protection des enfants avec les autorités.**
 
-- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 13, p. 226 ; Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227
-- Australie : L'Online Safety Act 2021 oblige les fournisseurs à fournir aux autorités des rapports statistiques réguliers sur les contenus dangereux pour les enfants. *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 17/157))*
-- **Recommandation :** Introduire un article dédié (ex. article X) précisant les modalités de transmission, les formats de données, les garanties d'anonymat et les délais de remise des statistiques aux autorités compétentes.
-
-**Lacune : Pas de texte autorisant explicitement l'ANTIC à imposer des mesures techniques contraignantes aux plateformes étrangères sans présence locale**
-
-- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225
-- Émirats arabes unis : Le Décret fédéral n°26/2025 permet aux autorités de requérir la suppression ou le blocage de contenus illicites sur toute plateforme, même étrangère, via des ordonnances contraignantes. *(Federal Decree by Law No. (26) of 2025 Regarding Child Digital Safety (United Arab Emirates), article 10, p. 1)*
-- **Recommandation :** Modifier l'article 10 de la charte pour inclure une compétence d'ordre direct sur les fournisseurs étrangers opérant sur le territoire numérique camerounais.
+- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227
+- Émirats arabes unis : Obligation pour les plateformes numériques de fournir des statistiques et rapports périodiques aux autorités compétentes. *(Federal Decree by Law No. (26) of 2025 Regarding Child Digital Safety (United Arab Emirates), article 10, p. 1)*
+- **Recommandation :** Adopter, par décret ou loi, une disposition similaire à l’article 10 du Décret des Émirats, imposant aux acteurs privés de signaler aux autorités des statistiques agrégées anonymisées sur les contenus bloqués chez les mineurs.
 
 **Conflits :**
-- Conflit potentiel entre la nécessité de partager des données agrégées (exigence de transparence) et le respect du droit à la vie privée des enfants (article 23).
+- Aucun conflit identifié entre les objectifs des extraits camerounais et les pratiques étrangères cités.
 
 **Problèmes de coordination :**
-- Manque de protocole clair entre MinorShield, les régulateurs (ANTIC, ART) et le ministère des télécommunications pour la remontée et le traitement des données de blocage.
+- Coordination insuffisante entre MinorShield (acteur privé) et le régulateur (ANTIC/MINPOSTEL) pour la transmission des données nécessaires à l’action préventive.
 
 
 ---
@@ -128,152 +114,146 @@ Les actions de l'ANTIC et de l'ART sont solidement fondées sur les articles E3 
 
 ### MinorShield
 
-**Évaluation.** Une hausse de 400 % des blocages à Douala et Yaoundé indique une possible campagne de harcèlement ou de diffusion de contenus inappropriés ciblant les mineurs. Le cas isolé de la collégienne montre que le score de détection franchit le seuil de blocage, mais le contexte (jeu entre amies) peut entraîner un faux positif.
+**Évaluation.** Une hausse soudaine de contenus bloqués et un cas de blocage proche du seuil ont été détectés. Le parent demande des explications et la collégienne conteste le blocage.
 
-**Ce qu'il ignore :** Qui est à l'origine du vocabulaire d'argot récurrent dans les messages bloqués ? ; Quel est le seuil exact de blocage appliqué par MinorShield pour chaque catégorie ? ; Si les captures sont transmises aux autorités, quelles garanties d'anonymisation seront jugées suffisantes par l'APDP
+**Ce qu'il ignore :** Le seuil exact de blocage appliqué par MinorShield ; L'existence d'une autorisation préalable de l'APDP pour la transmission de captures aux autorités
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **MinorShield** — Envoyer une alerte agrégée aux parents des enfants protégés indiquant la hausse de blocages et les inviter à vérifier les paramètres de contrôle parental. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 13, p. 226 |
-| **MinorShield** — Conserver les captures d’écran liées aux blocages pendant 30 jours, en appliquant le protocole d’anonymisation en cours de validation, et préparer leur transmission aux autorités sur demande légale. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227 |
-| **MinorShield** — Répondre au parent de la collégienne en expliquant le fonctionnement du score de détection, le risque de faux positifs et les mesures de recours (demande de réexamen). | ⚠️ non étayée | — |
+| **MinorShield** — Informer le parent des raisons du blocage en se référant à l'obligation d'aider les utilisateurs à comprendre le fonctionnement du service | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 13, p. 226 |
+| **MinorShield** — Conserver la capture d'écran concernée pendant 30 jours, conformément aux exigences de mise en place de mécanismes de retrait ou de blocage immédiat | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227 |
+| **MinorShield** — Préparer un rapport agrégé anonymisé des incidents pour le transmettre aux autorités sur demande, après obtention d'une autorisation préalable de l'APDP | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227 |
 
 **Lacunes signalées :**
-- La loi ne précise pas de procédure exacte pour le partage de captures d’écran à des autorités étrangères, limitant notre capacité à le faire sans consentement explicite.
-- Nous ne disposons pas d’un cadre légal autorisant la sanction directe des auteurs du contenu.
+- La loi ne précise pas explicitement les conditions de transmission de captures d'écran brutes à des autorités étrangères
+- Absence de texte définissant le seuil de score déclenchant le blocage
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier la hausse anormale comme un signal d'alerte.
-2. Vérifier que les actions proposées sont couvertes par les obligations légales (E1, E2).
-3. Déterminer les besoins de validation externe (APDP, MINPOSTEL).
-4. Formuler les actions et demandes tout en respectant les limites de mandat.
+1. Identifier les faits signalés (hausse de blocages, cas de collégienne).
+2. Vérifier les obligations légales liées à l'information des parents et à la protection de la vie privée.
+3. Déduire les mesures possibles (information, conservation, transmission agrégée) en s'appuyant sur les extraits E1 et E2.
+4. Constater le besoin d'une autorisation de l'APDP pour toute transmission de données sensibles.
 
 </details>
 
 
 ### APDP
 
-**Évaluation.** Une capture d'écran d'une conversation d'une mineure a été bloquée par MinorShield et conservée 30 jours. Le parent veut comprendre le blocage, la mineure le conteste. Le protocole d'anonymisation a été validé par MinorShield.
+**Évaluation.** Un mineur de 14 ans a vu son téléphone bloqué après qu'une capture d'écran contenant un texte potentiellement à caractère sexuel a été envoyée par MinorShield à son service de modération aux États-Unis. Le parent a été alerté et demande des explications.
 
-**Ce qu'il ignore :** si le parent a donné son consentement explicite pour la transmission des données à l'APDP ; si une autorisation de transfert vers les États-Unis est requise pour les données envoyées à OpenAI
+**Ce qu'il ignore :** Si le parent a déjà donné son consentement explicite pour le traitement de ces données ; Le délai exact requis par MinorShield pour obtenir une autorisation de transfert
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **APDP** — Demander à MinorShield de transmettre les captures d'écran uniquement sous forme anonymisée conformément au protocole validé, avant toute éventuelle communication aux autorités. | ✅ étayée | Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun, article 5, p. 3<br>Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 |
+| **APDP** — Demander à MinorShield de suspendre tout transfert de la capture d'écran vers les serveurs situés aux États-Unis jusqu'à obtention d'une autorisation préalable de l'APDP | ✅ étayée | Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun, article 53, p. 19 |
+| **APDP** — Informer le parent que les données de sa fille sont des données à caractère personnel d’un mineur et que tout traitement ou transfert nécessite le consentement du représentant légal, conformément à la réglementation sur la protection des droits des enfants | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 |
 
 **Lacunes signalées :**
-- La loi ne précise pas la procédure exacte pour communiquer des données anonymisées aux autorités judiciaires dans le cadre d'une enquête.
+- La loi ne précise pas la procédure exacte pour obtenir rapidement une autorisation de transfert en situation d'urgence
+- Aucun texte fourni ne détaille les modalités de communication du blocage au parent
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier la donnée sensible (capture d'écran d'une mineure).
-2. Vérifier le cadre légal applicable (anonymisation, droits de l'enfant).
-3. Formuler une demande de transmission anonymisée à MinorShield.
-4. Attendre la réponse pour décider d'une éventuelle notification aux autorités.
+1. Identifier que la transmission de données vers les USA relève du transfert international soumis à autorisation (E1).
+2. Constater que les données concernent un mineur, donc le consentement du représentant légal est requis (E2).
+3. Décider de suspendre le transfert jusqu'à autorisation et d'informer le parent de ses droits.
+4. Demander à MinorShield les éléments nécessaires pour évaluer la légalité du traitement.
 
 </details>
 
 
 ### Protection sociale et educative
 
-**Évaluation.** Une capture d'écran contenant un texte à caractère potentiellement abusif a été détectée sur le téléphone d'une collégienne de 14 ans. Le parent a été alerté et le dispositif MinorShield propose de conserver la preuve 30 jours et de la transmettre aux autorités sur demande.
+**Évaluation.** Une capture d'écran d'une conversation potentiellement à risque a été bloquée par MinorShield sur le téléphone d'une collégienne de 14 ans. Le parent a été alerté et demande des explications, tandis que la jeune affirme qu'il s'agit d'un jeu entre amies.
 
-**Ce qu'il ignore :** la décision du parent quant à la conservation de la capture ; l'évaluation du seuil de blocage par le système de modération d'OpenAI ; la volonté des autorités judiciaires d'ouvrir une enquête
+**Ce qu'il ignore :** Si le contenu doit être transmis aux autorités ; Si le parent souhaite une prise en charge psychologique de l'enfant ; Le statut exact du score par rapport au seuil de blocage de MinorShield
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **MINAS** — Déclencher la formation du personnel intervenant sur la détection et la prise en charge de cet abus en ligne, et préparer un rapport de signalement à transmettre aux autorités compétentes. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
+| **MINAS** — Informer le parent des mesures de prévention et de détection prévues par la loi et proposer un accompagnement psychologique pour l'enfant | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
 
 **Lacunes signalées :**
-- Aucun texte de loi ne confère au MINAS le pouvoir de demander directement la conservation ou la transmission des données à MinorShield.
-- Le MINESEC ne dispose d'aucune directive spécifique pour la protection d'élèves victimes en ligne.
+- La loi ne prévoit aucune procédure de transmission des captures d'écran de MinorShield aux autorités
+- Aucune disposition légale n'attribue au MINESEC un rôle dans la prise en charge d'un élève victime d'abus en ligne
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier le contenu à risque et le signaler au parent.
-2. Vérifier les obligations légales du MINAS (E1).
-3. Activer la formation et le signalement conformément à la mission du MINAS.
-4. Solliciter les autorités judiciaires pour l'enquête et la conservation des preuves.
+1. Identifier le problème : blocage d'un contenu potentiellement abusif sur le téléphone d'une mineure.
+2. Vérifier les compétences : le MINAS est responsable de la prévention, détection et prise en charge des abus en ligne (E1).
+3. Déterminer l'action possible : informer le parent et proposer un accompagnement, action fondée sur la formation du personnel du MINAS.
+4. Reconnaître les dépendances : besoin d'un module de formation parentale fourni par le MINPROFF, d'où la demande correspondante.
 
 </details>
 
 
 ### Chaine penale
 
-**Évaluation.** Un contenu potentiellement à caractère pornographique impliquant une collégienne de 14 ans a été détecté par MinorShield et bloqué. Le parent a été alerté, mais la mineure conteste la gravité du message.
+**Évaluation.** Une capture d'écran d'une conversation d'une collégienne de 14 ans a été bloquée par MinorShield pour contenu potentiellement à caractère sexuel. La police judiciaire doit constater l'infraction et préserver la preuve numérique.
 
-**Ce qu'il ignore :** Identité de l'expéditeur du message et du destinataire ; Existence d'autres échanges similaires sur le même appareil
+**Ce qu'il ignore :** l'existence d'une éventuelle plainte officielle de la victime ou de son représentant ; si le contenu constitue réellement de la pornographie enfantine au sens de la loi
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Police judiciaire** — Constater l'infraction, consigner le contenu bloqué dans un procès‑verbal et sécuriser la capture d'écran pendant 30 jours conformément aux exigences de conservation de preuves numériques. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228<br>Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 49, p. 210 |
-| **Parquet** — Qualifier les faits de diffusion ou mise à disposition de pornographie enfantine au sens de l'article 81 de la loi n°2010/012 et préparer la demande de mise en examen du responsable. | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 81, p. 215 |
+| **Police judiciaire** — Conserver la capture d'écran et les métadonnées associées comme preuve numérique conformément aux pouvoirs d'interception et de saisie de communications électroniques. | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 49, p. 210 |
+| **Police judiciaire** — Rédiger un procès‑verbal de constatation de l'infraction et le transmettre au Procureur de la République dans les huit jours. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
 
 **Lacunes signalées :**
-- La loi ne précise pas la procédure exacte pour solliciter la remise de données hébergées à l'étranger (serveur OpenAI aux États-Unis).
+- La loi ne précise pas la procédure exacte pour solliciter directement les données de MinorShield, d'où la demande à l'APDP.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier le contenu bloqué comme potentiellement illicite (pornographie enfantine).
-2. Vérifier les compétences de la police judiciaire pour constater et conserver la preuve (E1, E4).
-3. Déterminer la qualification juridique de l'infraction (E2) relevant du parquet.
-4. Formuler les demandes nécessaires aux acteurs externes (MinorShield, APDP) pour poursuivre l'enquête.
+1. Identifier le contenu suspect et la victime potentielle.
+2. Utiliser le pouvoir de saisie de la police (E4) pour conserver la preuve.
+3. Préparer le PV et le transmettre au parquet (E1).
+4. Demander aux autorités compétentes les informations complémentaires nécessaires.
 
 </details>
 
 
-**Demande** — MinorShield → APDP : Validation du protocole d'anonymisation des captures d'écran avant toute transmission aux autorités
-
-**Réponse de APDP** (✅ étayée) : Le protocole d'anonymisation proposé par MinorShield est conforme aux exigences de la loi n° 2024/017, article 53, qui impose à l'Autorité de délivrer les autorisations nécessaires après vérification que les données personnelles, notamment celles d'enfants, sont rendues anonymes avant toute transmission aux autorités.
+*Coordination interne* — Protection sociale et educative (social) : Fournir un module de formation à destination du parent pour l'aider à reconnaître et réagir face aux contenus à risque en ligne
 
 
-**Demande** — MinorShield → Regulateurs du numerique : Demande de coordination pour identifier d’éventuelles sources de diffusion massive de contenus inappropriés
-
-**Réponse de Regulateurs du numerique** (✅ étayée) : Nous acceptons de coordonner avec MinorShield. Nous analyserons les statistiques agrégées fournies et mobiliserons nos moyens techniques pour tracer les sources potentielles de diffusion, en collaboration avec l'ART si nécessaire.
+*Coordination interne* — Chaine penale (penal) : Qualifier l'infraction éventuelle (pornographie enfantine ou proposition sexuelle) et décider de l'ouverture d'une enquête judiciaire
 
 
-**Demande** — APDP → MinorShield : Fournir les captures d'écran anonymisées et confirmer que seules les données nécessaires à l'enquête seront transmises.
+**Demande** — MinorShield → APDP : Autorisation préalable pour la transmission éventuelle de captures d'écran aux autorités camerounaises
 
-**Réponse de MinorShield** (🔶 citation douteuse) : Nous allons transmettre les captures d'écran anonymisées, en supprimant toute donnée directement identifiante (nom, numéro de téléphone, adresse IP, etc.) et en ne conservant que les éléments strictement nécessaires à l'analyse du contenu (scores de détection, texte extrait, horodatage agrégé). Conformément à la loi n° 2024/017, seules les données indispensables à l'enquête seront communiquées aux autorités compétentes.
-
-
-**Demande** — Protection sociale et educative → Chaine penale : Demande d'ouverture d'enquête sur le contenu détecté et d'accès à la capture conservée 30 jours par MinorShield.
-
-**Réponse de Chaine penale** (✅ étayée) : Nous ouvrons une enquête conformément à l'article 32 de la loi n°2023/009 qui impose la constatation des infractions par les officiers de police judiciaire. Nous sollicitons auprès de MinorShield l'accès à la capture conservée pendant 30 jours afin de l'analyser comme preuve numérique.
+**Réponse de APDP** (✅ étayée) : Autorisation préalable accordée pour la transmission éventuelle des captures d'écran aux autorités camerounaises, sous réserve du respect des exigences de protection des données et de la nécessité de protéger l'enfant.
 
 
-**Demande** — Chaine penale → MinorShield : Transmission de la capture d'écran et des métadonnées associées pour les besoins de l'enquête
+**Demande** — APDP → MinorShield : Fournir les captures d'écran conservées et justifier la nécessité de les transmettre aux autorités américaines
 
-**Réponse de MinorShield** (🔶 citation douteuse) : Nous confirmons que la capture d'écran et les métadonnées associées seront transmises à la Police judiciaire uniquement dans le cadre de l'enquête en cours, après anonymisation conforme à la loi n° 2024/017 et aux exigences de l'article 23 de la loi n° 2023/009. Aucun autre traitement ou diffusion ne sera effectué.
+**Réponse de MinorShield** (✅ étayée) : Nous transmettons les captures d'écran conservées aux autorités américaines afin de permettre la modération du texte et des images par le service d'OpenAI, ce qui est nécessaire pour identifier les contenus à risque et protéger les enfants concernés.
 
 
-**Demande** — Chaine penale → APDP : Autorisation de traitement des données personnelles de la mineure dans le cadre de l'enquête
+**Demande** — Chaine penale → APDP : Fournir les logs de conservation de la capture d'écran et les conditions de stockage de MinorShield
 
-**Réponse de APDP** (✅ étayée) : L'Autorité autorise le traitement des données personnelles de la mineure dans le cadre de l'enquête, sous réserve que les données soient limitées aux éléments strictement nécessaires, anonymisées conformément aux protocoles validés par MinorShield, et que le consentement parental soit vérifié. Toute transmission à l'étranger devra faire l'objet d'une autorisation préalable de l'APDP.
+**Réponse de APDP** (🔶 citation douteuse) : Nous prenons acte de votre demande et, conformément de nos missions d'examen et d'enquête, nous procéderons à la vérification de la légalité de la transmission des logs de conservation et des conditions de stockage de MinorShield avant toute communication.
 
 
 ### ⚖️ Analyse du conseiller juridique
 
-Le blocage du contenu est justifié par les obligations de protection des enfants (E1, E2). Toutefois, la loi camerounaise ne définit pas la durée de conservation des captures ni les modalités de transmission, créant une lacune comparée aux pratiques australiennes. Il faut harmoniser les procédures entre MinorShield, l'APDP et les forces de l'ordre pour garantir à la fois la protection des enfants et le respect de la vie privée.
+Le blocage du contenu est conforme à la loi camerounaise (E1) et la police peut légalement intercepter les communications (E6). Cependant, le droit camerounais ne précise pas la durée de conservation des preuves numériques, créant une lacune comparée aux pratiques australiennes et américaines. Il faut harmoniser les procédures de conservation et renforcer la coordination avec l'APDP pour garantir le respect des droits des enfants et de la vie privée.
 
 | Acteur | Action | Verdict | Commentaire |
 |---|---|---|---|
-| MinorShield | Blocage du message suspect sur le téléphone de la collégienne | ✅ fondée | Le blocage repose sur l'obligation des fournisseurs de services en ligne de protéger les enfants (E1) et sur le devoir de respecter la protection des données des mineurs (E2). |
-| MinorShield | Conservation des captures d'écran 30 jours et transmission aux autorités sur demande | ⚠️ à vérifier | La loi camerounaise prévoit la collecte et le traitement des données des enfants (E2, E4) mais ne précise pas de durée de conservation ni les modalités de transmission aux autorités. |
-| Police judiciaire | Possibilité d'intercepter et d'enregistrer la communication électronique suspecte | ✅ fondée | Article 49 de la loi sur la cybersécurité autorise l'officier de police judiciaire à intercepter les communications (E8). |
+| MinorShield | blocage du message contenant du texte à risque sur le téléphone de la collégienne | ✅ fondée | Le blocage repose sur l'obligation de retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants (E1). |
+| MinorShield | conservation des captures d'écran 30 jours et mise à disposition des autorités sur demande | ⚠️ à vérifier | E1 impose le retrait immédiat mais ne précise pas la durée de conservation des données; la pratique de conservation 30 jours n'est pas couverte. |
+| Police judiciaire | interception et enregistrement de la communication électronique suspectée | ✅ fondée | L'article 49 de la loi sur la cybersécurité autorise l'officier de police judiciaire à intercepter, enregistrer ou transcrire toute communication électronique (E6). |
 
-**Lacune : Absence de cadre légal précis sur la durée de conservation des preuves numériques et les conditions de leur transmission aux autorités**
+**Lacune : Absence de cadre précis sur la durée légale de conservation des données de contenus bloqués et sur les conditions de transmission aux autorités.**
 
-- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 ; Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun, article 53, p. 19
-- Australie : L'Online Safety Act 2021 prévoit une conservation limitée des contenus signalés et des procédures claires de transmission aux autorités. *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 64/157))*
-- **Recommandation :** Introduire un article précisant une durée maximale de conservation (ex. 14 jours) et définir les protocoles de transmission sécurisée aux forces de l'ordre.
+- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227
+- Australie : Le Online Safety Act prévoit des ordonnances de retrait et de conservation limitées, avec des délais clairement définis pour la transmission aux autorités. *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 64/157))*
+- États‑Unis : Le COPPA impose des exigences de conservation limitées et de suppression des données après vérification de l'âge. *(Children's Online Privacy Protection Rule (COPPA Rule), 16 CFR Part 312 (United States)] (partie 13/24))*
+- **Recommandation :** Instaurer, par décret, une période maximale de conservation de 15 jours pour les captures d'écran liées à des contenus à risque, avec obligation de suppression automatique sauf décision judiciaire, et préciser les modalités de transmission aux autorités.
 
 **Conflits :**
-- Conflit potentiel entre la protection de la vie privée des données (E2) et la transmission obligatoire aux autorités sans cadre clair.
+- Le besoin de protéger la vie privée de l'enfant (E1) entre en tension avec la possibilité d'interception par la police judiciaire (E6) sans cadre de contrôle strict.
 
 **Problèmes de coordination :**
-- Manque de coordination formalisée entre MinorShield, l'APDP et la Police judiciaire pour le partage des preuves numériques.
+- Absence de demande explicite de la part de MinorShield à l'APDP (E2) pour valider la légalité du stockage des données, ce qui freine la conformité.
 
 
 ---
@@ -285,29 +265,26 @@ Le blocage du contenu est justifié par les obligations de protection des enfant
 > Des parents se présentent dans des centres sociaux de Douala. Deux victimes : une collégienne de 15 ans et une lycéenne de 19 ans, menacées de voir publiées des photos intimes si elles ne versent pas 50 000 FCFA par Mobile Money. Les photos ont été obtenues après plusieurs jours de manipulation par un faux profil. Le collège de la plus jeune envisage de l'exclure pour « atteinte à l'image de l'établissement ».
 
 
-> 🔧 **Reconfiguration automatique** (nouvelle_tentative, Protection sociale et educative) : taux d'actions etayees 33% sous le seuil de 50% — tentative nouvelle retenue. Règle : ML Intent : qualite.seuil_taux_etayees_agent (Y.3172 REQ-ML-MNG-004)
-
-
 ### Protection sociale et educative
 
-**Évaluation.** Détection d'abus en ligne confirmée et deux victimes signalées ; besoin urgent de prise en charge psychosociale et de prévention auprès des parents et de l'établissement scolaire.
+**Évaluation.** Une collégienne a reçu un blocage de son téléphone suite à une détection d'abus en ligne et deux jeunes victimes (15 ans et 19 ans) sont menacées de chantage avec diffusion de photos intimes. Les parents sont déjà présents dans les centres sociaux de Douala.
 
-**Ce qu'il ignore :** les modalités de formation des parents proposées par le MINPROFF ; la décision du collège concernant l'exclusion de la collégienne
+**Ce qu'il ignore :** les coordonnées exactes du personnel intervenant dans les centres sociaux ; les procédures internes de signalement au niveau du MINPROFF ; les mesures disciplinaires applicables du collège
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **MINAS** — Déployer une équipe d'intervention sociale pour accompagner les deux victimes et former le personnel du centre social à la détection et à la prise en charge des abus en ligne. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
+| **MINAS** — Organiser une session de formation urgente pour le personnel des centres sociaux de Douala sur la prévention, la détection et la prise en charge des abus en ligne | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
 
 **Lacunes signalées :**
-- Le MINESEC ne dispose d'aucune disposition légale pour intervenir directement dans la protection des élèves victimes d'extorsion en ligne.
-- Le texte de loi ne précise pas les modalités de coordination entre MINAS et MINPROFF.
+- Aucune disposition légale ne prévoit de mesures spécifiques du MINESEC pour la protection des élèves victimes en ligne
+- Le partage de compétences entre MINAS et MINPROFF n’est pas clairement défini dans la loi
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier la détection d'abus (E1) et les victimes présentées aux centres sociaux.
-2. Appliquer la compétence du MINAS à former le personnel de prise en charge.
-3. Reconnaître le besoin de formation des parents, relevant du MINPROFF.
-4. Noter l'absence de cadre pour le MINESEC et solliciter son avis pour la décision scolaire.
+1. Identifier les victimes et le besoin immédiat de prise en charge
+2. Vérifier les bases légales disponibles (E1 pour formation du personnel)
+3. Déterminer l'action possible du MINAS (formation du personnel)
+4. Demander au MINPROFF les outils de formation parentale complémentaires
 
 </details>
 
@@ -317,79 +294,60 @@ Le blocage du contenu est justifié par les obligations de protection des enfant
 
 ### Chaine penale
 
-**Évaluation.** Des photos intimes de mineurs ont été obtenues via un faux profil et font l'objet de menaces de diffusion contre rançon. La police judiciaire a reçu la capture d'écran de MinorShield et l'autorisation de l'APDP pour traiter les données de la victime de 15 ans.
+**Évaluation.** Des mineurs sont victimes d'extorsion et de menaces de diffusion d'images intimes obtenues via un faux profil. La police judiciaire doit constater les infractions, saisir les preuves numériques et les transmettre au parquet, qui qualifiera les faits.
 
-**Ce qu'il ignore :** identité du faux profil et localisation du serveur hébergeant les images ; preuves de paiement Mobile Money des victimes ; délais de conservation des données chez l'opérateur d'accès Internet
+**Ce qu'il ignore :** L'identité exacte du ou des auteurs du faux profil ; L'emplacement des serveurs hébergeant les images et les logs de MinorShield ; Le consentement ou la coopération du opérateur Mobile Money pour le gel des comptes
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Police judiciaire** — Constater l'infraction de diffusion et de chantage à caractère pédopornographique et rédiger le procès‑verbal d'enquête | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 80, p. 215<br>Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
-| **Parquet** — Qualifier les faits de chantage et de diffusion d'images pédopornographiques et décider de la mise en examen | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 80, p. 215 |
-| **Police judiciaire** — Demander aux opérateurs de télécommunications les relevés de transactions Mobile Money des victimes pour corroborer la rançon | ⚠️ non étayée | — |
+| **Police judiciaire** — Saisir et préserver les preuves numériques (captures d'écran, logs de MinorShield, relevés Mobile Money) conformément aux procédures d'enquête cybernétique. | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 52, p. 210 |
+| **Police judiciaire** — Rédiger le procès‑verbal des constats et le transmettre au Procureur de la République dans le délai légal. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
+| **Parquet** — Qualifier les faits d'extorsion et de diffusion d'images pédopornographiques et ouvrir les poursuites pénales contre les auteurs. | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 80, p. 215 |
 
 **Lacunes signalées :**
-- Absence d'extrait législatif précisant la procédure de demande de logs Mobile Money aux opérateurs
-- Pas de texte de loi explicitant le rôle du parquet dans la qualification du chantage en plus de la diffusion pédopornographique
+- La loi ne prévoit pas explicitement la procédure de demande directe de logs à un prestataire privé comme MinorShield sans passer par l'APDP
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Vérifier la recevabilité des preuves numériques (capture d'écran) via les autorisations de l'APDP et MinorShield.
-2. Constater l'infraction selon E1 (diffusion d'images pédopornographiques) et E2 (compétence de la police judiciaire).
-3. Le parquet qualifie les faits et décide de la mise en examen.
-4. Demander les éléments complémentaires (logs financiers, identité du faux profil) aux acteurs compétents.
+1. Identifier les infractions (extorsion, diffusion d'images pédopornographiques).
+2. Appliquer l'article E5 pour autoriser la police à saisir les preuves numériques.
+3. Utiliser l'article E2 pour transmettre le PV au parquet.
+4. Le parquet, sur la base de l'article E1, qualifie les faits et initie les poursuites.
 
 </details>
 
 
-*Coordination interne* — Protection sociale et educative (social) : Fournir les modules de formation destinés aux parents pour prévenir le chantage et le partage de contenus intimes.
+*Coordination interne* — Protection sociale et educative (social) : Fournir les modules de formation destinés aux parents afin d’accompagner la prise en charge des deux victimes
 
 
-*Coordination interne* — Protection sociale et educative (social) : Clarifier la procédure disciplinaire du collège face à la menace de diffusion d'images intimes et garantir le respect des droits de la victime.
+**Demande** — Chaine penale → APDP : Transmission des logs de conservation de la capture d'écran et des conditions de stockage de MinorShield
 
-
-**Demande** — Chaine penale → Regulateurs du numerique : Accès aux relevés de transactions Mobile Money des victimes sur la période concernée
-
-**Réponse de Regulateurs du numerique** (✅ étayée) : L'ANTIC ne dispose pas de l'autorité pour accéder aux relevés de transactions Mobile Money des victimes. Conformément à ses compétences limitées à la régulation des TIC et à la protection des enfants en ligne, cette demande relève de la compétence des autorités judiciaires compétentes.
-
-
-**Demande** — Chaine penale → Entreprises du numerique : Identification du compte du faux profil utilisé pour obtenir les photos
-
-**Réponse de Entreprises du numerique** (✅ étayée) : Nous procéderons à l'identification du compte du faux profil conformément à votre demande et aux obligations légales en vigueur.
-
-
-**Demande** — Chaine penale → APDP : Confirmation écrite du respect des conditions d'anonymisation des données de la mineure
-
-**Réponse de APDP** (✅ étayée) : Nous confirmons que les captures d'écran de la collégienne seront transmises aux autorités uniquement après anonymisation conforme aux exigences légales, en supprimant toute donnée directement identifiante (nom, numéro de téléphone, adresse IP, etc.) et en ne conservant que les éléments strictement nécessaires à l'analyse du contenu. Cette procédure respecte les obligations de l'APDP en matière de protection des données à caractère personnel.
+**Réponse de APDP** (✅ étayée) : L'APDP ne peut pas transmettre les logs de conservation ni les conditions de stockage de MinorShield sans le consentement explicite du mineur et de son représentant légal, conformément aux exigences de protection des données des enfants.
 
 
 ### ⚖️ Analyse du conseiller juridique
 
-Les actions de MINAS et de la police sont fondées sur les textes E2, E1 et E3. Cependant, le droit camerounais ne précise pas la procédure d'obtention des logs Mobile Money et la coordination inter‑ministerielle, contrairement aux pratiques australiennes, britanniques et aux recommandations de l'ONU. Il faut créer des textes d'application et des protocoles de coopération pour combler ces lacunes.
+Le cadre juridique camerounais prévoit formation, enquête et sanction, mais ne prévoit pas de mécanisme de retrait immédiat d'images intimes. Cette lacune contraste avec les pratiques australiennes qui imposent un avis de retrait aux fournisseurs. Il faut harmoniser les procédures entre les acteurs sociaux, judiciaires et techniques pour protéger efficacement les victimes.
 
 | Acteur | Action | Verdict | Commentaire |
 |---|---|---|---|
-| MINAS | Déployer une équipe d'intervention sociale et former le personnel à la détection et prise en charge des abus en ligne | ✅ fondée | L'article 8 de la loi 2023/009 (E2) impose au Ministère des affaires sociales de fournir une formation appropriée aux intervenants sur les abus en ligne. |
-| Police judiciaire | Constater l'infraction de diffusion et de chantage à caractère pédopornographique et rédiger le procès‑verbal d'enquête | ✅ fondée | L'article 80 de la loi 2010/012 (E1) pénalise la diffusion d'images pédopornographiques et l'article 32 de la loi 2023/009 (E3) prévoit que les officiers de police judiciaire constatent les infractions. |
-| Police judiciaire | Demander aux opérateurs de télécommunications les relevés de transactions Mobile Money des victimes | ⚠️ à vérifier | Aucun extrait fourni ne précise la procédure de demande de logs aux opérateurs (absence d'E4 ou autre). La loi 2023/009 (E4) mentionne le rôle de l'organe de régulation mais ne donne pas de texte détaillé pour les forces de l'ordre. |
+| MINAS | formation du personnel intervenant sur la prévention et la prise en charge des abus en ligne | ✅ fondée | L'article 8 de la charte de protection des enfants en ligne impose cette formation (E1) |
+| Police judiciaire | lancement d'enquête et saisie de preuves électroniques | ✅ fondée | L'article 52 prévoit que les officiers de police judiciaire mènent les enquêtes cybernétiques (E2) |
+| Parquet | transmission du procès‑verbal et des pièces saisies dans les 8 jours | ✅ fondée | L'article 32 impose ce délai de transmission au procureur (E3) |
+| APDP | sanction du responsable du traitement pour non‑respect de la protection des droits des enfants | ✅ fondée | L'article 17 oblige les responsables du traitement à respecter la réglementation sur les droits des enfants (E5) |
+| Opérateurs | suppression de l'image intime sous menace de diffusion | ⚠️ à vérifier | Le droit camerounais sanctionne la diffusion (E4) mais ne prévoit pas explicitement l'obligation de retrait à la demande de la victime |
 
-**Lacune : Absence de texte précisant la procédure de requête de données de paiement (Mobile Money) aux opérateurs par les forces de l'ordre**
+**Lacune : Absence d'obligation légale de retrait immédiat d'images intimes sous menace, et de procédure de signalement aux plateformes**
 
-- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225
-- Australie : L'Online Safety Act 2021 (E7) autorise les autorités à exiger la suppression d'images intimes et à obtenir les informations d'identification du compte auprès du fournisseur. *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 65/157))*
-- Royaume-Uni : L'Online Safety Act 2023 (E8) prévoit que les autorités peuvent demander aux fournisseurs les données nécessaires à l'enquête sur les contenus illicites. *(Online Safety Act 2023 (United Kingdom, 2023 c. 50)] (partie 368/388))*
-- **Recommandation :** Adopter un texte d'application précisant que la police judiciaire peut, sur autorisation judiciaire, solliciter les relevés de transactions électroniques aux opérateurs, en s'inspirant des procédures australiennes et britanniques.
-
-**Lacune : Manque de cadre de coordination entre MINAS et MINPROFF pour la prise en charge des victimes d'abus en ligne**
-
-- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 ; Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228
-- ONU : Le principe de coordination inter‑institutionnelle est rappelé dans les observations générales du CRC (E10) qui incitent les États à établir des mécanismes de coopération entre les services sociaux et judiciaires. *(ONU_CRC_Observation_generale_25_2021_FR.txt)*
-- **Recommandation :** Émettre un arrêté ministériel définissant les modalités de coopération entre MINAS, MINPROFF et les autorités judiciaires pour les cas d'abus en ligne.
+- Droit camerounais : Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 80, p. 215
+- Australie : obligation pour le fournisseur de retirer l'image suite à un avis de retrait *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 65/157))*
+- **Recommandation :** Insérer dans la législation camerounaise une disposition imposant aux fournisseurs de services en ligne de retirer sans délai toute image intime faisant l'objet d'une menace de diffusion, sur réception d'un avis de la victime ou de son représentant légal.
 
 **Conflits :**
-- Conflit potentiel entre le rôle de l'ANTIC (régulation TIC) et les forces de l'ordre pour l'accès aux données de paiement, le texte (E4) ne clarifie pas la hiérarchie.
+- Le collège envisage d'exclure la victime alors que la loi impose protection et prise en charge des enfants victimes d'abus en ligne (E1).
 
 **Problèmes de coordination :**
-- Absence de protocole partagé entre MINAS, la police judiciaire et l'ANTIC pour la transmission rapide des preuves numériques et des données de paiement.
+- Manque de protocole partagé entre MINAS, la police judiciaire et les opérateurs pour le signalement et le retrait rapide des contenus illicites.
 
 
 ---
@@ -403,130 +361,118 @@ Les actions de MINAS et de la police sont fondées sur les textes E2, E1 et E3. 
 
 ### Regulateurs du numerique
 
-**Évaluation.** Une hausse massive de contenus bloqués signale une diffusion rapide d'images illicites. Les images circulent sur Tchatlink, plateforme étrangère, et les opérateurs sont sollicités pour un filtrage. MinorShield demande une coordination et le parquet veut les relevés Mobile Money.
+**Évaluation.** Une hausse massive de contenus bloqués signale une possible diffusion d'images illicites. Les images circulent sur Tchatlink, plateforme étrangère, et les opérateurs sont sollicités pour un filtrage.
 
-**Ce qu'il ignore :** l'identité exacte des serveurs hébergeant les contenus sur Tchatlink ; les délais de modération internes de Tchatlink ; les modalités d'accès aux relevés Mobile Money selon la loi
+**Ce qu'il ignore :** Capacité juridique de l'ANTIC à imposer un filtrage aux opérateurs sans décision de l'ART ; Délais de réponse de Tchatlink et son éventuelle présence juridique au Cameroun
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **ANTIC** — Émettre une mise en demeure aux opérateurs de télécommunications nationaux pour mettre en place un filtrage temporaire des contenus identifiés, conformément aux mesures de protection des enfants en ligne. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 |
-| **ANTIC** — Demander au MINPOSTEL d'initier une démarche diplomatique auprès de Tchatlink afin d'accélérer la modération des images illicites. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225 |
-| **ANTIC** — Informer le pénal que l'accès aux relevés Mobile Money relève de la compétence du parquet et nécessite une autorisation judiciaire, hors de notre champ d'action. | ⚠️ non étayée | — |
+| **ANTIC** — Émettre une alerte de sécurité et recommander aux opérateurs de télécommunications de mettre en place un filtrage temporaire des contenus suspectés | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 |
 
 **Lacunes signalées :**
-- La loi ne précise pas les procédures exactes pour contraindre une plateforme étrangère sans présence locale.
-- Aucun texte ne nous autorise à accéder directement aux relevés Mobile Money sans mandat judiciaire.
+- L'ANTIC ne peut pas imposer directement à une plateforme étrangère sans présence locale ; aucune disposition légale ne prévoit une sanction administrative directe contre Tchatlink.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier les acteurs capables d'agir sur le filtrage (ANTIC + ART).
-2. Utiliser l'article 27 pour justifier la mise en demeure aux opérateurs.
-3. Recourir à l'article 10 pour demander une action diplomatique via MINPOSTEL.
-4. Clarifier les limites d'accès aux données financières et orienter le pénal vers le judiciaire.
+1. Identifier le problème : diffusion d'images illicites sur plateforme étrangère.
+2. Vérifier les prérogatives : l'ANTIC peut prendre mesures en collaboration avec l'ART (E2).
+3. Déterminer les actions possibles : alerte et recommandation de filtrage, demande de coopération à l'ART et au MINPOSTEL.
+4. Noter les limites : incapacité d'imposer directement à Tchatlink, besoin de coordination.
 
 </details>
 
 
 ### Entreprises du numerique
 
-**Évaluation.** Des images d'abus sexuel d'une mineure de 15 ans circulent sur Tchatlink. Les autorités pénales demandent l'identification du compte fautif. Les opérateurs sont sollicités pour un filtrage mais ne peuvent agir que sur décision d'une autorité.
+**Évaluation.** Des images d'abus sexuel d'une mineure de 15 ans circulent sur Tchatlink, plateforme étrangère. Les autorités camerounaises n'ont pas encore demandé de suspension, mais les opérateurs sont sollicités pour un filtrage et Tchatlink a indiqué un délai de modération non précisé.
 
-**Ce qu'il ignore :** Décision formelle d'une autorité compétente pour ordonner la suspension ; Identité exacte du compte à bloquer fournie par la police
+**Ce qu'il ignore :** la décision formelle d'une autorité compétente (ANTIC, ART ou MINPOSTEL) de demander la suspension du compte ou du contenu ; les informations précises (URL, identifiants) que Tchatlink doit fournir pour le signalement
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Operateurs** — Mettre en place le mécanisme de signalement requis et préparer la suspension du compte dès réception d'une décision d'autorité | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 24, p. 227 |
+| **Operateurs** — Mettre en place et promouvoir un mécanisme de signalement des publications portant atteinte à la dignité et à l'intégrité des enfants | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 24, p. 227 |
 
 **Lacunes signalées :**
-- La loi ne nous autorise pas à suspendre un compte sans décision explicite d'une autorité compétente
+- La loi ne prévoit pas que les opérateurs puissent suspendre d'office le contenu sans décision d'autorité ; ils ne peuvent qu'activer le signalement.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier le contenu illicite et la demande d'identification du compte.
-2. Vérifier les obligations légales des opérateurs (E2) pour le signalement.
-3. Préparer la suspension conditionnelle à une décision d'autorité (E1).
-4. Demander à Tchatlink d'accélérer sa modération afin d'obtenir les informations nécessaires.
+1. Identifier le contenu illicite (images d'abus d'une mineure).
+2. Vérifier les obligations légales : E1 impose la suspension sur demande d'autorité, E2 impose le signalement par les opérateurs.
+3. Décider d'une action réalisable sans décision d'autorité : mettre en place le signalement.
+4. Demander à Tchatlink les informations nécessaires et à l'autorité la décision de suspension.
 
 </details>
+
+
+> 🔧 **Reconfiguration automatique** (nouvelle_tentative, Chaine penale) : taux d'actions etayees 0% sous le seuil de 50% — tentative nouvelle retenue. Règle : ML Intent : qualite.seuil_taux_etayees_agent (Y.3172 REQ-ML-MNG-004)
 
 
 ### Chaine penale
 
-**Évaluation.** Des images à caractère pornographique d'une mineure de 15 ans circulent en ligne, accompagnées d'extorsion via Mobile Money. La police judiciaire a reçu les captures et les métadonnées anonymisées de MinorShield, ainsi que l'autorisation de l'APDP pour le traitement des données.
+**Évaluation.** Des images à caractère sexuel d'une mineure de 15 ans circulent en ligne, constituant une pornographie enfantine et un chantage au moyen de menaces de diffusion contre paiement. La police judiciaire doit constater les infractions et saisir les preuves, puis le parquet doit qualifier les faits et engager les poursuites.
 
-**Ce qu'il ignore :** Identité exacte du compte faux profil utilisé sur Tchatlink ; Localisation du serveur hébergeant les images (pour éventuelle coopération internationale) ; Date précise à laquelle Tchatlink pourra fournir la préservation du contenu
+**Ce qu'il ignore :** L'identité exacte des responsables de la diffusion sur la plateforme Tchatlink ; Le consentement du représentant légal de la victime pour la transmission des logs à l'APDP
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Police judiciaire** — Établir le procès‑verbal d'enquête sur les faits de diffusion de pornographie enfantine et d'extorsion, puis le transmettre au Parquet dans le délai de 8 jours | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
-| **Parquet** — Qualifier les faits d'extorsion (chantage) et de mise à disposition de pornographie enfantine, et ordonner l'ouverture d'une instruction ainsi que les mesures d'enquête complémentaires | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 81, p. 215 |
-| **Police judiciaire** — Demander à Tchatlink la préservation immédiate des messages contenant les images et les métadonnées afin de garantir la preuve numérique | ⚠️ non étayée | — |
+| **Police judiciaire** — Constater les infractions de diffusion de pornographie enfantine et saisir les preuves numériques, puis transmettre le procès‑verbal au Procureur de la République | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
+| **Parquet** — Qualifier les faits de diffusion de pornographie enfantine au sens de l'article 81 et décider de l'ouverture d'une instruction pénale | 🔶 citation douteuse · citation absente ou non retrouvee mot pour mot dans les extraits cites | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 81, p. 215 |
 
 **Lacunes signalées :**
-- Absence d'extrait légal autorisant explicitement la demande de filtrage ou de blocage du trafic par les opérateurs de télécommunications
+- La loi ne prévoit pas explicitement la procédure de demande de consentement du représentant légal du mineur à l'APDP pour la transmission des logs
+- Aucun texte fourni ne détaille les délais de réponse du Tchatlink pour la suppression du contenu
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Constater les faits et sécuriser les preuves numériques reçues (captures, métadonnées).
-2. Formaliser le PV d'enquête et le transmettre au Parquet conformément à l'art. 32 (E1).
-3. Le Parquet qualifie les infractions selon l'art. 81 (E2) et ordonne les mesures d'instruction.
-4. La police sollicite les acteurs techniques (Tchatlink, opérateurs) pour préserver et identifier les auteurs.
+1. Identifier les faits de diffusion d'images d'une mineure comme pornographie enfantine
+2. Vérifier la compétence de la police judiciaire pour constater et saisir les preuves (E1)
+3. Utiliser l'article 81 pour qualifier juridiquement les faits (E2)
+4. Demander l'appui du ministère des télécommunications pour le filtrage requis
 
 </details>
 
 
-*Coordination interne* — Regulateurs du numerique (regulateurs) : Appliquer le filtrage demandé aux réseaux d'accès conformément à la mise en demeure de l'ANTIC.
+*Coordination interne* — Regulateurs du numerique (regulateurs) : Ordonner aux opérateurs de télécommunications le filtrage des flux provenant de Tchatlink contenant les images de la victime
 
 
-*Coordination interne* — Regulateurs du numerique (regulateurs) : Lancer une requête officielle auprès de Tchatlink pour obtenir une date précise de modération des contenus illicites.
+*Coordination interne* — Regulateurs du numerique (regulateurs) : Initier le dialogue officiel avec Tchatlink pour obtenir le retrait immédiat des images et un engagement de délai de modération
 
 
-*Coordination interne* — Entreprises du numerique (entreprises) : Accélérer la modération du contenu incriminé et fournir le statut du compte concerné
+*Coordination interne* — Entreprises du numerique (entreprises) : Fournir les détails techniques (URL, identifiants, horodatage) des messages contenant les images incriminées
 
 
-**Demande** — Regulateurs du numerique → Chaine penale : Fournir les procédures nécessaires pour obtenir une autorisation judiciaire afin d'accéder aux relevés Mobile Money.
+**Demande** — Entreprises du numerique → Regulateurs du numerique : Émettre une décision officielle de suspension d'accès au contenu incriminé conformément à l'article 14
 
-**Réponse de Chaine penale** (🔶 citation douteuse) : Conformément à l'article 32 de la loi n° 2023/009, la procédure consiste à : 1) rédiger une requête motivée précisant les faits de chantage (art. 303 du Code pénal) et les victimes concernées ; 2) joindre les captures d'écran anonymisées fournies par MinorShield et l'autorisation de traitement délivrée par l'APDP ; 3) déposer la requête auprès du juge d'instruction ou du tribunal compétent pour obtenir un mandat d'accès aux relevés Mobile Money ; 4) transmettre le mandat aux opérateurs de télécommunications qui devront communiquer les données demandées dans les délais légaux.
-
-
-**Demande** — Chaine penale → Entreprises du numerique : Preservation des messages contenant les images de la victime et transmission d'une copie conforme au format original
-
-**Réponse de Entreprises du numerique** (✅ étayée) : Nous procéderons à la préservation immédiate des messages contenant les images de la victime conformément aux exigences légales et transmettrons une copie conforme au format original aux autorités judiciaires compétentes.
+**Réponse de Regulateurs du numerique** (✅ étayée) : Nous prenons acte de votre demande et, conformément à nos prérogatives, nous émettons une décision officielle de suspension d'accès au contenu incriminé.
 
 
-**Demande** — Chaine penale → Entreprises du numerique : Identification du numéro de téléphone utilisé pour le paiement Mobile Money de 50 000 FCFA
+**Demande** — Chaine penale → Regulateurs du numerique : Coopération pour le filtrage et le blocage des contenus illicites diffusés via les opérateurs de télécommunications
 
-**Réponse de Entreprises du numerique** (✅ étayée) : Nous transmettons au Parquet les informations d'identification du numéro de téléphone utilisé pour le paiement Mobile Money de 50 000 FCFA, conformément à notre obligation de coopération avec les autorités judiciaires.
+**Réponse de Regulateurs du numerique** (✅ étayée) : L'ANTIC accepte de coopérer avec les autorités judiciaires pour le filtrage et le blocage des contenus illicites diffusés via les opérateurs de télécommunications, conformément à ses prérogatives de moyens préventifs et répressifs en matière de protection des enfants en ligne.
 
 
 ### ⚖️ Analyse du conseiller juridique
 
-Les actions de l'ANTIC sont partiellement fondées mais manquent de précision légale pour contraindre Tchatlink. Les opérateurs respectent leurs obligations de signalement, mais le droit camerounais ne prévoit pas de procédure de retrait rapide ni de filtrage technique obligatoire. Il faut introduire des mécanismes de notice‑and‑takedown et clarifier la coopération inter‑institutionnelle.
+Le droit camerounais prévoit le rôle préventif des régulateurs et le signalement par les opérateurs, mais ne fixe pas de délais contraignants pour les plateformes étrangères. Cette lacune contraste avec les pratiques australiennes qui imposent des avis de retrait rapides. Il faut harmoniser les procédures et clarifier les responsabilités entre les différents organes de régulation.
 
 | Acteur | Action | Verdict | Commentaire |
 |---|---|---|---|
-| ANTIC | Émettre une mise en demeure aux opérateurs de télécommunications nationaux pour mettre en place un filtrage temporaire des contenus identifiés | ⚠️ à vérifier | L'article 27 (E3) autorise l'organe chargé de la régulation des TIC à prendre des mesures en collaboration avec l'organe de régulation des télécommunications, mais il ne précise pas explicitement le recours à un filtrage technique obligatoire. La base légale est donc partielle. |
-| ANTIC | Demander au MINPOSTEL d'initier une démarche diplomatique auprès de Tchatlink afin d'accélérer la modération des images illicites | ⚠️ à vérifier | L'article 10 (E4) prévoit que l'organe de régulation des TIC déploie des moyens préventifs, mais il ne mentionne pas explicitement une action diplomatique envers une plateforme étrangère. La mesure repose sur une interprétation large. |
-| Operateurs | Mettre en place le mécanisme de signalement requis et préparer la suspension du compte dès réception d'une décision d'autorité | ✅ fondée | L'article 24 (E5) impose aux opérateurs de promouvoir les mécanismes de signalement des contenus illicites. La suspension du compte nécessite toutefois une décision d'autorité, ce qui est respecté. |
+| Tchatlink | Réponse de traitement « selon ses délais habituels de modération » sans engagement de date | ⚠️ à vérifier | E3 prévoit que les opérateurs doivent promouvoir les mécanismes de signalement, mais ne fixe pas de délai de réponse pour les plateformes étrangères |
+| Operateurs | Filtrage demandé par les régulateurs pour bloquer les images | ✅ fondée | E24 (E3) impose aux opérateurs de promouvoir le signalement, ce qui inclut des mesures techniques de blocage en cas de contenus illicites |
+| ANTIC | Déploiement de moyens préventifs et répressifs pour protéger les enfants en ligne | ✅ fondée | E1 article 10 stipule explicitement ce rôle de l'organe chargé de la régulation des TIC |
 
-**Lacune : Absence de procédure claire pour contraindre une plateforme étrangère sans présence locale à retirer rapidement des contenus illicites**
+**Lacune : Absence de délai précis imposé aux plateformes étrangères pour répondre à une demande de retrait de contenus illicites**
 
-- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 ; Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225
-- Australie : Le Online Safety Act 2021 permet d'émettre un "removal notice" contraignant les hébergeurs à retirer le contenu illicite sous 24 h *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 17/157))*
-- Royaume-Uni : L'Online Safety Act 2023 impose aux plateformes de retirer les contenus préjudiciables dans les délais raisonnables, sous peine d'amendes *(Online Safety Act 2023 (United Kingdom, 2023 c. 50)] (partie 54/388))*
-- **Recommandation :** Introduire, par décret, une procédure de "notice and takedown" applicable aux plateformes étrangères, avec un délai de 48 h et la possibilité d'une sanction administrative en cas de non‑conformité.
-
-**Lacune : Pas de cadre légal définissant le filtrage technique obligatoire (ex. blocage d'URL ou de mots‑clés) par les opérateurs**
-
-- Droit camerounais : E25
-- UE : Le Digital Services Act (article 25) impose aux fournisseurs de services en ligne de retirer rapidement les contenus illicites après notification *(Règlement (UE) 2022/2065 du 19 octobre 2022 relatif à un marché unique des services numériques (Digital Services Act), article 25)*
-- **Recommandation :** Adopter un règlement d'application précisant les modalités techniques de filtrage et les obligations de coopération des opérateurs avec l'ANTIC.
+- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 24, p. 227
+- Australie : Obligation de délivrer un avis de retrait dans un délai déterminé *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 17/157))*
+- **Recommandation :** Introduire, via règlement d'application, un délai maximal de 48 heures pour les plateformes étrangères afin de répondre à une demande de retrait de contenus préjudiciables aux enfants.
 
 **Conflits :**
-- Le mandat de l'ANTIC de prendre des mesures (E3) peut entrer en conflit avec le principe de souveraineté des plateformes étrangères, non couvert par le droit camerounais.
+- Le mandat de l'organe de régulation des TIC (E1) de prendre des mesures répressives peut entrer en conflit avec la compétence exclusive des officiers de police judiciaire (E4) pour la constatation des infractions.
 
 **Problèmes de coordination :**
-- Manque de lien formel entre l'ANTIC et le MINPOSTEL pour la mise en œuvre conjointe des mesures de filtrage et de diplomatie.
+- Manque de protocole clair entre ANTIC, l'organe de régulation des télécommunications (ART) et les opérateurs pour activer conjointement les mesures prévues à l'article 27 (E2).
 
 
 ---
@@ -538,197 +484,194 @@ Les actions de l'ANTIC sont partiellement fondées mais manquent de précision l
 > L'enquête établit que les escrocs ont obtenu les numéros de téléphone des victimes et de leurs parents par une fuite de données de l'application de gestion scolaire ScolaPlus, utilisée par 300 établissements. L'éditeur de ScolaPlus avait détecté une anomalie trois semaines plus tôt mais n'a encore prévenu ni les établissements, ni les familles, ni aucune autorité.
 
 
+> 🔧 **Reconfiguration automatique** (nouvelle_tentative, APDP) : taux d'actions etayees 33% sous le seuil de 50% — tentative nouvelle retenue. Règle : ML Intent : qualite.seuil_taux_etayees_agent (Y.3172 REQ-ML-MNG-004)
+
+
 ### APDP
 
-**Évaluation.** Une fuite de données de ScolaPlus a exposé les numéros de téléphone d'enfants et de leurs parents, puis MinorShield a détecté du contenu potentiellement dangereux sur le téléphone d'une collégienne. Les autorités pénales ont déjà autorisé le traitement des données de la mineure, mais aucune notification officielle n'a été faite aux familles ni aux établissements scolaires.
+**Évaluation.** Une fuite de données de l'application scolaire ScolaPlus a exposé les numéros de téléphone d'enfants et de leurs parents, et MinorShield a transmis des captures d'écran aux autorités américaines sans consentement parental explicite.
 
-**Ce qu'il ignore :** si le consentement parental a été obtenu pour le traitement des données de la mineure ; si ScolaPlus a déjà informé les personnes concernées conformément à l'art. 22
+**Ce qu'il ignore :** les bases légales précises de l'article 22 sur la notification des violations ; les preuves concrètes de l'absence de consentement parental pour la transmission aux USA
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **APDP** — Émettre une mise en demeure à ScolaPlus pour qu'il notifie sans délai les familles et les établissements concernés de la fuite, conformément à l'obligation de notification de violation de données. | ✅ étayée | Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun, article 53, p. 19 |
-| **APDP** — Publier un avis public rappelant aux opérateurs et aux plateformes la nécessité d'anonymiser les données avant toute transmission aux autorités, en s'appuyant sur la charte de protection des enfants. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 |
+| **APDP** — Lancer une enquête sur la violation de données de ScolaPlus et exiger la mise en conformité avec le délai de 18 mois | ✅ étayée | Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun, article 53, p. 19 |
+| **APDP** — Ordonner à MinorShield de cesser toute transmission de données ou captures d'écran vers des autorités étrangères tant que le consentement parental n'est pas vérifié | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 |
+| **APDP** — Publier un avis public rappelant l'obligation de notification des violations de données aux personnes concernées sans délai | ✅ étayée | Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun, article 53, p. 19 |
 
 **Lacunes signalées :**
-- L'extrait de la loi précisant l'obligation de notification (art. 22) n'est pas présent dans la base de connaissances, ce qui empêche de le citer explicitement.
+- Absence d'extrait de l'article 22 précisant l'obligation de notification aux personnes concernées
+- Pas de texte de loi détaillant la procédure d'autorisation préalable de transfert vers un État étranger (article 32)
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier la fuite de données comme une violation de la loi.
-2. Vérifier les autorisations déjà accordées (traitement par la police).
-3. Constater l'absence de notification aux personnes concernées.
-4. Déclencher les mesures de l'APDP pour obliger la notification et rappeler les exigences d'anonymisation.
+1. Identifier la fuite de données comme une violation grave affectant des mineurs
+2. Vérifier les pouvoirs de l'APDP via l'article 53 (E1)
+3. Appliquer la charte de protection des enfants (E2) pour encadrer les transferts de données
+4. Déterminer les actions nécessaires et les demandes d'information aux parties concernées
 
 </details>
 
 
 ### Regulateurs du numerique
 
-**Évaluation.** Une fuite de données de ScolaPlus a permis le chantage d'enfants, les contenus illicites se diffusent via Tchatlink, plateforme étrangère, et MinorShield signale une hausse de blocages. L'ANTIC doit intervenir sur les fournisseurs locaux et coordonner la réponse nationale.
+**Évaluation.** Une fuite de données scolaires a permis la diffusion d'images d'une victime mineure sur une plateforme étrangère, tandis qu'une hausse anormale de contenus bloqués a été détectée par MinorShield.
 
-**Ce qu'il ignore :** Identité précise des responsables de la fuite chez ScolaPlus ; Existence d'un représentant légal de Tchatlink au Cameroun ; Délais exacts de réponse de MINPOSTEL pour activer le Plan d'Action National
+**Ce qu'il ignore :** l'identité exacte des responsables de la fuite chez ScolaPlus ; les délais de réponse de Tchatlink et les capacités techniques de blocage de la plateforme étrangère
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **ANTIC** — Émettre une mise en demeure à ScolaPlus pour qu'elle informe immédiatement les établissements, les familles et les autorités de la fuite, sous 15 jours, sous peine de sanctions administratives. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 |
-| **ANTIC** — Ordonner le blocage temporaire des contenus illicites identifiés sur les réseaux nationaux et demander aux opérateurs d'appliquer les filtres recommandés par MinorShield. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225 |
-| **MINPOSTEL** — Déclencher le Plan d'Action National de Protection des Enfants en Ligne pour mobiliser les ministères de l'Éducation, de la Famille et des Affaires Sociales afin d'informer les familles et les établissements scolaires. | ⚠️ non étayée · mention non vérifiée : article 4 · texte absent de la base : 2023/009 | — |
+| **ANTIC** — Émettre une mise en demeure à l'éditeur ScolaPlus pour qu'il informe immédiatement les établissements, les familles et les autorités compétentes de la fuite de données et prenne les mesures correctives nécessaires. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 |
+| **ANTIC** — Demander au CIRT de collecter les preuves numériques relatives aux images diffusées sur Tchatlink afin de les transmettre aux autorités compétentes. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225 |
 
 **Lacunes signalées :**
-- Absence d'extrait légal autorisant explicitement l'ANTIC à imposer un blocage de contenus sur des plateformes étrangères
-- Pas de texte précisant la procédure de coopération internationale avec Tchatlink
+- La loi ne prévoit pas de pouvoir direct de l'ANTIC sur les plateformes étrangères sans présence locale, limitant l'action de blocage direct.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier la fuite de données comme cause première du chantage.
-2. Utiliser les pouvoirs de l'ANTIC (art. 10, art. 27) pour agir contre le fournisseur de données et bloquer les contenus.
-3. Faire appel au MINPOSTEL pour mobiliser le plan national et informer les parties prenantes.
-4. Demander la coopération des acteurs hors de notre compétence (Tchatlink, ART, pénal) pour compléter l'action.
+1. Identifier la fuite de données comme une atteinte non pénale aux droits des enfants.
+2. Utiliser l'article 27 pour justifier une mesure de mise en demeure par l'ANTIC.
+3. Faire appel au CIRT pour la collecte de preuves numériques.
+4. Coordonner avec l'ART et le MINPOSTEL pour les actions complémentaires de blocage et de sensibilisation.
 
 </details>
 
 
 ### Entreprises du numerique
 
-**Évaluation.** Des images pédopornographiques circulent sur Tchatlink et proviennent d'une fuite de données de ScolaPlus. Les autorités pénales demandent identification et préservation des preuves.
+**Évaluation.** Des images pédopornographiques circulent sur Tchatlink et proviennent d'une fuite de données de ScolaPlus. Les régulateurs ont déjà émis une décision officielle de suspension du contenu incriminé.
 
-**Ce qu'il ignore :** la décision officielle d'une autorité de régulation ou du ministère des télécommunications pour ordonner le blocage du compte Tchatlink ; les détails techniques de la fuite chez ScolaPlus (logs, dates exactes)
+**Ce qu'il ignore :** Le délai exact imposé par les autorités pour la suspension ; Les coordonnées précises de l'autorité qui a délivré la décision de suspension
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Operateurs** — Mise en place immédiate d'un contrôle parental et d'un mécanisme de signalement des contenus illicites sur le réseau, en attendant décision d'autorité. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 25, p. 227 |
+| **Operateurs** — Suspendre l'accès aux contenus incriminés sur le réseau conformément à la décision des autorités | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 25, p. 227 |
 
 **Lacunes signalées :**
-- La loi ne précise pas la procédure exacte de coopération entre un opérateur et un promoteur étranger comme Tchatlink pour le blocage sans décision judiciaire.
+- La loi ne précise pas le délai exact de mise en œuvre de la suspension par les opérateurs
+- Aucun texte fourni ne détaille les sanctions spécifiques en cas de non‑notification par le promoteur de réseau social
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier les obligations légales des opérateurs (E1, E2).
-2. Constater qu'aucune décision d'autorité n'est encore prise pour bloquer Tchatlink.
-3. Proposer des mesures préventives (contrôle parental, signalement) que les opérateurs peuvent mettre en œuvre immédiatement.
-4. Solliciter les autorités compétentes et ScolaPlus pour obtenir les décisions et informations nécessaires.
+1. Identifier les faits : diffusion d'images illicites sur Tchatlink et fuite de données de ScolaPlus.
+2. Vérifier les obligations légales applicables (E1, E2).
+3. Déterminer les mesures que chaque institution peut prendre dans son champ de compétence.
+4. Formuler les actions et les demandes en se basant sur les extraits légaux pertinents.
 
 </details>
 
 
 ### Protection sociale et educative
 
-**Évaluation.** Une détection d'abus en ligne a été signalée (collégienne) et deux victimes se sont présentées, victimes de chantage via des photos intimes. Une fuite de données chez ScolaPlus a permis aux escrocs d'obtenir les numéros de téléphone.
+**Évaluation.** Une collégienne a reçu un blocage de son téléphone suite à une détection d'abus en ligne, et deux victimes (15 et 19 ans) sont menacées de chantage avec diffusion de photos intimes. L'origine du problème est une fuite de données de l'application scolaire ScolaPlus, non signalée aux autorités.
 
-**Ce qu'il ignore :** les mesures déjà prises par le MINPROFF auprès des parents ; les actions de suivi de ScolaPlus suite à la fuite ; les procédures internes du MINESEC pour protéger les élèves victimes
+**Ce qu'il ignore :** Qui a la compétence pour ordonner la notification obligatoire de la fuite de données aux établissements et aux familles ; Quel organisme peut imposer des sanctions à l'éditeur de ScolaPlus
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **MINAS** — Lancer une formation urgente du personnel des centres sociaux de Douala à la détection et à la prise en charge des abus en ligne, en s'appuyant sur le cas détecté. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
+| **MINAS** — Organiser une formation urgente du personnel des centres sociaux de Douala sur la prévention, la détection et la prise en charge des abus en ligne concernant les deux victimes | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
 
 **Lacunes signalées :**
-- Aucune disposition légale n'attribue au MINESEC la protection directe des élèves victimes en ligne.
-- Le partage de compétences entre MINAS et MINPROFF n'est pas clairement défini dans la loi.
+- Aucun texte de loi ne donne explicitement au MINESEC le pouvoir d'intervenir directement auprès d'élèves victimes en ligne
+- La loi ne prévoit pas de procédure obligatoire de notification de fuite de données aux établissements et aux familles
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier les faits connus (détection, victimes, fuite).
-2. Vérifier les attributions légales (E1 pour formation du personnel).
-3. Choisir l'action qui relève clairement du MINAS.
-4. Déterminer les demandes de coordination nécessaires auprès des autres acteurs.
+1. Identifier les victimes et le vecteur de l'abus (chantage via données fuitées).
+2. Vérifier quel ministère a le pouvoir de former le personnel sur les abus en ligne (MINAS, article 8).
+3. Déterminer les besoins complémentaires (formation des parents, régulation des opérateurs) et adresser des demandes aux acteurs compétents.
+4. Constater les limites légales (absence de mandat pour MINESEC et pour notification de fuite).
 
 </details>
 
 
 ### Chaine penale
 
-**Évaluation.** Des mineurs ont été victimes d'extorsion et de diffusion de contenus à caractère sexuel via une fuite de données scolaires. Les preuves numériques sont partiellement préservées, mais l'accès aux relevés Mobile Money reste bloqué.
+**Évaluation.** Des images à caractère pornographique d’une mineure de 15 ans circulent, accompagnées de menaces d’extorsion. La police judiciaire a constaté les faits et doit formaliser le constat et solliciter les moyens nécessaires auprès des autorités compétentes.
 
-**Ce qu'il ignore :** Identité exacte du responsable du compte frauduleux ; Localisation précise du serveur hébergeant les images sur Tchatlink ; Existence d'une ordonnance judiciaire déjà délivrée pour l'accès aux relevés Mobile Money
+**Ce qu'il ignore :** Identité du responsable de la fuite de données chez ScolaPlus ; Consentement explicite du mineur et de son représentant légal pour la transmission des logs de MinorShield
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Police judiciaire** — Demande d'autorisation judiciaire au Parquet pour obtenir les relevés de transactions Mobile Money des victimes afin de retracer les paiements de 50 000 FCFA. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
-| **Parquet** — Qualification des faits d'extorsion (chantage) et de diffusion de pornographie enfantine conformément aux articles 81 de la loi 2010/012 et 321 du Code pénal. | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 81, p. 215<br>Loi n° 2016/007 du 12 juillet 2016 portant Code pénal (Cameroun), article 321, p. 119 |
-| **Police judiciaire** — Rédaction et transmission du procès‑verbal d'enquête incluant la capture d'écran anonymisée fournie par MinorShield et les métadonnées préservées par l'opérateur. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
+| **Police judiciaire** — Rédiger le procès‑verbal constatant les infractions et le transmettre au Procureur de la République dans le délai légal | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
+| **Police judiciaire** — Demander à l'ANTIC la mise en place d'un filtrage et blocage des contenus illicites diffusés via les opérateurs de télécommunications | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 52, p. 210 |
 
 **Lacunes signalées :**
-- La loi fournie ne précise pas la procédure exacte pour obtenir les relevés Mobile Money auprès des opérateurs, nécessitant une décision judiciaire non détaillée ici.
+- La législation ne prévoit pas de procédure directe pour contraindre une plateforme étrangère (Tchatlink) à retirer les contenus illicites.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier les infractions principales (chantage, diffusion de pornographie).
-2. Vérifier les bases légales applicables aux preuves numériques et à la qualification pénale.
-3. Déterminer les actions que chaque institution peut entreprendre selon son mandat.
-4. Formuler les demandes d'information complémentaires indispensables à la poursuite de l'enquête.
+1. Constater les faits et formaliser le PV selon l'article 32 (E1).
+2. Identifier les besoins de preuves numériques (logs MinorShield) et vérifier la condition de consentement (APDP).
+3. Solliciter le soutien technique de l'ANTIC pour le blocage des contenus diffusés.
+4. Noter l'absence de cadre légal pour contraindre Tchatlink, ce qui constitue une lacune à combler.
 
 </details>
 
 
-*Coordination interne* — Regulateurs du numerique (regulateurs) : Coordonner avec les opérateurs d'accès Internet pour appliquer les filtres et assurer le blocage des URLs incriminées
+*Coordination interne* — Regulateurs du numerique (regulateurs) : Ordonner aux opérateurs de télécommunications de bloquer l'accès aux contenus illicites diffusés via la plateforme Tchatlink en conformité avec les mesures de protection des enfants.
 
 
-*Coordination interne* — Entreprises du numerique (entreprises) : Fourniture urgente des logs de la fuite de données et notification des parents
+*Coordination interne* — Regulateurs du numerique (regulateurs) : Intégrer la fuite de données de ScolaPlus dans le Plan d'Action National de Protection des Enfants en Ligne et mobiliser les acteurs éducatifs pour informer les familles.
 
 
-*Coordination interne* — Protection sociale et educative (social) : Fournir les modules de formation destinés aux parents pour les aider à réagir face au chantage et à la diffusion de contenus intimes.
+*Coordination interne* — Entreprises du numerique (entreprises) : Signalement des images pédopornographiques et suspension immédiate des groupes concernés
 
 
-*Coordination interne* — Chaine penale (penal) : Autorisation judiciaire d'accès aux relevés Mobile Money des victimes
+*Coordination interne* — Entreprises du numerique (entreprises) : Notification aux autorités de la fuite de données et mise en place d'un contrôle parental renforcé
 
 
-**Demande** — APDP → MinorShield : Fournir la documentation complète du protocole d'anonymisation appliqué aux captures d'écran et aux données de blocage.
-
-**Réponse de MinorShield** (✅ étayée) : Nous transmettons la documentation complète du protocole d'anonymisation appliqué aux captures d'écran et aux données de blocage, incluant la description des méthodes de pseudonymisation, le chiffrement AES‑256 en transit et au repos, les contrôles d'accès basés sur le principe du moindre privilège, ainsi que les procédures de vérification d'absence d'identifiants directs avant toute transmission aux autorités.
+*Coordination interne* — Protection sociale et educative (social) : Fournir des modules de formation destinés aux parents des victimes pour les aider à réagir face aux menaces et au chantage en ligne
 
 
-**Demande** — APDP → Entreprises du numerique : Confirmer la date prévue de notification aux familles et aux établissements, et fournir les preuves de cette notification.
+**Demande** — APDP → Entreprises du numerique : Fournir le registre complet des accès aux données et les mesures prises depuis la détection de l'anomalie
 
-**Réponse de Entreprises du numerique** (⚠️ non étayée) : Nous prévoyons de notifier les familles et les établissements le 28 juin 2026. La notification sera faite par courriel officiel et par SMS, accompagnée d'un rapport détaillé de la fuite. Nous joignons à ce message les copies des accusés de réception des courriels et les logs d'envoi des SMS comme preuves.
-
-
-**Demande** — Regulateurs du numerique → Entreprises du numerique : Fournir les preuves de diffusion des images et coopérer à leur retrait définitif
-
-**Réponse de Entreprises du numerique** (✅ étayée) : Nous transmettons les journaux d'accès et les traces de diffusion des images provenant de notre réseau, conformément à nos obligations de signalement et de coopération avec l'organe de régulation des TIC. Nous nous tenons prêts à assister aux opérations de retrait définitif des contenus incriminés.
+**Réponse de Entreprises du numerique** (⚠️ non étayée) : Nous transmettons le registre complet des accès aux données ainsi que les mesures prises depuis la détection de l'anomalité, conformément à votre demande.
 
 
-**Demande** — Regulateurs du numerique → Chaine penale : Transmission de la requête motivée et des captures d'écran anonymisées pour obtenir l'autorisation judiciaire d'accès aux relevés Mobile Money
+**Demande** — APDP → MinorShield : Justifier juridiquement la transmission des captures d'écran aux autorités américaines et fournir les consentements parentaux associés
 
-**Réponse de Chaine penale** (✅ étayée) : Nous transmettons immédiatement la requête motivée ainsi que les captures d'écran anonymisées conformément à votre demande afin de faciliter l'obtention de l'autorisation judiciaire d'accès aux relevés Mobile Money.
-
-
-**Demande** — Entreprises du numerique → Regulateurs du numerique : Demande d'ordonnance de suspension du compte Tchatlink diffusant les images de la victime
-
-**Réponse de Regulateurs du numerique** (✅ étayée) : Conformément à l'article 27 de la loi n° 2023/009, nous prenons la mesure de mise en demeure de suspension du compte Tchatlink diffusant les images de la victime, en collaboration avec l'ART. Une ordonnance de suspension sera émise sous 15 jours, faute de quoi des sanctions administratives seront appliquées.
+**Réponse de MinorShield** (✅ étayée) : Conformément à l'article 23(2) de la loi n° 2023/009, nous avons mis en place un système de paramétrage qui respecte la vie privée des enfants et nécessite le consentement explicite des parents avant tout transfert de données sensibles. Les captures d'écran concernées ont été conservées 30 jours, les parents ont donné leur accord écrit pour leur transmission aux autorités américaines afin de permettre la modération du texte et de la violence par le service d’OpenAI, ce qui est indispensable à la protection de l’enfant.
 
 
-**Demande** — Protection sociale et educative → Entreprises du numerique : Obtenir le rapport d'incident complet et les mesures correctives prises après la fuite de données.
+**Demande** — APDP → Chaine penale : Coopérer à l'enquête sur l'origine de la fuite de données et partager les éléments de preuve pertinents
 
-**Réponse de Entreprises du numerique** (✅ étayée) : Nous préparons le rapport d'incident complet ainsi que le plan des mesures correctives prises suite à la fuite de données et le transmettrons aux autorités compétentes dès qu'il sera finalisé.
+**Réponse de Chaine penale** (✅ étayée) : Nous acceptons de coopérer à l'enquête sur l'origine de la fuite de données et de transmettre les éléments de preuve pertinents que nous détenons.
+
+
+**Demande** — Protection sociale et educative → Regulateurs du numerique : Informer sur les mesures de régulation à prendre envers l'opérateur mobile qui a permis le paiement du chantage via Mobile Money
+
+**Réponse de Regulateurs du numerique** (✅ étayée) : L'ANTIC peut ordonner à l'opérateur mobile de suspendre les services de paiement utilisés pour le chantage, d'appliquer un filtrage renforcé des transactions suspectes et de mettre en demeure l'opérateur de se conformer sous 15 jours sous peine de sanctions administratives.
+
+
+**Demande** — Chaine penale → APDP : Obtenir le consentement explicite du mineur de 15 ans et de son représentant légal pour la transmission des logs de conservation de MinorShield
+
+**Réponse de APDP** (⚠️ non étayée) : Conformément à l'article 9(3) de la loi n° 2024/017, le consentement explicite du mineur de 15 ans ainsi que celui de son représentant légal sont obligatoires avant toute transmission de ses données. Vous devez donc obtenir ces consentements avant de procéder.
+
+
+**Demande** — Chaine penale → Regulateurs du numerique : Activer le dispositif de filtrage et de blocage des contenus pornographiques enfantins diffusés sur les réseaux nationaux
+
+**Réponse de Regulateurs du numerique** (✅ étayée) : Nous activons immédiatement le dispositif de filtrage et de blocage des contenus pornographiques enfantins sur les réseaux nationaux, conformément de nos prérogatives.
 
 
 ### ⚖️ Analyse du conseiller juridique
 
-Les actions proposées par l'APDP et l'ANTIC manquent de bases légales précises, notamment sur les délais et les exigences d'anonymisation. Le droit camerounais présente des lacunes comparées aux standards internationaux comme le COPPA ou le RGPD. Il est urgent d'adopter des décrets d'application clarifiant notification, délais et anonymisation, et de formaliser un protocole de coordination entre APDP et ANTIC.
+Le cadre camerounais habilite l'APDP à enquêter et l'organe de régulation des TIC à agir préventivement, mais il ne prévoit pas de notification obligatoire rapide des violations. Cette lacune contraste avec les exigences de notification de COPPA aux États-Unis. Il est recommandé d'introduire une obligation de notification immédiate pour combler ce vide juridique.
 
 | Acteur | Action | Verdict | Commentaire |
 |---|---|---|---|
-| APDP | Émettre une mise en demeure à ScolaPlus pour qu'il notifie sans délai les familles et les établissements concernés de la fuite, conformément à l'obligation de notification de violation de données. | ⚠️ à vérifier | L'extrait E4 décrit les missions de l'APDP mais ne précise pas d'obligation de notification (article 53). Aucun texte fourni ne mentionne un délai de notification, il faut donc vérifier la réglementation applicable (ex. texte d'application de la loi 2024/017). |
-| APDP | Publier un avis public rappelant aux opérateurs et aux plateformes la nécessité d'anonymiser les données avant toute transmission aux autorités, en s'appuyant sur la charte de protection des enfants. | ❌ non fondée | L'extrait E5 impose aux responsables du traitement de respecter la réglementation en matière de protection des droits des enfants, mais il ne crée pas d'obligation d'anonymisation préalable à la transmission aux autorités. Aucun texte fourni ne le prévoit. |
-| ANTIC | Émettre une mise en demeure à ScolaPlus pour qu'elle informe immédiatement les établissements, les familles et les autorités de la fuite, sous 15 jours, sous peine de sanctions administratives. | ⚠️ à vérifier | L'extrait E3 indique que l'organe chargé de la régulation des TIC peut prendre des mesures lorsque les atteintes ne sont pas pénales, mais il ne fixe pas de délai de 15 jours ni de sanction précise. Il faut vérifier les décrets d'application de la charte (E1/E6). |
+| APDP | ouvrir et traiter la plainte relative à la fuite de données de ScolaPlus | ✅ fondée | L'APDP est habilité à traiter les réclamations et à enquêter sur les faits selon l'article 53 de la loi n°2024/017 (E2). |
+| ANTIC | déployer des moyens préventifs et répressifs pour protéger les enfants dans le cyberespace suite à la fuite | ✅ fondée | L'organe chargé de la régulation des TIC doit déployer les moyens nécessaires à la protection des enfants en ligne (E1). |
+| ScolaPlus | notifier immédiatement les établissements, les familles et l'APDP de la fuite de données | ⚠️ à vérifier | L'article 17 (E4) impose aux responsables du traitement de respecter la réglementation, mais ne précise pas d'obligation de notification immédiate aux parties concernées ; il manque donc une base légale explicite pour cette action. |
 
-**Lacune : Absence de texte précisant le délai de notification des violations de données à caractère personnel aux personnes concernées.**
-
-- Droit camerounais : Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun, article 53, p. 19
-- États-Unis : Le COPPA impose une notification sans délai raisonnable aux parents dès la découverte d'une violation. *(Children's Online Privacy Protection Rule (COPPA Rule), 16 CFR Part 312 (United States)] (partie 15/24))*
-- **Recommandation :** Adopter un décret d'application de la loi 2024/017 qui fixe un délai de 72 heures pour notifier les personnes concernées, en s'inspirant du modèle COPPA.
-
-**Lacune : Pas de disposition explicite imposant l'anonymisation des données avant transmission aux autorités compétentes.**
+**Lacune : Absence d'obligation légale précise de notification rapide des violations de données aux personnes concernées et aux autorités compétentes.**
 
 - Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226
-- Union européenne : Le RGPD impose la minimisation des données et l'anonymisation lorsque possible avant tout partage. *(aucun extrait disponible pour cette juridiction)*
-- **Recommandation :** Intégrer dans le texte de la charte (E1) une clause de minimisation et d'anonymisation des données avant toute transmission aux autorités.
-
-**Conflits :**
-- Le rôle de l'APDP (notification) et celui de l'ANTIC (mesures administratives) se chevauchent sans clarification de la compétence première, créant un risque de double sanction.
+- États-Unis (COPPA) : Obligation de notifier les parents dès la découverte d'une violation de données concernant un enfant. *(Children's Online Privacy Protection Rule (COPPA Rule), 16 CFR Part 312 (United States)] (partie 15/24))*
+- **Recommandation :** Adopter, par décret ou texte d'application, une disposition imposant aux responsables de traitement de notifier sans délai les personnes concernées et l'APDP dès la détection d'une fuite, avec un délai maximal de 72 heures, conformément aux bonnes pratiques internationales.
 
 **Problèmes de coordination :**
-- Absence de protocole partagé entre l'APDP et l'ANTIC pour la notification et le suivi des violations, ce qui ralentit la réponse.
+- Manque de communication formalisée entre ScolaPlus et l'APDP, entraînant un retard de trois semaines avant toute alerte aux autorités.
 
 
 ---
@@ -742,202 +685,210 @@ Les actions proposées par l'APDP et l'ANTIC manquent de bases légales précise
 
 ### MinorShield
 
-**Évaluation.** Une hausse soudaine de 400 % des blocages à Douala et Yaoundé, associée à un vocabulaire d'argot commun, indique une possible campagne de diffusion de contenus inappropriés ciblant les enfants. Le protocole d'anonymisation des captures d'écran a été validé par l'APDP, mais les autorités demandent encore la documentation détaillée et les données agrégées pour enquêter.
+**Évaluation.** Une hausse soudaine de 400 % des contenus bloqués indique une possible campagne de diffusion de contenus inappropriés ciblant les enfants à Douala et Yaoundé. Le système a déjà détecté un cas concret (SIMULE-0001) et les médias pressent de bloquer Tchatlink, ce qui nécessite une réponse technique et juridique coordonnée.
 
-**Ce qu'il ignore :** L'origine exacte du vocabulaire d'argot et des contenus bloqués ; Les métadonnées précises des captures d'écran (horodatage, localisation) nécessaires à l'enquête ; Le niveau de coopération technique des opérateurs d'accès Internet pour tracer les sources
+**Ce qu'il ignore :** L'identité précise des auteurs du contenu suspect ; Le volume exact des captures d'écran déjà collectées et leur statut de consentement parental
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **MinorShield** — Transmettre aux autorités compétentes les captures d'écran anonymisées ainsi que les métadonnées essentielles (horodatage, région) pour soutenir l'enquête, en respectant le protocole validé par l'APDP. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227 |
-| **MinorShield** — Fournir aux régulateurs les statistiques agrégées des blocages (sans données personnelles) afin de faciliter l'identification des sources de diffusion massive. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 13, p. 226 |
-| **MinorShield** — Publier un avis de mise en garde aux parents sur le risque d'augmentation des contenus NSFW, rappelant les limites du système (faux positifs) et les mesures prises. | ⚠️ non étayée | — |
+| **MinorShield** — Déployer immédiatement des mécanismes de blocage et de retrait des publications identifiées comme portant atteinte à la dignité ou à l'intégrité des enfants. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227 |
+| **MinorShield** — Informer les parents des alertes générées et les accompagner dans la compréhension du fonctionnement du filtre. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 13, p. 226 |
+| **MinorShield** — Préparer un rapport agrégé anonymisé des incidents détectés pour le transmettre aux autorités camerounaises, en attendant l'autorisation explicite de l'APDP. | ⚠️ non étayée | — |
 
 **Lacunes signalées :**
-- La loi ne prévoit pas explicitement la possibilité de bloquer totalement une plateforme comme Tchatlink sans décision judiciaire
-- Aucun cadre légal ne détaille la procédure de partage de métadonnées précises avec la police judiciaire en dehors d'une autorisation préalable
+- Absence de texte légal précisant les conditions de partage de statistiques agrégées avec les autorités nationales
+- Pas de disposition détaillant la procédure de transmission de données personnelles d'enfants vers des autorités étrangères au-delà du consentement
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier l'anomalie de blocage et son impact potentiel sur les enfants.
-2. Vérifier la conformité du protocole d'anonymisation avec l'APDP.
-3. Déterminer les actions possibles sous les articles E1 et E2.
-4. Formuler les demandes nécessaires aux autres acteurs pour compléter la chaîne d'investigation.
+1. Identifier l'anomalie de blocage et son impact sur la protection des enfants.
+2. Appliquer les obligations légales de blocage et de retrait (E2).
+3. Respecter le devoir d'information et d'éducation des utilisateurs (E1).
+4. Solliciter les autorisations nécessaires auprès de l'APDP et du MINPOSTEL avant toute transmission ou mesure de blocage étendue.
 
 </details>
 
 
 ### Regulateurs du numerique
 
-**Évaluation.** Une fuite de données scolaires a permis la diffusion d'images d'une mineure de 15 ans sur la plateforme étrangère Tchatlink, entraînant une hausse massive de contenus bloqués détectée par MinorShield. Les opérateurs et la plateforme ont fourni des preuves de diffusion et souhaitent coopérer au retrait.
+**Évaluation.** Une hausse massive de contenus illicites a été détectée, les images d'une victime mineure circulent sur Tchatlink et les données proviennent d'une fuite de ScolaPlus. Les opérateurs et plateformes sont impliqués, et la pression médiatique réclame des mesures rapides.
 
-**Ce qu'il ignore :** l'étendue exacte du trafic de Tchatlink sur le réseau national ; les délais de réponse de la plateforme étrangère aux demandes de retrait ; les modalités précises du plan d'action national pour la protection des enfants en ligne
+**Ce qu'il ignore :** Le texte particulier précisant le rôle exact de l'ANTIC (article 10(2)) ; Les délais de réponse de Tchatlink et les procédures internes de l'ART pour ordonner un blocage technique ; L'existence d'un cadre légal national permettant le blocage complet d'une plateforme étrangère
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **ANTIC** — Émettre une mise en demeure à Tchatlink pour retirer immédiatement les images et suspendre le compte diffusant les contenus illicites, sous 15 jours, sous menace de sanctions administratives. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 |
-| **ANTIC** — Lancer une enquête technique via le CIRT pour identifier les sources de diffusion massive et collecter les preuves numériques nécessaires au retrait complet. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225 |
-| **MINPOSTEL** — Activer le Plan d'Action National de Protection des Enfants en Ligne pour informer les écoles, les parents et les médias des risques et des bonnes pratiques. | ⚠️ non étayée · mention non vérifiée : article 4 | — |
+| **ANTIC** — Déployer des moyens préventifs de blocage des contenus illicites sur les réseaux nationaux en ordonnant aux opérateurs de filtrer les flux liés aux images de la victime. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 10, p. 225 |
+| **ART** — Coordonner avec les opérateurs de télécommunications pour appliquer le filtrage demandé par l'ANTIC et assurer le suivi technique du blocage. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227 |
+| **MINPOSTEL** — Lancer une campagne de sensibilisation nationale sur les risques de partage de contenus illicites et sur les bonnes pratiques de protection des données scolaires. | ⚠️ non étayée | — |
 
 **Lacunes signalées :**
-- La loi ne prévoit pas de procédure directe de blocage d'une plateforme étrangère sans présence locale, ce qui limite l'action de l'ART.
-- L'article 10(2) renvoie à un texte non disponible, empêchant de préciser les moyens préventifs exacts de l'ANTIC.
+- Absence de texte précisant le rôle exact de l'ANTIC (article 10(2))
+- Pas de base légale explicite pour un blocage total d'une plateforme étrangère sans présence locale
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier la source de diffusion (fuite ScolaPlus) et la plateforme (Tchatlink).
-2. Utiliser les pouvoirs de l'ANTIC (art.10, art.27) pour ordonner le retrait et sanctionner.
-3. Coordonner avec l'ART pour envisager un blocage temporaire du réseau.
-4. Faire appel au MINPOSTEL pour mobiliser le plan national de protection et informer le public.
+1. Identifier les faits majeurs (hausse de contenus, fuite de données, diffusion sur Tchatlink).
+2. Rechercher les dispositions légales applicables aux mesures préventives et à la coopération inter‑institutions.
+3. Déterminer les actions que chaque institution peut prendre dans le cadre de son mandat.
+4. Formuler les demandes de coordination nécessaires aux acteurs disposant des moyens complémentaires.
 
 </details>
 
 
 ### APDP
 
-**Évaluation.** Une fuite de données de ScolaPlus a exposé les numéros de téléphone d'enfants et de leurs parents, entraînant un blocage de téléphone par MinorShield et une forte pression médiatique pour bloquer Tchatlink.
+**Évaluation.** Une fuite de données de ScolaPlus a exposé les numéros de téléphone d'enfants et de leurs parents, entraînant un blocage du téléphone d'une collégienne par MinorShield. Des pressions médiatiques demandent le blocage complet de Tchatlink, mais aucune autorisation de transfert de données sensibles n'a été obtenue.
 
-**Ce qu'il ignore :** Si le consentement parental a été recueilli pour le traitement des données de la mineure par MinorShield ; Si un transfert de données vers un État étranger a eu lieu dans le cadre de l’enquête ; Le texte précis prévoyant le rôle de l’APDP en matière de notification publique d’une violation
+**Ce qu'il ignore :** Existence d'autorisations préalables de l'APDP pour le transfert de captures d'écran aux États-Unis ; Consentements parentaux effectifs pour les mineurs concernés ; Détails complets de la fuite de données chez ScolaPlus
+
+| Action | Vérification | Sources |
+|---|---|---|
+| **APDP** — Émettre une mise en demeure à Tchatlink de suspendre le traitement des données d'enfants jusqu'à obtention du consentement parental requis | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 |
+| **APDP** — Demander à MinorShield de fournir les consentements parentaux associés aux captures d'écran avant tout transfert à des autorités étrangères | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 |
+| **APDP** — Ordonner à ScolaPlus de communiquer le registre complet des accès aux données et les mesures correctives prises suite à la fuite | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 17, p. 226 |
 
 **Lacunes signalées :**
-- La loi n° 2024/017 ne précise pas explicitement le pouvoir de l’APDP d’ordonner le blocage d’un service en ligne comme Tchatlink
-- Aucun extrait fourni ne décrit la procédure de notification publique d’une violation (art. 22) pour que je puisse l’appliquer
+- Aucun extrait fourni ne précise la procédure d'autorisation préalable de transfert de données vers un État étranger (art. 32)
+- L'article 53 de la loi 2024/017 n'est pas complet dans la source OCR, limitant la précision des pouvoirs d'enquête
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier la fuite et le traitement des données de la mineure.
-2. Vérifier que le traitement est autorisé et anonymisé conformément à la loi.
-3. S’assurer que les victimes sont informées selon les exigences légales.
-4. Demander les éléments manquants avant de prendre toute mesure supplémentaire.
+1. Identifier la fuite de données comme source du problème
+2. Vérifier les obligations légales concernant le traitement des données d'enfants
+3. Déterminer les actions que l'APDP peut prendre directement
+4. Formuler les demandes d'information nécessaires aux autres acteurs
 
 </details>
 
 
 ### Protection sociale et educative
 
-**Évaluation.** Des enfants sont menacés après une fuite de données scolaires et une diffusion de contenus à caractère sexuel. Le MINAS doit former le personnel à la détection et à la prise en charge, le MINESEC doit préparer un curriculum de prévention, et il faut obtenir les preuves numériques et l’autorisation de bloquer la plateforme incriminée.
+**Évaluation.** Des adolescentes sont victimes de chantage en ligne suite à une fuite de données scolaires. Le MINAS peut former le personnel à détecter et prendre en charge ces abus, le MINPROFF peut préparer des modules d'information pour les parents, et le MINESEC peut intégrer l'éducation à l'usage responsable d'Internet dans les curricula.
 
-**Ce qu'il ignore :** Qui sont les auteurs exacts de la fuite de données ScolaPlus ; Quel est le volume exact des données compromises ; Quel critère juridique précise le blocage total d’un réseau social
+**Ce qu'il ignore :** Le nombre exact de personnels et de parents à former ; Le contenu détaillé de la fuite de données et les responsables techniques ; Les modalités de coopération entre le MINPROFF et le ministère des télécommunications
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **MINAS** — Organiser une session de formation pour le personnel des centres sociaux de Douala sur la prévention, la détection et la prise en charge des abus en ligne détectés (ex. blocage du téléphone de la collégienne). | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
-| **MINESEC** — Élaborer et diffuser un curriculum d’utilisation responsable d’Internet destiné aux établissements secondaires, incluant la gestion des menaces de chantage en ligne. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 6, p. 225 |
+| **MINAS** — Organiser une session de formation pour le personnel des centres sociaux de Douala sur la prévention, la détection et la prise en charge des abus en ligne | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 8, p. 225 |
+| **MINPROFF** — Élaborer des modules d'information à destination des parents sur les risques de chantage en ligne et les procédures de signalement | ⚠️ non étayée | — |
+| **MINESEC** — Intégrer dans les curricula scolaires un volet sur l'utilisation responsable d'Internet et la protection contre le chantage en ligne | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 6, p. 225 |
 
 **Lacunes signalées :**
-- La loi n°2023/009 ne confère à aucun ministère le pouvoir de bloquer entièrement une plateforme en ligne.
-- Aucune disposition légale n’est prévue pour la prise en charge directe des victimes de chantage au sein des établissements secondaires.
+- Aucune disposition légale ne permet au MINESEC d'intervenir directement auprès des élèves victimes en ligne
+- La loi ne prévoit pas de mesure de blocage total d'une plateforme comme Tchatlink
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier les besoins de formation et de prévention à partir des faits signalés.
-2. Vérifier les articles de loi disponibles pour chaque ministère.
-3. Définir les actions compatibles avec les compétences légales (MINAS, MINESEC).
-4. Formuler les demandes d’informations et d’autorisations nécessaires aux acteurs externes.
+1. Identifier les victimes et les points de vulnérabilité (fuite de données, chantage)
+2. Associer chaque besoin à l'institution compétente selon les articles de loi
+3. Déterminer les actions possibles et les bases légales correspondantes
+4. Formuler des demandes aux acteurs externes nécessaires à la mise en œuvre
 
 </details>
 
 
 ### Chaine penale
 
-**Évaluation.** Des mineurs sont victimes d'extorsion et de diffusion de contenus à caractère sexuel via une plateforme étrangère. La police a déjà préservé les preuves numériques et l'APDP a autorisé le traitement des données de la mineure. Le parquet doit qualifier les faits et autoriser les mesures d'enquête complémentaires.
+**Évaluation.** Des images à caractère pornographique impliquant une mineure de 15 ans circulent en ligne, accompagnées de menaces de chantage. La police judiciaire a déjà constaté les infractions et les a consignées, et le parquet doit qualifier les faits et décider des suites.
 
-**Ce qu'il ignore :** Identité exacte du responsable du compte Tchatlink diffusant les images ; Existence d'une ordonnance judiciaire déjà délivrée pour l'accès aux relevés Mobile Money
+**Ce qu'il ignore :** Le consentement explicite du mineur et de son représentant légal pour la transmission des logs de MinorShield ; L'éventuelle décision judiciaire d'ordonner le blocage total de la plateforme Tchatlink
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Police judiciaire** — Constituer le procès‑verbal d'extorsion et de diffusion de pornographie enfantine et le transmettre au Parquet dans le délai de 8 jours | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
-| **Police judiciaire** — Demander au juge d'instruction l'autorisation judiciaire d'accès aux relevés Mobile Money des victimes pour identifier les paiements illicites | ✅ étayée | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 52, p. 210 |
-| **Parquet** — Qualifier les faits d'extorsion (art. 303 du Code pénal) et de diffusion de pornographie enfantine (art. 81 de la loi 2010/012) et ordonner la mise en demeure de Tchatlink de bloquer le contenu incriminé | 🔶 citation douteuse · mention non vérifiée : article 303 | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 81, p. 215 |
+| **Police judiciaire** — Constater les infractions et transmettre le procès‑verbal ainsi que les éléments saisis au Procureur dans le délai légal | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 |
+| **Parquet** — Qualifier les faits de diffusion de pornographie enfantine et prononcer l'ouverture des poursuites pénales | 🔶 citation douteuse · citation absente ou non retrouvee mot pour mot dans les extraits cites | Loi n° 2010/012 du 21 decembre 2010 relative a la cybersecurite et a la cybercriminalite au Cameroun, article 81, p. 215 |
 
 **Lacunes signalées :**
-- La loi ne prévoit pas explicitement la procédure de blocage total d'une plateforme étrangère sur le territoire national
+- La législation fournie ne prévoit pas explicitement la procédure d’autorisation de blocage total d’une plateforme étrangère comme Tchatlink, ce qui empêche le parquet de prendre cette mesure sans texte supplémentaire.
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier les infractions constatées (extorsion, diffusion de pornographie enfantine).
-2. Vérifier les bases légales permettant la constatation et la transmission du PV.
-3. Déterminer les mesures d'enquête complémentaires requises (relevés Mobile Money, identification du compte).
-4. Formuler les demandes aux acteurs compétents pour obtenir les autorisations et informations manquantes.
+1. Identifier les infractions relevées (pornographie enfantine, chantage).
+2. Vérifier les compétences de chaque institution (police pour constat, parquet pour qualification).
+3. Appliquer les articles pertinents (E1 pour la transmission du PV, E2 pour la qualification).
+4. Déterminer les informations manquantes (consentement APDP, cadre légal du blocage).
 
 </details>
 
 
 ### Entreprises du numerique
 
-**Évaluation.** Des images d'abus circulent sur Tchatlink et une fuite de données de ScolaPlus a permis leur diffusion. Les autorités ont demandé la suspension du compte Tchatlink et la coopération des opérateurs.
+**Évaluation.** Des images d'abus sexuel d'une mineure circulent sur Tchatlink, plateforme étrangère. Une fuite de données de ScolaPlus a permis aux escrocs d'obtenir les numéros de téléphone des victimes. Les autorités ont émis une décision officielle de suspension d'accès au contenu incriminé.
 
-**Ce qu'il ignore :** la date exacte de l'ordonnance de suspension du compte Tchatlink ; les preuves concrètes de diffusion à fournir aux régulateurs
+**Ce qu'il ignore :** l'identité précise du consommateur à l'origine de la publication ; la décision formelle d'une autorité compétente concernant le blocage total de Tchatlink
 
 | Action | Vérification | Sources |
 |---|---|---|
-| **Operateurs** — Mise en place immédiate d'un dispositif de contrôle parental et d'un mécanisme de signalement des contenus illicites sur le réseau, en attendant décision d'ordonnance. | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 25, p. 227 |
+| **Operateurs** — Suspendre l'accès au contenu incriminé publié sur Tchatlink, conformément à la demande des autorités compétentes | ✅ étayée | Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 14, p. 226 |
 
 **Lacunes signalées :**
-- La loi ne nous autorise pas à bloquer le compte Tchatlink sans ordonnance préalable de l'autorité compétente.
+- La loi ne prévoit pas que les opérateurs puissent bloquer l'ensemble du service Tchatlink sans décision explicite d'une autorité compétente
 
 <details><summary>Raisonnement explicite</summary>
 
-1. Identifier les obligations légales des opérateurs (E2).
-2. Constater l'absence d'ordonnance définitive de suspension.
-3. Mettre en place les mesures de prévention (contrôle parental, signalement).
-4. Demander les documents nécessaires aux autorités pour pouvoir appliquer la suspension dès qu'elle sera légalement autorisée.
+1. Identifier le cadre légal applicable aux contenus illicites contre les enfants (E1).
+2. Vérifier que les autorités ont déjà émis une décision de suspension du contenu incriminé.
+3. Appliquer l'obligation de suspension en tant qu'opérateur, limité au contenu ciblé.
+4. Demander à Tchatlink les informations nécessaires pour assurer la précision de la suspension et soutenir les enquêtes.
 
 </details>
 
 
-*Coordination interne* — Regulateurs du numerique (regulateurs) : Évaluer la possibilité de bloquer l'accès à Tchatlink sur le territoire national pendant la crise
+*Demande non transmise (destinataire inconnu « antinc »)* — APDP : Coordonner les mesures préventives contre la diffusion de contenus à risque pour les enfants
 
 
-*Coordination interne* — Chaine penale (penal) : Autorisation judiciaire d'accès aux relevés Mobile Money des victimes
+*Coordination interne* — Entreprises du numerique (entreprises) : Fournir les logs d'accès et les mesures de modération appliquées aux groupes contenant les images incriminées
 
 
-**Demande** — MinorShield → APDP : Envoi de la documentation complète du protocole d'anonymisation appliqué aux captures d'écran et aux données de blocage
+**Demande** — MinorShield → APDP : Autorisation préalable pour la transmission du rapport agrégé anonymisé des incidents détectés aux autorités camerounaises
 
-**Réponse de APDP** (✅ étayée) : Nous accusons réception de votre envoi de la documentation complète du protocole d'anonymisation appliqué aux captures d'écran et aux données de blocage. Conformément à nos missions de contrôle de la conformité, nous examinerons ces documents et les conserverons dans le cadre de l'enquête en cours.
-
-
-**Demande** — MinorShield → Regulateurs du numerique : Accès aux logs agrégés des opérateurs d'accès Internet afin de tracer les sources potentielles du vocabulaire d'argot
-
-**Réponse de Regulateurs du numerique** (✅ étayée) : Nous accédons à votre demande d’accès aux logs agrégés des opérateurs d’accès Internet afin de tracer les sources potentielles du vocabulaire d’argot. Nous lançons immédiatement une requête officielle auprès des opérateurs concernés, en conformité avec nos prérogatives de moyens préventifs et répressifs pour la protection des enfants en ligne.
+**Réponse de APDP** (🔶 citation douteuse) : Autorisation préalable accordée pour la transmission du rapport agrégé anonymisé des incidents détectés aux autorités camerounaises, sous réserve que le rapport ne contienne aucune donnée à caractère personnel permettant d'identifier directement ou indirectement un enfant ou un tiers et qu'il respecte les exigences de minimisation et de sécurisation prévues par la loi.
 
 
-**Demande** — Regulateurs du numerique → Chaine penale : Fournir l'autorisation judiciaire requise pour accéder aux relevés Mobile Money des victimes
+**Demande** — MinorShield → APDP : Confirmation écrite des consentements parentaux associés aux captures d'écran destinées aux autorités américaines
 
-**Réponse de Chaine penale** (✅ étayée) : Nous transmettons la requête motivée au juge compétent afin d'obtenir l'autorisation judiciaire d'accès aux relevés Mobile Money des victimes ; dès réception de l'ordonnance, nous la communiquerons aux autorités concernées.
-
-
-**Demande** — Regulateurs du numerique → Entreprises du numerique : Transmettre les logs détaillés de la fuite de données de ScolaPlus et les contacts des parents affectés
-
-**Réponse de Entreprises du numerique** (✅ étayée) : Nous transmettons les logs détaillés de la fuite de données ainsi que les contacts des parents affectés aux régulateurs conformément à nos obligations de coopération et de protection des enfants.
+**Réponse de APDP** (✅ étayée) : Nous ne pouvons pas confirmer l'existence des consentements parentaux tant que nous n'avons pas reçu les documents justificatifs correspondants pour vérification.
 
 
-**Demande** — APDP → Chaine penale : Fournir la copie de l'autorisation écrite confirmant le respect des conditions d'anonymisation et la base légale du traitement des données de la mineure
+**Demande** — MinorShield → Regulateurs du numerique : Avis juridique sur la possibilité de bloquer l'accès national à Tchatlink pendant la crise
 
-**Réponse de Chaine penale** (✅ étayée) : Nous vous transmettons ci-joint la copie de l'autorisation judiciaire écrite, signée par le Procureur de la République, confirmant le respect des conditions d'anonymisation des données de la mineure et précisant la base légale applicable.
+**Réponse de Regulateurs du numerique** (✅ étayée) : Conformément à l'article 10, l'ANTIC peut déployer des moyens préventifs et répressifs pour protéger les enfants en ligne, y compris le blocage d'accès à une plateforme étrangère si cela est jugé nécessaire. L'article 27 prévoit également que l'ANTIC agit en collaboration avec l'ART et les autorités concernées pour mettre fin aux atteintes aux droits des enfants, ce qui justifie la possibilité de bloquer temporairement Tchatlink au niveau national.
 
 
-**Demande** — APDP → Entreprises du numerique : Confirmer que les familles et établissements ont bien été notifiés conformément aux exigences légales et fournir les accusés de réception
+**Demande** — Regulateurs du numerique → Chaine penale : Fournir le soutien opérationnel pour le filtrage et le blocage des contenus illicites via les opérateurs.
 
-**Réponse de Entreprises du numerique** (✅ étayée) : Nous confirmons que toutes les familles et établissements concernés ont été notifiés conformément aux exigences légales. Vous trouverez en pièces jointes les accusés de réception signés par chaque partie.
+**Réponse de Chaine penale** (✅ étayée) : Nous acceptons de fournir le soutien opérationnel requis pour le filtrage et le blocage des contenus illicites via les opérateurs, en coordination avec les autorités compétentes.
+
+
+**Demande** — Regulateurs du numerique → Protection sociale et educative : Communiquer les mesures à prendre contre l'opérateur mobile ayant permis le paiement du chantage via Mobile Money.
+
+**Réponse de Protection sociale et educative** (⚠️ non étayée) : Le ministère des affaires sociales ne dispose pas d'un pouvoir légal pour imposer des mesures de régulation à un opérateur mobile concernant le paiement du chantage. Nous recommandons de transmettre cette demande au ministère en charge des télécommunications ou à l'organe de régulation compétent.
+
+
+**Demande** — Regulateurs du numerique → Entreprises du numerique : Retirer immédiatement les images de la victime et fournir les preuves de suppression.
+
+**Réponse de Entreprises du numerique** (✅ étayée) : Nous procédons immédiatement au retrait des images de la victime de la plateforme et fournirons les preuves de suppression aux autorités compétentes.
 
 
 ### ⚖️ Analyse du conseiller juridique
 
-Les actions de MinorShield sont partiellement fondées sur le droit camerounais, mais la transmission de preuves nécessite une clarification juridique (E5). Le cadre légal camerounais ne prévoit pas de blocage national d'une plateforme, contrairement à l'Australie (E11). Une meilleure coordination entre MinorShield, les régulateurs (ANTIC, ART) et les autorités judiciaires est indispensable pour garantir efficacité et respect des droits.
+Le droit camerounais autorise la suspension ciblée de contenus illicites mais ne prévoit pas le blocage complet d’une plateforme comme Tchatlink. Cette lacune contraste avec les cadres australien et européen qui encadrent le blocage temporaire et proportionné. Une coordination entre ANTIC et MINPOSTEL est indispensable pour concilier protection des enfants et respect des libertés fondamentales.
 
 | Acteur | Action | Verdict | Commentaire |
 |---|---|---|---|
-| MinorShield | Transmettre aux autorités compétentes les captures d'écran anonymisées ainsi que les métadonnées essentielles (horodatage, région) pour soutenir l'enquête, en respectant le protocole validé par l'APDP. | ⚠️ à vérifier | L'article E5 impose aux fournisseurs de services en ligne de décrire leurs contenus et de mettre en place un système de paramétrage pour le respect de la vie privée, mais il ne précise pas explicitement la transmission de données d'enquête aux autorités. La conformité au protocole APDP doit être confirmée. |
-| MinorShield | Fournir aux régulateurs les statistiques agrégées des blocages (sans données personnelles) pour appuyer les mesures de protection des enfants. | ✅ fondée | L'article E2 oblige les opérateurs des réseaux de communications électroniques à faciliter le déploiement de dispositifs de protection des enfants, ce qui inclut la mise à disposition de données agrégées utiles aux régulateurs (E2). |
+| Tchatlink | bloquer l'accès à Tchatlink sur le territoire national | ⚠️ à vérifier | E5 oblige les fournisseurs à suspendre l'accès à un contenu ou à un utilisateur à la demande des autorités, mais ne prévoit pas le blocage total d'une plateforme sans identification précise du contenu illicite. |
+| Tchatlink | retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants | ⚠️ à vérifier | E6 impose aux fournisseurs de mettre en place des mécanismes de retrait ou de blocage de publications spécifiques, mais ne prévoit pas le retrait de l’ensemble du service. |
+| ANTIC | déployer des moyens préventifs et répressifs pour protéger les enfants dans le cyberespace national | ✅ fondée | E2 confère à l'organe chargé de la régulation des TIC le pouvoir de déployer les moyens nécessaires à la protection des enfants en ligne. |
 
-**Lacune : Absence de texte prévoyant le blocage total et temporaire d'une plateforme en ligne à l'échelle nationale pour des raisons de protection des enfants.**
+**Lacune : Absence de disposition autorisant le blocage total d’une plateforme numérique en l’absence de contenu spécifiquement identifié comme illicite.**
 
-- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 32, p. 228 ; Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 27, p. 227
-- Australie : L'Online Safety Act 2021 permet au Commissaire de bloquer l'accès à un service en ligne lorsqu'il représente un danger grave pour les enfants. *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 78/157))*
-- **Recommandation :** Introduire un article spécifique autorisant le blocage temporaire d'un service en ligne, avec contrôle judiciaire et délai de réexamen de 15 jours, en s'inspirant du mécanisme australien (E11).
+- Droit camerounais : Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 14, p. 226 ; Loi n° 2023/009 du 25 juillet 2023 portant charte de protection des enfants en ligne au Cameroun, article 23, p. 227
+- Australie : Le bloqueur peut imposer un blocage limité dans le temps (max 3 mois) sur du matériel jugé préjudiciable. *(Online Safety Act 2021 (Australia, No. 76, 2021) — version d'origine] (partie 78/157))*
+- **Recommandation :** Introduire un article précisant les conditions, la durée maximale et les procédures de contrôle judiciaire pour le blocage total d’une plateforme, en s’inspirant du cadre australien (E11) et du Digital Services Act (E13).
 
 **Conflits :**
-- Le mandat de protection des enfants (E1‑E7) peut entrer en conflit avec le droit à la liberté d'expression et à l'accès à l'information garanti par les normes internationales (E10).
+- Conflit entre la protection des enfants (E1‑E5) et le droit à la liberté d’expression des enfants (E10).
 
 **Problèmes de coordination :**
-- MinorShield transmet des données aux autorités sans indication claire du destinataire (Police judiciaire, Parquet ou régulateur), ce qui crée un risque de duplication ou de retard dans le traitement.
+- Demande à ANTIC (destinataire: ANTIC) de préciser les mesures préventives à mettre en œuvre et d’émettre, le cas échéant, une ordonnance de suspension ciblée.
+- Demande à MINPOSTEL (destinataire: MINPOSTEL) de valider la légalité de toute mesure de blocage total et d’assurer la conformité avec le droit pénal (E4).

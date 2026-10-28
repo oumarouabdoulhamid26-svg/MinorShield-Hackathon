@@ -108,7 +108,9 @@ function checks(entry){
     const flags = [...(c.citations_invalides||[]).map(i => "identifiant inexistant : "+i),
                    ...(c.mentions_non_verifiees||[]), ...(c.textes_non_verifies||[]).map(t => "texte absent de la base : "+t),
                    ...(c.incoherences||[])];
+    const quote = c.citation ? `<div class="muted" style="font-size:.85rem;margin-top:4px">${c.citation_exacte ? "✓ citation retrouvée mot pour mot" : "✗ citation non retrouvée mot pour mot"} : « ${esc(c.citation)} »</div>` : "";
     return `<div class="act"><span class="badge s-${c.statut}">${STATUT[c.statut]||c.statut}</span> ${c.institution ? "<b>"+esc(c.institution)+"</b> — " : ""}${esc(c.action)}
+      ${quote}
       ${flags.length ? `<div class="flags">${flags.map(esc).join(" · ")}</div>` : ""}
       ${(c.citations_valides||[]).map(i => extractBox(byId[i])).join("")}</div>`;
   }).join("");
@@ -178,7 +180,7 @@ for(const s of steps){
 }
 html += `<footer><b>Comment lire les statuts.</b><div class="legend">
   <span class="badge s-etayee">✅ étayée</span> s'appuie sur un extrait réellement fourni à l'assistant
-  <span class="badge s-citation_douteuse">🔶 douteuse</span> cite un extrait réel, mais mentionne un article ou un texte absent de cet extrait, ou annonce une autre juridiction
+  <span class="badge s-citation_douteuse">🔶 douteuse</span> cite un extrait réel, mais mentionne un article ou un texte absent de cet extrait, annonce une autre juridiction, ou recopie une phrase qui ne s'y retrouve pas mot pour mot
   <span class="badge s-non_etayee">⚠️ non étayée</span> aucune source citée
   <span class="badge s-citation_invalide">❌ invalide</span> cite un identifiant qui n'a jamais été fourni (invention)</div>
   <p>Chaque assistant ne connaît que les étapes qui lui ont été révélées. Les extraits sont tirés de la base de connaissances (lois camerounaises et références internationales) ; cliquer sur une source affiche le texte exact présenté à l'assistant.</p>

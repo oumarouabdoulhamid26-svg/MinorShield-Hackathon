@@ -31,7 +31,8 @@ LEGAL_CATEGORY = "Child_Online_Protection"
 # (200 000 jetons). Une premiere simulation complete en consommait 174 000 ;
 # ces reglages en economisent environ 20 %.
 # Valeurs par defaut ; le ML Intent (agent/intent.json) les remplace au demarrage.
-EXTRACT_CHARS = 600          # longueur maximale d'un extrait presente au modele
+EXTRACT_CHARS = 1200         # longueur maximale d'un extrait presente au modele (83 % des
+                             # articles camerounais y tiennent en entier, 37 % a 500)
 DEFAULT_EXTRACTS = 4
 ANSWER_EXTRACTS = 3          # extraits pour repondre a une demande
 OLD_STEP_CHARS = 0           # 0 = etapes anciennes en entier ; sinon tronquees a N caracteres
@@ -42,6 +43,23 @@ MAX_PER_FILE = 2             # extraits au plus par texte, pour garder des sourc
 KEY_ARTICLES = 2             # articles cles du mandat fournis en priorite
 
 _LEGAL_FILES: dict[str, str] = {}
+
+CUT_MARK = "[... suite de l'article non fournie : ne la suppose pas]"
+
+
+def cut_extract(doc: str, limit: Optional[int] = None) -> str:
+    """Extrait presente au modele : au plus ``limit`` caracteres, coupe en fin
+    de ligne et signale comme incomplet. Un article coupe sans avertissement
+    etait complete de memoire par le modele (relecture de precision : « collecte
+    des... » devenu « collecte de signalements »)."""
+    limit = limit or EXTRACT_CHARS
+    if len(doc) <= limit:
+        return doc
+    head = doc[:limit]
+    nl = head.rfind("\n")
+    if nl > limit // 2:
+        head = head[:nl]
+    return head.rstrip() + "\n" + CUT_MARK
 
 
 def _legal_files(kb: KnowledgeBase) -> dict[str, str]:
@@ -115,9 +133,10 @@ SCHEMA_REACTION = """{
   "inconnues": ["ce que tu ignores et qui compte pour decider"],
   "actions": [
     {"institution": "l'institution qui agit, choisie dans ta liste",
-     "action": "ce qu'elle fait, dans les limites de sa mission",
+     "action": "UNE mesure, dans les limites de sa mission",
      "base_legale": ["E1"],
-     "justification": "pourquoi cet extrait fonde l'action"}
+     "citation": "la phrase de l'extrait qui fonde cette mesure, recopiee mot pour mot",
+     "justification": "pourquoi cette phrase fonde la mesure"}
   ],
   "demandes": [{"destinataire": "identifiant d'un autre acteur", "objet": "ce que tu lui demandes",
                 "raison": "pourquoi ton action depend de lui"}],
@@ -130,6 +149,7 @@ SCHEMA_REPONSE = """{
   "institution": "l'institution qui repond, choisie dans ta liste",
   "reponse": "ta reponse a la demande",
   "base_legale": ["E1"],
+  "citation": "la phrase de l'extrait qui fonde ta reponse, recopiee mot pour mot",
   "peut_agir": true,
   "raisonnement": ["etape 1", "etape 2"]
 }"""
@@ -195,7 +215,7 @@ class CrisisAgent:
             out.append(Extract(
                 id="", source_file=meta.get("source_file", ""), article=meta.get("article", ""),
                 page=meta.get("page", ""), country=meta.get("country", ""),
-                similarity=sim, text=doc[:EXTRACT_CHARS],
+                similarity=sim, text=cut_extract(doc),
             ))
 
         best = max((1 - d for _, _, d in general), default=0.0)
@@ -286,9 +306,10 @@ REGLES IMPERATIVES :
 2. Tu n'agis que dans les limites de ta mission. Chaque action indique dans "institution" UNE seule institution, recopiee exactement de cette liste : {institutions}.
 3. Coordination : pour chaque mesure, information ou decision qui releve d'un AUTRE agent de la liste ci-dessous (un pouvoir que tu n'as pas, une donnee qu'il detient, une decision qu'il doit prendre), adresse-lui une demande dans "demandes", avec la raison. Dans une crise, presque toute action depend d'un autre agent : si tu n'adresses aucune demande, explique pourquoi dans "raisonnement".
 4. Toute action fondee sur le droit cite au moins un extrait fourni. "base_legale" contient UNIQUEMENT des identifiants d'extraits (exemple : ["E2", "E4"]), JAMAIS un numero d'article ecrit de memoire. Ne mentionne aucun article absent des extraits. Si aucun extrait ne fonde une action, laisse "base_legale" vide et explique-le dans "lacunes".
-5. Dis clairement ce que tu ignores.
-6. Sois concis : au plus 3 actions et 3 demandes, une evaluation de 2 phrases, un raisonnement de 4 etapes courtes au plus.
-7. Reponds uniquement en francais, uniquement en JSON valide.
+5. Une action = UNE mesure. Dans "citation", recopie MOT POUR MOT (sans reformuler) la phrase de l'extrait qui fonde cette mesure ; elle est verifiee automatiquement. Si la phrase ne couvre qu'une partie de ce que tu veux faire, separe en deux actions, ou laisse la partie non couverte sans base legale. N'ajoute aucun delai, duree, pouvoir ou obligation qui ne figure pas dans la citation. Un extrait qui se termine par « suite non fournie » est incomplet : ne devine pas la suite.
+6. Dis clairement ce que tu ignores.
+7. Sois concis : au plus 3 actions et 3 demandes, une evaluation de 2 phrases, un raisonnement de 4 etapes courtes au plus.
+8. Reponds uniquement en francais, uniquement en JSON valide.
 
 {LEXIQUE}"""
 

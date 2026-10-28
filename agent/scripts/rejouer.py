@@ -30,7 +30,12 @@ def details(entry: dict) -> None:
         print(f"    {entry['information'][:600]}")
         if entry.get("entree_simulee"):
             print(f"    [entree SIMULEE] {json.dumps(entry['entree_simulee'].get('sortie'), ensure_ascii=False)[:300]}")
-    elif ev == "intervention_analyse":
+    if ev in ("intervention_reaction", "intervention_reponse"):
+        for c in entry.get("verification", [])[:6]:
+            if c.get("citation"):
+                ok = "mot pour mot" if c.get("citation_exacte") else "NON retrouvee mot pour mot"
+                print(f"         citation ({ok}) : « {c['citation'][:160]} »")
+    if ev == "intervention_analyse":
         rep = entry.get("reponse") or {}
         for g in (rep.get("lacunes") or [])[:4]:
             txt = g.get("lacune", "") if isinstance(g, dict) else str(g)

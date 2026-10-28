@@ -1,21 +1,25 @@
 {
   "resume": {
     "scenario": "operation_miroir",
-    "evenements": 131,
-    "interventions": 53,
+    "evenements": 116,
+    "interventions": 47,
     "verifications": {
-      "etayee": 95,
-      "non_etayee": 10,
-      "citation_douteuse": 4,
+      "etayee": 79,
+      "non_etayee": 8,
+      "citation_douteuse": 6,
       "citation_invalide": 1
     },
-    "taux_etayees": 0.864,
-    "jetons_total": 165279,
+    "taux_etayees": 0.84,
+    "jetons_total": 178041,
     "institution_nommee": {
-      "valide": 69
+      "valide": 61
     },
-    "demandes_transmises": 25,
-    "demandes_non_transmises": 0,
+    "citations_mot_pour_mot": {
+      "exacte": 74,
+      "non_retrouvee": 6
+    },
+    "demandes_transmises": 19,
+    "demandes_non_transmises": 1,
     "coordinations_internes": 13
   },
   "scenario": {
@@ -95,7 +99,7 @@
           "Un établissement peut-il sanctionner une élève victime ?"
         ],
         "lacunes_attendues": [
-          "La victime de 19 ans n'est pas un « enfant » au sens de la loi n° 2023/009 (moins de 18 ans), alors que la majorité civile est à 21 ans",
+          "La victime de 19 ans n'est pas un « enfant » au sens de la loi n° 2023/009 (art. 3 : moins de 18 ans), alors que le Code pénal (art. 347) protège spécialement les mineurs de 16 à 21 ans",
           "Chevauchement des missions MINAS et MINPROFF",
           "Absence de directive scolaire sur la protection des élèves victimes en ligne"
         ]
@@ -165,7 +169,7 @@
   },
   "intent": {
     "fichier": "agent/intent.json",
-    "empreinte": "5e655a604e19",
+    "empreinte": "3390548412e7",
     "mode": "reference",
     "modele_principal": "openai/gpt-oss-120b",
     "modele_secours": "openai/gpt-oss-20b"
@@ -183,82 +187,54 @@
         "verifications": [
           {
             "acteur": "MinorShield",
-            "action": "Activer le mode de collecte de statistiques agrégées et anonymisées sur les blocages, puis les transmettre aux autorités compétentes",
-            "verdict": "a_verifier",
-            "commentaire": "L'extrait E1 impose aux entreprises d'aider les enfants à comprendre les services, mais ne précise pas le partage de statistiques agrégées aux autorités ; l'extrait E2 décrit des obligations de transparence sur la vie privée, sans mentionner de transmission aux pouvoirs publics. La base légale est donc partielle."
-          },
-          {
-            "acteur": "ANTIC",
-            "action": "Émettre un avis de vigilance aux opérateurs d'accès Internet et aux fournisseurs de services de messagerie, les invitant à renforcer le filtrage des messages contenant le vocabulaire suspect et à signaler tout incident au CIRT",
-            "verdict": "fondee",
-            "commentaire": "L'extrait E3 stipule que l'organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs pour protéger les enfants en ligne, ce qui justifie l'émission d'un avis de vigilance."
-          },
-          {
-            "acteur": "ART",
-            "action": "Coordonner avec les opérateurs de communications électroniques pour vérifier la conformité des filtres et, le cas échéant, appliquer les mesures correctives prévues à l'article 27",
-            "verdict": "fondee",
-            "commentaire": "L'extrait E4 indique que l'organe de régulation des TIC, en collaboration avec les régulateurs des télécommunications, prend des mesures correctives lorsque les atteintes aux droits des enfants ne constituent pas des infractions pénales."
+            "action": "partager des statistiques agrégées et anonymisées avec les autorités",
+            "verdict": "non_fondee",
+            "commentaire": "Aucun extrait camerounais ne prévoit la transmission de données agrégées par un acteur privé de protection des enfants. Aucun texte fourni ne mentionne ce type de partage.",
+            "citation": ""
           },
           {
             "acteur": "MINPOSTEL",
-            "action": "Lancer, dans le cadre du Plan d'Action National de Protection des Enfants en Ligne, une campagne d'information auprès des parents et des établissements scolaires",
-            "verdict": "a_verifier",
-            "commentaire": "Aucun extrait fourni ne mentionne explicitement une mission d'information publique pour le ministère des télécommunications ; la mesure repose donc sur une interprétation large de la charte (E1‑E4) mais n'est pas directement fondée."
+            "action": "déployer des moyens préventifs et répressifs pour protéger les enfants en ligne",
+            "verdict": "fondee",
+            "commentaire": "E2 article 10‑1 prévoit que l’organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs nécessaires à la protection des enfants dans le cyberespace national.",
+            "citation": "L’organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs nécessaires à la protection des enfants dans le cyberespace national."
           },
           {
-            "acteur": "APDP",
-            "action": "Demander la description détaillée des méthodes d'anonymisation avant validation du protocole",
+            "acteur": "Operateurs",
+            "action": "mettre en place des mécanismes permettant de bloquer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants",
             "verdict": "fondee",
-            "commentaire": "L'extrait E5 impose aux responsables du traitement des données le respect de la réglementation en matière de protection des droits des enfants, incluant la garantie de non‑identifiabilité."
+            "commentaire": "E1 article 23‑3 impose aux fournisseurs de contenus et de services en ligne d’instaurer des mécanismes de blocage immédiat des publications portant atteinte aux enfants.",
+            "citation": "Ils mettent également en place des mécanismes permettant de retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants ou de bloquer l'accès à ces publications."
           }
         ],
         "lacunes": [
           {
-            "lacune": "Absence de cadre précis pour le partage de statistiques agrégées et anonymisées avec les autorités publiques",
+            "lacune": "Absence de cadre légal encadrant le partage de données agrégées par un acteur privé de protection des enfants avec les autorités.",
             "texte_camerounais": [
-              "E1",
-              "E2"
-            ],
-            "comparaison": [
-              {
-                "juridiction": "Australie",
-                "pratique": "L'Online Safety Act 2021 oblige les fournisseurs à fournir aux autorités des rapports statistiques réguliers sur les contenus dangereux pour les enfants.",
-                "reference": "E7"
-              }
-            ],
-            "references": [
-              "E1",
-              "E2",
-              "E7"
-            ],
-            "recommandation": "Introduire un article dédié (ex. article X) précisant les modalités de transmission, les formats de données, les garanties d'anonymat et les délais de remise des statistiques aux autorités compétentes."
-          },
-          {
-            "lacune": "Pas de texte autorisant explicitement l'ANTIC à imposer des mesures techniques contraignantes aux plateformes étrangères sans présence locale",
-            "texte_camerounais": [
-              "E3"
+              "E1"
             ],
             "comparaison": [
               {
                 "juridiction": "Émirats arabes unis",
-                "pratique": "Le Décret fédéral n°26/2025 permet aux autorités de requérir la suppression ou le blocage de contenus illicites sur toute plateforme, même étrangère, via des ordonnances contraignantes.",
-                "reference": "E10"
+                "pratique": "Obligation pour les plateformes numériques de fournir des statistiques et rapports périodiques aux autorités compétentes.",
+                "reference": "E7",
+                "citation": "Providing statistics and periodic reports to the Concerned Authorities regarding measures taken and the extent of compliance with the controls and obligations stipulated in this Decree."
               }
             ],
             "references": [
-              "E3",
-              "E10"
+              "E1",
+              "E7"
             ],
-            "recommandation": "Modifier l'article 10 de la charte pour inclure une compétence d'ordre direct sur les fournisseurs étrangers opérant sur le territoire numérique camerounais."
+            "recommandation": "Adopter, par décret ou loi, une disposition similaire à l’article 10 du Décret des Émirats, imposant aux acteurs privés de signaler aux autorités des statistiques agrégées anonymisées sur les contenus bloqués chez les mineurs."
           }
         ],
         "conflits": [
-          "Conflit potentiel entre la nécessité de partager des données agrégées (exigence de transparence) et le respect du droit à la vie privée des enfants (article 23)."
+          "Aucun conflit identifié entre les objectifs des extraits camerounais et les pratiques étrangères cités."
         ],
         "coordination": [
-          "Manque de protocole clair entre MinorShield, les régulateurs (ANTIC, ART) et le ministère des télécommunications pour la remontée et le traitement des données de blocage."
+          "Coordination insuffisante entre MinorShield (acteur privé) et le régulateur (ANTIC/MINPOSTEL) pour la transmission des données nécessaires à l’action préventive."
         ],
-        "synthese": "Les actions de l'ANTIC et de l'ART sont solidement fondées sur les articles E3 et E4, tandis que les mesures de MinorShield et de MINPOSTEL nécessitent des précisions légales. Le droit camerounais manque de dispositions détaillées sur le partage de statistiques agrégées et sur l'application de mesures techniques aux acteurs étrangers, contrairement à l'Australie et aux Émirats arabes unis. Il est recommandé d'amender la charte pour combler ces lacunes et d'établir un protocole de coordination inter‑institutionnel."
+        "synthese": "Le droit camerounais oblige les fournisseurs à bloquer les contenus illicites et le régulateur à agir préventivement, mais il ne prévoit pas le partage de statistiques par un acteur privé comme MinorShield. Cette lacune contraste avec les exigences de reporting des Émirats arabes unis. Il faut donc créer un cadre légal de transmission de données agrégées pour améliorer la réponse coordonnée."
       }
     },
     {
@@ -269,58 +245,67 @@
         "social",
         "penal"
       ],
-      "demandes": 6,
-      "interventions": 10,
+      "demandes": 3,
+      "interventions": 7,
       "analyse": {
         "verifications": [
           {
             "acteur": "MinorShield",
-            "action": "Blocage du message suspect sur le téléphone de la collégienne",
+            "action": "blocage du message contenant du texte à risque sur le téléphone de la collégienne",
             "verdict": "fondee",
-            "commentaire": "Le blocage repose sur l'obligation des fournisseurs de services en ligne de protéger les enfants (E1) et sur le devoir de respecter la protection des données des mineurs (E2)."
+            "commentaire": "Le blocage repose sur l'obligation de retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants (E1).",
+            "citation": "Ils mettent également en place des mécanismes permettant de retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants ou de bloquer l'accès à ces publications."
           },
           {
             "acteur": "MinorShield",
-            "action": "Conservation des captures d'écran 30 jours et transmission aux autorités sur demande",
+            "action": "conservation des captures d'écran 30 jours et mise à disposition des autorités sur demande",
             "verdict": "a_verifier",
-            "commentaire": "La loi camerounaise prévoit la collecte et le traitement des données des enfants (E2, E4) mais ne précise pas de durée de conservation ni les modalités de transmission aux autorités."
+            "commentaire": "E1 impose le retrait immédiat mais ne précise pas la durée de conservation des données; la pratique de conservation 30 jours n'est pas couverte.",
+            "citation": "Ils mettent en place des mécanismes permettant de retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants ou de bloquer l'accès à ces publications."
           },
           {
             "acteur": "Police judiciaire",
-            "action": "Possibilité d'intercepter et d'enregistrer la communication électronique suspecte",
+            "action": "interception et enregistrement de la communication électronique suspectée",
             "verdict": "fondee",
-            "commentaire": "Article 49 de la loi sur la cybersécurité autorise l'officier de police judiciaire à intercepter les communications (E8)."
+            "commentaire": "L'article 49 de la loi sur la cybersécurité autorise l'officier de police judiciaire à intercepter, enregistrer ou transcrire toute communication électronique (E6).",
+            "citation": "l’Oﬃcier de Police Judiciaire peut intercepter, enregistrer ou transcrire toute communication électronique."
           }
         ],
         "lacunes": [
           {
-            "lacune": "Absence de cadre légal précis sur la durée de conservation des preuves numériques et les conditions de leur transmission aux autorités",
+            "lacune": "Absence de cadre précis sur la durée légale de conservation des données de contenus bloqués et sur les conditions de transmission aux autorités.",
             "texte_camerounais": [
-              "E2",
-              "E4"
+              "E1"
             ],
             "comparaison": [
               {
                 "juridiction": "Australie",
-                "pratique": "L'Online Safety Act 2021 prévoit une conservation limitée des contenus signalés et des procédures claires de transmission aux autorités.",
-                "reference": "E10"
+                "pratique": "Le Online Safety Act prévoit des ordonnances de retrait et de conservation limitées, avec des délais clairement définis pour la transmission aux autorités.",
+                "reference": "E9",
+                "citation": "If the Commissioner is satisfied that there were 2 or more occasions during the previous 12 months on which: ... the Commissioner may: ..."
+              },
+              {
+                "juridiction": "États‑Unis",
+                "pratique": "Le COPPA impose des exigences de conservation limitées et de suppression des données après vérification de l'âge.",
+                "reference": "E10",
+                "citation": "Verifying a parent's identity by checking a form of government‑issued identification against databases of such information, where the parent's identification is deleted by the operator from its records promptly after such verification is complete;"
               }
             ],
             "references": [
-              "E2",
-              "E4",
+              "E1",
+              "E9",
               "E10"
             ],
-            "recommandation": "Introduire un article précisant une durée maximale de conservation (ex. 14 jours) et définir les protocoles de transmission sécurisée aux forces de l'ordre."
+            "recommandation": "Instaurer, par décret, une période maximale de conservation de 15 jours pour les captures d'écran liées à des contenus à risque, avec obligation de suppression automatique sauf décision judiciaire, et préciser les modalités de transmission aux autorités."
           }
         ],
         "conflits": [
-          "Conflit potentiel entre la protection de la vie privée des données (E2) et la transmission obligatoire aux autorités sans cadre clair."
+          "Le besoin de protéger la vie privée de l'enfant (E1) entre en tension avec la possibilité d'interception par la police judiciaire (E6) sans cadre de contrôle strict."
         ],
         "coordination": [
-          "Manque de coordination formalisée entre MinorShield, l'APDP et la Police judiciaire pour le partage des preuves numériques."
+          "Absence de demande explicite de la part de MinorShield à l'APDP (E2) pour valider la légalité du stockage des données, ce qui freine la conformité."
         ],
-        "synthese": "Le blocage du contenu est justifié par les obligations de protection des enfants (E1, E2). Toutefois, la loi camerounaise ne définit pas la durée de conservation des captures ni les modalités de transmission, créant une lacune comparée aux pratiques australiennes. Il faut harmoniser les procédures entre MinorShield, l'APDP et les forces de l'ordre pour garantir à la fois la protection des enfants et le respect de la vie privée."
+        "synthese": "Le blocage du contenu est conforme à la loi camerounaise (E1) et la police peut légalement intercepter les communications (E6). Cependant, le droit camerounais ne précise pas la durée de conservation des preuves numériques, créant une lacune comparée aux pratiques australiennes et américaines. Il faut harmoniser les procédures de conservation et renforcer la coordination avec l'APDP pour garantir le respect des droits des enfants et de la vie privée."
       }
     },
     {
@@ -329,82 +314,74 @@
         "social",
         "penal"
       ],
-      "demandes": 3,
-      "interventions": 5,
+      "demandes": 1,
+      "interventions": 3,
       "analyse": {
         "verifications": [
           {
             "acteur": "MINAS",
-            "action": "Déployer une équipe d'intervention sociale et former le personnel à la détection et prise en charge des abus en ligne",
+            "action": "formation du personnel intervenant sur la prévention et la prise en charge des abus en ligne",
             "verdict": "fondee",
-            "commentaire": "L'article 8 de la loi 2023/009 (E2) impose au Ministère des affaires sociales de fournir une formation appropriée aux intervenants sur les abus en ligne."
+            "commentaire": "L'article 8 de la charte de protection des enfants en ligne impose cette formation (E1)",
+            "citation": "Le Ministère en charge des affaires sociales offre, au personnel intervenant dans la prise en charge des enfants, une formation appropriée en matière de prévention, de détection et de prise en charge des abus dont peuvent être victimes les enfants en ligne."
           },
           {
             "acteur": "Police judiciaire",
-            "action": "Constater l'infraction de diffusion et de chantage à caractère pédopornographique et rédiger le procès‑verbal d'enquête",
+            "action": "lancement d'enquête et saisie de preuves électroniques",
             "verdict": "fondee",
-            "commentaire": "L'article 80 de la loi 2010/012 (E1) pénalise la diffusion d'images pédopornographiques et l'article 32 de la loi 2023/009 (E3) prévoit que les officiers de police judiciaire constatent les infractions."
+            "commentaire": "L'article 52 prévoit que les officiers de police judiciaire mènent les enquêtes cybernétiques (E2)",
+            "citation": "En cas d’infraction cybernétique, les Oﬃciers de Police Judiciaire à compétence générale et les agents habilités de l’Agence, procèdent aux enquêtes conformément aux dispositions du Code de Procédure Pénale."
           },
           {
-            "acteur": "Police judiciaire",
-            "action": "Demander aux opérateurs de télécommunications les relevés de transactions Mobile Money des victimes",
+            "acteur": "Parquet",
+            "action": "transmission du procès‑verbal et des pièces saisies dans les 8 jours",
+            "verdict": "fondee",
+            "commentaire": "L'article 32 impose ce délai de transmission au procureur (E3)",
+            "citation": "Les procès-verbaux constatant les infractions, ainsi que les objets et documents saisis, sont transmis au Procureur de la République compétent dans un délai maximum de huit (08) jours."
+          },
+          {
+            "acteur": "APDP",
+            "action": "sanction du responsable du traitement pour non‑respect de la protection des droits des enfants",
+            "verdict": "fondee",
+            "commentaire": "L'article 17 oblige les responsables du traitement à respecter la réglementation sur les droits des enfants (E5)",
+            "citation": "Les responsables du traitement des données ou leurs sous-traitants sont tenus de respecter la réglementation en vigueur en matière de protection des droits des enfants."
+          },
+          {
+            "acteur": "Opérateurs",
+            "action": "suppression de l'image intime sous menace de diffusion",
             "verdict": "a_verifier",
-            "commentaire": "Aucun extrait fourni ne précise la procédure de demande de logs aux opérateurs (absence d'E4 ou autre). La loi 2023/009 (E4) mentionne le rôle de l'organe de régulation mais ne donne pas de texte détaillé pour les forces de l'ordre."
+            "commentaire": "Le droit camerounais sanctionne la diffusion (E4) mais ne prévoit pas explicitement l'obligation de retrait à la demande de la victime",
+            "citation": "Est puni d’un emprisonnement de trois (03) à six (06) ans et d’une amende de 5 000 000 (cinq millions) à 10 000 000 (dix millions) F CFA ou de l’une de ces deux peines seulement, celui qui diffuse, fixe, enregistre ou transmet à titre onéreux ou gratuit l’image présentant les actes de pédophilie sur un mineur par voie de communications électroniques ou d’un système d’information."
           }
         ],
         "lacunes": [
           {
-            "lacune": "Absence de texte précisant la procédure de requête de données de paiement (Mobile Money) aux opérateurs par les forces de l'ordre",
+            "lacune": "Absence d'obligation légale de retrait immédiat d'images intimes sous menace, et de procédure de signalement aux plateformes",
             "texte_camerounais": [
               "E4"
             ],
             "comparaison": [
               {
                 "juridiction": "Australie",
-                "pratique": "L'Online Safety Act 2021 (E7) autorise les autorités à exiger la suppression d'images intimes et à obtenir les informations d'identification du compte auprès du fournisseur.",
-                "reference": "E7"
-              },
-              {
-                "juridiction": "Royaume-Uni",
-                "pratique": "L'Online Safety Act 2023 (E8) prévoit que les autorités peuvent demander aux fournisseurs les données nécessaires à l'enquête sur les contenus illicites.",
-                "reference": "E8"
+                "pratique": "obligation pour le fournisseur de retirer l'image suite à un avis de retrait",
+                "reference": "E6",
+                "citation": "a notice (a removal notice) requiring the provider to remove an intimate image from the service."
               }
             ],
             "references": [
               "E4",
-              "E7",
-              "E8"
+              "E6"
             ],
-            "recommandation": "Adopter un texte d'application précisant que la police judiciaire peut, sur autorisation judiciaire, solliciter les relevés de transactions électroniques aux opérateurs, en s'inspirant des procédures australiennes et britanniques."
-          },
-          {
-            "lacune": "Manque de cadre de coordination entre MINAS et MINPROFF pour la prise en charge des victimes d'abus en ligne",
-            "texte_camerounais": [
-              "E2",
-              "E3"
-            ],
-            "comparaison": [
-              {
-                "juridiction": "ONU",
-                "pratique": "Le principe de coordination inter‑institutionnelle est rappelé dans les observations générales du CRC (E10) qui incitent les États à établir des mécanismes de coopération entre les services sociaux et judiciaires.",
-                "reference": "E10"
-              }
-            ],
-            "references": [
-              "E2",
-              "E3",
-              "E10"
-            ],
-            "recommandation": "Émettre un arrêté ministériel définissant les modalités de coopération entre MINAS, MINPROFF et les autorités judiciaires pour les cas d'abus en ligne."
+            "recommandation": "Insérer dans la législation camerounaise une disposition imposant aux fournisseurs de services en ligne de retirer sans délai toute image intime faisant l'objet d'une menace de diffusion, sur réception d'un avis de la victime ou de son représentant légal."
           }
         ],
         "conflits": [
-          "Conflit potentiel entre le rôle de l'ANTIC (régulation TIC) et les forces de l'ordre pour l'accès aux données de paiement, le texte (E4) ne clarifie pas la hiérarchie."
+          "Le collège envisage d'exclure la victime alors que la loi impose protection et prise en charge des enfants victimes d'abus en ligne (E1)."
         ],
         "coordination": [
-          "Absence de protocole partagé entre MINAS, la police judiciaire et l'ANTIC pour la transmission rapide des preuves numériques et des données de paiement."
+          "Manque de protocole partagé entre MINAS, la police judiciaire et les opérateurs pour le signalement et le retrait rapide des contenus illicites."
         ],
-        "synthese": "Les actions de MINAS et de la police sont fondées sur les textes E2, E1 et E3. Cependant, le droit camerounais ne précise pas la procédure d'obtention des logs Mobile Money et la coordination inter‑ministerielle, contrairement aux pratiques australiennes, britanniques et aux recommandations de l'ONU. Il faut créer des textes d'application et des protocoles de coopération pour combler ces lacunes."
+        "synthese": "Le cadre juridique camerounais prévoit formation, enquête et sanction, mais ne prévoit pas de mécanisme de retrait immédiat d'images intimes. Cette lacune contraste avec les pratiques australiennes qui imposent un avis de retrait aux fournisseurs. Il faut harmoniser les procédures entre les acteurs sociaux, judiciaires et techniques pour protéger efficacement les victimes."
       }
     },
     {
@@ -414,82 +391,60 @@
         "entreprises",
         "penal"
       ],
-      "demandes": 3,
-      "interventions": 6,
+      "demandes": 2,
+      "interventions": 5,
       "analyse": {
         "verifications": [
           {
-            "acteur": "ANTIC",
-            "action": "Émettre une mise en demeure aux opérateurs de télécommunications nationaux pour mettre en place un filtrage temporaire des contenus identifiés",
+            "acteur": "Tchatlink",
+            "action": "Réponse de traitement « selon ses délais habituels de modération » sans engagement de date",
             "verdict": "a_verifier",
-            "commentaire": "L'article 27 (E3) autorise l'organe chargé de la régulation des TIC à prendre des mesures en collaboration avec l'organe de régulation des télécommunications, mais il ne précise pas explicitement le recours à un filtrage technique obligatoire. La base légale est donc partielle."
-          },
-          {
-            "acteur": "ANTIC",
-            "action": "Demander au MINPOSTEL d'initier une démarche diplomatique auprès de Tchatlink afin d'accélérer la modération des images illicites",
-            "verdict": "a_verifier",
-            "commentaire": "L'article 10 (E4) prévoit que l'organe de régulation des TIC déploie des moyens préventifs, mais il ne mentionne pas explicitement une action diplomatique envers une plateforme étrangère. La mesure repose sur une interprétation large."
+            "commentaire": "E3 prévoit que les opérateurs doivent promouvoir les mécanismes de signalement, mais ne fixe pas de délai de réponse pour les plateformes étrangères",
+            "citation": "Les opérateurs des réseaux de communications électroniques et les exploitants de systèmes d'information promeuvent les mécanismes de signalement des publications portant atteinte à la dignité et à l’intégrité des enfants."
           },
           {
             "acteur": "Operateurs",
-            "action": "Mettre en place le mécanisme de signalement requis et préparer la suspension du compte dès réception d'une décision d'autorité",
+            "action": "Filtrage demandé par les régulateurs pour bloquer les images",
             "verdict": "fondee",
-            "commentaire": "L'article 24 (E5) impose aux opérateurs de promouvoir les mécanismes de signalement des contenus illicites. La suspension du compte nécessite toutefois une décision d'autorité, ce qui est respecté."
+            "commentaire": "E24 (E3) impose aux opérateurs de promouvoir le signalement, ce qui inclut des mesures techniques de blocage en cas de contenus illicites",
+            "citation": "Les opérateurs des réseaux de communications électroniques et les exploitants de systèmes d'information promeuvent les mécanismes de signalement des publications portant atteinte à la dignité et à l’intégrité des enfants."
+          },
+          {
+            "acteur": "ANTIC",
+            "action": "Déploiement de moyens préventifs et répressifs pour protéger les enfants en ligne",
+            "verdict": "fondee",
+            "commentaire": "E1 article 10 stipule explicitement ce rôle de l'organe chargé de la régulation des TIC",
+            "citation": "L’organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs nécessaires à la protection des enfants dans le cyberespace national."
           }
         ],
         "lacunes": [
           {
-            "lacune": "Absence de procédure claire pour contraindre une plateforme étrangère sans présence locale à retirer rapidement des contenus illicites",
+            "lacune": "Absence de délai précis imposé aux plateformes étrangères pour répondre à une demande de retrait de contenus illicites",
             "texte_camerounais": [
-              "E3",
-              "E4"
+              "E3"
             ],
             "comparaison": [
               {
                 "juridiction": "Australie",
-                "pratique": "Le Online Safety Act 2021 permet d'émettre un \"removal notice\" contraignant les hébergeurs à retirer le contenu illicite sous 24 h",
-                "reference": "E9"
-              },
-              {
-                "juridiction": "Royaume-Uni",
-                "pratique": "L'Online Safety Act 2023 impose aux plateformes de retirer les contenus préjudiciables dans les délais raisonnables, sous peine d'amendes",
-                "reference": "E11"
+                "pratique": "Obligation de délivrer un avis de retrait dans un délai déterminé",
+                "reference": "E8",
+                "citation": "a hosting service provider who hosts cyber‑bullying material targeted at an Australian child may be given a notice (a removal notice) requiring the provider to cease hosting the material;"
               }
             ],
             "references": [
               "E3",
-              "E4",
-              "E9",
-              "E11"
+              "E8"
             ],
-            "recommandation": "Introduire, par décret, une procédure de \"notice and takedown\" applicable aux plateformes étrangères, avec un délai de 48 h et la possibilité d'une sanction administrative en cas de non‑conformité."
-          },
-          {
-            "lacune": "Pas de cadre légal définissant le filtrage technique obligatoire (ex. blocage d'URL ou de mots‑clés) par les opérateurs",
-            "texte_camerounais": [
-              "E25"
-            ],
-            "comparaison": [
-              {
-                "juridiction": "UE",
-                "pratique": "Le Digital Services Act (article 25) impose aux fournisseurs de services en ligne de retirer rapidement les contenus illicites après notification",
-                "reference": "E10"
-              }
-            ],
-            "references": [
-              "E25",
-              "E10"
-            ],
-            "recommandation": "Adopter un règlement d'application précisant les modalités techniques de filtrage et les obligations de coopération des opérateurs avec l'ANTIC."
+            "recommandation": "Introduire, via règlement d'application, un délai maximal de 48 heures pour les plateformes étrangères afin de répondre à une demande de retrait de contenus préjudiciables aux enfants."
           }
         ],
         "conflits": [
-          "Le mandat de l'ANTIC de prendre des mesures (E3) peut entrer en conflit avec le principe de souveraineté des plateformes étrangères, non couvert par le droit camerounais."
+          "Le mandat de l'organe de régulation des TIC (E1) de prendre des mesures répressives peut entrer en conflit avec la compétence exclusive des officiers de police judiciaire (E4) pour la constatation des infractions."
         ],
         "coordination": [
-          "Manque de lien formel entre l'ANTIC et le MINPOSTEL pour la mise en œuvre conjointe des mesures de filtrage et de diplomatie."
+          "Manque de protocole clair entre ANTIC, l'organe de régulation des télécommunications (ART) et les opérateurs pour activer conjointement les mesures prévues à l'article 27 (E2)."
         ],
-        "synthese": "Les actions de l'ANTIC sont partiellement fondées mais manquent de précision légale pour contraindre Tchatlink. Les opérateurs respectent leurs obligations de signalement, mais le droit camerounais ne prévoit pas de procédure de retrait rapide ni de filtrage technique obligatoire. Il faut introduire des mécanismes de notice‑and‑takedown et clarifier la coopération inter‑institutionnelle."
+        "synthese": "Le droit camerounais prévoit le rôle préventif des régulateurs et le signalement par les opérateurs, mais ne fixe pas de délais contraignants pour les plateformes étrangères. Cette lacune contraste avec les pratiques australiennes qui imposent des avis de retrait rapides. Il faut harmoniser les procédures et clarifier les responsabilités entre les différents organes de régulation."
       }
     },
     {
@@ -501,73 +456,58 @@
         "social",
         "penal"
       ],
-      "demandes": 8,
+      "demandes": 6,
       "interventions": 11,
       "analyse": {
         "verifications": [
           {
             "acteur": "APDP",
-            "action": "Émettre une mise en demeure à ScolaPlus pour qu'il notifie sans délai les familles et les établissements concernés de la fuite, conformément à l'obligation de notification de violation de données.",
-            "verdict": "a_verifier",
-            "commentaire": "L'extrait E4 décrit les missions de l'APDP mais ne précise pas d'obligation de notification (article 53). Aucun texte fourni ne mentionne un délai de notification, il faut donc vérifier la réglementation applicable (ex. texte d'application de la loi 2024/017)."
-          },
-          {
-            "acteur": "APDP",
-            "action": "Publier un avis public rappelant aux opérateurs et aux plateformes la nécessité d'anonymiser les données avant toute transmission aux autorités, en s'appuyant sur la charte de protection des enfants.",
-            "verdict": "non_fondee",
-            "commentaire": "L'extrait E5 impose aux responsables du traitement de respecter la réglementation en matière de protection des droits des enfants, mais il ne crée pas d'obligation d'anonymisation préalable à la transmission aux autorités. Aucun texte fourni ne le prévoit."
+            "action": "ouvrir et traiter la plainte relative à la fuite de données de ScolaPlus",
+            "verdict": "fondee",
+            "commentaire": "L'APDP est habilité à traiter les réclamations et à enquêter sur les faits selon l'article 53 de la loi n°2024/017 (E2).",
+            "citation": "L'Autorité de protection des données à caractère personnel est un organisme public indépendant chargé, notamment : de traiter les réclamations, pétitions et plaintes introduites par une personne concernée où par un organisme, une organisation ou une association et, dans la mesure nécessaire, examiner où enquêter sur l'objet desdites réclamations, pétitions ou plaintes, et informer l'auteur de la réclamation, pétition ou plainte de l'état d'avancement et de l'issue de l'enquête dans un délai raisonnable"
           },
           {
             "acteur": "ANTIC",
-            "action": "Émettre une mise en demeure à ScolaPlus pour qu'elle informe immédiatement les établissements, les familles et les autorités de la fuite, sous 15 jours, sous peine de sanctions administratives.",
+            "action": "déployer des moyens préventifs et répressifs pour protéger les enfants dans le cyberespace suite à la fuite",
+            "verdict": "fondee",
+            "commentaire": "L'organe chargé de la régulation des TIC doit déployer les moyens nécessaires à la protection des enfants en ligne (E1).",
+            "citation": "L’organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs nécessaires à la protection des enfants dans le cyberespace national."
+          },
+          {
+            "acteur": "ScolaPlus",
+            "action": "notifier immédiatement les établissements, les familles et l'APDP de la fuite de données",
             "verdict": "a_verifier",
-            "commentaire": "L'extrait E3 indique que l'organe chargé de la régulation des TIC peut prendre des mesures lorsque les atteintes ne sont pas pénales, mais il ne fixe pas de délai de 15 jours ni de sanction précise. Il faut vérifier les décrets d'application de la charte (E1/E6)."
+            "commentaire": "L'article 17 (E4) impose aux responsables du traitement de respecter la réglementation, mais ne précise pas d'obligation de notification immédiate aux parties concernées ; il manque donc une base légale explicite pour cette action.",
+            "citation": "Les responsables du traitement des données ou leurs sous-traitants sont tenus de respecter la réglementation en vigueur en matière de protection des droits des enfants."
           }
         ],
         "lacunes": [
           {
-            "lacune": "Absence de texte précisant le délai de notification des violations de données à caractère personnel aux personnes concernées.",
+            "lacune": "Absence d'obligation légale précise de notification rapide des violations de données aux personnes concernées et aux autorités compétentes.",
             "texte_camerounais": [
               "E4"
             ],
             "comparaison": [
               {
-                "juridiction": "États-Unis",
-                "pratique": "Le COPPA impose une notification sans délai raisonnable aux parents dès la découverte d'une violation.",
-                "reference": "E9"
+                "juridiction": "États-Unis (COPPA)",
+                "pratique": "Obligation de notifier les parents dès la découverte d'une violation de données concernant un enfant.",
+                "reference": "E9",
+                "citation": "the parent's online contact information may not be used or disclosed for any other purpose. In such cases, the operator must make reasonable efforts, taking into consideration available technology, to ensure that the parent receives notice as described in § 312.4(c)(2);"
               }
             ],
             "references": [
               "E4",
               "E9"
             ],
-            "recommandation": "Adopter un décret d'application de la loi 2024/017 qui fixe un délai de 72 heures pour notifier les personnes concernées, en s'inspirant du modèle COPPA."
-          },
-          {
-            "lacune": "Pas de disposition explicite imposant l'anonymisation des données avant transmission aux autorités compétentes.",
-            "texte_camerounais": [
-              "E5"
-            ],
-            "comparaison": [
-              {
-                "juridiction": "Union européenne",
-                "pratique": "Le RGPD impose la minimisation des données et l'anonymisation lorsque possible avant tout partage.",
-                "reference": "aucun extrait disponible pour cette juridiction"
-              }
-            ],
-            "references": [
-              "E5"
-            ],
-            "recommandation": "Intégrer dans le texte de la charte (E1) une clause de minimisation et d'anonymisation des données avant toute transmission aux autorités."
+            "recommandation": "Adopter, par décret ou texte d'application, une disposition imposant aux responsables de traitement de notifier sans délai les personnes concernées et l'APDP dès la détection d'une fuite, avec un délai maximal de 72 heures, conformément aux bonnes pratiques internationales."
           }
         ],
-        "conflits": [
-          "Le rôle de l'APDP (notification) et celui de l'ANTIC (mesures administratives) se chevauchent sans clarification de la compétence première, créant un risque de double sanction."
-        ],
+        "conflits": [],
         "coordination": [
-          "Absence de protocole partagé entre l'APDP et l'ANTIC pour la notification et le suivi des violations, ce qui ralentit la réponse."
+          "Manque de communication formalisée entre ScolaPlus et l'APDP, entraînant un retard de trois semaines avant toute alerte aux autorités."
         ],
-        "synthese": "Les actions proposées par l'APDP et l'ANTIC manquent de bases légales précises, notamment sur les délais et les exigences d'anonymisation. Le droit camerounais présente des lacunes comparées aux standards internationaux comme le COPPA ou le RGPD. Il est urgent d'adopter des décrets d'application clarifiant notification, délais et anonymisation, et de formaliser un protocole de coordination entre APDP et ANTIC."
+        "synthese": "Le cadre camerounais habilite l'APDP à enquêter et l'organe de régulation des TIC à agir préventivement, mais il ne prévoit pas de notification obligatoire rapide des violations. Cette lacune contraste avec les exigences de notification de COPPA aux États-Unis. Il est recommandé d'introduire une obligation de notification immédiate pour combler ce vide juridique."
       }
     },
     {
@@ -580,51 +520,63 @@
         "penal",
         "entreprises"
       ],
-      "demandes": 14,
+      "demandes": 11,
       "interventions": 12,
       "analyse": {
         "verifications": [
           {
-            "acteur": "MinorShield",
-            "action": "Transmettre aux autorités compétentes les captures d'écran anonymisées ainsi que les métadonnées essentielles (horodatage, région) pour soutenir l'enquête, en respectant le protocole validé par l'APDP.",
+            "acteur": "Tchatlink",
+            "action": "bloquer l'accès à Tchatlink sur le territoire national",
             "verdict": "a_verifier",
-            "commentaire": "L'article E5 impose aux fournisseurs de services en ligne de décrire leurs contenus et de mettre en place un système de paramétrage pour le respect de la vie privée, mais il ne précise pas explicitement la transmission de données d'enquête aux autorités. La conformité au protocole APDP doit être confirmée."
+            "commentaire": "E5 oblige les fournisseurs à suspendre l'accès à un contenu ou à un utilisateur à la demande des autorités, mais ne prévoit pas le blocage total d'une plateforme sans identification précise du contenu illicite.",
+            "citation": "Les fournisseurs d’accès à Internet, les fournisseurs des contenus, les exploitants des systèmes d’information ou les promoteurs de réseau social, doivent, à la demande des autorités compétentes, suspendre l'accès à Internet, à leur contenu numérique ou réseau social à un consommateur qui est à l'origine de la publication d’un contenu portant atteinte à la dignité et à l'intégrité des enfants."
           },
           {
-            "acteur": "MinorShield",
-            "action": "Fournir aux régulateurs les statistiques agrégées des blocages (sans données personnelles) pour appuyer les mesures de protection des enfants.",
+            "acteur": "Tchatlink",
+            "action": "retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants",
+            "verdict": "a_verifier",
+            "commentaire": "E6 impose aux fournisseurs de mettre en place des mécanismes de retrait ou de blocage de publications spécifiques, mais ne prévoit pas le retrait de l’ensemble du service.",
+            "citation": "Ils mettent également en place des mécanismes permettant de retirer immédiatement les publications portant atteinte à la dignité et à l'intégrité des enfants ou de bloquer l'accès à ces publications."
+          },
+          {
+            "acteur": "ANTIC",
+            "action": "déployer des moyens préventifs et répressifs pour protéger les enfants dans le cyberespace national",
             "verdict": "fondee",
-            "commentaire": "L'article E2 oblige les opérateurs des réseaux de communications électroniques à faciliter le déploiement de dispositifs de protection des enfants, ce qui inclut la mise à disposition de données agrégées utiles aux régulateurs (E2)."
+            "commentaire": "E2 confère à l'organe chargé de la régulation des TIC le pouvoir de déployer les moyens nécessaires à la protection des enfants en ligne.",
+            "citation": "L’organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs nécessaires à la protection des enfants dans le cyberespace national."
           }
         ],
         "lacunes": [
           {
-            "lacune": "Absence de texte prévoyant le blocage total et temporaire d'une plateforme en ligne à l'échelle nationale pour des raisons de protection des enfants.",
+            "lacune": "Absence de disposition autorisant le blocage total d’une plateforme numérique en l’absence de contenu spécifiquement identifié comme illicite.",
             "texte_camerounais": [
-              "E1",
-              "E7"
+              "E5",
+              "E6"
             ],
             "comparaison": [
               {
                 "juridiction": "Australie",
-                "pratique": "L'Online Safety Act 2021 permet au Commissaire de bloquer l'accès à un service en ligne lorsqu'il représente un danger grave pour les enfants.",
-                "reference": "E11"
+                "pratique": "Le bloqueur peut imposer un blocage limité dans le temps (max 3 mois) sur du matériel jugé préjudiciable.",
+                "reference": "E11",
+                "citation": "A blocking request remains in force for the period specified in the blocking request. The specified period must not be longer than 3 months."
               }
             ],
             "references": [
-              "E1",
-              "E7"
+              "E5",
+              "E6",
+              "E11"
             ],
-            "recommandation": "Introduire un article spécifique autorisant le blocage temporaire d'un service en ligne, avec contrôle judiciaire et délai de réexamen de 15 jours, en s'inspirant du mécanisme australien (E11)."
+            "recommandation": "Introduire un article précisant les conditions, la durée maximale et les procédures de contrôle judiciaire pour le blocage total d’une plateforme, en s’inspirant du cadre australien (E11) et du Digital Services Act (E13)."
           }
         ],
         "conflits": [
-          "Le mandat de protection des enfants (E1‑E7) peut entrer en conflit avec le droit à la liberté d'expression et à l'accès à l'information garanti par les normes internationales (E10)."
+          "Conflit entre la protection des enfants (E1‑E5) et le droit à la liberté d’expression des enfants (E10)."
         ],
         "coordination": [
-          "MinorShield transmet des données aux autorités sans indication claire du destinataire (Police judiciaire, Parquet ou régulateur), ce qui crée un risque de duplication ou de retard dans le traitement."
+          "Demande à ANTIC (destinataire: ANTIC) de préciser les mesures préventives à mettre en œuvre et d’émettre, le cas échéant, une ordonnance de suspension ciblée.",
+          "Demande à MINPOSTEL (destinataire: MINPOSTEL) de valider la légalité de toute mesure de blocage total et d’assurer la conformité avec le droit pénal (E4)."
         ],
-        "synthese": "Les actions de MinorShield sont partiellement fondées sur le droit camerounais, mais la transmission de preuves nécessite une clarification juridique (E5). Le cadre légal camerounais ne prévoit pas de blocage national d'une plateforme, contrairement à l'Australie (E11). Une meilleure coordination entre MinorShield, les régulateurs (ANTIC, ART) et les autorités judiciaires est indispensable pour garantir efficacité et respect des droits."
+        "synthese": "Le droit camerounais autorise la suspension ciblée de contenus illicites mais ne prévoit pas le blocage complet d’une plateforme comme Tchatlink. Cette lacune contraste avec les cadres australien et européen qui encadrent le blocage temporaire et proportionné. Une coordination entre ANTIC et MINPOSTEL est indispensable pour concilier protection des enfants et respect des libertés fondamentales."
       }
     }
   ]

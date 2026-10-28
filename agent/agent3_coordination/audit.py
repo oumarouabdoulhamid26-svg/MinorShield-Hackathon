@@ -11,6 +11,14 @@ Chaque action est en outre VERIFIEE :
                             (signe d'une invention du modele).
 Les articles mentionnes dans le texte libre mais absents des extraits cites
 sont signales (« mention non verifiee »).
+
+Citation mot pour mot : chaque action recopie la phrase de l'extrait qui la
+fonde (champ « citation »). Le code verifie que cette phrase figure
+reellement, a l'identique (casse, accents, espaces et cesures pres), dans un
+extrait cite ; sinon l'action passe a « citation_douteuse ». Le modele ne
+peut donc pas s'appuyer sur un article qu'il paraphrase ou complete de
+memoire. Les journaux anterieurs a ce controle (sans champ « citation »)
+ne sont pas declasses : « citation_exacte » y vaut None.
 """
 
 from __future__ import annotations
@@ -132,6 +140,72 @@ def check_citations(cited: list[str], text: str, extracts_by_id: dict[str, Any],
     }
 
 
+MIN_QUOTE_CHARS = 25          # une citation plus courte ne prouve rien
+_ELLIPSIS = re.compile(r"\[\s*(?:\.\.\.|…)\s*\]|\.\.\.|…")
+
+
+def _norm_quote(text: str) -> str:
+    """Forme comparable d'un texte : ligatures, apostrophes et guillemets
+    unifies, cesures de fin de ligne recollees, accents et casse ignores (le
+    Code penal de l'OMPI a perdu ses accents, le modele les remet)."""
+    t = unicodedata.normalize("NFKC", text or "")
+    # Tirets typographiques (le modele ecrit « ci‑dessous » avec un trait
+    # d'union insecable, le texte de loi avec un tiret ordinaire).
+    t = re.sub(r"[‐-―−]", "-", t)
+    # Numeros d'alinea « (2) », « (a) » et puces de liste : le modele les omet
+    # en recopiant deux alineas qui se suivent ; ils ne portent aucun sens.
+    t = re.sub(r"\(\s*(?:\d{1,3}|[a-z])\s*\)", " ", t)
+    t = re.sub(r"(?:^|\s)[-•·]\s", " ", t)
+    t = re.sub(r"[‘’ʼ`´]", "'", t)
+    t = re.sub(r"[“”«»\"]", " ", t)
+    t = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", t)          # cesure : « pédopor-\nnographie »
+    t = t.replace("­", "")
+    t = "".join(ch for ch in unicodedata.normalize("NFD", t.lower()) if unicodedata.category(ch) != "Mn")
+    return re.sub(r"\s+", " ", t).strip(" .;:,'")
+
+
+def check_quote(quote: Any, texts: list[str]) -> bool:
+    """La citation figure-t-elle mot pour mot dans l'un des textes ?
+
+    Les points de suspension separent des morceaux : chacun doit figurer, dans
+    l'ordre, dans le meme extrait."""
+    if not isinstance(quote, str):
+        return False
+    parts = [_norm_quote(p) for p in _ELLIPSIS.split(quote)]
+    parts = [p for p in parts if p]
+    if sum(len(p) for p in parts) < MIN_QUOTE_CHARS:
+        return False
+    for text in texts:
+        hay, pos = _norm_quote(text), 0
+        for p in parts:
+            pos = hay.find(p, pos)
+            if pos < 0:
+                break
+            pos += len(p)
+        else:
+            return True
+    return False
+
+
+def _apply_quote(check: dict[str, Any], item: dict[str, Any], by_id: dict[str, Any],
+                 required: bool = True) -> dict[str, Any]:
+    """Ajoute le controle de la citation au resultat de ``check_citations``.
+
+    ``required`` : la citation est exigee (simulations recentes) ; une action
+    sans citation est alors declassee. Faux pour relire un journal anterieur."""
+    if not check["citations_valides"] or ("citation" not in item and not required):
+        check["citation_exacte"] = None
+        return check
+    ok = check_quote(item.get("citation"), [by_id[c].text for c in check["citations_valides"]])
+    check["citation"] = item.get("citation") or ""
+    check["citation_exacte"] = ok
+    if not ok:
+        check["incoherences"].append("citation absente ou non retrouvee mot pour mot dans les extraits cites")
+        if check["statut"] == "etayee":
+            check["statut"] = "citation_douteuse"
+    return check
+
+
 def _institution(agent_id: str, value: Any) -> dict[str, Any]:
     """L'institution nommee pour une action appartient-elle a l'agent ?
 
@@ -149,9 +223,29 @@ def _institution(agent_id: str, value: Any) -> dict[str, Any]:
     return {"institution": match or name, "institution_valide": bool(match) or not allowed}
 
 
-def verify_turn(turn: Turn) -> list[dict[str, Any]]:
-    """Verifie chaque action (ou la reponse) d'une intervention."""
+def journal_has_quotes(entries: list[dict[str, Any]]) -> bool:
+    """Le journal provient-il d'une simulation qui demandait des citations ?"""
+    for e in entries:
+        r = e.get("reponse") or {}
+        items = (r.get("actions") or []) + (r.get("verifications") or []) + [r]
+        if any(isinstance(i, dict) and "citation" in i for i in items):
+            return True
+    return False
+
+
+def _quoted_ids(quote: Any, by_id: dict[str, Any]) -> list[str]:
+    """Extraits ou figure la citation : designent la source quand le texte ne
+    donne que le numero d'article (« article 13 ») au lieu de l'identifiant."""
+    return [i for i, e in by_id.items() if check_quote(quote, [e.text])]
+
+
+def verify_turn(turn: Turn, require_quote: bool = True) -> list[dict[str, Any]]:
+    """Verifie chaque action (ou la reponse) d'une intervention.
+
+    ``require_quote`` : exiger la citation mot pour mot (faux pour relire un
+    journal anterieur a ce controle, cf. ``journal_has_quotes``)."""
     by_id = {e.id: e for e in turn.extracts}
+    rq = require_quote
     out = turn.output or {}
     checks: list[dict[str, Any]] = []
     if not out:
@@ -164,12 +258,12 @@ def verify_turn(turn: Turn) -> list[dict[str, Any]]:
             if not isinstance(a, dict):
                 continue
             text = f"{a.get('action', '')} {a.get('justification', '')}"
-            c = check_citations(_ids(a.get("base_legale")), text, by_id)
+            c = _apply_quote(check_citations(_ids(a.get("base_legale")), text, by_id), a, by_id, rq)
             c["action"] = a.get("action", "")
             c.update(_institution(turn.agent, a.get("institution")))
             checks.append(c)
     elif turn.kind == "reponse":
-        c = check_citations(_ids(out.get("base_legale")), out.get("reponse", ""), by_id)
+        c = _apply_quote(check_citations(_ids(out.get("base_legale")), out.get("reponse", ""), by_id), out, by_id, rq)
         c["action"] = out.get("reponse", "")
         c.update(_institution(turn.agent, out.get("institution")))
         checks.append(c)
@@ -178,7 +272,8 @@ def verify_turn(turn: Turn) -> list[dict[str, Any]]:
         for v in out.get("verifications", []) or []:
             if isinstance(v, dict):
                 text = f"{v.get('commentaire', '')}"
-                c = check_citations(_ids(text), text, by_id)
+                ids = _ids(text) or _quoted_ids(v.get("citation"), by_id)
+                c = _apply_quote(check_citations(ids, text, by_id), v, by_id, rq)
                 c["action"] = f"Verdict « {v.get('verdict', '')} » sur {v.get('acteur', '')} : {v.get('action', '')}"
                 checks.append(c)
         # 2. Lacunes : constat sur le droit camerounais...
@@ -194,8 +289,8 @@ def verify_turn(turn: Turn) -> list[dict[str, Any]]:
                 if not isinstance(comp, dict):
                     continue
                 text = f"{comp.get('pratique', '')}"
-                c = check_citations(_ids(comp.get("reference")), text, by_id,
-                                    juridiction=str(comp.get("juridiction", "")))
+                c = _apply_quote(check_citations(_ids(comp.get("reference")), text, by_id,
+                                                 juridiction=str(comp.get("juridiction", ""))), comp, by_id, rq)
                 c["action"] = f"Comparaison {comp.get('juridiction', '')} : {comp.get('pratique', '')}"
                 checks.append(c)
     return checks
@@ -213,6 +308,7 @@ class AuditLog:
         self.status_counter: Counter = Counter()
         self.tokens = 0
         self.institutions = Counter()   # actions avec / sans institution valide
+        self.quotes = Counter()         # citations retrouvees / non retrouvees mot pour mot
 
     def read_existing(self) -> list[dict[str, Any]]:
         """Evenements deja ecrits dans le journal (reprise d'une simulation)."""
@@ -236,6 +332,8 @@ class AuditLog:
                     self.status_counter[c["statut"]] += 1
                     if "institution_valide" in c:
                         self.institutions["valide" if c["institution_valide"] else "manquante"] += 1
+                    if c.get("citation_exacte") is not None:
+                        self.quotes["exacte" if c["citation_exacte"] else "non_retrouvee"] += 1
 
     def event(self, kind: str, **data: Any) -> dict[str, Any]:
         entry = {"horodatage": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -251,6 +349,8 @@ class AuditLog:
             self.status_counter[c["statut"]] += 1
             if "institution_valide" in c:
                 self.institutions["valide" if c["institution_valide"] else "manquante"] += 1
+            if c.get("citation_exacte") is not None:
+                self.quotes["exacte" if c["citation_exacte"] else "non_retrouvee"] += 1
         self.tokens += turn.tokens
         return self.event(
             f"intervention_{turn.kind}",
@@ -280,6 +380,7 @@ class AuditLog:
             "taux_etayees": round(self.status_counter["etayee"] / total, 3) if total else None,
             "jetons_total": self.tokens,
             "institution_nommee": dict(self.institutions),
+            "citations_mot_pour_mot": dict(self.quotes),
             "demandes_transmises": sum(1 for e in self.entries if e["evenement"] == "demande_transmise"),
             "demandes_non_transmises": sum(1 for e in self.entries if e["evenement"] == "demande_non_transmise"),
             "coordinations_internes": sum(1 for e in self.entries if e["evenement"] == "coordination_interne"),

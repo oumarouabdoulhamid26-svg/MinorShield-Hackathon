@@ -57,6 +57,7 @@ def main() -> int:
     statuts, par_agent = Counter(), defaultdict(Counter)
     jetons = defaultdict(list)
     inst = Counter()
+    quotes = Counter()
     for e in inter:
         if e.get("erreur"):
             continue
@@ -66,6 +67,8 @@ def main() -> int:
             par_agent[e["agent"]][c["statut"]] += 1
             if "institution_valide" in c:
                 inst["valide" if c["institution_valide"] else "manquante"] += 1
+            if c.get("citation_exacte") is not None:
+                quotes["exacte" if c["citation_exacte"] else "non_retrouvee"] += 1
     total = sum(statuts.values())
     ev = Counter(e["evenement"] for e in journal)
     reconf = [e for e in journal if e["evenement"] == "reconfiguration"]
@@ -79,7 +82,10 @@ def main() -> int:
             f"- Modèle(s) : {', '.join(f'{m} ({n})' for m, n in modeles.items())}",
             f"- Interventions : {len(inter)} (dont {sum(1 for e in inter if e.get('erreur'))} en erreur)",
             f"- Affirmations vérifiées : {total} — " + ", ".join(f"{k} {v}" for k, v in statuts.most_common()),
-            f"- **Taux d'actions étayées : {statuts['etayee'] / total:.1%}**" if total else "- Taux : —", "",
+            f"- **Taux d'actions étayées : {statuts['etayee'] / total:.1%}**" if total else "- Taux : —",
+            (f"- Citations retrouvées mot pour mot dans l'extrait cité : {quotes['exacte']} sur "
+             f"{quotes['exacte'] + quotes['non_retrouvee']}" if quotes else
+             "- Citations mot pour mot : contrôle absent de cette simulation (antérieure au 27/10/2026)"), "",
             "| Agent | Étayées | Douteuses | Non étayées | Invalides | Taux |", "|---|---|---|---|---|---|"]
     for a, c in sorted(par_agent.items()):
         n = sum(c.values())

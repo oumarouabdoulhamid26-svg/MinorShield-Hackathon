@@ -20,18 +20,19 @@ Australia, the UAE and the UN. Every citation is checked automatically and
 every exchange is logged. The orchestrator follows ITU-T Y.3172 and is driven
 by a declarative ML Intent.
 
-**Results of the reference run** (24 Oct 2026, open-weight gpt-oss-120b,
+**Results of the reference run** (27 Oct 2026, open-weight gpt-oss-120b,
 laptop without GPU):
 
 | | |
 |---|---|
-| Legal claims supported by an extract actually provided | **86.4%** of 110 |
-| Requests routed between agents | 25, none lost |
+| Legal claims citing an extract actually provided, with a sentence of it copied word for word (checked by code) | **84.0%** of 94 |
+| Of those, claims that a human reviewer finds fully grounded (sample of 30, 95% Wilson interval) | **50%** [33–67]; 77% at least partly |
+| Requests routed between agents | 19 (1 lost to a misspelt recipient, fixed since) |
 | Retrieval of the right article (15 hand-verified control questions) | **14/15**, MRR 0.82 |
-| Expected gaps (written before the run) found, after human review | 7 found, 3 partly, 5 missed, + 4 unexpected |
-| AI errors not caught by the checker, found by human review | 4 (reported) |
+| Expected gaps (written before the run) found, after human review | 7 found, 3 partly, 5 missed, + 3 unexpected |
+| AI errors not caught by the checker, found by human review | 8 (reported) |
 | ITU-T Y.3172 requirements | 15 implemented, 4 partly, 2 not |
-| Cost of a full run | 165,279 tokens, 21 minutes |
+| Cost of a full run | 178,041 tokens, 22 minutes |
 
 **Read first:** the technical report
 ([PDF, English](docs/rapport_technique/MinorShield_Policy_Lab_Technical_Report.pdf)),
@@ -113,9 +114,19 @@ font apparaître les lacunes du droit.
 | Statut | Signification |
 |---|---|
 | ✅ étayée | s'appuie sur un extrait réellement fourni à l'assistant |
-| 🔶 douteuse | cite un vrai extrait, mais mentionne un article ou un texte absent de cet extrait |
+| 🔶 douteuse | cite un vrai extrait, mais mentionne un article ou un texte absent de cet extrait, ou sa citation ne s'y retrouve pas mot pour mot |
 | ⚠️ non étayée | aucune source citée |
 | ❌ invalide | cite un extrait qui n'a jamais été fourni (invention) |
+
+Depuis le 27/10/2026, chaque action recopie aussi **mot pour mot** la phrase de
+l'extrait qui la fonde (champ `citation`). Le code vérifie qu'elle s'y trouve
+réellement, aux accents, à la casse, aux tirets, aux césures et aux numéros
+d'alinéa près : un article paraphrasé, ou complété de mémoire, ne passe plus
+pour « étayé ». Les extraits sont fournis jusqu'à 1 200 caractères, et un
+extrait coupé est signalé comme tel au modèle. Dans la simulation de référence
+du 27/10, 74 citations sur 80 sont retrouvées mot pour mot ; les 6 autres
+sautent un élément de liste sans le signaler. La simulation précédente
+(24/10, sans ce contrôle) est archivée dans `docs/archives/reference_20261024/`.
 
 ## Démarrage rapide (agents)
 
@@ -194,6 +205,30 @@ partir de son journal, étape par étape.
 
 ```bash
 python agent/scripts/rejouer.py docs/exemple_simulation --pas-a-pas --details
+```
+
+Précision des affirmations « étayées », par relecture humaine : un
+échantillon fixe de 30 affirmations par simulation (`docs/precision/<simulation>/`)
+est relu cas par cas, avec l'article complet et la citation de l'agent sous
+les yeux ; le score donne la précision avec un intervalle de confiance de
+Wilson à 95 % et, avec deux relecteurs, leur accord (kappa de Cohen). Un second
+relecteur ne doit pas ouvrir les relectures existantes avant d'avoir fini.
+Référence du 27/10 : 50 % fondées (IC 95 % 33–67 %), contre 23 % (12–41 %) pour
+celle du 24/10, avant les corrections.
+
+```bash
+python agent/scripts/precision.py relire --relecteur <nom>
+python agent/scripts/precision.py score
+python agent/scripts/precision.py --dossier docs/precision/reference_20261024 score
+```
+
+Provenance de la base : `bd/MANIFESTE.csv` donne pour chaque document
+l'émetteur, l'adresse, la date de consultation, le traitement, le statut de
+vérification et l'empreinte SHA-256 du texte ingéré (et du PDF officiel quand
+il existe). Vérifier que les textes du dépôt n'ont pas changé :
+
+```bash
+python bd/scripts/manifeste.py verifier
 ```
 
 Modèles : `gpt-oss-120b` (raisonnement, via Groq, poids ouverts),

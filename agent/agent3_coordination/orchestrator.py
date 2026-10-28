@@ -76,7 +76,12 @@ def resolve_agent(name: str, agents: dict[str, Any]) -> Optional[str]:
             i = _norm(inst)
             if n == i or i.startswith(n + " ") or n.startswith(i + " "):
                 return aid
-    return None
+    # Faute de frappe du modele (« antinc » pour « antic ») : nom le plus proche,
+    # s'il est sans ambiguite.
+    import difflib
+    noms = {a: a for a in agents} | {_norm(i): a for a in agents for i in ROLES[a].institutions}
+    proche = difflib.get_close_matches(n, list(noms), n=1, cutoff=0.8)
+    return noms[proche[0]] if proche else None
 
 
 def _support_rate(turn: Turn) -> Optional[float]:

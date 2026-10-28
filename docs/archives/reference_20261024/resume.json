@@ -1,0 +1,631 @@
+{
+  "resume": {
+    "scenario": "operation_miroir",
+    "evenements": 131,
+    "interventions": 53,
+    "verifications": {
+      "etayee": 95,
+      "non_etayee": 10,
+      "citation_douteuse": 4,
+      "citation_invalide": 1
+    },
+    "taux_etayees": 0.864,
+    "jetons_total": 165279,
+    "institution_nommee": {
+      "valide": 69
+    },
+    "demandes_transmises": 25,
+    "demandes_non_transmises": 0,
+    "coordinations_internes": 13
+  },
+  "scenario": {
+    "id": "operation_miroir",
+    "titre": "Opération Miroir",
+    "resume": "Une campagne de chantage sexuel (sextorsion) vise des élèves camerounais. L'information arrive par morceaux, à des moments différents, et pas aux mêmes institutions.",
+    "avertissement": "Scénario fictif à des fins de simulation. Les entreprises « Tchatlink » et « ScolaPlus » sont inventées.",
+    "etapes": [
+      {
+        "numero": 1,
+        "moment": "J0, 08h00",
+        "titre": "Une hausse anormale de contenus bloqués",
+        "information": "Le système MinorShield constate depuis 48 heures une hausse de 400 % des contenus bloqués sur les appareils d'enfants protégés à Douala et à Yaoundé. Les messages interceptés partagent le même vocabulaire d'argot local et des formules du type « envoie ta photo sinon… ». Il est encore impossible de dire s'il s'agit d'une campagne organisée ou d'une coïncidence. MinorShield propose de ne partager avec les autorités que des statistiques agrégées et anonymisées.",
+        "destinataires": [
+          "minorshield",
+          "regulateurs"
+        ],
+        "questions_attendues": [
+          "Un outil privé peut-il alerter les autorités, et avec quelles données, sans porter atteinte à la vie privée des enfants ?"
+        ],
+        "lacunes_attendues": [
+          "La loi n° 2023/009 (art. 33) oblige les fournisseurs d'accès à signaler les contenus portant atteinte aux enfants, mais ne prévoit ni canal ni seuil d'alerte pour un outil tiers de protection de l'enfance ou pour des signaux agrégés"
+        ]
+      },
+      {
+        "numero": 2,
+        "moment": "J0, 12h00",
+        "titre": "Un blocage sur le téléphone d'une collégienne",
+        "information": "Sortie de détection SIMULÉE, au format réel de l'API de MinorShield (DetectionResponse) : {\"request_id\": \"SIMULE-0001\", \"label\": \"nsfw\", \"category\": \"texte\", \"nsfw_score\": 0.62, \"image_score\": 0.48, \"text_score\": 0.83, \"extracted_text\": \"envoie ta photo sinon...\", \"processing_ms\": 2140, \"timestamp\": \"J0T12:04:31\"}. Le contenu concerne une conversation sur le téléphone d'une collégienne de 14 ans ; le score combiné (image × 60 % + texte × 40 %) est proche du seuil de blocage. L'écran a été masqué et le parent alerté. Fonctionnement réel de MinorShield : la capture d'écran est envoyée au serveur de MinorShield ; pour la violence et le texte, elle est aussi transmise au service de modération d'OpenAI, situé aux États-Unis. Pour confirmer les cas douteux et aider d'éventuels enquêteurs, MinorShield propose de conserver ces captures 30 jours et de les communiquer aux autorités sur demande. Le parent demande pourquoi le message a été bloqué ; la collégienne affirme qu'il s'agit d'un jeu entre amies.",
+        "destinataires": [
+          "minorshield",
+          "apdp",
+          "social",
+          "penal"
+        ],
+        "entree_simulee": {
+          "source": "MinorShield, API de détection (format DetectionResponse)",
+          "simule": true,
+          "sortie": {
+            "request_id": "SIMULE-0001",
+            "label": "nsfw",
+            "category": "texte",
+            "nsfw_score": 0.62,
+            "image_score": 0.48,
+            "text_score": 0.83,
+            "extracted_text": "envoie ta photo sinon...",
+            "processing_ms": 2140,
+            "timestamp": "J0T12:04:31"
+          }
+        },
+        "questions_attendues": [
+          "L'envoi des captures d'écran d'un enfant à un service étranger (OpenAI, États-Unis) est-il licite sans autorisation de l'APDP ?",
+          "Qui doit consentir à l'analyse de l'écran d'un mineur : le parent, l'enfant, ou les deux ?",
+          "MinorShield peut-il conserver des captures et les communiquer à la police sans réquisition ?",
+          "Qui répond d'un blocage injustifié ou d'une détection manquée ?"
+        ],
+        "lacunes_attendues": [
+          "Surveillance et vie privée : au-delà du consentement parental exigé pour un mineur (loi n° 2024/017, art. 9(3)), aucun texte ne dit quand la surveillance de l'écran d'un enfant par un outil privé est licite, ni quelle place donner à l'avis de l'enfant",
+          "Transfert transfrontalier : la loi n° 2024/017 (art. 32) soumet tout transfert vers un État étranger à l'autorisation préalable de l'APDP, mais rien n'encadre les services d'IA étrangers appelés en temps réel",
+          "Responsabilité : aucun texte ne désigne qui répond d'un blocage injustifié ou d'une détection manquée (développeur, parent, école)",
+          "Normes : aucune norme pour mesurer et publier les performances d'un détecteur de contenus, ni pour expliquer un blocage à l'enfant",
+          "Définition : le « contenu inapproprié » de la loi n° 2023/009 (art. 3) ne correspond pas aux catégories du détecteur (nudité, violence, texte)"
+        ]
+      },
+      {
+        "numero": 3,
+        "moment": "J0, 16h00",
+        "titre": "Deux victimes identifiées",
+        "information": "Des parents se présentent dans des centres sociaux de Douala. Deux victimes : une collégienne de 15 ans et une lycéenne de 19 ans, menacées de voir publiées des photos intimes si elles ne versent pas 50 000 FCFA par Mobile Money. Les photos ont été obtenues après plusieurs jours de manipulation par un faux profil. Le collège de la plus jeune envisage de l'exclure pour « atteinte à l'image de l'établissement ».",
+        "destinataires": [
+          "social",
+          "penal"
+        ],
+        "questions_attendues": [
+          "Quelle qualification pénale pour les faits ?",
+          "Qui pilote la prise en charge des victimes : MINAS ou MINPROFF ?",
+          "Un établissement peut-il sanctionner une élève victime ?"
+        ],
+        "lacunes_attendues": [
+          "La victime de 19 ans n'est pas un « enfant » au sens de la loi n° 2023/009 (moins de 18 ans), alors que la majorité civile est à 21 ans",
+          "Chevauchement des missions MINAS et MINPROFF",
+          "Absence de directive scolaire sur la protection des élèves victimes en ligne"
+        ]
+      },
+      {
+        "numero": 4,
+        "moment": "J1, 10h00",
+        "titre": "Les images circulent sur une plateforme étrangère",
+        "information": "Des images de la victime de 15 ans circulent dans des groupes de la messagerie Tchatlink, dont le siège est hors du Cameroun. Sollicitée, Tchatlink répond qu'elle traitera la demande « selon ses délais habituels de modération », sans s'engager sur une date. Les opérateurs de télécommunications sont sollicités pour un filtrage.",
+        "destinataires": [
+          "regulateurs",
+          "entreprises",
+          "penal"
+        ],
+        "questions_attendues": [
+          "Peut-on contraindre une plateforme étrangère, et dans quel délai ?",
+          "Les opérateurs peuvent-ils filtrer un contenu précis sans bloquer tout un service ?"
+        ],
+        "lacunes_attendues": [
+          "Portée extraterritoriale limitée face aux plateformes sans établissement au Cameroun",
+          "Délai de mise en demeure de 15 jours (loi n° 2023/009, art. 28), inadapté à une diffusion virale"
+        ]
+      },
+      {
+        "numero": 5,
+        "moment": "J1, 18h00",
+        "titre": "L'origine : une fuite de données scolaires",
+        "information": "L'enquête établit que les escrocs ont obtenu les numéros de téléphone des victimes et de leurs parents par une fuite de données de l'application de gestion scolaire ScolaPlus, utilisée par 300 établissements. L'éditeur de ScolaPlus avait détecté une anomalie trois semaines plus tôt mais n'a encore prévenu ni les établissements, ni les familles, ni aucune autorité.",
+        "destinataires": [
+          "apdp",
+          "regulateurs",
+          "entreprises",
+          "social",
+          "penal"
+        ],
+        "questions_attendues": [
+          "Quelles obligations de notification pour l'éditeur, et dans quel délai ?",
+          "Quelle responsabilité et quelles sanctions pour ScolaPlus ?"
+        ],
+        "lacunes_attendues": [
+          "Autorité de protection des données en place depuis juin 2026 seulement : procédures en construction",
+          "La loi n° 2024/017 (art. 22) impose d'informer « sans délai » l'APDP et les personnes concernées, mais sans délai chiffré (72 heures dans le RGPD, art. 33) ni règle propre aux enfants"
+        ]
+      },
+      {
+        "numero": 6,
+        "moment": "J2, 09h00",
+        "titre": "Pression médiatique : faut-il bloquer Tchatlink ?",
+        "information": "L'affaire fait la une des médias et des réseaux sociaux. Une proposition circule : bloquer entièrement l'accès à Tchatlink sur le territoire national jusqu'à la fin de la crise. Tchatlink compte plusieurs millions d'utilisateurs au Cameroun, dont de nombreux commerçants.",
+        "destinataires": [
+          "minorshield",
+          "regulateurs",
+          "apdp",
+          "social",
+          "penal",
+          "entreprises"
+        ],
+        "questions_attendues": [
+          "Un blocage national est-il proportionné, et qui peut l'ordonner ?"
+        ],
+        "lacunes_attendues": [
+          "Conflit d'objectifs : protection de l'enfance contre liberté d'expression et impact économique",
+          "Absence de mécanisme formel de coordination interinstitutionnelle de crise"
+        ]
+      }
+    ]
+  },
+  "intent": {
+    "fichier": "agent/intent.json",
+    "empreinte": "5e655a604e19",
+    "mode": "reference",
+    "modele_principal": "openai/gpt-oss-120b",
+    "modele_secours": "openai/gpt-oss-20b"
+  },
+  "etapes": [
+    {
+      "etape": 1,
+      "destinataires": [
+        "minorshield",
+        "regulateurs"
+      ],
+      "demandes": 1,
+      "interventions": 3,
+      "analyse": {
+        "verifications": [
+          {
+            "acteur": "MinorShield",
+            "action": "Activer le mode de collecte de statistiques agrégées et anonymisées sur les blocages, puis les transmettre aux autorités compétentes",
+            "verdict": "a_verifier",
+            "commentaire": "L'extrait E1 impose aux entreprises d'aider les enfants à comprendre les services, mais ne précise pas le partage de statistiques agrégées aux autorités ; l'extrait E2 décrit des obligations de transparence sur la vie privée, sans mentionner de transmission aux pouvoirs publics. La base légale est donc partielle."
+          },
+          {
+            "acteur": "ANTIC",
+            "action": "Émettre un avis de vigilance aux opérateurs d'accès Internet et aux fournisseurs de services de messagerie, les invitant à renforcer le filtrage des messages contenant le vocabulaire suspect et à signaler tout incident au CIRT",
+            "verdict": "fondee",
+            "commentaire": "L'extrait E3 stipule que l'organe chargé de la régulation des TIC déploie des moyens préventifs et répressifs pour protéger les enfants en ligne, ce qui justifie l'émission d'un avis de vigilance."
+          },
+          {
+            "acteur": "ART",
+            "action": "Coordonner avec les opérateurs de communications électroniques pour vérifier la conformité des filtres et, le cas échéant, appliquer les mesures correctives prévues à l'article 27",
+            "verdict": "fondee",
+            "commentaire": "L'extrait E4 indique que l'organe de régulation des TIC, en collaboration avec les régulateurs des télécommunications, prend des mesures correctives lorsque les atteintes aux droits des enfants ne constituent pas des infractions pénales."
+          },
+          {
+            "acteur": "MINPOSTEL",
+            "action": "Lancer, dans le cadre du Plan d'Action National de Protection des Enfants en Ligne, une campagne d'information auprès des parents et des établissements scolaires",
+            "verdict": "a_verifier",
+            "commentaire": "Aucun extrait fourni ne mentionne explicitement une mission d'information publique pour le ministère des télécommunications ; la mesure repose donc sur une interprétation large de la charte (E1‑E4) mais n'est pas directement fondée."
+          },
+          {
+            "acteur": "APDP",
+            "action": "Demander la description détaillée des méthodes d'anonymisation avant validation du protocole",
+            "verdict": "fondee",
+            "commentaire": "L'extrait E5 impose aux responsables du traitement des données le respect de la réglementation en matière de protection des droits des enfants, incluant la garantie de non‑identifiabilité."
+          }
+        ],
+        "lacunes": [
+          {
+            "lacune": "Absence de cadre précis pour le partage de statistiques agrégées et anonymisées avec les autorités publiques",
+            "texte_camerounais": [
+              "E1",
+              "E2"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "Australie",
+                "pratique": "L'Online Safety Act 2021 oblige les fournisseurs à fournir aux autorités des rapports statistiques réguliers sur les contenus dangereux pour les enfants.",
+                "reference": "E7"
+              }
+            ],
+            "references": [
+              "E1",
+              "E2",
+              "E7"
+            ],
+            "recommandation": "Introduire un article dédié (ex. article X) précisant les modalités de transmission, les formats de données, les garanties d'anonymat et les délais de remise des statistiques aux autorités compétentes."
+          },
+          {
+            "lacune": "Pas de texte autorisant explicitement l'ANTIC à imposer des mesures techniques contraignantes aux plateformes étrangères sans présence locale",
+            "texte_camerounais": [
+              "E3"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "Émirats arabes unis",
+                "pratique": "Le Décret fédéral n°26/2025 permet aux autorités de requérir la suppression ou le blocage de contenus illicites sur toute plateforme, même étrangère, via des ordonnances contraignantes.",
+                "reference": "E10"
+              }
+            ],
+            "references": [
+              "E3",
+              "E10"
+            ],
+            "recommandation": "Modifier l'article 10 de la charte pour inclure une compétence d'ordre direct sur les fournisseurs étrangers opérant sur le territoire numérique camerounais."
+          }
+        ],
+        "conflits": [
+          "Conflit potentiel entre la nécessité de partager des données agrégées (exigence de transparence) et le respect du droit à la vie privée des enfants (article 23)."
+        ],
+        "coordination": [
+          "Manque de protocole clair entre MinorShield, les régulateurs (ANTIC, ART) et le ministère des télécommunications pour la remontée et le traitement des données de blocage."
+        ],
+        "synthese": "Les actions de l'ANTIC et de l'ART sont solidement fondées sur les articles E3 et E4, tandis que les mesures de MinorShield et de MINPOSTEL nécessitent des précisions légales. Le droit camerounais manque de dispositions détaillées sur le partage de statistiques agrégées et sur l'application de mesures techniques aux acteurs étrangers, contrairement à l'Australie et aux Émirats arabes unis. Il est recommandé d'amender la charte pour combler ces lacunes et d'établir un protocole de coordination inter‑institutionnel."
+      }
+    },
+    {
+      "etape": 2,
+      "destinataires": [
+        "minorshield",
+        "apdp",
+        "social",
+        "penal"
+      ],
+      "demandes": 6,
+      "interventions": 10,
+      "analyse": {
+        "verifications": [
+          {
+            "acteur": "MinorShield",
+            "action": "Blocage du message suspect sur le téléphone de la collégienne",
+            "verdict": "fondee",
+            "commentaire": "Le blocage repose sur l'obligation des fournisseurs de services en ligne de protéger les enfants (E1) et sur le devoir de respecter la protection des données des mineurs (E2)."
+          },
+          {
+            "acteur": "MinorShield",
+            "action": "Conservation des captures d'écran 30 jours et transmission aux autorités sur demande",
+            "verdict": "a_verifier",
+            "commentaire": "La loi camerounaise prévoit la collecte et le traitement des données des enfants (E2, E4) mais ne précise pas de durée de conservation ni les modalités de transmission aux autorités."
+          },
+          {
+            "acteur": "Police judiciaire",
+            "action": "Possibilité d'intercepter et d'enregistrer la communication électronique suspecte",
+            "verdict": "fondee",
+            "commentaire": "Article 49 de la loi sur la cybersécurité autorise l'officier de police judiciaire à intercepter les communications (E8)."
+          }
+        ],
+        "lacunes": [
+          {
+            "lacune": "Absence de cadre légal précis sur la durée de conservation des preuves numériques et les conditions de leur transmission aux autorités",
+            "texte_camerounais": [
+              "E2",
+              "E4"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "Australie",
+                "pratique": "L'Online Safety Act 2021 prévoit une conservation limitée des contenus signalés et des procédures claires de transmission aux autorités.",
+                "reference": "E10"
+              }
+            ],
+            "references": [
+              "E2",
+              "E4",
+              "E10"
+            ],
+            "recommandation": "Introduire un article précisant une durée maximale de conservation (ex. 14 jours) et définir les protocoles de transmission sécurisée aux forces de l'ordre."
+          }
+        ],
+        "conflits": [
+          "Conflit potentiel entre la protection de la vie privée des données (E2) et la transmission obligatoire aux autorités sans cadre clair."
+        ],
+        "coordination": [
+          "Manque de coordination formalisée entre MinorShield, l'APDP et la Police judiciaire pour le partage des preuves numériques."
+        ],
+        "synthese": "Le blocage du contenu est justifié par les obligations de protection des enfants (E1, E2). Toutefois, la loi camerounaise ne définit pas la durée de conservation des captures ni les modalités de transmission, créant une lacune comparée aux pratiques australiennes. Il faut harmoniser les procédures entre MinorShield, l'APDP et les forces de l'ordre pour garantir à la fois la protection des enfants et le respect de la vie privée."
+      }
+    },
+    {
+      "etape": 3,
+      "destinataires": [
+        "social",
+        "penal"
+      ],
+      "demandes": 3,
+      "interventions": 5,
+      "analyse": {
+        "verifications": [
+          {
+            "acteur": "MINAS",
+            "action": "Déployer une équipe d'intervention sociale et former le personnel à la détection et prise en charge des abus en ligne",
+            "verdict": "fondee",
+            "commentaire": "L'article 8 de la loi 2023/009 (E2) impose au Ministère des affaires sociales de fournir une formation appropriée aux intervenants sur les abus en ligne."
+          },
+          {
+            "acteur": "Police judiciaire",
+            "action": "Constater l'infraction de diffusion et de chantage à caractère pédopornographique et rédiger le procès‑verbal d'enquête",
+            "verdict": "fondee",
+            "commentaire": "L'article 80 de la loi 2010/012 (E1) pénalise la diffusion d'images pédopornographiques et l'article 32 de la loi 2023/009 (E3) prévoit que les officiers de police judiciaire constatent les infractions."
+          },
+          {
+            "acteur": "Police judiciaire",
+            "action": "Demander aux opérateurs de télécommunications les relevés de transactions Mobile Money des victimes",
+            "verdict": "a_verifier",
+            "commentaire": "Aucun extrait fourni ne précise la procédure de demande de logs aux opérateurs (absence d'E4 ou autre). La loi 2023/009 (E4) mentionne le rôle de l'organe de régulation mais ne donne pas de texte détaillé pour les forces de l'ordre."
+          }
+        ],
+        "lacunes": [
+          {
+            "lacune": "Absence de texte précisant la procédure de requête de données de paiement (Mobile Money) aux opérateurs par les forces de l'ordre",
+            "texte_camerounais": [
+              "E4"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "Australie",
+                "pratique": "L'Online Safety Act 2021 (E7) autorise les autorités à exiger la suppression d'images intimes et à obtenir les informations d'identification du compte auprès du fournisseur.",
+                "reference": "E7"
+              },
+              {
+                "juridiction": "Royaume-Uni",
+                "pratique": "L'Online Safety Act 2023 (E8) prévoit que les autorités peuvent demander aux fournisseurs les données nécessaires à l'enquête sur les contenus illicites.",
+                "reference": "E8"
+              }
+            ],
+            "references": [
+              "E4",
+              "E7",
+              "E8"
+            ],
+            "recommandation": "Adopter un texte d'application précisant que la police judiciaire peut, sur autorisation judiciaire, solliciter les relevés de transactions électroniques aux opérateurs, en s'inspirant des procédures australiennes et britanniques."
+          },
+          {
+            "lacune": "Manque de cadre de coordination entre MINAS et MINPROFF pour la prise en charge des victimes d'abus en ligne",
+            "texte_camerounais": [
+              "E2",
+              "E3"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "ONU",
+                "pratique": "Le principe de coordination inter‑institutionnelle est rappelé dans les observations générales du CRC (E10) qui incitent les États à établir des mécanismes de coopération entre les services sociaux et judiciaires.",
+                "reference": "E10"
+              }
+            ],
+            "references": [
+              "E2",
+              "E3",
+              "E10"
+            ],
+            "recommandation": "Émettre un arrêté ministériel définissant les modalités de coopération entre MINAS, MINPROFF et les autorités judiciaires pour les cas d'abus en ligne."
+          }
+        ],
+        "conflits": [
+          "Conflit potentiel entre le rôle de l'ANTIC (régulation TIC) et les forces de l'ordre pour l'accès aux données de paiement, le texte (E4) ne clarifie pas la hiérarchie."
+        ],
+        "coordination": [
+          "Absence de protocole partagé entre MINAS, la police judiciaire et l'ANTIC pour la transmission rapide des preuves numériques et des données de paiement."
+        ],
+        "synthese": "Les actions de MINAS et de la police sont fondées sur les textes E2, E1 et E3. Cependant, le droit camerounais ne précise pas la procédure d'obtention des logs Mobile Money et la coordination inter‑ministerielle, contrairement aux pratiques australiennes, britanniques et aux recommandations de l'ONU. Il faut créer des textes d'application et des protocoles de coopération pour combler ces lacunes."
+      }
+    },
+    {
+      "etape": 4,
+      "destinataires": [
+        "regulateurs",
+        "entreprises",
+        "penal"
+      ],
+      "demandes": 3,
+      "interventions": 6,
+      "analyse": {
+        "verifications": [
+          {
+            "acteur": "ANTIC",
+            "action": "Émettre une mise en demeure aux opérateurs de télécommunications nationaux pour mettre en place un filtrage temporaire des contenus identifiés",
+            "verdict": "a_verifier",
+            "commentaire": "L'article 27 (E3) autorise l'organe chargé de la régulation des TIC à prendre des mesures en collaboration avec l'organe de régulation des télécommunications, mais il ne précise pas explicitement le recours à un filtrage technique obligatoire. La base légale est donc partielle."
+          },
+          {
+            "acteur": "ANTIC",
+            "action": "Demander au MINPOSTEL d'initier une démarche diplomatique auprès de Tchatlink afin d'accélérer la modération des images illicites",
+            "verdict": "a_verifier",
+            "commentaire": "L'article 10 (E4) prévoit que l'organe de régulation des TIC déploie des moyens préventifs, mais il ne mentionne pas explicitement une action diplomatique envers une plateforme étrangère. La mesure repose sur une interprétation large."
+          },
+          {
+            "acteur": "Operateurs",
+            "action": "Mettre en place le mécanisme de signalement requis et préparer la suspension du compte dès réception d'une décision d'autorité",
+            "verdict": "fondee",
+            "commentaire": "L'article 24 (E5) impose aux opérateurs de promouvoir les mécanismes de signalement des contenus illicites. La suspension du compte nécessite toutefois une décision d'autorité, ce qui est respecté."
+          }
+        ],
+        "lacunes": [
+          {
+            "lacune": "Absence de procédure claire pour contraindre une plateforme étrangère sans présence locale à retirer rapidement des contenus illicites",
+            "texte_camerounais": [
+              "E3",
+              "E4"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "Australie",
+                "pratique": "Le Online Safety Act 2021 permet d'émettre un \"removal notice\" contraignant les hébergeurs à retirer le contenu illicite sous 24 h",
+                "reference": "E9"
+              },
+              {
+                "juridiction": "Royaume-Uni",
+                "pratique": "L'Online Safety Act 2023 impose aux plateformes de retirer les contenus préjudiciables dans les délais raisonnables, sous peine d'amendes",
+                "reference": "E11"
+              }
+            ],
+            "references": [
+              "E3",
+              "E4",
+              "E9",
+              "E11"
+            ],
+            "recommandation": "Introduire, par décret, une procédure de \"notice and takedown\" applicable aux plateformes étrangères, avec un délai de 48 h et la possibilité d'une sanction administrative en cas de non‑conformité."
+          },
+          {
+            "lacune": "Pas de cadre légal définissant le filtrage technique obligatoire (ex. blocage d'URL ou de mots‑clés) par les opérateurs",
+            "texte_camerounais": [
+              "E25"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "UE",
+                "pratique": "Le Digital Services Act (article 25) impose aux fournisseurs de services en ligne de retirer rapidement les contenus illicites après notification",
+                "reference": "E10"
+              }
+            ],
+            "references": [
+              "E25",
+              "E10"
+            ],
+            "recommandation": "Adopter un règlement d'application précisant les modalités techniques de filtrage et les obligations de coopération des opérateurs avec l'ANTIC."
+          }
+        ],
+        "conflits": [
+          "Le mandat de l'ANTIC de prendre des mesures (E3) peut entrer en conflit avec le principe de souveraineté des plateformes étrangères, non couvert par le droit camerounais."
+        ],
+        "coordination": [
+          "Manque de lien formel entre l'ANTIC et le MINPOSTEL pour la mise en œuvre conjointe des mesures de filtrage et de diplomatie."
+        ],
+        "synthese": "Les actions de l'ANTIC sont partiellement fondées mais manquent de précision légale pour contraindre Tchatlink. Les opérateurs respectent leurs obligations de signalement, mais le droit camerounais ne prévoit pas de procédure de retrait rapide ni de filtrage technique obligatoire. Il faut introduire des mécanismes de notice‑and‑takedown et clarifier la coopération inter‑institutionnelle."
+      }
+    },
+    {
+      "etape": 5,
+      "destinataires": [
+        "apdp",
+        "regulateurs",
+        "entreprises",
+        "social",
+        "penal"
+      ],
+      "demandes": 8,
+      "interventions": 11,
+      "analyse": {
+        "verifications": [
+          {
+            "acteur": "APDP",
+            "action": "Émettre une mise en demeure à ScolaPlus pour qu'il notifie sans délai les familles et les établissements concernés de la fuite, conformément à l'obligation de notification de violation de données.",
+            "verdict": "a_verifier",
+            "commentaire": "L'extrait E4 décrit les missions de l'APDP mais ne précise pas d'obligation de notification (article 53). Aucun texte fourni ne mentionne un délai de notification, il faut donc vérifier la réglementation applicable (ex. texte d'application de la loi 2024/017)."
+          },
+          {
+            "acteur": "APDP",
+            "action": "Publier un avis public rappelant aux opérateurs et aux plateformes la nécessité d'anonymiser les données avant toute transmission aux autorités, en s'appuyant sur la charte de protection des enfants.",
+            "verdict": "non_fondee",
+            "commentaire": "L'extrait E5 impose aux responsables du traitement de respecter la réglementation en matière de protection des droits des enfants, mais il ne crée pas d'obligation d'anonymisation préalable à la transmission aux autorités. Aucun texte fourni ne le prévoit."
+          },
+          {
+            "acteur": "ANTIC",
+            "action": "Émettre une mise en demeure à ScolaPlus pour qu'elle informe immédiatement les établissements, les familles et les autorités de la fuite, sous 15 jours, sous peine de sanctions administratives.",
+            "verdict": "a_verifier",
+            "commentaire": "L'extrait E3 indique que l'organe chargé de la régulation des TIC peut prendre des mesures lorsque les atteintes ne sont pas pénales, mais il ne fixe pas de délai de 15 jours ni de sanction précise. Il faut vérifier les décrets d'application de la charte (E1/E6)."
+          }
+        ],
+        "lacunes": [
+          {
+            "lacune": "Absence de texte précisant le délai de notification des violations de données à caractère personnel aux personnes concernées.",
+            "texte_camerounais": [
+              "E4"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "États-Unis",
+                "pratique": "Le COPPA impose une notification sans délai raisonnable aux parents dès la découverte d'une violation.",
+                "reference": "E9"
+              }
+            ],
+            "references": [
+              "E4",
+              "E9"
+            ],
+            "recommandation": "Adopter un décret d'application de la loi 2024/017 qui fixe un délai de 72 heures pour notifier les personnes concernées, en s'inspirant du modèle COPPA."
+          },
+          {
+            "lacune": "Pas de disposition explicite imposant l'anonymisation des données avant transmission aux autorités compétentes.",
+            "texte_camerounais": [
+              "E5"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "Union européenne",
+                "pratique": "Le RGPD impose la minimisation des données et l'anonymisation lorsque possible avant tout partage.",
+                "reference": "aucun extrait disponible pour cette juridiction"
+              }
+            ],
+            "references": [
+              "E5"
+            ],
+            "recommandation": "Intégrer dans le texte de la charte (E1) une clause de minimisation et d'anonymisation des données avant toute transmission aux autorités."
+          }
+        ],
+        "conflits": [
+          "Le rôle de l'APDP (notification) et celui de l'ANTIC (mesures administratives) se chevauchent sans clarification de la compétence première, créant un risque de double sanction."
+        ],
+        "coordination": [
+          "Absence de protocole partagé entre l'APDP et l'ANTIC pour la notification et le suivi des violations, ce qui ralentit la réponse."
+        ],
+        "synthese": "Les actions proposées par l'APDP et l'ANTIC manquent de bases légales précises, notamment sur les délais et les exigences d'anonymisation. Le droit camerounais présente des lacunes comparées aux standards internationaux comme le COPPA ou le RGPD. Il est urgent d'adopter des décrets d'application clarifiant notification, délais et anonymisation, et de formaliser un protocole de coordination entre APDP et ANTIC."
+      }
+    },
+    {
+      "etape": 6,
+      "destinataires": [
+        "minorshield",
+        "regulateurs",
+        "apdp",
+        "social",
+        "penal",
+        "entreprises"
+      ],
+      "demandes": 14,
+      "interventions": 12,
+      "analyse": {
+        "verifications": [
+          {
+            "acteur": "MinorShield",
+            "action": "Transmettre aux autorités compétentes les captures d'écran anonymisées ainsi que les métadonnées essentielles (horodatage, région) pour soutenir l'enquête, en respectant le protocole validé par l'APDP.",
+            "verdict": "a_verifier",
+            "commentaire": "L'article E5 impose aux fournisseurs de services en ligne de décrire leurs contenus et de mettre en place un système de paramétrage pour le respect de la vie privée, mais il ne précise pas explicitement la transmission de données d'enquête aux autorités. La conformité au protocole APDP doit être confirmée."
+          },
+          {
+            "acteur": "MinorShield",
+            "action": "Fournir aux régulateurs les statistiques agrégées des blocages (sans données personnelles) pour appuyer les mesures de protection des enfants.",
+            "verdict": "fondee",
+            "commentaire": "L'article E2 oblige les opérateurs des réseaux de communications électroniques à faciliter le déploiement de dispositifs de protection des enfants, ce qui inclut la mise à disposition de données agrégées utiles aux régulateurs (E2)."
+          }
+        ],
+        "lacunes": [
+          {
+            "lacune": "Absence de texte prévoyant le blocage total et temporaire d'une plateforme en ligne à l'échelle nationale pour des raisons de protection des enfants.",
+            "texte_camerounais": [
+              "E1",
+              "E7"
+            ],
+            "comparaison": [
+              {
+                "juridiction": "Australie",
+                "pratique": "L'Online Safety Act 2021 permet au Commissaire de bloquer l'accès à un service en ligne lorsqu'il représente un danger grave pour les enfants.",
+                "reference": "E11"
+              }
+            ],
+            "references": [
+              "E1",
+              "E7"
+            ],
+            "recommandation": "Introduire un article spécifique autorisant le blocage temporaire d'un service en ligne, avec contrôle judiciaire et délai de réexamen de 15 jours, en s'inspirant du mécanisme australien (E11)."
+          }
+        ],
+        "conflits": [
+          "Le mandat de protection des enfants (E1‑E7) peut entrer en conflit avec le droit à la liberté d'expression et à l'accès à l'information garanti par les normes internationales (E10)."
+        ],
+        "coordination": [
+          "MinorShield transmet des données aux autorités sans indication claire du destinataire (Police judiciaire, Parquet ou régulateur), ce qui crée un risque de duplication ou de retard dans le traitement."
+        ],
+        "synthese": "Les actions de MinorShield sont partiellement fondées sur le droit camerounais, mais la transmission de preuves nécessite une clarification juridique (E5). Le cadre légal camerounais ne prévoit pas de blocage national d'une plateforme, contrairement à l'Australie (E11). Une meilleure coordination entre MinorShield, les régulateurs (ANTIC, ART) et les autorités judiciaires est indispensable pour garantir efficacité et respect des droits."
+      }
+    }
+  ]
+}
