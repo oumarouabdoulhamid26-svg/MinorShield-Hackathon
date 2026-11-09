@@ -12,7 +12,7 @@ MinorShield Policy Lab is a multi-agent policy sandbox for **child online
 protection**. Six AI agents, each representing real institutions with one
 objective (regulators, data protection authority, criminal justice chain,
 social and educational protection, digital companies, and MinorShield, a
-parental-control app already deployed in Cameroon), handle a sextortion crisis
+parental-control app developed in Cameroon), handle a sextortion crisis
 revealed in six stages. Each agent knows only what it was told, acts within
 its legal mandate and must cite the article it actually retrieved; a legal
 advisor identifies the gaps of the law and compares them with the EU, UK, US,

@@ -4,43 +4,43 @@
 > (`docs/exemple_simulation/`); every figure is backed in `docs/PREUVES.md`.
 > Section order follows the FAQ of the hackathon page (a to h).
 
-AI for Good Sandbox Hackathon – [Team Name] – MinorShield Policy Lab
-Team leader: Abdoul-Hamid Oumarou — Team members: [to be completed] — Contact: oumarouabdoulhamid26@gmail.com
+AI for Good Sandbox Hackathon – MinorShield NRH – MinorShield Policy Lab
+Team leader: Abdoul-Hamid Oumarou — Team members: Djenabou Charifa Alioum, Djiala Meli Nelson — Mentor: Chwofoh Sikapa Lucien — Contact: oumarouabdoulhamid26@gmail.com
 GitHub: https://github.com/oumarouabdoulhamid26-svg/MinorShield-Hackathon
 
 ## 1. Introduction
 
-MinorShield is a parental-control application already deployed in Cameroon (2nd prize, national ICT project competition 2026). It captures what is displayed on a child's phone, analyses it with AI models (nudity, violence, toxic text) and blocks dangerous content while alerting the parent. Protecting a child this way raises questions the law has not settled: may a private tool watch a child's screen, send the captures to a foreign AI service, keep them for the police, or alert the authorities about an emerging campaign? And when such a tool reveals a real crisis, can the institutions concerned act together?
+MinorShield is a parental-control application developed in Cameroon by our team (SofTarget, Yaoundé). It captures what is displayed on a child's phone, analyses it with AI models (nudity, violence, toxic text) and blocks dangerous content while alerting the parent. Protecting a child this way raises questions the law has not settled: may a private tool watch a child's screen, send the captures to a foreign AI service, keep them for the police, or alert the authorities about an emerging campaign? And when such a tool reveals a real crisis, can the institutions concerned act together?
 
 MinorShield Policy Lab answers these questions in a sandbox. Six AI agents, each representing a group of real institutions sharing one objective (regulators, data protection authority, criminal justice chain, social and educational protection, digital companies, and MinorShield as the innovative AI solution), handle a sextortion crisis revealed in six stages. Each agent knows only what has been disclosed to it, acts within the mandate the law gives it and must justify every action with an article it actually retrieved; a legal-advisor agent judges each action, identifies the gaps of the law and compares them with the EU, the UK, the US, Australia, the UAE and the UN. Every citation is checked automatically and every exchange is written to an audit log. The domain is child online protection; Cameroon is the field of illustration, and every gap is stated for the domain with verified global examples.
 
 ## 2. Description of the use case
 
-**The AI solution and its real architecture.** On the child's phone, MinorShield captures the screen and sends it to its server, which returns a decision (`DetectionResponse`: label, category, scores). Nudity is detected on the server (NudeNet); violence and text are also sent to OpenAI's moderation service in the United States; a local lexicon covers Cameroonian slang. If the content is judged inappropriate, the screen is masked and the parent alerted. This architecture is effective, but it is also exactly where the law is silent or demanding: consent for a minor, transfer of a child's data abroad, retention, liability for errors.
+**The AI solution and its real architecture:** On the child's phone, MinorShield captures the screen and sends it to its server, which returns a decision (`DetectionResponse`: label, category, scores). Nudity is detected on the server (NudeNet); violence and text are also sent to OpenAI's moderation service in the United States; a local lexicon covers Cameroonian slang. If the content is judged inappropriate, the screen is masked and the parent alerted. This architecture is effective, but it is also exactly where the law is silent or demanding: consent for a minor, transfer of a child's data abroad, retention, liability for errors.
 
-**Gaps in existing approaches.** (1) Crisis exercises between institutions are rare, costly and leave no trace of why a decision was taken. (2) General-purpose chatbots answer legal questions from memory and invent plausible articles. (3) Comparisons with foreign law are done by hand. (4) Nobody sees in advance where mandates overlap or where no institution is competent.
+**Gaps in existing approaches:** (1) Crisis exercises between institutions are rare, costly and leave no trace of why a decision was taken. (2) General-purpose chatbots answer legal questions from memory and invent plausible articles. (3) Comparisons with foreign law are done by hand. (4) Nobody sees in advance where mandates overlap or where no institution is competent.
 
-**How the solution answers them.** A citable knowledge base (official texts split article by article); agents whose mandates come from the law; information revealed progressively and unequally; coordination through requests between agents; automatic verification of every citation; a full audit log; an orchestrator driven by a declarative ML Intent that reconfigures itself when quality drops.
+**How the solution answers them:** A citable knowledge base (official texts split article by article); agents whose mandates come from the law; information revealed progressively and unequally; coordination through requests between agents; automatic verification of every citation; a full audit log; an orchestrator driven by a declarative ML Intent that reconfigures itself when quality drops.
 
 ## 3. Use case requirements
 
-- **Data (SRC, C, PP).** Official legal texts only, with source, date and page recorded (`bd/SOURCES.md`): 13 Cameroonian texts, including the Child Online Protection Charter (Law 2023/009), the data protection law (2024/017, obtained from the Presidency's certified copy by OCR) and the Penal Code; 7 international references (EU DSA and GDPR, UK and Australian Online Safety Acts, US COPPA Rule, UAE Federal Decree-Law 26/2025 on Child Digital Safety, UN General Comment No. 25); the ITU strategy corpus. Article-level chunks, local multilingual embeddings (bge-m3): 8,304 chunks. No real child data: the detector output of stage 2 is simulated in the real API format and labelled as such.
-- **Retrieval quality.** 15 control queries with a hand-verified expected article: the agents' retrieval finds it in 14/15 cases (MRR 0.82), against 7/15 for a plain search, thanks to two rules: the key articles of each agent's mandate are always offered, and at most two extracts per text.
-- **Model (M).** Open-weight gpt-oss-120b (Groq), structured JSON output with explicit reasoning; fallback model declared in the ML Intent. Each request fits the free-tier limit (8,000 tokens per minute); a full run uses 178,041 tokens (22 minutes on a laptop without GPU).
-- **Policy (P).** An agent acts only on information revealed to it; it cites only extract IDs it received and copies, word for word, the sentence that grounds each action (checked by code); every action names the institution acting; it states what the law does not allow.
-- **Sink and human oversight.** Outputs (audit log, report, demonstration page, indicators) are deliberation material for human decision-makers, not legal advice.
+- **Data (SRC, C, PP):** Official legal texts only, with source, date and page recorded (`bd/SOURCES.md`): 13 Cameroonian texts, including the Child Online Protection Charter (Law 2023/009), the data protection law (2024/017, obtained from the Presidency's certified copy by OCR) and the Penal Code; 7 international references (EU DSA and GDPR, UK and Australian Online Safety Acts, US COPPA Rule, UAE Federal Decree-Law 26/2025 on Child Digital Safety, UN General Comment No. 25); the ITU strategy corpus. Article-level chunks, local multilingual embeddings (bge-m3): 8,304 chunks. No real child data: the detector output of stage 2 is simulated in the real API format and labelled as such.
+- **Retrieval quality:** 15 control queries with a hand-verified expected article: the agents' retrieval finds it in 14/15 cases (MRR 0.82), against 7/15 for a plain search, thanks to two rules: the key articles of each agent's mandate are always offered, and at most two extracts per text.
+- **Model (M):** Open-weight gpt-oss-120b (Groq), structured JSON output with explicit reasoning; fallback model declared in the ML Intent. Each request fits the free-tier limit (8,000 tokens per minute); a full run uses 178,041 tokens (22 minutes on a laptop without GPU).
+- **Policy (P):** An agent acts only on information revealed to it; it cites only extract IDs it received and copies, word for word, the sentence that grounds each action (checked by code); every action names the institution acting; it states what the law does not allow.
+- **Sink and human oversight:** Outputs (audit log, report, demonstration page, indicators) are deliberation material for human decision-makers, not legal advice.
 
 ## 4. Mapping with ITU-T Y.3172
 
-| Node | Implementation |
-|---|---|
-| SRC | Legal texts of 7 jurisdictions, scenario, simulated MinorShield detector output |
-| C / PP | Ingestion, OCR, article-level chunking with metadata, bge-m3 embeddings |
-| M | Six actor agents and one advisor on gpt-oss-120b, retrieval-augmented |
-| P | Mandate limits, institution named per action, citation and word-for-word quote verification, advisor verdicts |
-| D | Orchestrator: stages revealed to their recipients only, requests routed between agents |
-| SINK | Audit log, readable report, demonstration page, indicators |
-| MLFO / ML Intent | Orchestrator configured by `agent/intent.json` (sources, agents, models, constraints, quality threshold, outputs) |
+| Node | Implementation | Supporting policy documents |
+|---|---|---|
+| SRC | Legal texts of 7 jurisdictions, scenario, simulated MinorShield detector output | Law 2024/017 art. 9(3) (parental consent for a minor's data); no real child data used |
+| C / PP | Ingestion, OCR, article-level chunking with metadata, bge-m3 embeddings | Law 2024/017 art. 13 (retention) and art. 32 (transfer abroad) |
+| M | Six actor agents and one advisor on gpt-oss-120b, retrieval-augmented | No Cameroonian text on AI models (gaps N2, N3) |
+| P | Mandate limits, institution named per action, citation and word-for-word quote verification, advisor verdicts | Law 2023/009 art. 14, 16, 23(3), 27–29 (suspension, reporting, removal, sanctions) |
+| D | Orchestrator: stages revealed to their recipients only, requests routed between agents | Law 2023/009 art. 32 (offences recorded, report to the prosecutor within 8 days) |
+| SINK | Audit log, readable report, demonstration page, indicators | UN GC 25 para. 27 (coordinating body); decisions left to humans |
+| MLFO / ML Intent | Orchestrator configured by `agent/intent.json` (sources, agents, models, constraints, quality threshold, outputs) | ITU-T Y.3172 (ML Intent) |
 
 Of the 20 requirements of Y.3172 (detail and evidence in `docs/Y3172.md`), **15 are implemented, 4 partially and 2 not**. Highlights: declarative ML Intent translated into configuration (SPEC-001/002, time and token constraints logged when exceeded); automatic reconfiguration when the share of supported actions falls below the threshold, and fallback model when a quota is exhausted (MNG-001/004: 3 reconfigurations in the reference run, all improving the result); monitoring through citation checks and indicators (MNG-003); chaining retrieve → reason → verify → coordinate → advise → report (MNG-005). Not claimed: transfer of trained models and training data (INT-001/002), since no model is fine-tuned and no real child data may be used.
 
@@ -54,7 +54,6 @@ Of the 20 requirements of Y.3172 (detail and evidence in `docs/Y3172.md`), **15 
 | D6 Human Interface | Demonstration page and replay: every decision opens the article it relies on |
 | D4 Contextualisation | Cameroonian law and slang lexicon; comparison with five other jurisdictions and the UN |
 | D11 AI for Inclusion | Free open-weight models, French-language corpus, runs on a laptop without GPU |
-| D1 Data/Model Marketplace | Provenance of every text, open repository, corrections to the ITU reference corpus |
 
 ## 6. Requirements mapped to local policies
 
@@ -68,7 +67,7 @@ Of the 20 requirements of Y.3172 (detail and evidence in `docs/Y3172.md`), **15 
 | Removing content | Law 2023/009, art. 14, 27–29 | Suspension of a user on request; 15-day formal notice before sanctions |
 | Qualifying the offence | Penal Code, art. 303 and 347; Law 2010/012, art. 80–82 | Blackmail; offences against minors aged 16 to 21; child sexual abuse material online |
 
-## 7. Evaluation scenario: technical solution and policy
+## 7. Error scenarios: technical solution and policy
 
 "Operation Mirror", six stages over three days, each revealed only to the agents concerned:
 
@@ -83,13 +82,13 @@ Of the 20 requirements of Y.3172 (detail and evidence in `docs/Y3172.md`), **15 
 
 **Results of the reference run** (27 October 2026, gpt-oss-120b, full log in `docs/exemple_simulation/`): 47 interventions; 19 requests routed between agents (24 addressed to an institution's name were redirected to the right agent; 1 lost to a misspelt recipient, fixed since); **84.0% of the 94 legal claims cite an extract actually provided and copy a sentence of it found word for word** (74 of 80 quotes exact); institution named in 61/61 actions; 3 automatic reconfigurations; 178,041 tokens. **Precision**, measured by human review of 30 randomly drawn supported claims: **50% fully grounded** (95% Wilson interval 33–67%), 77% at least partly; the same measure gave 23% (12–41%) before word-for-word quotes and full-length extracts were introduced. Of the 15 gaps written into the scenario beforehand, human review finds **7 identified, 3 partially, 5 missed**, plus 3 gaps we had not anticipated (intimate images under threat before publication, police access to a private tool's logs, a missing implementing text).
 
-**What worked.** Stage 2: the data protection authority asked MinorShield to suspend any transfer of the capture to its moderation service in the United States until prior authorisation (Law 2024/017, art. 32), and noted that no procedure allows granting it quickly. Stage 3: the advisor found no way to act on an intimate image that is only threatened with publication and proposed removal on the victim's notice. Stage 6: no legal basis to block a whole platform. **What was missed.** For the fourth run in a row, no agent noticed that the 19-year-old victim falls outside the Charter (under 18) while the Penal Code protects minors aged 16 to 21; nobody questioned the lawfulness of monitoring the child's screen itself. These gaps come from our human analysis and are reported as such.
+**What worked:** Stage 2: the data protection authority asked MinorShield to suspend any transfer of the capture to its moderation service in the United States until prior authorisation (Law 2024/017, art. 32), and noted that no procedure allows granting it quickly. Stage 3: the advisor found no way to act on an intimate image that is only threatened with publication and proposed removal on the victim's notice. Stage 6: no legal basis to block a whole platform. **What was missed:** For the fourth run in a row, no agent noticed that the 19-year-old victim falls outside the Charter (under 18) while the Penal Code protects minors aged 16 to 21; nobody questioned the lawfulness of monitoring the child's screen itself. These gaps come from our human analysis and are reported as such.
 
-**AI errors caught, and not caught.** The verifier flagged 1 invented extract ID, 6 quotes not found word for word and 8 unsupported actions. An exact quote proves the sentence exists, not that it grounds the claim: human review found 8 errors behind real citations, e.g. a breach-notification duty attributed to COPPA, Australian blocking powers overstated, breach notification and retention declared missing although art. 22 and 13 of Law 2024/017 cover them, and facts invented in one answer.
+**AI errors caught, and not caught:** The verifier flagged 1 invented extract ID, 6 quotes not found word for word and 8 unsupported actions. An exact quote proves the sentence exists, not that it grounds the claim: human review found 8 errors behind real citations, e.g. a breach-notification duty attributed to COPPA, Australian blocking powers overstated, breach notification and retention declared missing although art. 22 and 13 of Law 2024/017 cover them, and facts invented in one answer.
 
-**Handling the controversy.** The system never decides: it produces the material for a human deliberation. On stage 6 the advisor found no legal basis for blocking a whole platform, recorded the conflict between child protection and freedom of expression, and recommended a provision setting conditions, a maximum duration and judicial control, drawing on the Australian framework and the DSA; our answer favours targeted, motivated measures under judicial control before any general block.
+**Handling the controversy:** The system never decides: it produces the material for a human deliberation. On stage 6 the advisor found no legal basis for blocking a whole platform, recorded the conflict between child protection and freedom of expression, and recommended a provision setting conditions, a maximum duration and judicial control, drawing on the Australian framework and the DSA; our answer favours targeted, motivated measures under judicial control before any general block.
 
-**Limits.** The verifier cannot detect an exact quote used for a wrong claim (precision 50%, one reviewer, not blind); the detector input is simulated; results come from one model and one scenario. A human legal review remains mandatory.
+**Limits:** The verifier cannot detect an exact quote used for a wrong claim (precision 50%, one reviewer, not blind); the detector input is simulated; results come from one model and one scenario. A human legal review remains mandatory.
 
 ## 8. Policy gaps and standards gaps
 
@@ -108,4 +107,4 @@ Detail, sources and global examples: `docs/LACUNES.md`. Summary:
 | No coordination body; overlapping ministries | Law 2023/009, art. 4–8 | UAE DL art. 4–5; UN GC 25 para. 27 |
 | No framework or proportionality for blocking a platform | Law 2023/009, art. 14 | UAE DL art. 10(3); DSA art. 17, 20 |
 
-**Standards gaps.** (N1) Y.3172 has no node to verify that a language-model output is grounded in its sources: we propose one between M and SINK: a word-for-word quote check, and three metrics (share of supported claims, precision by human review, recall of expected gaps). (N2) The AI Readiness Report 2.0 does not cover agentic AI (delegation, multi-agent coordination, autonomy): indicators should cover traceability of exchanges, respect of mandates and grounding. (N3) No standard to measure and publish the performance of on-device content detectors or to explain a block to a child. (N4) Laws published only as (often scanned) PDF, without a machine-readable, article-level format. (N5) Integrity issues in the ITU reference corpus (two truncated files, 20 of 67 documents with a wrong country), corrected in our repository.
+**Standards gaps:** (N1) Y.3172 has no node to verify that a language-model output is grounded in its sources: we propose one between M and SINK: a word-for-word quote check, and three metrics (share of supported claims, precision by human review, recall of expected gaps). (N2) The AI Readiness Report 2.0 does not cover agentic AI (delegation, multi-agent coordination, autonomy) nor child online safety (children appear only as examples, p. 25 and 38): indicators should cover traceability of exchanges, respect of mandates and grounding. (N3) No standard to measure and publish the performance of on-device content detectors or to explain a block to a child. (N4) Laws published only as (often scanned) PDF, without a machine-readable, article-level format. (N5) Integrity issues in the ITU reference corpus (two truncated files, 20 of 67 documents with a wrong country), corrected in our repository.
